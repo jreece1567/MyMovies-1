@@ -5,9 +5,7 @@ import com.sandy.mymovies.models.dto.Cast;
 import com.sandy.mymovies.models.dto.Title;
 import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Component;
 
-@Component
 public interface MovieRepository extends CrudRepository<Movie, String> {
 
 	//  /title/{imdbid}

@@ -5,7 +5,7 @@ import com.sandy.mymovies.models.domain.Movie;
 import com.sandy.mymovies.models.dto.Genre;
 import com.sandy.mymovies.models.dto.Tag;
 import com.sandy.mymovies.models.dto.Title;
-import com.sandy.mymovies.repositories.EpisodeRepo;
+import com.sandy.mymovies.repositories.EpisodeRepository;
 import com.sandy.mymovies.repositories.MovieRepository;
 import java.util.List;
 import java.util.Optional;
@@ -16,10 +16,10 @@ import org.springframework.stereotype.Service;
 public class MyMoviesService {
 
 	private MovieRepository movieRepository;
-	private EpisodeRepo episodeRepository;
+	private EpisodeRepository episodeRepository;
 
 	@Autowired
-	public MyMoviesService(MovieRepository movieRepository, EpisodeRepo episodeRepository) {
+	public MyMoviesService(MovieRepository movieRepository, EpisodeRepository episodeRepository) {
 		this.movieRepository = movieRepository;
 		this.episodeRepository = episodeRepository;
 	}
