@@ -37,13 +37,13 @@ public class MymoviesApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         // test repository setup
-        movieRepository.save(new Movie("0128442", "Rounders", "1998", "2:01", "R", "John Dahl",
+        movieRepository.save(new Movie("0128442", "Rounders", 1998,"2:01", "R", "John Dahl",
                 "0128442.jpg",
                 "A young man is a reformed gambler who must return to playing big stakes poker to help a friend pay off loan sharks."));
 
         Optional<Movie> m = movieRepository.findById("0128442");
         if (m.isPresent()) {
-            log.info(m.toString());
+            log.info("Found: "+ m.get().toString());
         } else {
             log.info("Unable to load movie with id: "+"0128442");
         }
@@ -54,7 +54,7 @@ public class MymoviesApplication implements CommandLineRunner {
 
     static class MovieFromFile {
 
-        private String imdbid, title, releaseYear, duration, rating, director, imageUrl, description;
+        private String imdbId, title, releaseYear, duration, rating, director, imageUrl, description;
         private Genre genre;
         private Tag tags;
         private Cast cast;
@@ -63,7 +63,7 @@ public class MymoviesApplication implements CommandLineRunner {
 
     static class EpisodeFromFile {
 
-        private String imdbid, season, episodeNumber, title, description;
+        private String imdbId, season, episodeNumber, title, description;
 
         static List<EpisodeFromFile> importEpisodes() throws IOException {
             return new ObjectMapper()

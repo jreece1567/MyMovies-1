@@ -1,6 +1,9 @@
 package com.sandy.mymovies.controllers;
+
 import com.sandy.mymovies.models.domain.Episode;
 import com.sandy.mymovies.models.domain.Movie;
+import com.sandy.mymovies.models.dto.Cast;
+import com.sandy.mymovies.models.dto.Index;
 import com.sandy.mymovies.models.dto.Title;
 import com.sandy.mymovies.services.MyMoviesService;
 import java.util.List;
@@ -15,112 +18,109 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyMoviesController {
 
-	private MyMoviesService service;
+    private MyMoviesService service;
 
-	// -- Basic crud endpoints --
-	//		/title/{imdbid}
-	//		/titles/{index}/{key}
-	// 		/movies/{imdbid}
-	//		/movies/{index}
-	// 		/cast/{imdbid}
-	// 		/episodes/{imdbid}/{season}
-	// 		/episodes/{imdbid}
-	// 		/season/{imdbid}
-	// -- Index endpoints --
-	//		/index/keys/{name}
-	//		/index/{name}
-	//		/index/{name}/{key}
-	@Autowired
-	public MyMoviesController(MyMoviesService service) {
-		this.service = service;
+    // -- Basic crud endpoints --
+    //		/title/{imdbId}
+    //		/titles/{index}/{key}
+    // 		/movies/{imdbId}
+    //		/movies/{index}
+    // 		/cast/{imdbId}
+    // 		/episodes/{imdbId}/{season}
+    // 		/episodes/{imdbId}
+    // 		/season/{imdbId}
+    // -- Index endpoints --
+    //		/index/keys/{name}
+    //		/index/{name}
+    //		/index/{name}/{key}
+    @Autowired
+    public MyMoviesController(MyMoviesService service) {
+        this.service = service;
+    }
+
+    /**
+     * @return Individual movie
+     */
+    @RequestMapping(method = RequestMethod.GET, path = "/movie/{imdbId}")
+    @ResponseStatus(HttpStatus.OK)
+    public Movie getMovieByImdbId(@PathVariable("imdbId") String imdbId) {
+        return service.verifyMovie(imdbId);
+    }
+
+    /**
+     * @return Individual movie title
+     */
+    @RequestMapping(method = RequestMethod.GET, path = "/title/{imdbId}")
+    @ResponseStatus(HttpStatus.OK)
+    public Title getTitleByImdbId(@PathVariable("imdbId") String imdbId) {
+        return service.verifyTitle(imdbId);
+    }
+
+	/**
+	 * @return Titles associated with an index
+	 * @param index
+	 * @param key
+	 */
+	@RequestMapping(method = RequestMethod.GET, path = "{/titles/{index}/{key}")
+	public List<Title> getTitlesByIndexAndKey(@PathVariable("index") String index, @PathVariable("key") String key)
+	{
+        Index idx = Index.valueOf(index);   // will throw IllegalArgumentException if the 'index' is not valid
+		return service.verifyTitlesByIndexAndKey(idx, key);
 	}
 
 	/**
-	 * @return Individual movie
-	 * @param imdbid
+	 * @return Cast associated with a single movie (list of strings)
+	 * @param imdbId
 	 */
-	@RequestMapping(method = RequestMethod.GET, path = "/movie/{imdbid}")
+	@RequestMapping(method = RequestMethod.GET, path = "{/cast/{imdbId}}")
 	@ResponseStatus(HttpStatus.OK)
-	public Movie getMovieByImdbId(@PathVariable String imdbid) {
-		return service.verifyMovie(imdbid);
+	public Cast getCastByImdbId(@PathVariable("imdbId") String imdbId) {
+		return service.verifyCast(imdbId);
 	}
 
-//	/**
-//	 * @return Movies associated with an index
-//	 * @param index
-//	 */
-//	@RequestMapping(method = RequestMethod.GET, path = "{/movies/{index}}")
-//	@ResponseStatus(HttpStatus.OK)
-//	public List<Movie> getMoviesByIndex(@PathVariable String index) {
-//		return service.verifyMoviesByIndex(index);
-//	}
+    /**
+     * @return All episodes associated with a show
+     */
+    @RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Episode> getEpisodesByImdbId(@PathVariable("imdbId") String imdbId) {
+        return service.verifyEpisodes(imdbId);
+    }
 
 	/**
-	 * @return Individual movie title
-	 * @param imdbid
+	 * @return Episodes associated with a show and season
+	 * @param imdbId
 	 */
-	@RequestMapping(method = RequestMethod.GET, path = "/title/{imdbid}")
+	@RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbId}/{seasonNumber}")
 	@ResponseStatus(HttpStatus.OK)
-	public Title getTitleByImdbId(@PathVariable String imdbid) {
-		return service.verifyTitle(imdbid);
+	public List<Episode> getEpisodesByImdbIdAndSeason(@PathVariable("imdbId") String imdbId, @PathVariable("seasonNumber") Integer seasonNumber) {
+		return service.verifyEpisodes(imdbId, seasonNumber);
 	}
 
-//	/**
-//	 * @return Titles associated with an index
-//	 * @param index
-//	 * @param key
-//	 */
-//	@RequestMapping(method = RequestMethod.GET, path = "{/titles/{index}/{key}")
-//	public List<Title> getTitlesByIndexAndKey(@PathVariable String index, @PathVariable String key)
-//	{
-//		return service.verifyTitlesByIndexAndKey(index, key);
-//	}
+    /**
+     * @return A list of seasons associated with a show
+     */
+    @RequestMapping(method = RequestMethod.GET, path = "/seasons/{imdbId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<String> getSeasonsByImdbId(@PathVariable("imdbId") String imdbId) {
+        return service.verifyImdbAndReturnSeasons(imdbId);
+    }
 
-//	/**
-//	 * @return Cast associated with a single movie (list of strings)
-//	 * @param imdbid
-//	 */
-//	@RequestMapping(method = RequestMethod.GET, path = "{/cast/{imdbid}}")
-//	@ResponseStatus(HttpStatus.OK)
-//	public Cast getCastByImdbId(@PathVariable String imdbid) {
-//		return service.verifyCast(imdbid);
-//	}
+    /**
+     * @return A list of keys associated with an index
+     */
+    @RequestMapping(method = RequestMethod.GET, path = "/index/keys/{name}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<String> getKeysByIndex(@PathVariable("name") String name) {
+        Index idx = Index.valueOf(name);
+        return service.verifyIndex(idx);
+    }
 
-	/**
-	 * @return All episodes associated with a show
-	 * @param imdbid
-	 */
-	@RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbid}")
-	@ResponseStatus(HttpStatus.OK)
-	public List<Episode> getEpisodesByImdbId(@PathVariable String imdbid) {
-		return service.verifyEpisodes(imdbid);
-	}
-
-//	/**
-//	 * @return Episodes associated with a show and season
-//	 * @param imdbid
-//	 */
-//	@RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbid}/{seasonNumber}")
-//	@ResponseStatus(HttpStatus.OK)
-//	public List<Episode> getEpisodesByImdbIdAndSeason(@PathVariable String imdbid, @PathVariable seasonNumber) {
-//		return service.verifyEpisodes(imdbid, seasonNumber);
-//	}
-
-	/**
-	 * @return A list of seasons associated with a show
-	 * @param imdbid
-	 */
-	@RequestMapping(method = RequestMethod.GET, path = "/seasons/{imdbid}")
-	@ResponseStatus(HttpStatus.OK)
-	public List<String> getSeasonsByImdbId(@PathVariable String imdbid) {
-		return service.verifyImdbAndReturnSeasons(imdbid);
-	}
-
-	// -- Remaining endpoints --
-	//		/index/keys/{name}
-	//		/index/{name}
-	//		/index/{name}/{key}
-	//		/search/{index}
-	//		/count/{index}
+    // -- Remaining endpoints --
+    //		/index/keys/{name}
+    //		/index/{name}
+    //		/index/{name}/{key}
+    //		/search/{index}
+    //		/count/{index}
 
 }

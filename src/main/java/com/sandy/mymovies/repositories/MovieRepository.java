@@ -1,18 +1,30 @@
 package com.sandy.mymovies.repositories;
 
 import com.sandy.mymovies.models.domain.Movie;
-import com.sandy.mymovies.models.dto.Cast;
-import com.sandy.mymovies.models.dto.Title;
-import java.util.Optional;
+import java.util.List;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 public interface MovieRepository extends CrudRepository<Movie, String> {
 
-	//  /title/{imdbid}
-	Optional<Title> findTitleByImdbid(String imdbId);
+    List<Movie> findAllByReleaseYear(Integer releaseYear);
 
-	//  /cast/{imdbid}
-	Optional<Cast> findCastByImdbid(String imdbId);
+    List<Movie> findAllByDirector(String director);
 
-	//	/movie/{imdbid} <- Optional<Movie>, findById()
+    List<Movie> findAllByRating(String rating);
+
+    List<Movie> findAllByTitle(String title);
+
+    @Query("SELECT DISTINCT director from Movie")
+    List<String> findAllDistinctDirectors();
+
+    @Query("SELECT DISTINCT rating from Movie")
+    List<String> findAllDistinctRatings();
+
+    @Query("SELECT DISTINCT releaseYear from Movie")
+    List<Integer> findAllDistinctReleaseYears();
+
+    @Query("SELECT DISTINCT title from Movie")
+    List<String> findAllDistinctTitles();
+
 }

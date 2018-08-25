@@ -8,8 +8,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class Title implements Serializable {
 
-  private int imdbId;
+  private String imdbId;
   private String title;
-  private String year;
+  private Integer releaseYear;
   private String imageUrl;
 }

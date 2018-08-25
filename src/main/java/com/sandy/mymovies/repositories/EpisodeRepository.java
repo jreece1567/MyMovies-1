@@ -7,14 +7,14 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface EpisodeRepository extends CrudRepository<Episode, String> {
 
-	// /episodes/{imdbid}
-	List<Episode> findAllByImdbid(String imdbid);
+	// /episodes/{imdbId}
+	List<Episode> findAllByImdbId(String imdbId);
 
-	// /episodes/{imdbid}/{season}
-	List<Episode> findAllByImdbidAndSeason(String imdbid, String season);
+	// /episodes/{imdbId}/{season}
+	List<Episode> findAllByImdbIdAndSeason(String imdbId, Integer season);
 
 	// todo: ??
-	// /seasons/{imdbid}
-	@Query("SELECT DISTINCT season from Episode where imdbid=?1")
-	List<String> findDistinctSeasonsByImdbid(String imdbid);
+	// /seasons/{imdbId}
+	@Query("SELECT DISTINCT season from Episode where imdbId=?1")
+	List<String> findDistinctSeasonsByImdbId(String imdbId);
 }
