@@ -1,16 +1,22 @@
 package com.sandy.mymovies.repositories;
 
-import com.sandy.mymovies.models.domain.Tags;
+import com.sandy.mymovies.models.domain.Tag;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-public interface TagRepository extends CrudRepository<Tags,String> {
+/**
+ * JPA interface to Tag table.
+ */
+public interface TagRepository extends CrudRepository<Tag, String> {
 
-    @Query("SELECT imdbId FROM Tags WHERE tag = ?1")
+    @Query("SELECT tag FROM Tag WHERE imdbId = ?1")
+    List<String> findAllByImdbId(String imdbId);
+
+    @Query("SELECT imdbId FROM Tag WHERE tag = ?1")
     List<String> findAllByTag(String tag);
 
-    @Query("SELECT DISTINCT tag FROM Tags")
+    @Query("SELECT DISTINCT tag FROM Tag")
     List<String> findAllDistinctTags();
 
 }

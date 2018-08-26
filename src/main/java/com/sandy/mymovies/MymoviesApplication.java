@@ -4,12 +4,12 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sandy.mymovies.models.domain.Movie;
+import com.sandy.mymovies.models.domain.Video;
 import com.sandy.mymovies.models.dto.Cast;
-import com.sandy.mymovies.models.dto.Genre;
-import com.sandy.mymovies.models.dto.Tag;
+import com.sandy.mymovies.models.dto.Genres;
+import com.sandy.mymovies.models.dto.Tags;
+import com.sandy.mymovies.repositories.VideoRepository;
 import com.sandy.mymovies.services.MyMoviesService;
-import com.sandy.mymovies.repositories.MovieRepository;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
@@ -24,7 +24,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MymoviesApplication implements CommandLineRunner {
 
     @Autowired
-    MovieRepository movieRepository;
+    VideoRepository videoRepository;
 
     @Autowired
     MyMoviesService movieService;
@@ -37,15 +37,15 @@ public class MymoviesApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         // test repository setup
-        movieRepository.save(new Movie("0128442", "Rounders", 1998,"2:01", "R", "John Dahl",
-                "0128442.jpg",
-                "A young man is a reformed gambler who must return to playing big stakes poker to help a friend pay off loan sharks."));
+        videoRepository.save(new Video("0128442", "Rounders", 1998, "2:01", "R", "John Dahl",
+            "0128442.jpg",
+            "A young man is a reformed gambler who must return to playing big stakes poker to help a friend pay off loan sharks."));
 
-        Optional<Movie> m = movieRepository.findById("0128442");
-        if (m.isPresent()) {
-            log.info("Found: "+ m.get().toString());
+        Optional<Video> video = videoRepository.findById("0128442");
+        if (video.isPresent()) {
+            log.info("Found: " + video.get().toString());
         } else {
-            log.info("Unable to load movie with id: "+"0128442");
+            log.info("Unable to load movie with id: " + "0128442");
         }
 
         // Load files, create movie beans
@@ -55,8 +55,8 @@ public class MymoviesApplication implements CommandLineRunner {
     static class MovieFromFile {
 
         private String imdbId, title, releaseYear, duration, rating, director, imageUrl, description;
-        private Genre genre;
-        private Tag tags;
+        private Genres genre;
+        private Tags tags;
         private Cast cast;
 
     }
@@ -67,10 +67,10 @@ public class MymoviesApplication implements CommandLineRunner {
 
         static List<EpisodeFromFile> importEpisodes() throws IOException {
             return new ObjectMapper()
-                    .setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY)
-                    .readValue(EpisodeFromFile.class.getResourceAsStream("foo"),
-                            new TypeReference<List<EpisodeFromFile>>() {
-                            });
+                .setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY)
+                .readValue(EpisodeFromFile.class.getResourceAsStream("foo"),
+                    new TypeReference<List<EpisodeFromFile>>() {
+                    });
         }
     }
 }

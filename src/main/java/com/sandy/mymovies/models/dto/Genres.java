@@ -3,6 +3,9 @@ package com.sandy.mymovies.models.dto;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Tag extends ArrayList<String> implements Serializable {
+/**
+ * A list of genres.
+ */
+public class Genres extends ArrayList<String> implements Serializable {
 
 }

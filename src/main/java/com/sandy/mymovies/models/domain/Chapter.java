@@ -9,34 +9,52 @@ import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.Data;
 
+/**
+ * Bean associating an episode with an imdbId and season.
+ */
 @Entity
 @Table(indexes = {
-        @Index(name = "IDX_IMDBID", columnList = "imdbId"),
-        @Index(name = "IDX_SEASON", columnList = "season")})
+    @javax.persistence.Index(name = "IDX_IMDBID", columnList = "imdbId"),
+    @Index(name = "IDX_SEASON", columnList = "season")})
 @Data
-public class Episode implements Serializable {
+public class Chapter implements Serializable {
 
     @Id
     @GeneratedValue
     private int id;
 
+    /**
+     * The imdbId of a show in which the episode appears.
+     */
     @Column
     private String imdbId;
 
+    /**
+     * The season of a show in which the episode appears.
+     */
     @Column
     private Integer season;
 
+    /**
+     * The episode number (within a season) in which the episode appears.
+     */
     @Column
     private Integer episodeNumber;
 
+    /**
+     * The title of the episode.
+     */
     @Column
     private String title;
 
+    /**
+     * The description the episode.
+     */
     @Column
     private String description;
 
-    public Episode(String imdbId, Integer season, Integer episodeNumber, String title,
-            String description) {
+    public Chapter(String imdbId, Integer season, Integer episodeNumber, String title,
+        String description) {
         this.imdbId = imdbId;
         this.season = season;
         this.episodeNumber = episodeNumber;

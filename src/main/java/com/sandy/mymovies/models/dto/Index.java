@@ -1,5 +1,8 @@
 package com.sandy.mymovies.models.dto;
 
+/**
+ * The defined indices for the MyMovies app.
+ */
 public enum Index {
     ALL("all"),
     TAG("tag"),

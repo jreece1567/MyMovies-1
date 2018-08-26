@@ -4,9 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * A list of actor-names.
+ * A list of tag names.
  */
-public class Cast extends ArrayList<String> implements Serializable {
+public class Tags extends ArrayList<String> implements Serializable {
 
 }
-
