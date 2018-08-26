@@ -12,10 +12,10 @@ import com.sandy.mymovies.models.domain.Actor;
  */
 public interface ActorRepository extends CrudRepository<Actor, String> {
 
-  @Query("SELECT imdbId from Actor WHERE name=?1")
+  @Query("SELECT imdbId FROM Actor WHERE name=?1")
   List<String> findAllByName(String name);
 
-  @Query("SELECT name from Actor WHERE imdbId=?1")
+  @Query("SELECT name FROM Actor WHERE imdbId=?1")
   List<String> findAllByImdbId(String imdbId);
 
   @Query("SELECT DISTINCT name FROM Actor")

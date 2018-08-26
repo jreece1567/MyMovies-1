@@ -24,6 +24,6 @@ public interface ChapterRepository extends CrudRepository<Chapter, String> {
 
   // todo: ??
   // /seasons/{imdbId}
-  @Query("SELECT DISTINCT season from Episode where imdbId=?1")
+  @Query("SELECT DISTINCT season FROM Episode WHERE imdbId=?1")
   List<String> findDistinctSeasonsByImdbId(String imdbId);
 }
