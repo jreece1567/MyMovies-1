@@ -107,7 +107,7 @@ public class MyMoviesApplication implements CommandLineRunner {
         }
 
         log.info("Loading "+map.size()+" movies ...");
-        final Map<Integer,Integer> moviesLoaded = new HashMap<>();  // use a map so that we can update it from within a closure.
+        final Map<String,Integer> moviesLoaded = new HashMap<>();  // use a map so that we can update it from within a closure.
 
         // walk the list of imdbid's, loading each 'Movie' JSON file and storing it in our DB
         map.keySet().forEach(imdbId -> {
@@ -118,7 +118,7 @@ public class MyMoviesApplication implements CommandLineRunner {
                 movie = new ObjectMapper()
                     .readValue(movieReader, new TypeReference<Movie>() {
                     });
-                moviesLoaded.put(Integer.parseInt(imdbId),1);  // do this so that we can keep a count from inside this closure.
+                moviesLoaded.put(imdbId,1);  // do this so that we can keep a count from inside this closure.
             } catch (JsonMappingException | JsonParseException e) {
                 log.log(Level.ALL, "Error reading " + imdbId + ".json", e);
             } catch (IOException e) {

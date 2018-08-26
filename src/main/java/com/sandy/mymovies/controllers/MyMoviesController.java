@@ -201,11 +201,11 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/{name}/{key}")
   @ResponseStatus(HttpStatus.OK)
-  public List<Title> getIdsByIndex(@PathVariable("name") final String name,
+  public Key getIdsByIndex(@PathVariable("name") final String name,
       @PathVariable("key") final String key) {
 
     final Index idx = Index.valueOf(name);
-    return service.readTitlesByIndexAndKey(idx, key);
+    return service.readIdsByIndexAndKey(idx, key);
   }
 
   /**
