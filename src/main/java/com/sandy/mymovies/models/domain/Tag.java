@@ -1,6 +1,7 @@
 package com.sandy.mymovies.models.domain;
 
 import javax.persistence.Entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,13 +15,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Tag {
 
-    /**
-     * The name of the tag.
-     */
-    private String tag;
+  /**
+   * The name of the tag.
+   */
+  private String tag;
 
-    /**
-     * The imdbId of a movie associated with this tag.
-     */
-    private String imdbId;
+  /**
+   * The imdbId of a movie associated with this tag.
+   */
+  private String imdbId;
 }

@@ -1,6 +1,7 @@
 package com.sandy.mymovies.models.dto;
 
 import java.util.List;
+
 import lombok.Data;
 
 /**
@@ -9,7 +10,7 @@ import lombok.Data;
 @Data
 public class Key {
 
-    private String key;
+  private String key;
 
-    private List<String> ids;
+  private List<String> ids;
 }

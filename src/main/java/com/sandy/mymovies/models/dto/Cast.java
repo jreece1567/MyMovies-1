@@ -1,12 +1,12 @@
 package com.sandy.mymovies.models.dto;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * A list of actor-names.
  */
-public class Cast extends ArrayList<String> implements Serializable {
+@SuppressWarnings("serial")
+public class Cast extends ArrayList<String> {
 
 }
 

@@ -1,6 +1,5 @@
 package com.sandy.mymovies.models.dto;
 
-import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -11,10 +10,10 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
-public class Title implements Serializable {
+public class Title {
 
-    private String imdbId;
-    private String title;
-    private Integer releaseYear;
-    private String imageUrl;
+  private String imdbId;
+  private String title;
+  private Integer releaseYear;
+  private String imageUrl;
 }

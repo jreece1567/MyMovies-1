@@ -1,6 +1,7 @@
 package com.sandy.mymovies.models.domain;
 
 import javax.persistence.Entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,13 +15,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Genre {
 
-    /**
-     * The name of the genre.
-     */
-    private String genre;
+  /**
+   * The name of the genre.
+   */
+  private String genre;
 
-    /**
-     * The imdbId of a movie associated with this genre.
-     */
-    private String imdbId;
+  /**
+   * The imdbId of a movie associated with this genre.
+   */
+  private String imdbId;
 }
