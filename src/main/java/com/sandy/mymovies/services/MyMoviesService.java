@@ -88,22 +88,22 @@ public class MyMoviesService {
    *
    * @return created episode
    */
-  public Episode createEpisode(final String imdbId, final Integer season,
-      final Integer episodeNumber, final String title, final String description) {
+  public Episode createEpisode(final String imdbId, final String season,
+      final String episodeNumber, final String title, final String description) {
 
     final Optional<Chapter> chapter =
-        chapterRepository.findByImdbIdAndSeasonAndEpisodeNumber(imdbId, season, episodeNumber);
+        chapterRepository.findByImdbIdAndSeasonAndEpisodeNumber(imdbId, Integer.parseInt(season), Integer.parseInt(episodeNumber));
     if (chapter.isPresent()) {
-      return new Episode(chapter.get().getImdbId(), chapter.get().getSeason(),
-          chapter.get().getEpisodeNumber(), chapter.get().getTitle(),
+      return new Episode(chapter.get().getImdbId(), String.valueOf(chapter.get().getSeason()),
+          String.valueOf(chapter.get().getEpisodeNumber()), chapter.get().getTitle(),
           chapter.get().getDescription());
     }
 
     final Chapter newChapter =
-        chapterRepository.save(new Chapter(imdbId, season, episodeNumber, title, description));
+        chapterRepository.save(new Chapter(imdbId, Integer.parseInt(season), Integer.parseInt(episodeNumber), title, description));
 
-    return new Episode(newChapter.getImdbId(), newChapter.getSeason(),
-        newChapter.getEpisodeNumber(), newChapter.getTitle(), newChapter.getDescription());
+    return new Episode(newChapter.getImdbId(), String.valueOf(newChapter.getSeason()),
+        String.valueOf(newChapter.getEpisodeNumber()), newChapter.getTitle(), newChapter.getDescription());
   }
 
   /**
@@ -189,8 +189,8 @@ public class MyMoviesService {
 
     final List<Chapter> chapters = chapterRepository.findAllByImdbId(imdbId);
     final List<Episode> episodes = new ArrayList<>();
-    chapters.forEach(c -> episodes.add(new Episode(c.getImdbId(), c.getSeason(),
-        c.getEpisodeNumber(), c.getTitle(), c.getDescription())));
+    chapters.forEach(c -> episodes.add(new Episode(c.getImdbId(), String.valueOf(c.getSeason()),
+        String.valueOf(c.getEpisodeNumber()), c.getTitle(), c.getDescription())));
     return episodes;
   }
 
@@ -204,8 +204,8 @@ public class MyMoviesService {
 
     final List<Chapter> chapters = chapterRepository.findAllByImdbIdAndSeason(imdbId, seasonNumber);
     final List<Episode> episodes = new ArrayList<>();
-    chapters.forEach(chapter -> episodes.add(new Episode(chapter.getImdbId(), chapter.getSeason(),
-        chapter.getEpisodeNumber(), chapter.getTitle(), chapter.getDescription())));
+    chapters.forEach(chapter -> episodes.add(new Episode(chapter.getImdbId(), String.valueOf(chapter.getSeason()),
+        String.valueOf(chapter.getEpisodeNumber()), chapter.getTitle(), chapter.getDescription())));
     return episodes;
   }
 

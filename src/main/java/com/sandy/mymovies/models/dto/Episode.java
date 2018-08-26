@@ -20,12 +20,12 @@ public class Episode {
   /**
    * The season of a show in which the episode appears.
    */
-  private Integer season;
+  private String season;
 
   /**
    * The episode number (within a season) in which the episode appears.
    */
-  private Integer episodeNumber;
+  private String episodeNumber;
 
   /**
    * The title of the episode.
