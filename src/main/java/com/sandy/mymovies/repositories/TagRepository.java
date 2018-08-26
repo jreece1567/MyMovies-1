@@ -4,10 +4,12 @@ import com.sandy.mymovies.models.domain.Tag;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * JPA interface to Tag table.
  */
+@Repository
 public interface TagRepository extends CrudRepository<Tag, String> {
 
   @Query("SELECT tag FROM Tag WHERE imdbId = ?1")

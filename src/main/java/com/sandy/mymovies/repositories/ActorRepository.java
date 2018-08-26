@@ -4,10 +4,12 @@ import com.sandy.mymovies.models.domain.Actor;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * JPA interface to Actor table.
  */
+@Repository
 public interface ActorRepository extends CrudRepository<Actor, String> {
 
   @Query("SELECT imdbId FROM Actor WHERE name=?1")

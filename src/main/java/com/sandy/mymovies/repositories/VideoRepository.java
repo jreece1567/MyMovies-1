@@ -4,10 +4,12 @@ import com.sandy.mymovies.models.domain.Video;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * JPA interface to Video table.
  */
+@Repository
 public interface VideoRepository extends CrudRepository<Video, String> {
 
   // Video.releaseYear-related methods

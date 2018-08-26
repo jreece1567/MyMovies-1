@@ -4,11 +4,17 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sandy.mymovies.models.domain.Actor;
 import com.sandy.mymovies.models.domain.Chapter;
+import com.sandy.mymovies.models.domain.Genre;
+import com.sandy.mymovies.models.domain.Tag;
 import com.sandy.mymovies.models.domain.Video;
 import com.sandy.mymovies.models.dto.Episode;
 import com.sandy.mymovies.models.dto.Movie;
+import com.sandy.mymovies.repositories.ActorRepository;
 import com.sandy.mymovies.repositories.ChapterRepository;
+import com.sandy.mymovies.repositories.GenreRepository;
+import com.sandy.mymovies.repositories.TagRepository;
 import com.sandy.mymovies.repositories.VideoRepository;
 import com.sandy.mymovies.services.MyMoviesService;
 import java.io.BufferedReader;
@@ -32,10 +38,17 @@ public class MyMoviesApplication implements CommandLineRunner {
 
   // remove these repository references along with the 'testRepos' method below when repo-testing is complete.
   @Autowired
-  VideoRepository videoRepository;
+  ActorRepository actorRepository;
   @Autowired
   ChapterRepository chapterRepository;
+  @Autowired
+  GenreRepository genreRepository;
+  @Autowired
+  TagRepository tagRepository;
+  @Autowired
+  VideoRepository videoRepository;
 
+  // the service is the only interface needed by this class in normal situations
   @Autowired
   MyMoviesService movieService;
 
@@ -48,6 +61,7 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // test repository setup - remove this when repos are validated
     testRepos();
+    // test file-access setup - remove this when validated.
 
     // un-comment the 'loadAllxxx()' calls below when ready to load everything
     // Load files, create movie beans
@@ -61,16 +75,15 @@ public class MyMoviesApplication implements CommandLineRunner {
    */
   private void testRepos() {
 
-    // test 'Video' (Movie) repo
-    videoRepository.save(new Video("0128442", "Rounders", 1998, "2:01", "R", "John Dahl",
-        "0128442.jpg",
-        "A young man is a reformed gambler who must return to playing big stakes poker to help a friend pay off loan sharks."));
+    // test 'Actor' (Cast) repo
+    actorRepository.save(new Actor("Matt Damon","0128442"));
 
-    final Optional<Video> video = videoRepository.findById("0128442");
-    if (video.isPresent()) {
-      log.info("Found: " + video.get().toString());
+    final List<String> actorImdbIds = actorRepository.findAllByName("Matt Damon");
+    if (!actorImdbIds.isEmpty()) {
+      log.info("Found: " + actorImdbIds.toString());
     } else {
-      log.info("Unable to load movie with id: " + "0128442");
+      log.info(
+          "Unable to load actor with name: " + "Matt Damon");
     }
 
     // test 'Chapter' (Episode) repo
@@ -85,6 +98,60 @@ public class MyMoviesApplication implements CommandLineRunner {
       log.info(
           "Unable to load episode with id: " + "4052886" + " season " + "1" + " episode " + "1");
     }
+
+    // test 'Genre' (Genres) repo
+    genreRepository.save(new Genre("Crime","0128442"));
+
+    final List<String> genreImdbIds = genreRepository.findAllByGenre("Crime");
+    if (!genreImdbIds.isEmpty()) {
+      log.info("Found: " + genreImdbIds.toString());
+    } else {
+      log.info(
+          "Unable to load genre with name: " + "Crime");
+    }
+
+    // test 'Tag' (Tags) repo
+    tagRepository.save(new Tag("TV","4052886"));
+
+    final List<String> tagImdbIds = tagRepository.findAllByTag("TV");
+    if (!tagImdbIds.isEmpty()) {
+      log.info("Found: " + tagImdbIds.toString());
+    } else {
+      log.info(
+          "Unable to load tag with name: " + "TV");
+    }
+
+    // test 'Video' (Movie) repo
+    videoRepository.save(new Video("0128442", "Rounders", 1998, "2:01", "R", "John Dahl",
+        "0128442.jpg",
+        "A young man is a reformed gambler who must return to playing big stakes poker to help a friend pay off loan sharks."));
+
+    final Optional<Video> video = videoRepository.findById("0128442");
+    if (video.isPresent()) {
+      log.info("Found: " + video.get().toString());
+    } else {
+      log.info("Unable to load movie with id: " + "0128442");
+    }
+
+  }
+
+  private void testFileAccess() {
+
+    BufferedReader indexReader = new BufferedReader(
+        new InputStreamReader(getClass().getResourceAsStream("/db/index_id.json")));
+    Map<String, List<String>> map = new HashMap<>();
+    try {
+      map = new ObjectMapper()
+          .readValue(indexReader, new TypeReference<HashMap<String, List<String>>>() {
+          });
+    } catch (JsonMappingException | JsonParseException e) {
+      log.log(Level.ALL, "Error reading index_id.json", e);
+      return;
+    } catch (IOException e) {
+      log.log(Level.ALL, "Error reading index_id.json", e);
+      return;
+    }
+    log.info("Loaded file: "+map.toString());
   }
 
   /**

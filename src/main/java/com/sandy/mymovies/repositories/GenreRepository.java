@@ -4,10 +4,12 @@ import com.sandy.mymovies.models.domain.Genre;
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * JPA interface to Genre table.
  */
+@Repository
 public interface GenreRepository extends CrudRepository<Genre, String> {
 
   @Query("SELECT genre FROM Genre WHERE imdbId = ?1")

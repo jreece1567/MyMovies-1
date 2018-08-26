@@ -5,10 +5,12 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * JPA interface to Chapter table.
  */
+@Repository
 public interface ChapterRepository extends CrudRepository<Chapter, String> {
 
   Optional<Chapter> findByImdbIdAndSeasonAndEpisodeNumber(String imdbId, Integer season,

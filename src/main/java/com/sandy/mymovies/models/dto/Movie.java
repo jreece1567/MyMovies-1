@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 /**
  * A bean containing the complete information on a Movie, including the Cast, Genres, and Tags.
  *
- * @see Movie
+ * @see com.sandy.mymovies.models.domain.Video
  * @see com.sandy.mymovies.models.dto.Tags
  * @see com.sandy.mymovies.models.dto.Genres
  * @see com.sandy.mymovies.models.dto.Cast

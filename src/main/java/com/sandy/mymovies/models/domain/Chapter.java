@@ -3,6 +3,7 @@ package com.sandy.mymovies.models.domain;
 import javax.persistence.Entity;
 import javax.persistence.Index;
 import javax.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Table(indexes = {@Index(name = "IDX_IMDBID", columnList = "imdbId"),
     @Index(name = "IDX_SEASON", columnList = "season")})
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Chapter {
 
   /**
@@ -39,14 +42,5 @@ public class Chapter {
    * The description the episode.
    */
   private String description;
-
-  public Chapter(final String imdbId, final Integer season, final Integer episodeNumber,
-      final String title, final String description) {
-    this.imdbId = imdbId;
-    this.season = season;
-    this.episodeNumber = episodeNumber;
-    this.title = title;
-    this.description = description;
-  }
 
 }
