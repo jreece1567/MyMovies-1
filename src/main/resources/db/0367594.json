@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0367594",
+  "title" : "Charlie and the Chocolate Factory",
+  "releaseYear" : "2005",
+  "duration" : "1:55",
+  "rating" : "PG",
+  "director" : "Tim Burton",
+  "imageUrl" : "0367594.jpg",
+  "description" : "A young boy wins a tour through the most magnificent chocolate factory in the world, led by the world's most unusual candy maker.",
+  "genres" : [ "Adventure", "Comedy", "Family" ],
+  "cast" : [ "Johnny Depp", "Freddie Highmore", "David Kelly", "Helena Bonham Carter", "Noah Taylor", "Missi Pyle", "James Fox", "Deep Roy", "Christopher Lee", "Adam Godley", "Franziska Troegner", "AnnaSophia Robb", "Julia Winter", "Jordan Fry", "Philip Wiegratz", "Blair Dunlop", "Liz Smith", "Eileen Essell", "David Morris", "Nitin Ganatra", "Shelley Conn", "Chris Cresswell", "Philip Philmar", "Tony Kirwood", "Todd Boyce", "Nayef Rashed", "Menis Yousry", "Harry Taylor", "Hubertus Geller", "Francesca Hunt", "Garrick Hagon", "Kevin Eldon", "Mark Heap", "Roger Frost", "Oscar James", "Colette Appleby", "Debora Weston", "Annette Badland", "Steve Hope Wynne", "Geoffrey Holder", "Kevin Higgins", "Robert Boas", "Elena Buda", "Ray Donn", "Danny Elfman", "Aiko Horiuchi", "Stephen Humby", "Jynine James", "Sid Karne", "Hollie Kemp", "Michelle Kernohan", "Sara Kirkpatrick", "Brigitte Millar", "Débora Monteiro", "Georgie Smith", "Ray Verma", "John Warman", "Tracy Yarkoni" ],
+  "tags" : [ ]
+}

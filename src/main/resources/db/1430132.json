@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1430132",
+  "title" : "The Wolverine",
+  "releaseYear" : "2013",
+  "duration" : "2:06",
+  "rating" : "PG-13",
+  "director" : "James Mangold",
+  "imageUrl" : "1430132.jpg",
+  "description" : "When Wolverine is summoned to Japan by an old acquaintance, he is embroiled in a conflict that forces him to confront his own demons.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Hugh Jackman", "Tao Okamoto", "Rila Fukushima", "Hiroyuki Sanada", "Svetlana Khodchenkova", "Brian Tee", "Hal Yamanouchi", "Will Yun Lee", "Ken Yamamura", "Famke Janssen", "Nobutaka Aoyagi", "Seiji Funamoto", "Shinji Ikefuji", "Qyoko Kudo", "Nobuaki Kakuda", "Chiharu Mizuno", "Takao Kinoshita", "Conrad Coleby", "Taris Tyler", "Sarah Naylor-Liddell", "Joshua Remilton", "Andy Owens", "Allan Poppleton", "Geoff Burke", "Yasuyo Shiba", "Mai Ishikawa", "Yaeko Kimura", "Ryuta Kimura", "Briden Starr", "Maria Lukasheva", "Tess Haubrich", "Taki Abe", "William Takayanagi-Temm", "Kuni Hashimoto", "Erich Chikashi Linzbichler", "Shingo Usami", "Naoya Ogawa", "Atsushi Sawada", "Takashi Matsuyama", "Masa Yamaguchi", "Eric Laciste", "Hideki Sugiguchi", "Garret Sato", "Kosuke Masano", "Yoji Tatsuta", "Yoshinori Fukushige", "Hiroshi Kasuga", "Yumiko Nakamura", "Kimi", "Keiko Matsumoto", "Louis Toshio Okada", "Franck Bossi", "Jeremy Costello", "Christopher Kien Dao", "Joe E", "Dane Eade", "Keiichi Enomoto", "Lewis Fitz-Gerald", "Shaun Robert Foley", "Hisa Goto", "Jack Kelly", "Lex Lang", "Kenny Low", "Jeremy Marinas", "Jackson McGrath", "Ian McKellen", "Rhys McMahon", "Tiriel Mora", "Shuhei Ogawa", "Shunsuke Okubo", "Nobuaki Shimamoto", "Patrick Stewart", "Benjamin Taylor", "Andy Trieu", "Jon Valera", "Benjamin Wang", "Luke Webb" ],
+  "tags" : [ "Marvel" ]
+}

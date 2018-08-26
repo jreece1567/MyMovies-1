@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0093773",
+  "title" : "Predator",
+  "releaseYear" : "1987",
+  "duration" : "1:47",
+  "rating" : "R",
+  "director" : "John McTiernan",
+  "imageUrl" : "0093773.jpg",
+  "description" : "A team of commandos, on a mission in a Central American jungle, find themselves hunted by an extra-terrestrial warrior.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Arnold Schwarzenegger", "Carl Weathers", "Elpidia Carrillo", "Bill Duke", "Jesse Ventura", "Sonny Landham", "Richard Chaves", "R.G. Armstrong", "Shane Black", "Kevin Peter Hall", "Steve Boyum", "William H. Burton", "Peter Cullen", "Henry Kingi", "Sven-Ole Thorsen" ],
+  "tags" : [ ]
+}

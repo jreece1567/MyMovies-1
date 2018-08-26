@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0084787",
+  "title" : "The Thing",
+  "releaseYear" : "1982",
+  "duration" : "1:49",
+  "rating" : "R",
+  "director" : "John Carpenter",
+  "imageUrl" : "0084787.jpg",
+  "description" : "Scientists in the Antarctic are confronted by a shape-shifting alien that assumes the appearance of the people that it kills.",
+  "genres" : [ "Horror", "Mystery", "Sci-Fi" ],
+  "cast" : [ "Kurt Russell", "Wilford Brimley", "T.K. Carter", "David Clennon", "Keith David", "Richard Dysart", "Charles Hallahan", "Peter Maloney", "Richard Masur", "Donald Moffat", "Joel Polis", "Thomas G. Waites", "Norbert Weisser", "Larry J. Franco", "Nate Irwin", "William Zeman", "Adrienne Barbeau", "John Carpenter", "Jed Jed" ],
+  "tags" : [ ]
+}

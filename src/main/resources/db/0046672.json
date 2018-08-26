@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0046672",
+  "title" : "20000 Leagues Under the Sea",
+  "releaseYear" : "1954",
+  "duration" : "2:07",
+  "rating" : "APPROVED",
+  "director" : "Richard Fleischer",
+  "imageUrl" : "0046672.jpg",
+  "description" : "A ship sent to investigate a wave of mysterious sinkings encounters the advanced submarine, the Nautilus, commanded by Captain Nemo.",
+  "genres" : [ "Adventure", "Drama", "Fantasy" ],
+  "cast" : [ "Kirk Douglas", "James Mason", "Paul Lukas", "Peter Lorre", "Robert J. Wilke", "Ted de Corsia", "Carleton Young", "J.M. Kerrigan", "Percy Helton", "Ted Cooper", "Chet Brandenburg", "John Daheim", "Jack Gargan", "Harper Goff", "Fred Graham", "Harry Harvey", "Ray Linn Jr.", "Dayton Lummis", "Eddie Marr", "Laurie Mitchell", "T. Monaghan", "Ron Nyman", "Gloria Pall", "Jack Pennick", "Robert Robinson", "Jack Stoney", "S. Tarnell", "Herb Vigran", "Sailor Vincent" ],
+  "tags" : [ ]
+}

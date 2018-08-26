@@ -1,0 +1,13 @@
+{
+  "imdbId" : "3575800",
+  "title" : "United States of Secrets",
+  "releaseYear" : "2014",
+  "duration" : "1:54",
+  "rating" : "TV-PG",
+  "director" : "Michael Kirk",
+  "imageUrl" : "3575800.jpg",
+  "description" : "From PBS and Frontline: Last year Edward Snowden downloaded tens of thousands of top-secret documents from a highly secure government computer network. The revelations that followed touched off a fierce debate over the massive surveillance operations conducted by the National Security Agency. Now FRONTLINE investigates the secret history of the unprecedented surveillance program that began in the wake of September 11th and continues today. ",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Peter Baker", "James Bamford", "William Binney", "George W. Bush", "Andrew Card", "Sarah Childress", "Richard Clarke", "Robert Deitz", "Thomas Drake", "Barton Gellman", "Jim Gilmore", "Jack Goldsmith", "Alberto Gonzales", "Siobhan Gorman", "Porter Goss", "Glenn Greenwald", "Luke Harding", "Michael Hayden", "Michael Isikoff", "Patrick Radden Keefe", "Bill Keller", "Eric Lichtblau", "Ryan Lizza", "Edward Loomis", "Will Lyman", "Ewen MacAskill", "Jane Mayer", "Barack Obama", "Matthew Olsen", "Vito Potenza", "Jesselyn Radack", "Ben Rhodes", "James Risen", "Diane Roark", "Thomas Tamm", "Philip Taubman" ],
+  "tags" : [ ]
+}

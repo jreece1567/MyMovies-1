@@ -1,0 +1,13 @@
+{
+  "imdbId" : "2333784",
+  "title" : "The Expendables 3",
+  "releaseYear" : "2014",
+  "duration" : "2:06",
+  "rating" : "PG-13",
+  "director" : "Patrick Hughes",
+  "imageUrl" : "2333784.jpg",
+  "description" : "Barney augments his team with new blood for a personal battle: to take down Conrad Stonebanks, the Expendables co-founder and notorious arms trader who is hell bent on wiping out Barney and every single one of his associates.",
+  "genres" : [ "Action", "Adventure", "Thriller" ],
+  "cast" : [ "Sylvester Stallone", "Jason Statham", "Harrison Ford", "Arnold Schwarzenegger", "Mel Gibson", "Wesley Snipes", "Dolph Lundgren", "Randy Couture", "Terry Crews", "Kelsey Grammer", "Glen Powell", "Antonio Banderas", "Victor Ortiz", "Ronda Rousey", "Kellan Lutz", "Jet Li", "Ivan Kostadinov", "Robert Davi", "Nikolay Stoyanov Ilchev", "Daniel Angelov", "Slavi Slavov", "Dimiter Doichinov", "Nikolay Stanoev", "Harry Anichkin", "Boswell Maloka", "Natalie Burn", "Velizar Binev", "Sarai Givaty", "Liubomir Simeonov", "Frank Pesce", "Thomas Canestraro", "Aleksandar Belovski", "Lilia Doytchinova", "Ivaylo Grancharov", "Wendy Kay", "Lisbeth Olofsson", "Cyndy Powell", "Bashar Rahal", "Tzvetislav Samardjiev" ],
+  "tags" : [ ]
+}

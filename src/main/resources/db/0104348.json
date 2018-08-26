@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0104348",
+  "title" : "Glengarry Glen Ross",
+  "releaseYear" : "1992",
+  "duration" : "1:40",
+  "rating" : "R",
+  "director" : "James Foley",
+  "imageUrl" : "0104348.jpg",
+  "description" : "An examination of the machinations behind the scenes at a real estate office.",
+  "genres" : [ "Drama" ],
+  "cast" : [ "Al Pacino", "Jack Lemmon", "Alec Baldwin", "Alan Arkin", "Ed Harris", "Kevin Spacey", "Jonathan Pryce", "Bruce Altman", "Jude Ciccolella", "Paul Butler", "Lori Tan Chinn", "Neal Jones", "Barry Rohrssen", "Leigh French", "George Cheung", "Murphy Dunne", "Dana Lee", "Julie Payne", "Gregory Snegoff", "Skipp Lynch" ],
+  "tags" : [ ]
+}

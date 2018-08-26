@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0428803",
+  "title" : "March of the Penguins",
+  "releaseYear" : "2005",
+  "duration" : "1:20",
+  "rating" : "G",
+  "director" : "Luc Jacquet",
+  "imageUrl" : "0428803.jpg",
+  "description" : "A look at the annual journey of Emperor penguins as they march -- single file -- to their traditional breeding ground.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Charles Berling", "Romane Bohringer", "Jules Sitruk", "Morgan Freeman", "Amitabh Bachchan", "Gösta Ekman", "Fiorello Fiorello", "Sofie Gråbøl", "Hikari Ishida", "Ryûnosuke Kamiki", "Marek Kondrat", "Takao Ohsawa" ],
+  "tags" : [ "Science" ]
+}

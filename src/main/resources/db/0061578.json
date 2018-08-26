@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0061578",
+  "title" : "The Dirty Dozen",
+  "releaseYear" : "1967",
+  "duration" : "2:30",
+  "rating" : "NOT RATED",
+  "director" : "Robert Aldrich",
+  "imageUrl" : "0061578.jpg",
+  "description" : "A US Army Major is assigned a dozen convicted murderers to train and lead them into a mass assassination mission of German officers in World War II.",
+  "genres" : [ "Action", "Drama", "War" ],
+  "cast" : [ "Lee Marvin", "Ernest Borgnine", "Charles Bronson", "Jim Brown", "John Cassavetes", "Richard Jaeckel", "George Kennedy", "Trini López", "Ralph Meeker", "Robert Ryan", "Telly Savalas", "Donald Sutherland", "Clint Walker", "Robert Webber", "Tom Busby", "Ben Carruthers", "Stuart Cooper", "Robert Phillips", "Colin Maitland", "Al Mancini", "George Roubicek", "Thick Wilson", "Dora Reisser", "Lewis Alexander", "Michael Anthony", "Cynthia Bizeray", "Leo Britt", "Harry Brooks Jr.", "Alan Chuntz", "Gerry Crampton", "Hugh Elton", "Gary Files", "Judith Furse", "Hal Galili", "Romo Gorrara", "Willoughby Gray", "Gerard Heinz", "John G. Heller", "George Hilsdon", "John Hollis", "Alf Joint", "Juba Kennerley", "Eric Kent", "Hildegard Knef", "Ann Lancaster", "Aileen Lewis", "Richard Marner", "Dick Miller", "Lou Morgan", "Lionel Murton", "Suzanne Owens-Duval", "Mike Reid", "Terry Richards", "Gordon Ruttan", "Frederick Schiller", "Michael Segal", "Richard Shaw", "Warren Stanhope", "Michael Stayner", "Emile Stemmler", "John Tatum", "Rocky Taylor", "Burnell Tucker", "Hedger Wallace", "Theodore Wilhelm", "Vicki Woolf" ],
+  "tags" : [ "WW-II" ]
+}

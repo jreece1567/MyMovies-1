@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0800369",
+  "title" : "Thor",
+  "releaseYear" : "2011",
+  "duration" : "1:55",
+  "rating" : "PG-13",
+  "director" : "Kenneth Branagh",
+  "imageUrl" : "0800369.jpg",
+  "description" : "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Chris Hemsworth", "Natalie Portman", "Tom Hiddleston", "Anthony Hopkins", "Stellan Skarsgård", "Kat Dennings", "Clark Gregg", "Colm Feore", "Idris Elba", "Ray Stevenson", "Tadanobu Asano", "Josh Dallas", "Jaimie Alexander", "Rene Russo", "Adriana Barraza", "Maximiliano Hernández", "Richard Cetrone", "Darren Kendrick", "Joshua Cox", "Justice Smith", "Joseph Gatt", "Luke Massy", "Matt Ducey", "Jason Camp", "Buddy Sosthand", "Blake Silver", "Jamie McShane", "Dale Godboldo", "Patrick O'Brien Demsey", "Jim Palmer", "Seth Coltan", "J. Michael Straczynski", "Ryan Schaefer", "Matt Battaglia", "Stan Lee", "Joel McCrary", "Isaac Kappy", "Juliet Lopez", "Rob Mars", "Carrie Lazar", "Harley Graham", "Alexander Wright", "Hilary Pingle", "Shawn-Caulin Young", "Kinsey McLean", "Kelly Hawthorne", "Dakota Goyo", "Ted Allpress", "Chris Antonini", "John Bailey", "David Bantly", "Vanessa Bednar", "Todd Bethke", "Troy Brenna", "Adam Critchlow", "Michelle Csitos", "Elizabeth Dean", "Pat Duke", "Kimberly Evan", "Eric Holloway", "Samuel L. Jackson", "Jasyn Jefferies", "James Kimball", "Raven Lewis", "Keith Middlebrook", "Nabil Nona", "Martin Palmer", "Terry Dale Parks", "Tanissa Potrovitza", "Taylor Reed", "Jeremy Renner", "Douglas Tait", "Clay von Carlowitz", "Travis Willingham" ],
+  "tags" : [ "Marvel" ]
+}

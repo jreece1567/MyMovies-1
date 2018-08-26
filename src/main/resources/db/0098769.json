@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0098769",
+  "title" : "The Civil War",
+  "releaseYear" : "1990",
+  "duration" : "11:20",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "0098769.jpg",
+  "description" : "A comprehensive survey of the American Civil War.",
+  "genres" : [ "Documentary", "History", "War" ],
+  "cast" : [ "Sam Waterston", "Julie Harris", "Jason Robards", "Morgan Freeman", "Garrison Keillor", "Arthur Miller", "George Plimpton", "Horton Foote", "George Black", "Philip Bosco", "Derek Jacobi", "Jeremy Irons", "Hoyt Axton", "Colleen Dewhurst", "Laurence Fishburne", "Shelby Foote", "David McCullough", "Charles McDowell", "Christopher Murney", "Kurt Vonnegut Jr.", "M. Emmet Walsh", "Ed Bearss", "Barbara Fields", "James Symington", "Terry Courier", "Jody Powell", "Studs Terkel", "Paul Roebling", "William Safire", "Daisy Turner" ],
+  "tags" : [ "Civil War" ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0272052",
+  "title" : "The Congress",
+  "releaseYear" : "1988",
+  "duration" : "1:30",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "0272052.jpg",
+  "description" : "The U. S. Congress is one of the country's most important and misunderstood institutions. Ken Burns tells the story behind this branch of government.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "David McCullough", "Charles McDowell", "Barbara Fields", "John C. Stennis", "Alistair Cooke", "Cokie Roberts", "David Broder", "George Tames", "James MacGregor Burns", "Jerome Dempsey", "Shelby Foote", "Ronnie Gilbert", "Julie Harris", "Derek Jacobi", "Garrison Keillor", "Walt MacPherson", "Arthur Miller", "Christopher Murney", "Paul Roebling", "Wendy Tilghman", "Kurt Vonnegut Jr.", "Douglas Turner Ward" ],
+  "tags" : [ ]
+}

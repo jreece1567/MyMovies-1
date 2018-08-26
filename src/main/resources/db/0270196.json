@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0270196",
+  "title" : "LBJ",
+  "releaseYear" : "1991",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "David Grubin",
+  "imageUrl" : "0270196.jpg",
+  "description" : "Award winning filmmaker David Grubin profiles one of the most controversial U.S. presidents, Lyndon Baines Johnson, who rose from obscurity to the pinnacle of power, only to suffer disillusionment and defeat. Witness the events that brought LBJ from Texas to Washington, the White House, and a landslide election in 1964. Follow his triumphs in passing a wave of social legislation then his downward spiral which ends in withdrawal from politics.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "David McCullough", "Joe Cervetto", "John Connally", "Robert Dallek", "Homer Dean", "Ronnie Dugger", "Lewis Gould", "Lady Bird Johnson", "Luci Baines Johnson", "Lyndon Johnson", "Wilbert Lee O'Daniel", "James Jarrell Pickle", "Lynda Bird Johnson Robb", "Franklin D. Roosevelt", "Coke Robert Stevenson" ],
+  "tags" : [ "President" ]
+}

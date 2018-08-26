@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0306355",
+  "title" : "Mark Twain",
+  "releaseYear" : "2002",
+  "duration" : "3:32",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "0306355.jpg",
+  "description" : "A biographical film about the acclaimed American humourist and author.",
+  "genres" : [ "Documentary", "Biography" ],
+  "cast" : [ "Keith David", "Kevin Conway", "Philip Bosco", "Blythe Danner", "Tim Clark", "Carolyn McCormick", "Amy Madigan", "Cynthia Nixon", "John Boyer", "Jocelyn Chadwick", "Shelly Fisher Fishkin", "Dick Gregory", "Hal Holbrook", "Chuck Jones", "Arthur Miller", "Ron Powers", "Laura Skandera-Trombley", "William Styron", "Mark Twain" ],
+  "tags" : [ ]
+}

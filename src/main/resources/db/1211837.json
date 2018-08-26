@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1211837",
+  "title" : "Doctor Strange",
+  "releaseYear" : "2016",
+  "duration" : "1:55",
+  "rating" : "PG-13",
+  "director" : "Scott Derrickson",
+  "imageUrl" : "1211837.jpg",
+  "description" : "A former neurosurgeon embarks on a journey of healing only to be drawn into the world of the mystic arts.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Benedict Cumberbatch", "Chiwetel Ejiofor", "Rachel McAdams", "Benedict Wong", "Mads Mikkelsen", "Tilda Swinton", "Michael Stuhlbarg", "Benjamin Bratt", "Scott Adkins", "Zara Phythian", "Alaa Safi", "Katrina Durden", "Topo Wresniwiro", "Umit Ulgen", "Linda Louise Duan", "Mark Anthony Brighton", "Meera Syal", "Amy Landecker", "Adam Pelta-Pauls", "Sarah Malin", "Eben Young", "Kobna Holdbrook-Smith", "Elizabeth Healey", "Guillaume Faure", "Daniel Dow", "Ezra Khan", "Kimberly Van Luin", "Pat Kiernan", "Kei Miura", "Henardo Rodriguez", "Alister Albert", "Mairead Armstrong", "Raj Awasti", "Annarie Boor", "Dante Briggins", "Jill Buchanan", "Alice Chen", "Bern Collaco", "Anna Elizabeth Eaton", "Daniel Eghan", "Juani Feliz", "Cliff Ferraro", "Sian Francis", "Ulises Galeano", "Martavious Gayles", "Chris Hemsworth", "Leigh Holland", "Mo Idriss", "Tamika Katon-Donegal", "Stan Lee", "Faith Logan", "Tyrone Love", "Pezh Maan", "Cameron Moon", "Shina Shihoko Nagai", "Emily Ng", "Emeson Nwolie", "Jag Patel", "Andreas Pliatsikas", "Samantha Russell", "Michelle Santiago", "Nancy Ellen Shore", "Tina Simmons", "Rachel Emma Slack", "Clem So", "Tony Paul West", "Ruolan Zhang" ],
+  "tags" : [ "Marvel" ]
+}

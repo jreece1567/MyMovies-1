@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0042393",
+  "title" : "Destination Moon",
+  "releaseYear" : "1950",
+  "duration" : "1:32",
+  "rating" : "NOT RATED",
+  "director" : "Irving Pichel",
+  "imageUrl" : "0042393.jpg",
+  "description" : "One of the first science fiction films to attempt a high level of accurate technical detail tells the story of the first trip to the moon.",
+  "genres" : [ "Adventure", "Drama", "Sci-Fi" ],
+  "cast" : [ "John Archer", "Warner Anderson", "Tom Powers", "Dick Wesson", "Erin O'Brien-Moore", "Franklyn Farnum", "Everett Glass", "Kenner G. Kemp", "Knox Manning", "Mike Miller", "Irving Pichel", "Cosmo Sardo", "Grace Stafford", "Bert Stevens", "Ted Warde" ],
+  "tags" : [ ]
+}

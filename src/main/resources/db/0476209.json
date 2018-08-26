@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0476209",
+  "title" : "Einstein's Big Idea",
+  "releaseYear" : "2005",
+  "duration" : "2:00",
+  "rating" : "NOT RATED",
+  "director" : "Gary Johnstone",
+  "imageUrl" : "0476209.jpg",
+  "description" : "This docudrama examines the history of scientific discovery that lead up to Albert Einstein's famous equation E=mc2 and its aftermath in the creation of nuclear energy. This includes Faraday's discovery of electromagnetic fields; Antoine Lavoisier's discovery that mass is never lost; and Emilie du Chatelet's demonstration that Newton's calculation of the velocity of a falling object was incorrect. By 1905, the miracle year where the publication Einstein's four physics papers changed over 200 years of scientific fundamentals, all of this came together with his now famous equation. Afterwards, Lise Meisner's work on uranium let to her conclusion that splitting an atom would release large amounts of energy.",
+  "genres" : [ "Biography", "Drama", "History" ],
+  "cast" : [ "Andrew Callaway", "Andy Crabbe", "Daniel D'Alessandro", "Brendan Fleming", "Gregory Fox-Murphy", "Ty Glaser", "Philip Herbert", "Chris Jenkinson", "Wolf Kahler", "George Layton", "Anton Lesser", "Alex Macqueen", "Aidan McArdle", "Richard Mulholland", "Stephen Noonan", "Julian Rhind-Tutt", "Steven Robertson", "Christian Rubeck", "Michael Sarne", "Rowan Schlosberg", "Robert Styles", "Simon Tcherniak", "James Tovell", "Di Trevis", "Emily Woof", "Ian Duncan", "Féodor Atkine", "Hélène de Fougerolles", "Christopher Eccleston", "Richard Hansell", "Shirley Henderson", "John Lithgow", "Michael Müller", "Samuel West" ],
+  "tags" : [ "Science" ]
+}

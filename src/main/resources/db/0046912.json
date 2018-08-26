@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0046912",
+  "title" : "Dial M for Murder",
+  "releaseYear" : "1954",
+  "duration" : "1:45",
+  "rating" : "PG",
+  "director" : "Alfred Hitchcock",
+  "imageUrl" : "0046912.jpg",
+  "description" : "An ex-tennis pro carries out a plot to murder his wife. When things go wrong, he improvises a brilliant plan B.",
+  "genres" : [ "Crime", "Thriller" ],
+  "cast" : [ "Ray Milland", "Grace Kelly", "Robert Cummings", "John Williams", "Anthony Dawson", "Leo Britt", "Patrick Allen", "George Leigh", "George Alderson", "Robin Hughes", "Richard Bender", "Sanders Clark", "Jack Cunningham", "Robert Dobson", "Guy Doleman", "Bess Flowers", "Robert Garvin", "Michael Hadlow", "Sam Harris", "Alfred Hitchcock", "Harold Miller", "Martin Milner", "Forbes Murray", "Ben Pollock", "Thayer Roberts" ],
+  "tags" : [ ]
+}

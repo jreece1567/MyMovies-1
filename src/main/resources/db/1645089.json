@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1645089",
+  "title" : "Inside Job",
+  "releaseYear" : "2010",
+  "duration" : "1:45",
+  "rating" : "PG-13",
+  "director" : "Charles Ferguson",
+  "imageUrl" : "1645089.jpg",
+  "description" : "Takes a closer look at what brought about the financial meltdown.",
+  "genres" : [ "Documentary", "Crime" ],
+  "cast" : [ "Matt Damon", "William Ackman", "Daniel Alpert", "Jonathan Alpert", "Sigridur Benediktsdottir", "Ben Bernanke", "Willem Buiter", "George W. Bush", "John Campbell", "Patrick Daniel", "Satyajit Das", "Kristin Davis", "Martin Feldstein", "Jerome Fons", "Barney Frank", "Timothy Geithner", "Robert Gnaizda", "Michael Greenberger", "Alan Greenspan", "Eric Halperin", "Samuel Hayes", "R. Glenn Hubbard", "Simon Johnson", "Christine Lagarde", "Andrew Lo", "Lee Hsien Loong", "Andri Snær Magnason", "David McCormick", "Lawrence McDonald", "Harvey Miller", "Frederic Mishkin", "Charles Morris", "Barack Obama", "Frank Partnoy", "Raghuram Rajan", "Kenneth Rogoff", "Nouriel Roubini", "Andrew Sheng", "Allan Sloan", "George Soros", "Eliot Spitzer", "Steven A. Stephen", "Dominique Strauss-Kahn", "Scott Talbott", "Gillian Tett", "Paul Volcker", "Henry Waxman", "Martin Wolf", "Gylfi Zoega", "Ann Curry" ],
+  "tags" : [ ]
+}

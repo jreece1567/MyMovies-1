@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0071807",
+  "title" : "The Man with the Golden Gun",
+  "releaseYear" : "1974",
+  "duration" : "2:5",
+  "rating" : "PG",
+  "director" : "Guy Hamilton",
+  "imageUrl" : "0071807.jpg",
+  "description" : "James Bond is led to believe that he is targeted by the world's most expensive assassin while he attempts to recover sensitive solar cell technology that is being sold to the highest bidder.",
+  "genres" : [ "Action", "Adventure", "Thriller" ],
+  "cast" : [ "Roger Moore", "Christopher Lee", "Britt Ekland", "Maud Adams", "Hervé Villechaize", "Clifton James", "Richard Loo", "Soon-Tek Oh", "Marc Lawrence", "Bernard Lee", "Lois Maxwell", "Marne Maitland", "Desmond Llewelyn", "James Cossins", "Yao Lin Chen", "Carmen Du Sautoy", "Gerald James", "Michael Osborne", "Michael Fleming", "Sonny Caldinez", "Leslie Crawford", "Gordon Everett", "Michael Goodliffe", "Ray Marioni", "Terence Plummer", "Jay Sidow", "George Silver", "Rocky Taylor", "Francoise Therry", "Master Toddy", "Nikki Van der Zyl", "Joie Vejjajiva", "Wei Wei Wong", "Qiu Yuen" ],
+  "tags" : [ "007" ]
+}

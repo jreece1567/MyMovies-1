@@ -1,0 +1,13 @@
+{
+  "imdbId" : "3154432",
+  "title" : "1964",
+  "releaseYear" : "2014",
+  "duration" : "1:54",
+  "rating" : "TV-PG",
+  "director" : "Stephen Ives",
+  "imageUrl" : "3154432.jpg",
+  "description" : "The pivotal year that essentially ushered in the true 1960s is explored.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "Oliver Platt", "Robert Cohen", "Hodding Carter III", "Ed King", "Stephanie Coontz", "Eric S. Perlstein", "Jann Wenner", "John Bracey", "Jon Margolis", "Dan T. Carter", "Robert A. Caro", "Mark Kurlansky", "Lee Edwards", "Richard Viguerie", "Phyllis Schlafly", "Susan Douglas", "Todd Gitlin", "Robert Lipsyte", "Claire Potter", "Robert Dallek", "Leah Wright Rigueur", "Robert Moses", "Dave Dennis", "Rita Schwerner Bender", "Max Frankel", "Marilyn B. Young", "Muhammad Ali", "The Beatles", "Walter Cronkite", "Bob Dylan", "Betty Friedan", "Barry Goldwater", "Lyndon Johnson", "Martin Luther King", "Lee Harvey Oswald", "Ronald Reagan", "Malcolm X" ],
+  "tags" : [ ]
+}

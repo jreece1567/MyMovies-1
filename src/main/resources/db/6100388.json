@@ -1,0 +1,13 @@
+{
+  "imdbId" : "6100388",
+  "title" : "Tesla",
+  "releaseYear" : "2016",
+  "duration" : "1:00",
+  "rating" : "TV-PG",
+  "director" : "David Grubin",
+  "imageUrl" : "6100388.jpg",
+  "description" : "Meet Nikola Tesla, the genius engineer and tireless inventor whose technology revolutionized the electrical age of the 20th century. Although eclipsed in fame by Edison and Marconi, it was ...",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "Jane Alcorn", "Harold Clark", "Peter Fisher", "Samantha Hunt", "Jill Jonnes", "Michael Murphy", "Marc Seifer", "John M. Staudenmaier" ],
+  "tags" : [ ]
+}

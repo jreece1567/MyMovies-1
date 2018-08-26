@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0064177",
+  "title" : "Colossus: The Forbin Project",
+  "releaseYear" : "1970",
+  "duration" : "1:40",
+  "rating" : "M",
+  "director" : "Joseph Sargent",
+  "imageUrl" : "0064177.jpg",
+  "description" : "An artificially intelligent supercomputer is developed and activated, only to reveal that it has a sinister agenda of its own.",
+  "genres" : [ "Sci-Fi", "Thriller" ],
+  "cast" : [ "Eric Braeden", "Susan Clark", "Gordon Pinsent", "William Schallert", "Leonid Rostoff", "Georg Stanford Brown", "Willard Sage", "Alex Rodine", "Martin E. Brooks", "Marion Ross", "Dolph Sweet", "Byron Morrow", "Lew Brown", "Sid McCoy", "Tom Basham", "Robert Cornthwaite", "James Hong", "Serge Tschernisch", "Paul Frees", "Fred Holliday" ],
+  "tags" : [ ]
+}

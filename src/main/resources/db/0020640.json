@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0020640",
+  "title" : "Animal Crackers",
+  "releaseYear" : "1930",
+  "duration" : "1:37",
+  "rating" : "PASSED",
+  "director" : "Victor Heerman",
+  "imageUrl" : "0020640.jpg",
+  "description" : "Mayhem and zaniness ensue when a valuable painting goes missing during a party in honor of famed African explorer Captain Spaulding.",
+  "genres" : [ "Comedy", "Musical" ],
+  "cast" : [ "The Marx Brothers", "Groucho Marx", "Harpo Marx", "Chico Marx", "Zeppo Marx", "Lillian Roth", "Margaret Dumont", "Louis Sorin", "Hal Thompson", "Margaret Irving", "Kathryn Reece", "Robert Greig", "Edward Metcalf", "The Music Masters", "Robert Allen", "Donald MacBride", "Ann Roth" ],
+  "tags" : [ ]
+}

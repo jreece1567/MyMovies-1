@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0062512",
+  "title" : "You Only Live Twice",
+  "releaseYear" : "1967",
+  "duration" : "1:57",
+  "rating" : "APPROVED",
+  "director" : "Lewis Gilbert",
+  "imageUrl" : "0062512.jpg",
+  "description" : "Agent 007 and the Japanese secret service ninja force must find and stop the true culprit of a series of spacejackings before nuclear war is provoked.",
+  "genres" : [ "Action", "Adventure", "Thriller" ],
+  "cast" : [ "Sean Connery", "Akiko Wakabayashi", "Mie Hama", "Tetsurô Tanba", "Teru Shimada", "Karin Dor", "Donald Pleasence", "Bernard Lee", "Lois Maxwell", "Desmond Llewelyn", "Charles Gray", "Tsai Chin", "Peter Fanene Maivia", "Burt Kwouk", "Michael Chow", "Ronald Rich", "Jeanne Roland", "David Toguri", "John Stone", "Norman Jones", "Paul Carson", "Laurence Herder", "Richard Graydon", "Bill Mitchell", "George Roubicek", "Anthony Ainley", "Vic Armstrong", "Robin Bailey", "George Baker", "David Bauer", "Ed Bishop", "Cecil Cheng", "Anthony Chinn", "Hans De Vries", "Moris Farhi", "Jonathan Hanson", "Masaaki Hatsumi", "David Healy", "Sylvana Henriques", "Tony Hill", "Frazer Hines", "Andy Ho", "Stephen Hubay", "Robert Hutton", "Patrick Jordan", "Hisako Katakura", "Michael Kennedy", "Alexander Knox", "Kristopher Kum", "Roy Lansford", "Lester Lee", "Robert Lee", "Mai Ling", "Richard Marner", "Kikko Matsuoka", "Basil Moss", "George Murcell", "Willy Myers", "Yasuko Nagazumi", "Bill Nagy", "James Payne", "Robert Rietty", "Shane Rimmer", "Sadanoyama", "William Sylvester", "Peter Taylor", "Francesca Tu", "Burnell Tucker", "Zsolt Vadaszffy", "Nikki Van der Zyl", "Jan Werich", "Jeffry Wickham", "Brian Wilde", "Yee-Wah Yang", "Tommy Yapp", "Ric Young" ],
+  "tags" : [ "007" ]
+}

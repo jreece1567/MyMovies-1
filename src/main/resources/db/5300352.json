@@ -1,0 +1,13 @@
+{
+  "imdbId" : "5300352",
+  "title" : "Garfield: Murder of a President",
+  "releaseYear" : "2016",
+  "duration" : "2:00",
+  "rating" : "TV-14",
+  "director" : "Rob Rapley",
+  "imageUrl" : "5300352.jpg",
+  "description" : "The life of President James Garfield, including his rise to power and the aftermath of his assassination.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "Anne Bobby", "David Bowles", "Daniel Brown", "Soraya Butler", "Jason Alan Carvell", "Jay DeYonker", "Cristina Doikos", "James Eckhouse", "Kathryn Erbe", "Ladislav Gergel", "Shuler Hensley", "Logan Hillier", "John Hutton", "Will Janowitz", "Adam LeFevre", "Sean Mahon", "Barbora Mudrová", "Michael Murphy", "Ted Otis", "Daniel Pearce", "Robert Petkoff", "Karina Rchichev", "Dan Rowland", "Mike Shapiro", "Joe Weintraub" ],
+  "tags" : [ "President" ]
+}

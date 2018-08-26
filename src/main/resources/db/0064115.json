@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0064115",
+  "title" : "Butch Cassidy and the Sundance Kid",
+  "releaseYear" : "1969",
+  "duration" : "1:50",
+  "rating" : "M",
+  "director" : "George Roy Hill",
+  "imageUrl" : "0064115.jpg",
+  "description" : "Two Western bank/train robbers flee to Bolivia when the law gets too close.",
+  "genres" : [ "Adventure", "Biography", "Crime" ],
+  "cast" : [ "Paul Newman", "Robert Redford", "Katharine Ross", "Strother Martin", "Henry Jones", "Jeff Corey", "George Furth", "Cloris Leachman", "Ted Cassidy", "Kenneth Mars", "Donnelly Rhodes", "Jody Gilbert", "Timothy Scott", "Don Keefer", "Charles Dierkop", "Pancho Córdova", "Nelson Olmsted", "Paul Bryar", "Sam Elliott", "Charles Akins", "Eric Sinclair", "Douglas Bank", "Larry Barton", "Rico Cattani", "José Chávez", "Dave Dunlop", "Jill Hall", "Percy Helton", "Buck Holland", "Jack Isbell", "Enrique Lucero", "Lyn Massey", "Thurl Ravenscroft", "Jorge Russek", "José Torvay" ],
+  "tags" : [ ]
+}

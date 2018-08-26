@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1673470",
+  "title" : "Landslide: A Portrait of President Herbert Hoover",
+  "releaseYear" : "2009",
+  "duration" : "0:58",
+  "rating" : "NOT RATED",
+  "director" : "Chip Duncan",
+  "imageUrl" : "1673470.jpg",
+  "description" : "This one-hour documentary explores the facts and fictions behind the presidency of Herbert Hoover including The Great Depression and its lasting impact on government.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Harry Smith", "Jonathan Alter", "Calvin Coolidge", "Timothy Egan", "Herbert Hoover", "Margaret Hoover", "David Kennedy", "Douglas MacArthur", "George H. Nash", "Robert Reich", "Franklin D. Roosevelt", "Amity Shlaes", "Harry Truman", "Timothy Walch" ],
+  "tags" : [ "President" ]
+}

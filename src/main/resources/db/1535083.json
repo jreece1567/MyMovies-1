@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1535083",
+  "title" : "Civilian Conservation Corps",
+  "releaseYear" : "2009",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "Robert Stone",
+  "imageUrl" : "1535083.jpg",
+  "description" : "American Experience celebrates the 75th anniversary of the Civilian Conservation Corps. Founded by Roosevelt during the Great Depression, the CCC put over 3 million men to work improving the countries infrastructure and national parks.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Jonathan Alter", "Robert Fechner", "Leo Gorcey", "Clifford Hammond", "Adolf Hitler", "Herbert Hoover", "Harley Jolley", "Huey Long", "Frances Perkins", "Houston Pritchett", "Franklin D. Roosevelt", "John Wayne", "Vicente Ximenes" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0067116",
+  "title" : "The French Connection",
+  "releaseYear" : "1971",
+  "duration" : "1:44",
+  "rating" : "R",
+  "director" : "William Friedkin",
+  "imageUrl" : "0067116.jpg",
+  "description" : "A pair of NYC cops in the Narcotics Bureau stumble onto a drug smuggling job with a French connection.",
+  "genres" : [ "Action", "Crime", "Thriller" ],
+  "cast" : [ "Gene Hackman", "Fernando Rey", "Roy Scheider", "Tony Lo Bianco", "Marcel Bozzuffi", "Frédéric de Pasquale", "Bill Hickman", "Ann Rebbot", "Harold Gary", "Arlene Farber", "Eddie Egan", "André Ernotte", "Sonny Grosso", "Benny Marino", "Patrick McDermott", "Alan Weeks", "Al Fann", "Irving Abrahams", "Randy Jurgensen", "William Coke", "The Three Degrees", "Frank Adonis", "Gilda Albertoni", "Robert Dahdah", "Sarina C. Grant", "Joe Lo Grippo", "Melonie Haller", "Eric Jones", "Charles McGregor", "Lora Mitchell", "Maureen Mooney", "Silvano Nolemi", "Burt Richards", "Fat Thomas", "Robert Weil" ],
+  "tags" : [ ]
+}

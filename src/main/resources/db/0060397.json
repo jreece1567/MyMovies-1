@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0060397",
+  "title" : "Fantastic Voyage",
+  "releaseYear" : "1966",
+  "duration" : "1:40",
+  "rating" : "PG",
+  "director" : "Richard Fleischer",
+  "imageUrl" : "0060397.jpg",
+  "description" : "A diplomat is nearly assassinated. In order to save him, a submarine is shrunken to microscopic size and injected into his blood stream with a small crew. Problems arise almost as soon as they enter the bloodstream.",
+  "genres" : [ "Adventure", "Fantasy", "Sci-Fi" ],
+  "cast" : [ "Stephen Boyd", "Raquel Welch", "Edmond O'Brien", "Donald Pleasence", "Arthur O'Connell", "William Redfield", "Arthur Kennedy", "Jean Del Val", "Barry Coe", "Ken Scott", "Shelby Grant", "James Brolin", "Brendan Fitzgerald", "Brendon Boone", "Kenneth MacDonald", "Christopher Riordan" ],
+  "tags" : [ ]
+}

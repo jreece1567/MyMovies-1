@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0078748",
+  "title" : "Alien",
+  "releaseYear" : "1979",
+  "duration" : "1:57",
+  "rating" : "R",
+  "director" : "Ridley Scott",
+  "imageUrl" : "0078748.jpg",
+  "description" : "The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crew heads home only to realize that a deadly bioform has joined them.",
+  "genres" : [ "Horror", "Sci-Fi" ],
+  "cast" : [ "Tom Skerritt", "Sigourney Weaver", "Veronica Cartwright", "Harry Dean Stanton", "John Hurt", "Ian Holm", "Yaphet Kotto", "Bolaji Badejo", "Helen Horton", "Eddie Powell" ],
+  "tags" : [ ]
+}

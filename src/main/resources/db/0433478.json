@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0433478",
+  "title" : "War of the Century",
+  "releaseYear" : "2000",
+  "duration" : "3:20",
+  "rating" : "NOT RATED",
+  "director" : "Laurence Rees",
+  "imageUrl" : "0433478.jpg",
+  "description" : "Documentary examining Operation Barbarossa, Hitler's invasion of the Soviet Union in 1941.",
+  "genres" : [ "Documentary", "History", "War" ],
+  "cast" : [ "John Erickson", "Stephen Walsh", "Samuel West" ],
+  "tags" : [ "WW-II" ]
+}

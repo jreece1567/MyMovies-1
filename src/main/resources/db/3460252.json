@@ -1,0 +1,13 @@
+{
+  "imdbId" : "3460252",
+  "title" : "The Hateful Eight",
+  "releaseYear" : "2015",
+  "duration" : "3:07",
+  "rating" : "R",
+  "director" : "Quentin Tarantino",
+  "imageUrl" : "3460252.jpg",
+  "description" : "In the dead of a Wyoming winter, a bounty hunter and his prisoner find shelter in a cabin currently inhabited by a collection of nefarious characters.",
+  "genres" : [ "Crime", "Drama", "Mystery" ],
+  "cast" : [ "Samuel L. Jackson", "Kurt Russell", "Jennifer Jason Leigh", "Walton Goggins", "Demián Bichir", "Tim Roth", "Michael Madsen", "Bruce Dern", "James Parks", "Dana Gourrier", "Zoë Bell", "Lee Horsley", "Gene Jones", "Keith Jefferson", "Craig Stark", "Belinda Owino", "Channing Tatum", "Quentin Tarantino" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0121765",
+  "title" : "Star Wars - Episode II - Attack of the Clones",
+  "releaseYear" : "2002",
+  "duration" : "2:22",
+  "rating" : "PG",
+  "director" : "George Lucas",
+  "imageUrl" : "0121765.jpg",
+  "description" : "Ten years after initially meeting, Anakin Skywalker shares a forbidden romance with Padm&eacute;, while Obi-Wan investigates an assassination attempt on the Senator and discovers a secret clone army crafted for the Jedi.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Ewan McGregor", "Natalie Portman", "Hayden Christensen", "Christopher Lee", "Samuel L. Jackson", "Frank Oz", "Ian McDiarmid", "Pernilla August", "Temuera Morrison", "Jimmy Smits", "Jack Thompson", "Leeanna Walsman", "Ahmed Best", "Rose Byrne", "Oliver Ford Davies", "Ronald Falk", "Jay Laga'aia", "Andy Secombe", "Anthony Daniels", "Silas Carson", "Ayesha Dharker", "Joel Edgerton", "Daniel Logan", "Bonnie Piesse", "Anthony Phelan", "Rena Owen", "Alethea McGrath", "Susie Porter", "Matt Doran", "Alan Ruscoe", "Matt Sloan", "Veronica Segura", "David Bowers", "Steve John Shepherd", "Bodie Taylor", "Matt Rowan", "Steven Boyle", "Zachariah Jensen", "Alex Knoll", "Phoebe Yiamkiati", "Kenny Baker", "Jerome St. John Blake", "Hassani Shapi", "Gin Clarke", "Khan Bonfils", "Michaela Cottrell", "Dipika O'Neill Joti", "Alfonso Sánchez", "Tux Akindoyeni", "Sacha Alexander", "Giulio Alimenti", "Amy Allen", "Nicolas Anastassiou", "Jason Baird", "Don Bies", "Kristen Bronson", "Douglas Bunn", "Marton Csokas", "Natalie Danks-Smith", "Russell Darling", "Justin Dix", "Eliana Dona", "C. Michael Easton", "Nicole Fantl", "Sandi Finlay", "Stephen George", "Emma Howard", "Hilton Howson", "Jesse Jensen", "Fiona Johnson", "Sara Elizabeth Joyce", "Nalini Krishan", "Gillian Libbert", "Amanda Lucas", "Jett Lucas", "Katie Lucas", "Liam Neeson", "Lily Nyamwasa", "Mary Oyaya", "Daniel Perrott", "Ian Roberts", "Kyle Rowling", "Joseph Jett Sally", "Juan-Luis Sanchez", "Mike Savva", "P. Kevin Scott", "Zeynep Selcuk", "Orli Shoshan", "Leonard L. Thomas", "Trevor Tighe", "Christopher Truswell", "Ian Watkin", "R. Christopher White", "Eric Wong", "Matthew Wood" ],
+  "tags" : [ "StarWars" ]
+}

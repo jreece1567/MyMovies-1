@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0063823",
+  "title" : "Yellow Submarine",
+  "releaseYear" : "1968",
+  "duration" : "1:25",
+  "rating" : "G",
+  "director" : "George Dunning",
+  "imageUrl" : "0063823.jpg",
+  "description" : "The Beatles agree to accompany Captain Fred in his Yellow Submarine and go to Pepperland to free it from the music hating Blue Meanies.",
+  "genres" : [ "Animation", "Adventure", "Comedy" ],
+  "cast" : [ "The Beatles", "Paul Angelis", "John Clive", "Dick Emery", "Geoffrey Hughes", "Lance Percival", "Peter Batten", "George Harrison", "John Lennon", "Paul McCartney", "Ringo Starr" ],
+  "tags" : [ ]
+}

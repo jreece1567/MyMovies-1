@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0163025",
+  "title" : "Jurassic Park III",
+  "releaseYear" : "2001",
+  "duration" : "1:32",
+  "rating" : "PG-13",
+  "director" : "Joe Johnston",
+  "imageUrl" : "0163025.jpg",
+  "description" : "A decidedly odd couple with ulterior motives convince Dr. Alan Grant to go to Isla Sorna (the second InGen dinosaur lab.), resulting in an unexpected landing...and unexpected new inhabitants on the island.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Sam Neill", "William H. Macy", "Téa Leoni", "Alessandro Nivola", "Trevor Morgan", "Michael Jeter", "John Diehl", "Bruce A. Young", "Laura Dern", "Taylor Nichols", "Mark Harelik", "Julio Oscar Mechoso", "Blake Michael Bryan", "Sarah Danielle Goldberg", "Linda Park", "Sonia Jackson", "Bruce French", "Bernard Zilinskas", "Rona Benson", "Frank Clem", "Karin M. Gaarder", "Edward C. Gillow", "Brad Everett Young" ],
+  "tags" : [ "Crichton" ]
+}

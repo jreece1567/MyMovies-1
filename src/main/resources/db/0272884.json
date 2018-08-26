@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0272884",
+  "title" : "Tesla: Master of Lightning",
+  "releaseYear" : "2000",
+  "duration" : "1:27",
+  "rating" : "TV-PG",
+  "director" : "Robert Uth",
+  "imageUrl" : "0272884.jpg",
+  "description" : "Biography of electrical inventor and visionary genius Nikola Tesla.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "Stacy Keach", "Elisabeth Noone", "Leland I. Anderson", "John Jacob Astor", "Charles W. Batchelor", "Sarah Bernhardt", "William H. Bragg", "Joseph Butler", "Margaret Cheney", "William Crookes", "Flora Dodge", "Thomas A. Edison", "Albert Einstein", "Michael Faraday", "Bernard Finn", "Percy E. Foxworth", "Elmer Gertz", "David L. Goodstein", "Jim Hardesty", "Heinrich Rudolf Hertz", "Adolf Hitler", "Lord Kelvin", "William Francis Kemmler", "Nikita Khrushchev", "Sava Kosanovich", "Guglielmo Marconi", "John Pierpont Morgan", "Charlotte Muzar", "Dennis Papadopoulos", "Ronald Reagan", "Charles E. Ruch", "William Terbo", "Milutin Tesla", "Nikola Tesla", "Mark Twain", "William K. Vanderbilt", "George Sylvester Viereck", "Swami Vivekananda", "George Westinghouse" ],
+  "tags" : [ ]
+}

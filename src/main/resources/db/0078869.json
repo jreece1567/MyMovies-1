@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0078869",
+  "title" : "The Black Hole",
+  "releaseYear" : "1979",
+  "duration" : "1:38",
+  "rating" : "PG",
+  "director" : "Gary Nelson",
+  "imageUrl" : "0078869.jpg",
+  "description" : "A research vessel finds a missing ship, commanded by a mysterious scientist, on the edge of a black hole.",
+  "genres" : [ "Action", "Adventure", "Family" ],
+  "cast" : [ "Maximilian Schell", "Anthony Perkins", "Robert Forster", "Joseph Bottoms", "Yvette Mimieux", "Ernest Borgnine", "Tom McLoughlin", "Roddy McDowall", "Gary Nelson", "Slim Pickens" ],
+  "tags" : [ ]
+}

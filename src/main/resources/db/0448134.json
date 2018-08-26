@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0448134",
+  "title" : "Sunshine",
+  "releaseYear" : "2007",
+  "duration" : "1:47",
+  "rating" : "R",
+  "director" : "Danny Boyle",
+  "imageUrl" : "0448134.jpg",
+  "description" : "A team of international astronauts are sent on a dangerous mission to reignite the dying Sun with a nuclear fission bomb in 2057.",
+  "genres" : [ "Adventure", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Cillian Murphy", "Michelle Yeoh", "Troy Garity", "Rose Byrne", "Hiroyuki Sanada", "Benedict Wong", "Chris Evans", "Cliff Curtis", "Mark Strong", "Paloma Baeza", "Archie Macdonald", "Sylvie Macdonald", "Chipo Chung", "Kevin Hudson" ],
+  "tags" : [ ]
+}

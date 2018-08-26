@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0104926",
+  "title" : "Mr. Baseball",
+  "releaseYear" : "1992",
+  "duration" : "1:48",
+  "rating" : "PG-13",
+  "director" : "Fred Schepisi",
+  "imageUrl" : "0104926.jpg",
+  "description" : "A fading baseball player is traded to a Japanese team and has trouble fitting into the society.",
+  "genres" : [ "Comedy", "Romance", "Sport" ],
+  "cast" : [ "Tom Selleck", "Ken Takakura", "Aya Takanashi", "Dennis Haysbert", "Toshi Shioya", "Kosuke Toyohara", "Toshizo Fujiwara", "Mak Takano", "Kenji Morinaga", "Joh Nishimura", "Norihide Goto", "Kensuke Toita", "Naoki Fuji", "Takanobu Hozumi", "Leon Lee", "Jun Hamamura", "Mineko Yorozuyo", "Shôji Ôki", "Tomoko Fujita", "Kinzô Sakura", "Ikuko Saiton", "Hikari Takano", "Art LaFleur", "Greg Goossen", "Nicholas Cascone", "Larry Pennell", "Scott Plank", "Charles Fick", "Michael McGrady", "Frank Thomas", "Michael Papajohn", "Rolando Rodriquez", "Todd A. Provence", "Frank Mendoza", "Ken Medlock", "Carrie Jean Yazel", "Mary Kohnert", "Makoto Kuno", "Michiyo Washizuka", "Shinsuke Aoki", "Rinzoh Suzuki", "Shintarô Mizushima", "Nobuyuki Kariya", "Satoshi Jinbo", "Masanao Matsuzaki", "Shôtarô Kusumi", "Katsushi Yamaguchi", "Hiro Nagae", "Yoshimi Imai", "Cin Chi Cheng", "Makoto Kakeda", "Shogo Nakajima", "Bradley Jay Lesley", "Garry Bassin", "Bob Costas", "James Corey Kaufman", "Tim McCarver", "Adam Vargas" ],
+  "tags" : [ ]
+}

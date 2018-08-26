@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0071411",
+  "title" : "Dersu Uzala",
+  "releaseYear" : "1977",
+  "duration" : "2:24",
+  "rating" : "G",
+  "director" : "Akira Kurosawa",
+  "imageUrl" : "0071411.jpg",
+  "description" : "The Russian army sends an explorer on an expedition to the snowy Siberian wilderness where he makes friends with a seasoned local hunter.",
+  "genres" : [ "Adventure", "Biography", "Drama" ],
+  "cast" : [ "Maksim Munzuk", "Yuriy Solomin", "Svetlana Danilchenko", "Dmitriy Korshikov", "Suymenkul Chokmorov", "Vladimir Kremena", "Aleksandr Pyatkov", "Mikhail Bychkov", "Sovetbek Dzhumadylov", "Vladimir Khrulev", "Nikolai Volkov" ],
+  "tags" : [ ]
+}

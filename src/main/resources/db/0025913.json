@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0025913",
+  "title" : "Triumph of the Will",
+  "releaseYear" : "1935",
+  "duration" : "1:50",
+  "rating" : "NOT RATED",
+  "director" : "Leni Riefenstahl",
+  "imageUrl" : "0025913.jpg",
+  "description" : "The infamous propaganda film of the 1934 Nazi Party rally in Nuremberg, Germany.",
+  "genres" : [ "Documentary", "History", "War" ],
+  "cast" : [ "Adolf Hitler", "Max Amann", "Martin Bormann", "Walter Buch", "Walter Darré", "Otto Dietrich", "Sepp Dietrich", "Hans Frank", "Joseph Goebbels", "Jakob Grimminger", "Hermann Göring", "Rudolf Hess", "Reinhard Heydrich", "Konstantin Hierl", "Heinrich Himmler", "Franz Hofer", "Robert Ley", "Viktor Lutze", "Ludwig Müller", "Erich Raeder", "Fritz Reinhardt", "Alfred Rosenberg", "Hjalmar Schacht", "Franz Xaver Schwarz", "Julius Streicher", "Fritz Todt", "Werner von Blomberg", "Hans Georg von Friedeburg", "Gerd von Rundstedt", "Baldur von Schirach", "Adolf Wagner" ],
+  "tags" : [ ]
+}

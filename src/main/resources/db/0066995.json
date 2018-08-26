@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0066995",
+  "title" : "Diamonds Are Forever",
+  "releaseYear" : "1971",
+  "duration" : "2:00",
+  "rating" : "GP",
+  "director" : "Guy Hamilton",
+  "imageUrl" : "0066995.jpg",
+  "description" : "A diamond smuggling investigation leads James Bond to Las Vegas, where he uncovers an extortion plot headed by his nemesis, Ernst Stavro Blofeld.",
+  "genres" : [ "Action", "Adventure", "Crime" ],
+  "cast" : [ "Sean Connery", "Jill St. John", "Charles Gray", "Lana Wood", "Jimmy Dean", "Bruce Cabot", "Putter Smith", "Bruce Glover", "Norman Burton", "Joseph Fürst", "Bernard Lee", "Desmond Llewelyn", "Leonard Barr", "Lois Maxwell", "Margaret Lacey", "Joe Robinson", "David de Keyser", "Laurence Naismith", "David Bauer", "Sammy Davis Jr.", "Sid Haig", "Marc Lawrence", "John Abineri", "Ray Baker", "Ed Bishop", "Nicky Blair", "Larry J. Blake", "Ed Call", "George Lane Cooper", "Dick Crockett", "Catherine Deeney", "Gary Dubin", "Clifford Earl", "Mark Elwes", "Brinsley Forde", "Constantine Gregory", "David Healy", "Karl Held", "Roy Hollis", "Bill Hutchinson", "Janos Kurucz", "Lola Larson", "Debbie Letteau", "Frank Mann", "Connie Mason", "Don Messick", "Burt Metcalfe", "Johnny Miller", "Terence Mountain", "Frank Olegario", "Trina Parks", "Denise Perrier", "Valerie Perrine", "Shane Rimmer", "Henry Rowland", "Gordon Ruttan", "Jay Sarno", "Tom Steele", "Michael Valente", "E.J. 'Tex' Young" ],
+  "tags" : [ "007" ]
+}

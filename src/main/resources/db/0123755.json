@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0123755",
+  "title" : "Cube",
+  "releaseYear" : "1998",
+  "duration" : "1:30",
+  "rating" : "R",
+  "director" : "Vincenzo Natali",
+  "imageUrl" : "0123755.jpg",
+  "description" : "7 complete strangers of widely varying personality characteristics are involuntarily placed in an endless kafkaesque maze containing deadly traps.",
+  "genres" : [ "Mystery", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Maurice Dean Wint", "David Hewlett", "Nicole de Boer", "Nicky Guadagni", "Andrew Miller", "Julian Richings", "Wayne Robson" ],
+  "tags" : [ ]
+}

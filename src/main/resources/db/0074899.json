@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0074899",
+  "title" : "Midway",
+  "releaseYear" : "1976",
+  "duration" : "2:12",
+  "rating" : "PG",
+  "director" : "Jack Smight",
+  "imageUrl" : "0074899.jpg",
+  "description" : "A dramatization of the battle that turned out to be the turning point of the Pacific Theatre of World War II.",
+  "genres" : [ "Action", "Drama", "History" ],
+  "cast" : [ "Charlton Heston", "Henry Fonda", "James Coburn", "Glenn Ford", "Hal Holbrook", "Toshirô Mifune", "Robert Mitchum", "Cliff Robertson", "Robert Wagner", "Robert Webber", "Ed Nelson", "James Shigeta", "Christina Kokubo", "Monte Markham", "Biff McGuire", "Christopher George", "Kevin Dobson", "Glenn Corbett", "Gregory Walcott", "Edward Albert", "Pat Morita", "John Fujioka", "Dale Ishimoto", "Dabney Coleman", "Erik Estrada", "Larry Pennell", "Clyde Kusatsu", "Phillip R. Allen", "Tom Selleck", "Sab Shimono", "Conrad Yama", "Robert Ito", "Yuki Shimoda", "Seth Sakai", "Kurt Grayson", "Alfie Wise", "Beeson Carroll", "John Bennett Perry", "Steve Kanaly", "Kip Niven", "Dennis Rucker", "Michael Richardson", "James Ingersoll", "Jeff Chamberlain", "Sam Chew Jr.", "Noel Conlon", "Larry Csonka", "Jesse Dizon", "Don Dolan", "Paul Frees", "Jerry Fujikawa", "Sean Garrison", "Ned Gill", "Redmond Gleeson", "Anthony Herrara", "David Hirokane", "Jim Ishida", "Lloyd Kino", "John Lupton", "David Macklin", "Sandy McPeak", "Steve Moriarty", "Chuck Morrell", "Richard Narita", "Yôsuke Natsuki", "Bennett Ohta", "Frank Parker", "Clint Ritchie", "Mitch Ryan", "Richard Sanders", "Richard Sarradet", "John Schuck", "Alec Smight", "Susan Sullivan", "Miiko Taka", "William Wellman Jr." ],
+  "tags" : [ "WW-II" ]
+}

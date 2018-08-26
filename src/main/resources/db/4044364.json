@@ -1,0 +1,13 @@
+{
+  "imdbId" : "4044364",
+  "title" : "Citizenfour",
+  "releaseYear" : "2014",
+  "duration" : "1:54",
+  "rating" : "R",
+  "director" : "Laura Poitras",
+  "imageUrl" : "4044364.jpg",
+  "description" : "A documentarian and a reporter travel to Hong Kong for the first of many meetings with Edward Snowden.",
+  "genres" : [ "Documentary", "Biography" ],
+  "cast" : [ "Edward Snowden", "Glenn Greenwald", "William Binney", "Jacob Appelbaum", "Ewen MacAskill", "Jeremy Scahill", "M. Margaret McKeown", "Kevin Bankston", "Harry Pregerson", "H. Thomas Byron", "Michael Daly Hawkins", "Jonathan Man", "Robert Tibbo", "José Casado", "Roberto Kaz", "Julian Borger", "Paul Johnson", "Nick Hopkins", "Julian Assange", "Marcel Bosonnet", "Wolfgang Kaleck", "Ben Wizner", "William Bourdon", "Gonzalo Boye", "Carsten Gericke", "David Miranda", "Ladar Levison", "Marcel Rosenbach", "Rainer Staudhammer", "Lindsay Mills", "Keith Alexander", "James Clapper", "Barack Obama", "Jesselyn Radack", "Laura Poitras" ],
+  "tags" : [ ]
+}

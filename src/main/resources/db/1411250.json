@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1411250",
+  "title" : "Riddick",
+  "releaseYear" : "2013",
+  "duration" : "PT119M",
+  "rating" : "R",
+  "director" : "David Twohy",
+  "imageUrl" : "1411250.jpg",
+  "description" : "Left for dead on a sun-scorched planet, Riddick finds himself up against an alien race of predators. Activating an emergency beacon alerts two ships: one carrying a new breed of mercenary, the other captained by a man from Riddick's past.",
+  "genres" : [ "Action", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Vin Diesel", "Jordi Mollà", "Matt Nable", "Katee Sackhoff", "Dave Bautista", "Bokeem Woodbine", "Raoul Trujillo", "Conrad Pla", "Danny Blanco Hall", "Noah Danby", "Neil Napier", "Nolan Gerard Funk", "Karl Urban", "Andreas Apergis", "Keri Hilson", "Charlie Marie Dupont", "Jan Gerste", "Antoinette Kalaj", "Alexandra Sokolovskaya", "Lani Minella" ],
+  "tags" : [ ]
+}

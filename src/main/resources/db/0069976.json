@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0069976",
+  "title" : "Dillinger",
+  "releaseYear" : "1973",
+  "duration" : "1:47",
+  "rating" : "R",
+  "director" : "John Milius",
+  "imageUrl" : "0069976.jpg",
+  "description" : "John Dillinger and his gang go on a bank robbing spree across the midwest, but one G-Man is determined to bring him down.",
+  "genres" : [ "Action", "Biography", "Crime" ],
+  "cast" : [ "Warren Oates", "Ben Johnson", "Michelle Phillips", "Cloris Leachman", "Harry Dean Stanton", "Geoffrey Lewis", "John P. Ryan", "Richard Dreyfuss", "Steve Kanaly", "John Martino", "Roy Jenson", "Read Morgan", "Frank McRae", "David Dorr", "Roland Bob Harris", "J. Edgar Hoover", "Terry Leonard", "Jerry Summers", "Catherine Tambini" ],
+  "tags" : [ ]
+}

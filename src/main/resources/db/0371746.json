@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0371746",
+  "title" : "Iron Man",
+  "releaseYear" : "2008",
+  "duration" : "2:06",
+  "rating" : "PG-13",
+  "director" : "Jon Favreau",
+  "imageUrl" : "0371746.jpg",
+  "description" : "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Robert Downey Jr.", "Terrence Howard", "Jeff Bridges", "Gwyneth Paltrow", "Leslie Bibb", "Shaun Toub", "Faran Tahir", "Clark Gregg", "Bill Smitrovich", "Sayed Badreya", "Paul Bettany", "Jon Favreau", "Peter Billingsley", "Tim Guinee", "Will Lyman", "Tom Morello", "Marco Khan", "Daston Kalili", "Ido Ezra", "Kevin Foster", "Garret Noël", "Eileen Weisinger", "Ahmed Ahmed", "Fahim Fazli", "Gerard Sanders", "Tim Rigby", "Russell Richardson", "Nazanin Boniadi", "Thomas Craig Plumer", "Robert Berkman", "Stacy Stas", "Lauren Scyphers", "Frank Nyi", "Marvin Jordan", "Jim Cramer", "Donna Evans", "Reid Harper", "Summer Kylie Remington", "Ava Rose Williams", "Vladimir Kubr", "Callie Croughwell", "Javan Tahir", "Sahar Bibiyan", "Patrick O'Connell", "Adam Harrington", "Meera Simhan", "Ben Newmark", "Ricki Noel Lander", "Jeannine Kaspar", "Sarah Cahill", "Stan Lee", "Justin Rex", "Zorianna Kit", "Lana Kinnear", "Nicole Lindeblad", "Masha Lund", "Gabrielle Tuite", "Tim Griffin", "Joshua Harto", "Micah A. Hauptman", "James Bethea", "Jeffrey Ashkin", "Russell Bobbitt", "Vianessa Castaños", "Mike Cochrane", "Crystal Marie Denha", "Mellany Gandara", "Halla Halla", "Rodrick Hersh", "Kristin J. Hooper", "Samuel L. Jackson", "Chris Jalandoni", "Steve Janousek", "Laura Liguori", "Flavia Manes Rossi", "Anthony Martins", "Robert McMurrer", "James M. Myers", "America Olivo", "Sylvette Ortiz", "Brett Padelford", "Ajani Perkins", "Chris Reid", "Toi Rose", "Arne Starr", "George F. Watson", "David Zyler" ],
+  "tags" : [ "Marvel" ]
+}

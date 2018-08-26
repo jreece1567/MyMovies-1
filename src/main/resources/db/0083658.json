@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0083658",
+  "title" : "Blade Runner",
+  "releaseYear" : "1982",
+  "duration" : "1:57",
+  "rating" : "R",
+  "director" : "Ridley Scott",
+  "imageUrl" : "0083658.jpg",
+  "description" : "Deckard, a blade runner, has to track down and terminate 4 replicants who hijacked a ship in space and have returned to Earth seeking their maker.",
+  "genres" : [ "Drama", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Harrison Ford", "Rutger Hauer", "Sean Young", "Edward James Olmos", "M. Emmet Walsh", "Daryl Hannah", "William Sanderson", "Brion James", "Joe Turkel", "Joanna Cassidy", "James Hong", "Morgan Paull", "Kevin Thompson", "John Edward Allen", "Hy Pyke", "Kimiko Hiroshige", "Bob Okazaki", "Carolyn DeMirjian", "Ben Astar", "Judith Burnett", "Leo Gorcey Jr.", "Dawna Lee Heising", "Sharon Hesky", "Kelly Hine", "Tom Hutchinson", "Charles Knapp", "Rose Mascari", "Jirô Okazaki", "Steve Pope", "Robert Reiter", "Alexis Rhee" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0092011",
+  "title" : "The Statue of Liberty",
+  "releaseYear" : "1985",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "0092011.jpg",
+  "description" : "Documentary showing the history of the world-famous Statue of Liberty in New York harbor.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "James Baldwin", "Tucker Burr", "Ray Charles", "Mario Cuomo", "Carolyn Forché", "Milos Forman", "Vartan Gregorian", "Jeremy Irons", "Derek Jacobi", "Barbara Jordan", "Jerzy Kosinski", "Sol Leibowitz", "David McCullough", "Arthur Miller", "Camilla Rockwell", "Paul Roebling", "Wendy Tilghman" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0054047",
+  "title" : "The Magnificent Seven",
+  "releaseYear" : "1960",
+  "duration" : "2:08",
+  "rating" : "APPROVED",
+  "director" : "John Sturges",
+  "imageUrl" : "0054047.jpg",
+  "description" : "An oppressed Mexican peasant village hires seven gunfighters to help defend their homes. Remake of the Japanese film 'The Seven Samurai'.",
+  "genres" : [ "Action", "Adventure", "Western" ],
+  "cast" : [ "Yul Brynner", "Eli Wallach", "Steve McQueen", "Horst Buchholz", "Charles Bronson", "Robert Vaughn", "Brad Dexter", "James Coburn", "Jorge Martínez de Hoyos", "Vladimir Sokoloff", "Rosenda Monteros", "Rico Alaniz", "Pepe Hern", "Natividad Vacío", "Mario Navarro", "Danny Bravo", "John A. Alonzo", "Enrique Lucero", "Alex Montoya", "Robert J. Wilke", "Val Avery", "Whit Bissell", "Bing Russell", "Henry Amargo", "José Chávez", "Roberto Contreras", "Jim Davis", "Valentin de Vargas", "Larry Duran", "Victor French", "Joseph Ruskin" ],
+  "tags" : [ ]
+}

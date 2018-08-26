@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0120915",
+  "title" : "Star Wars - Episode I - The Phantom Menace",
+  "releaseYear" : "1999",
+  "duration" : "2:16",
+  "rating" : "PG",
+  "director" : "George Lucas",
+  "imageUrl" : "0120915.jpg",
+  "description" : "Two Jedi Knights escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their old glory.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Liam Neeson", "Ewan McGregor", "Natalie Portman", "Jake Lloyd", "Ian McDiarmid", "Pernilla August", "Oliver Ford Davies", "Hugh Quarshie", "Ahmed Best", "Anthony Daniels", "Kenny Baker", "Frank Oz", "Terence Stamp", "Brian Blessed", "Andy Secombe", "Ray Park", "Lewis Macleod", "Warwick Davis", "Steve Speirs", "Silas Carson", "Jerome St. John Blake", "Alan Ruscoe", "Ralph Brown", "Celia Imrie", "Benedict Taylor", "Clarence Smith", "Samuel L. Jackson", "Dominic West", "Karol Cristina da Silva", "Liz Wilson", "Candice Orwell", "Sofia Coppola", "Keira Knightley", "Bronagh Gallagher", "John Fensom", "Greg Proops", "Scott Capurro", "Margaret Towner", "Dhruv Chanchani", "Oliver Walpole", "Katie Lucas", "Megan Udall", "Hassani Shapi", "Gin Clarke", "Khan Bonfils", "Michelle Taylor", "Michaela Cottrell", "Dipika O'Neill Joti", "Phil Eason", "Mark Coulier", "Lindsay Duncan", "Peter Serafinowicz", "James Taylor", "Chris Sanders", "Toby Longworth", "Marc Silk", "Amanda Lucas", "Sacha Alexander", "Simon Allen", "Richard Armitage", "Paul Bannon", "Don Bies", "Trisha Biggar", "Michonne Bourriague", "Douglas Bunn", "Ben Burtt", "Doug Chiang", "Rob Coleman", "Roman Coppola", "Sean Cronin", "Zsuzsanna Cseh", "Matt Daniel-Baker", "Russell Darling", "Philip Delancy", "Andrew Doucette", "C. Michael Easton", "Andrew Elias", "John Ellis", "Catherine Ernster", "Patrice Girod", "Ned Gorman", "Joss Gower", "Raymond Griffiths", "Nathan Hamill", "Tim Harrington", "Sally Hawkins", "Jack Haye", "Nifa Hindes", "Nishan Hindes", "Frank Huseyin", "Alexi Kaye Campbell", "David Knight", "John Knoll", "Kamay Lau", "Andrew Lawden", "Dan Madsen", "Iain McCaig", "Rick McCallum", "João Costa Menezes", "Taylor Murphy", "Jeff Olson", "Lorne Peterson", "Neil Riddaway", "Steve Sansweet", "Mike Savva", "Christopher Scarabosio", "Jeff Shay", "Christian Simpson", "Paul Martin Smith", "Scott Squires", "Tom Sylla", "Bill Tlusty", "Danny Wagner", "Matthew Wood" ],
+  "tags" : [ "StarWars" ]
+}

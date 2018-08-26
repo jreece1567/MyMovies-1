@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0309685",
+  "title" : "Horror in the East",
+  "releaseYear" : "2001",
+  "duration" : "1:00",
+  "rating" : "PG",
+  "director" : "",
+  "imageUrl" : "0309685.jpg",
+  "description" : "An examination of atrocities and depredations committed by Imperial Japanese military forces, from 1931 to 1945.",
+  "genres" : [ "Documentary", "War" ],
+  "cast" : [ "Edward Herrmann", "Samuel West" ],
+  "tags" : [ "WW-II" ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0079501",
+  "title" : "Mad Max",
+  "releaseYear" : "1979",
+  "duration" : "1:28",
+  "rating" : "R",
+  "director" : "George Miller",
+  "imageUrl" : "0079501.jpg",
+  "description" : "In a self-destructing world, a vengeful Australian policeman sets out to stop a violent motorcycle gang.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Mel Gibson", "Joanne Samuel", "Hugh Keays-Byrne", "Steve Bisley", "Tim Burns", "Roger Ward", "Lisa Aldenhoven", "David Bracks", "Bertrand Cadart", "David Cameron", "Robina Chaffey", "Stephen Clark", "Mathew Constantine", "Jerry Day", "Reg Evans", "Howard Eynon", "Max Fairchild", "John Farndale", "Peter Felmingham", "Sheila Florance", "Nic Gazzana", "Hunter Gibb", "Vincent Gil", "Andrew Gilmore", "Jonathan Hardy", "Brendan Heath", "Paul Johnstone", "Nick Lathouris", "John Ley", "Steve Millichamp", "Phil Motherwell", "George Novak", "Geoff Parry", "Lulu Pinkus", "Neil Thompson", "Billy Tisdall", "Gil Tucker", "Kim Sullivan", "John Arnold", "Tom Broadbridge", "Peter Culpan", "Peter Ford", "Clive Hearne", "Telford Jackson", "Christine Kaman", "Joan Letch", "Kerry Miller", "Janine Ogden", "Di Trelour", "Vernon Weaver", "Paul Young", "Brendan Young", "Andrew Jones", "James McCausland", "Amanda Muggleton" ],
+  "tags" : [ ]
+}

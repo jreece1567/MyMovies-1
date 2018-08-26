@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1016268",
+  "title" : "Enron: The Smartest Guys in the Room",
+  "releaseYear" : "2006",
+  "duration" : "1:50",
+  "rating" : "NOT RATED",
+  "director" : "Alex Gibney",
+  "imageUrl" : "1016268.jpg",
+  "description" : "A documentary about the Enron corporation, its faulty and corrupt business practices, and how they led to its fall.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "John Beard", "Tim Belden", "Barbara Boxer", "George W. Bush", "Jim Chanos", "Dick Cheney", "Bill Clinton", "Carol Coale", "Peter Coyote", "Gray Davis", "Reggie Dees II", "Joseph Dunn", "Max Eberts", "Peter Elkind", "Andrew Fastow", "David Freeman", "Philip Hilder", "Al Kaseweter", "Kenneth Lay", "Jay Leno", "Bill Lerach", "Joe Lingold", "Michael Lugenbuehl", "Loretta Lynch", "Amanda Martin-Brock", "Bethany McLean", "Mike Muckleroy", "James Nutter", "John Olson", "Lou L. Pai", "Kevin Phillips", "David V. Porter", "Nancy Rapoport", "Ronald Reagan", "Harvey Rosenfield", "Marla Ruzicka", "Mark Salzberg", "Arnold Schwarzenegger", "Maria Shriver", "Jeff Skilling", "Mimi Swartz", "Robert Traband", "Sherron Watkins", "Henry Waxman", "Andrew Weissman", "Colin Whitehead", "Charles Wickman" ],
+  "tags" : [ ]
+}

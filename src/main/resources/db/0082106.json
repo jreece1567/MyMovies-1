@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0082106",
+  "title" : "Brooklyn Bridge",
+  "releaseYear" : "1981",
+  "duration" : "58 minutes",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "0082106.jpg",
+  "description" : "This documentary chronicles the world-famous Brooklyn Bridge in New York City. The difficult construction process is described in interesting detail; later parts of the film interview current notables who describe the effects that the Brooklyn Bridge has had upon New York society and beyond.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Paul Roebling", "Julie Harris", "Arthur Miller", "Kurt Vonnegut Jr.", "Richard Pini", "Fred Sherry", "Austin Stevens", "Richard Rescia", "David McCullough", "Mel Blanc", "Sheelah Feinberg", "Paul Goldberger", "Oliver Hardy", "Anna Hostvedt", "Stan Laurel", "Lewis Mumford", "George Raft", "Adam Schefflan", "Frank Sinatra", "Xanthus Valan", "Johnny Weissmuller" ],
+  "tags" : [ ]
+}

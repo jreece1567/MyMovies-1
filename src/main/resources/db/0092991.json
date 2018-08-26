@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0092991",
+  "title" : "Evil Dead II",
+  "releaseYear" : "1987",
+  "duration" : "1:24",
+  "rating" : "X",
+  "director" : "Sam Raimi",
+  "imageUrl" : "0092991.jpg",
+  "description" : "The lone survivor of an onslaught of flesh-possessing spirits holds up in a cabin with a group of strangers while the demons continue their attack.",
+  "genres" : [ "Comedy", "Horror" ],
+  "cast" : [ "Bruce Campbell", "Sarah Berry", "Dan Hicks", "Kassie Wesley DePaiva", "Ted Raimi", "Denise Bixler", "Richard Domeier", "John Peakes", "Lou Hancock", "Snowy Winters", "Sid Abrams", "Josh Becker", "Scott Spiegel", "Thomas Kidd", "Mitch Cantor", "Jenny Griffith", "William Preston Robertson", "Tony Elwood", "Sam Raimi" ],
+  "tags" : [ ]
+}

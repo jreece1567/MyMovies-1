@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0338013",
+  "title" : "Eternal Sunshine of the Spotless Mind",
+  "releaseYear" : "2004",
+  "duration" : "1:48",
+  "rating" : "R",
+  "director" : "Michel Gondry",
+  "imageUrl" : "0338013.jpg",
+  "description" : "A couple undergo a procedure to erase each other from their memories when their relationship turns sour, but it is only through the process of loss that they discover what they had to begin with.",
+  "genres" : [ "Drama", "Romance", "Sci-Fi" ],
+  "cast" : [ "Jim Carrey", "Kate Winslet", "Gerry Robert Byrne", "Elijah Wood", "Thomas Jay Ryan", "Mark Ruffalo", "Jane Adams", "David Cross", "Kirsten Dunst", "Tom Wilkinson", "Ryan Whitney", "Debbon Ayer", "Amir Ali Said", "Brian Price", "Paulie Litt", "Josh Flitter", "Lola Daehler", "Deirdre O'Connell", "Lauren Adler" ],
+  "tags" : [ ]
+}

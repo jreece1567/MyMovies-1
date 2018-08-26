@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0042897",
+  "title" : "Rocketship X-M",
+  "releaseYear" : "1950",
+  "duration" : "1:17",
+  "rating" : "APPROVED",
+  "director" : "Kurt Neumann",
+  "imageUrl" : "0042897.jpg",
+  "description" : "An astronaut crew on their way to the Moon are unexpectedly propelled by gravitational forces and end up on Mars instead.",
+  "genres" : [ "Sci-Fi" ],
+  "cast" : [ "Lloyd Bridges", "Osa Massen", "John Emery", "Noah Beery Jr.", "Hugh O'Brian", "Morris Ankrum", "Patrick Aherne", "Sherry Moreland", "John Dutra", "Kathy Marlowe", "Tom Coleman", "James Conaty", "Sam Harris", "Judd Holdren", "Stuart Holmes", "Barry Norton", "Cosmo Sardo", "Bert Stevens" ],
+  "tags" : [ ]
+}

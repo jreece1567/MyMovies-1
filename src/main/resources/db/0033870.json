@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0033870",
+  "title" : "The Maltese Falcon",
+  "releaseYear" : "1941",
+  "duration" : "1:40",
+  "rating" : "NOT RATED",
+  "director" : "John Huston",
+  "imageUrl" : "0033870.jpg",
+  "description" : "A private detective takes on a case that involves him with three eccentric criminals, a gorgeous liar, and their quest for a priceless statuette.",
+  "genres" : [ "Crime", "Drama", "Film-Noir" ],
+  "cast" : [ "Humphrey Bogart", "Mary Astor", "Gladys George", "Peter Lorre", "Barton MacLane", "Lee Patrick", "Sydney Greenstreet", "Ward Bond", "Jerome Cowan", "Elisha Cook Jr.", "James Burke", "Murray Alper", "John Hamilton", "Charles Drake", "Chester Gan", "Creighton Hale", "Robert Homans", "William Hopper", "Walter Huston", "Hank Mann", "Jack Mower", "Emory Parnell" ],
+  "tags" : [ ]
+}

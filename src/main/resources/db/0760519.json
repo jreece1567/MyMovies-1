@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0760519",
+  "title" : "New York Underground",
+  "releaseYear" : "1997",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "Elena Mannes",
+  "imageUrl" : "0760519.jpg",
+  "description" : "Follows the construction of the New York City subway system in the early 1900s.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "Len Cariou", "David McCullough" ],
+  "tags" : [ ]
+}

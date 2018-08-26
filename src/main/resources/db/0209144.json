@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0209144",
+  "title" : "Memento",
+  "releaseYear" : "2000",
+  "duration" : "1:53",
+  "rating" : "R",
+  "director" : "Christopher Nolan",
+  "imageUrl" : "0209144.jpg",
+  "description" : "A man, suffering from short-term memory loss, uses notes and tattoos to hunt for the man he thinks killed his wife.",
+  "genres" : [ "Mystery", "Thriller" ],
+  "cast" : [ "Guy Pearce", "Carrie-Anne Moss", "Joe Pantoliano", "Mark Boone Junior", "Russ Fega", "Jorja Fox", "Stephen Tobolowsky", "Harriet Sansom Harris", "Thomas Lennon", "Callum Keith Rennie", "Kimberly Campbell", "Marianne Muellerleile", "Larry Holden", "Buzz Visconti" ],
+  "tags" : [ ]
+}

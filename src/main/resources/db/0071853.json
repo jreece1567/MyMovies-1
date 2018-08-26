@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0071853",
+  "title" : "Monty Python and the Holy Grail",
+  "releaseYear" : "1975",
+  "duration" : "1:31",
+  "rating" : "PG",
+  "director" : "Terry Gilliam",
+  "imageUrl" : "0071853.jpg",
+  "description" : "King Arthur and his knights embark on a low-budget search for the Grail, encountering many very silly obstacles.",
+  "genres" : [ "Adventure", "Comedy", "Fantasy" ],
+  "cast" : [ "Graham Chapman", "John Cleese", "Eric Idle", "Terry Gilliam", "Terry Jones", "Michael Palin", "Connie Booth", "Carol Cleveland", "Neil Innes", "Bee Duffell", "John Young", "Rita Davies", "Avril Stewart", "Sally Kinghorn", "Mark Zycon", "Elspeth Cameron", "Mitsuko Forstater", "Sandy Johnson", "Sandy Rose", "Romilly Squire", "Joni Flynn", "Alison Walker", "Loraine Ward", "Anna Lanski", "Sally Coombe", "Vivienne MacDonald", "Yvonne Dick", "Daphne Darling", "Fiona Gordon", "Gloria Graham", "Judy Lamb", "Tracy Sneddon", "Sylvia Taylor", "Joyce Pollner", "Mary Allen", "Julian Doyle", "Margarita Doyle", "Charles Knode", "Zack Matalon", "William Palin", "Tom Raeburn", "Roy Forge Smith", "Maggie Weston" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0057012",
+  "title" : "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+  "releaseYear" : "1964",
+  "duration" : "1:35",
+  "rating" : "PG",
+  "director" : "Stanley Kubrick",
+  "imageUrl" : "0057012.jpg",
+  "description" : "An insane general starts a process to nuclear holocaust that a war room of politicians and generals frantically try to stop.",
+  "genres" : [ "Comedy", "Sci-Fi", "War" ],
+  "cast" : [ "Peter Sellers", "George C. Scott", "Sterling Hayden", "Keenan Wynn", "Slim Pickens", "Peter Bull", "James Earl Jones", "Tracy Reed", "Jack Creley", "Frank Berry", "Robert O'Neil", "Glenn Beck", "Roy Stephens", "Shane Rimmer", "Hal Galili", "Paul Tamarin", "Laurence Herder", "Gordon Tanner", "John McCarthy", "Burnell Tucker" ],
+  "tags" : [ ]
+}

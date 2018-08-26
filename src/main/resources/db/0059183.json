@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0059183",
+  "title" : "The Flight of the Phoenix",
+  "releaseYear" : "1965",
+  "duration" : "2:22",
+  "rating" : "APPROVED",
+  "director" : "Robert Aldrich",
+  "imageUrl" : "0059183.jpg",
+  "description" : "After a plane crash in the Sahara, one of the survivors says he's an airplane designer and they can make a flyable plane from the wreckage.",
+  "genres" : [ "Adventure", "Drama" ],
+  "cast" : [ "James Stewart", "Richard Attenborough", "Peter Finch", "Hardy Krüger", "Ernest Borgnine", "Ian Bannen", "Ronald Fraser", "Christian Marquand", "Dan Duryea", "George Kennedy", "Gabriele Tinti", "Alex Montoya", "Peter Bravos", "William Aldrich", "Barrie Chase", "Stanley Ralph Ross" ],
+  "tags" : [ ]
+}

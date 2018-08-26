@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0093428",
+  "title" : "The Living Daylights",
+  "releaseYear" : "1987",
+  "duration" : "2:10",
+  "rating" : "PG",
+  "director" : "John Glen",
+  "imageUrl" : "0093428.jpg",
+  "description" : "James Bond is living on the edge to stop an evil arms dealer from starting another world war. Bond crosses all seven continents in order to stop the evil Whitaker and General Koskov.",
+  "genres" : [ "Action", "Adventure", "Thriller" ],
+  "cast" : [ "Timothy Dalton", "Maryam d'Abo", "Jeroen Krabbé", "Joe Don Baker", "John Rhys-Davies", "Art Malik", "Andreas Wisniewski", "Thomas Wheatley", "Desmond Llewelyn", "Robert Brown", "Geoffrey Keen", "Walter Gotell", "Caroline Bliss", "John Terry", "Virginia Hey", "John Bowe", "Julie T. Wallace", "Belle Avery", "Catherine Rabett", "Dulice Liecier", "Nadim Sawalha", "Alan Talbot", "Carl Rigg", "Tony Cyrus", "Atik Mohamed", "Michael Moor", "Sumar Khan", "Ken Sharrock", "Peter Porteous", "Anthony Carrick", "Frederick Warder", "Glyn Baker", "Scott Hoxby", "Bill Weston", "Richard Cubison", "Heinz Winter", "Leslie French", "Odette Benatar", "Dianna Casale", "Sharon Devlin", "Femi Gardiner", "Patricia Keefer", "Ruddy Rodríguez", "Mayte Sanchez", "Cela Savannah", "Karen Seeberg", "Waris Dirie", "Karen Williams", "Del Baker", "John Barry", "Marc Boyle", "Barbara Broccoli", "Graham Cole", "Simon Crane", "Gregor Grubhofer", "Alan Harris", "Suzy Herman", "Michel Julienne", "Gertan Klauber", "Derek Lyons", "Robert Miranda", "Michael Percival", "Hanno Pöschl", "Kerry Shale", "Chris Webb", "Paul Weston", "Nick Wilkinson", "Jane Wilson", "Michael G. Wilson" ],
+  "tags" : [ "007" ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "2026592",
+  "title" : "The Story of Maths",
+  "releaseYear" : "2008",
+  "duration" : "1:00",
+  "rating" : "TV-G",
+  "director" : "Karen McGann",
+  "imageUrl" : "2026592.jpg",
+  "description" : "Oxford professor Marcus du Sautoy presents a history of math, from the discovery of decimals in ancient Egypt to the great unsolved problems of today. This miniseries covers such subjects as the invention of zero and the Riemann hypothesis, the contributions of great mathematicians including Pythagoras, Plato and Euclid, and some of the biggest unsolved problems that confronted math scholars in the 20th century. Also, du Sautoy examines key mathematical ideas and their influence on today's science, technology and culture.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Marcus du Sautoy", "Christopher Anagnostakis", "John Britton", "Jim Carlson", "Serafina Cuomo", "Annette Imhausen", "Eleanor Robson" ],
+  "tags" : [ "Science" ]
+}

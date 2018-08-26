@@ -1,0 +1,13 @@
+{
+  "imdbId" : "2527336",
+  "title" : "Star Wars - Episode VIII - The Last Jedi",
+  "releaseYear" : "2017",
+  "duration" : "2:32",
+  "rating" : "PG-13",
+  "director" : "Rian Johnson",
+  "imageUrl" : "2527336.jpg",
+  "description" : "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares for battle with the First Order.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Mark Hamill", "Carrie Fisher", "Adam Driver", "Daisy Ridley", "John Boyega", "Oscar Isaac", "Andy Serkis", "Lupita Nyong'o", "Domhnall Gleeson", "Anthony Daniels", "Gwendoline Christie", "Kelly Marie Tran", "Laura Dern", "Benicio Del Toro", "Frank Oz", "Billie Lourd", "Joonas Suotamo", "Amanda Lawrence", "Jimmy Vee", "Brian Herring", "Dave Chapman", "Justin Theroux", "Tim Rose", "Tom Kane", "Adrian Edmondson", "Mark Lewis Jones", "Hermione Corfield", "Veronica Ngo", "Noah Segan", "Jamie Christopher", "Paul Kasey", "Michaela Coel", "Jonathan Harden", "Dan Euston", "Priyanga Burford", "Navin Chowdhry", "Andrew Jack", "Crystal Clarke", "Aki Omoshaybi", "Togo Igawa", "Hugh Skinner", "Tim Steed", "Simon Lowe", "Joe Van Moyland", "Shauna Macdonald", "Darren Morfitt", "Gerard Monaco", "Kate Dickie", "Patrick O'Kane", "Paul Bazely", "Orion Lee", "Amira Ghazalla", "Ralph Ineson", "Akshay Kumar", "Michael Jibson", "Luke Neal", "Andy Nyman", "Temirlan Blaev", "Josiah Oniha", "Sara Heller", "Matthew Sharp", "Lily Cole", "Warwick Davis", "Joseph Gordon-Levitt", "Kiran Shah", "Mike Quinn", "Gareth Edwards", "Jack Greenlees", "Danny Sapani", "Kevin Layne", "Ben Morris", "Andrew Abbott", "Chris Adams", "Martin Bratanov", "Dante Briggins", "Jair Burgos", "Glen Carroll", "Bern Collaço", "Joe Cornish", "Cavin Cornwall", "James Cox", "Quentin Devine", "Gary the Dog", "Nick Donald", "Steve Doyle", "James Filanowski", "David R. Grant", "Omar Gudjonsson", "Chelsea Hamill", "Griffin Hamill", "Nathan Hamill", "Christopher Jaciow", "Tobias James-Samuels", "Lucas Jones", "Mickey Lewis", "Tyrone Love", "Antonio Lujak", "Andrew Mackinnon", "Josh Methven", "Sandeep Mohan", "Ross Moneypenny", "Florian Robin", "David M. Santana", "Tanner Scott", "Clem So", "Leo Thompson", "George Vere", "Andy Wareham", "Dean Weir", "William Willoughby", "Latesha Wilson", "Edgar Wright", "Oscar Wright", "Liang Yang", "Karanja Yorke" ],
+  "tags" : [ "StarWars" ]
+}

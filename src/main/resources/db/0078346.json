@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0078346",
+  "title" : "Superman",
+  "releaseYear" : "1978",
+  "duration" : "2:23",
+  "rating" : "PG",
+  "director" : "Richard Donner",
+  "imageUrl" : "0078346.jpg",
+  "description" : "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest superhero.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Marlon Brando", "Gene Hackman", "Christopher Reeve", "Ned Beatty", "Jackie Cooper", "Glenn Ford", "Trevor Howard", "Margot Kidder", "Jack O'Halloran", "Valerie Perrine", "Maria Schell", "Terence Stamp", "Phyllis Thaxter", "Susannah York", "Jeff East", "Marc McClure", "Sarah Douglas", "Harry Andrews", "Vass Anderson", "John Hollis", "James Garbutt", "Michael Gover", "David Neal", "William Russell", "Penelope Lee", "John Stuart", "Alan Cullen", "Lee Quigley", "Aaron Smolinski", "Diane Sherry Case", "Jeff Atcheson", "Brad Flock", "David Petrou", "Billy J. Mitchell", "Robert Henderson", "Larry Lamb", "James Brockington", "John Cassady", "John F. Parker", "Antony Scott", "Ray Evans", "Sue Shifrin", "Miquel Brown", "Vincent Marzello", "Benjamin Feitelson", "Lise Hilboldt", "Leueen Willoughby", "Jill Ingham", "Pieter Stuyck", "Rex Reed", "Weston Gavin", "Steve Kahan", "Ray Hassett", "Randy Jurgensen", "Matt Russo", "Colin Skeaping", "Bo Rucker", "Paul Avery", "David Baxt", "George Harris II", "Michael Harrigan", "John Cording", "Raymond Thompson", "Oz Clarke", "Rex Everhart", "Jayne Tottman", "Frank Lazarus", "Brian Protheroe", "Lawrence Trimble", "Robert Whelan", "David Calder", "Norwich Duff", "Keith Alexander", "Michael Ensign", "Larry Hagman", "Paul Tuerpe", "Graham McPherson", "David Yorston", "Robert O'Neill", "Robert MacLeod", "John Ratzenberger", "Alan Tilvern", "Phil Brown", "Bill Bailey", "Burnell Tucker", "Chief Tug Smith", "Norman Warwick", "Chuck Julian", "Colin Etherington", "Mark Wynter", "Roy Stevens", "Kirk Alyn", "Bruce Boa", "Robert Dahdah", "David de Keyser", "Richard Donner", "Harry Fielder", "Edward Finneran", "Noel Neill", "Pam Rose", "Tony Selby" ],
+  "tags" : [ "DC" ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0100814",
+  "title" : "Tremors",
+  "releaseYear" : "1990",
+  "duration" : "1:36",
+  "rating" : "PG-13",
+  "director" : "Ron Underwood",
+  "imageUrl" : "0100814.jpg",
+  "description" : "Natives of a small isolated town defend themselves against strange underground creatures which are killing them one by one.",
+  "genres" : [ "Comedy", "Horror", "Sci-Fi" ],
+  "cast" : [ "Kevin Bacon", "Fred Ward", "Finn Carter", "Michael Gross", "Reba McEntire", "Robert Jayne", "Charlotte Stewart", "Tony Genaro", "Ariana Richards", "Richard Marcus", "Victor Wong", "Sunshine Parker", "Michael Dan Wagner", "Conrad Bachmann", "Bibi Besch", "John Goodwin", "John Pappas", "Tom Woodruff Jr." ],
+  "tags" : [ ]
+}

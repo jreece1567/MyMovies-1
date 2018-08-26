@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0996994",
+  "title" : "The War",
+  "releaseYear" : "2007",
+  "duration" : "2:04",
+  "rating" : "TV-14",
+  "director" : "Ken Burns",
+  "imageUrl" : "0996994.jpg",
+  "description" : "A seven-part series focusing on the many ways in which the Second World War impacted the lives of American families.",
+  "genres" : [ "Documentary", "War" ],
+  "cast" : [ "Quentin Aanenson", "Adam Arkin", "Kevin Conway", "Keith David", "Josh Lucas", "Tom Hanks", "Samuel L. Jackson", "Burt Wilson", "Daniel Inouye", "Katharine Phillips", "Maurice Bell", "Glenn D. Frazier", "Paul Fussell", "Sam Hynes", "Dwain Luce", "Sascha Weinzheimer", "Olga Ciarlo", "Barbara Covington", "Anne DeVico", "Leo Goldberg", "John Gray", "Jackie Greer", "Rebecca Holtz", "Robert Kashiwagi", "Ray Leopold", "Burnett Miller", "Emma Belle Pelcher", "Sidney Phillips", "Ray Pittman", "Asako Tokuno", "Joseph Vaghi", "Pete Arias", "Earl Burke", "Bobby Cannavale", "Ward Chamberlin", "Tom Ciarlo", "Walter Ehlers", "John Hope Franklin", "Tom Galloway", "Herndon Inge", "Robert Kasawaghi", "William Douglas Lansford", "Emily Lewis", "Carolyn McCormick", "Clyde Odum", "Barbara Perkins", "Dolores Silva", "Tim Tokuno", "Robert Wahlberg" ],
+  "tags" : [ "WW-II" ]
+}

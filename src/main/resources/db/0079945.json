@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0079945",
+  "title" : "Star Trek I: The Motion Picture",
+  "releaseYear" : "1979",
+  "duration" : "2:12",
+  "rating" : "PG",
+  "director" : "Robert Wise",
+  "imageUrl" : "0079945.jpg",
+  "description" : "When an alien spacecraft of enormous power is spotted approaching Earth, Admiral Kirk resumes command of the Starship Enterprise in order to intercept, examine and hopefully stop the intruder.",
+  "genres" : [ "Adventure", "Mystery", "Sci-Fi" ],
+  "cast" : [ "William Shatner", "Leonard Nimoy", "DeForest Kelley", "James Doohan", "George Takei", "Majel Barrett", "Walter Koenig", "Nichelle Nichols", "Persis Khambatta", "Stephen Collins", "Grace Lee Whitney", "Mark Lenard", "Billy Van Zandt", "Roger Aaron Brown", "Gary Faga", "David Gautreaux", "John Gowans", "Howard Itzkowitz", "Jon Rashad Kamal", "Marcy Lafferty", "Michele Povill", "Jeri McBride", "Terrence O'Connor", "Michael Rougas", "Susan O'Sullivan", "Ralph Brannen", "Ralph Byers", "Paula Crist", "Iva Lane", "Franklyn Seales", "Momo Yashima", "Jimmie Booth", "Joel Kramer", "Bill McIntosh", "Dave Moordigian", "Tom Morga", "Tony Rocco", "Joel Schultz", "Craig Thomas", "Edna Glover", "Norman Stuart", "Paul Weber", "Joshua Gallegos", "Lisa Chess", "Leslie C. Howard", "Sayra Hummel", "Junero Jennings", "Richard Arnold", "Fred Bronson", "Celeste Cartier", "Vern Dietsche", "Christopher Doohan", "Montgomery Doohan", "Scott Dweck", "Dennis Fischer", "Cassandra Foster", "Barnetta Fowler", "David Gerrold", "William Guest", "Sharon Hesky", "James T. Kirk", "Donald J. Long", "Winnie McCarthy", "Barbara Minster", "Ve Neill", "Susan Sackett", "Frank Salsedo", "Louise Stange-Wahl", "Bjo Trimble", "Scott Whitney", "Millicent Wise" ],
+  "tags" : [ "Star Trek" ]
+}

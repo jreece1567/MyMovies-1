@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0059800",
+  "title" : "Thunderball",
+  "releaseYear" : "1965",
+  "duration" : "2:10",
+  "rating" : "APPROVED",
+  "director" : "Terence Young",
+  "imageUrl" : "0059800.jpg",
+  "description" : "James Bond heads to The Bahamas to recover two nuclear warheads stolen by SPECTRE agent Emilio Largo in an international extortion scheme.",
+  "genres" : [ "Action", "Adventure", "Thriller" ],
+  "cast" : [ "Sean Connery", "Claudine Auger", "Adolfo Celi", "Luciana Paluzzi", "Rik Van Nutter", "Guy Doleman", "Molly Peters", "Martine Beswick", "Bernard Lee", "Desmond Llewelyn", "Lois Maxwell", "Roland Culver", "Earl Cameron", "Paul Stassino", "Rose Alba", "Philip Locke", "George Pravda", "Michael Brennan", "Leonard Sachs", "Edward Underdown", "Reginald Beckwith", "Harold Sanderson", "Anthony Bailey", "Gábor Baraker", "Amelia Bayntun", "Anthony Blackshaw", "Dana Broccoli", "Courtney Brown", "Ian Bulloch", "Clive Cazes", "Pauline Chamberlain", "Cecil Cheng", "Catherine Clemence", "Harold Coyne", "Michael Culver", "Bill Cummings", "Anthony Dawson", "Henry Ford II", "Jack Gwillim", "Neil Hallett", "Diane Hartford", "Philo Hauser", "George Hilsdon", "Patrick Holt", "Murray Kash", "Suzy Kendall", "John Ketteringham", "Roy Lansford", "George Leech", "André Maranne", "Kevin McClory", "Albert Michel", "Mitsouko", "Derek Partridge", "Eric Pohlmann", "Lloyd Reckord", "Robert Rietty", "Peter Roy", "Charles Russhon", "Bill Sawyer", "Bob Simmons", "Philip Stone", "Nikki Van der Zyl", "Sheree Winton" ],
+  "tags" : [ "007" ]
+}

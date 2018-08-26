@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0090605",
+  "title" : "Aliens",
+  "releaseYear" : "1986",
+  "duration" : "2:17",
+  "rating" : "R",
+  "director" : "James Cameron",
+  "imageUrl" : "0090605.jpg",
+  "description" : "The planet from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Sigourney Weaver", "Carrie Henn", "Michael Biehn", "Paul Reiser", "Lance Henriksen", "Bill Paxton", "Jenette Goldstein", "William Hope", "Al Matthews", "Mark Rolston", "Ricco Ross", "Colette Hiller", "Daniel Kash", "Cynthia Dale Scott", "Tip Tipping", "Trevor Steedman", "Paul Maxwell", "Valerie Colgan", "Alan Polonsky", "Alibe Parsons", "Blain Fairman", "Barbara Coles", "Carl Toop", "John Lees" ],
+  "tags" : [ ]
+}

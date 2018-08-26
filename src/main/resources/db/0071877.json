@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0071877",
+  "title" : "Murder on the Orient Express",
+  "releaseYear" : "1974",
+  "duration" : "2:08",
+  "rating" : "PG",
+  "director" : "Sidney Lumet",
+  "imageUrl" : "0071877.jpg",
+  "description" : "In 1935, when his train is stopped by deep snow, detective Hercule Poirot is called on to solve a murder that occurred in his car the night before.",
+  "genres" : [ "Crime", "Drama", "Mystery" ],
+  "cast" : [ "Albert Finney", "Lauren Bacall", "Martin Balsam", "Ingrid Bergman", "Jacqueline Bisset", "Jean-Pierre Cassel", "Sean Connery", "John Gielgud", "Wendy Hiller", "Anthony Perkins", "Vanessa Redgrave", "Rachel Roberts", "Richard Widmark", "Michael York", "Colin Blakely", "George Coulouris", "Denis Quilley", "Vernon Dobtcheff", "Jeremy Lloyd", "John Moffatt", "David de Keyser", "Leon Lissek", "Robert Rietty", "George Silver", "Vic Tablian", "Nubar Terziyan" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0067525",
+  "title" : "The Omega Man",
+  "releaseYear" : "1971",
+  "duration" : "1:38",
+  "rating" : "GP",
+  "director" : "Boris Sagal",
+  "imageUrl" : "0067525.jpg",
+  "description" : "Army doctor Robert Neville struggles to create a cure for the plague that wiped out most of the human race.",
+  "genres" : [ "Action", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Charlton Heston", "Anthony Zerbe", "Rosalind Cash", "Paul Koslo", "Eric Laneuville", "Lincoln Kilpatrick", "Jill Giraldi", "Anna Aries", "Brian Tochi", "DeVeren Bookwalter", "John Dierkes", "Monika Henreid", "Linda Redfearn", "Forrest Wood", "Steve Goldstein" ],
+  "tags" : [ ]
+}

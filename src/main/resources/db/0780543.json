@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0780543",
+  "title" : "Journey of Man",
+  "releaseYear" : "2003",
+  "duration" : "2:00",
+  "rating" : "NOT RATED",
+  "director" : "Clive Maltby",
+  "imageUrl" : "0780543.jpg",
+  "description" : "Traces the expansion of the human race from central Africa to Asia to the edge of South America.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "William H. Calvin", "Luigi Luca Cavalli-Sforza", "Nina Jablonski", "Richard Klein", "Michel Lorblanchet", "Zakirzhan Niyazov", "R.M. Pitchappan", "Merritt Ruhlen", "Peter Underhill", "Spencer Wells", "Doug Williams", "Royden Yates" ],
+  "tags" : [ "Science" ]
+}

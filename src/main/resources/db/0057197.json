@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0057197",
+  "title" : "Jason and the Argonauts",
+  "releaseYear" : "1963",
+  "duration" : "1:44",
+  "rating" : "APPROVED",
+  "director" : "Don Chaffey",
+  "imageUrl" : "0057197.jpg",
+  "description" : "The legendary Greek hero leads a team of intrepid adventurers in a perilous quest for the legendary Golden Fleece.",
+  "genres" : [ "Adventure", "Family", "Fantasy" ],
+  "cast" : [ "Todd Armstrong", "Nancy Kovack", "Gary Raymond", "Laurence Naismith", "Niall MacGinnis", "Michael Gwynn", "Douglas Wilmer", "Jack Gwillim", "Honor Blackman", "John Cairney", "Patrick Troughton", "Andrew Faulds", "Nigel Green", "Ennio Antonelli", "John Crawford", "Aldo Cristiani", "Eva Haddon", "Ferdinando Poggi", "Doug Robinson", "Davina Taylor", "Tim Turner" ],
+  "tags" : [ ]
+}

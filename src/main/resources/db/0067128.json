@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0067128",
+  "title" : "Get Carter",
+  "releaseYear" : "1971",
+  "duration" : "1:52",
+  "rating" : "R",
+  "director" : "Mike Hodges",
+  "imageUrl" : "0067128.jpg",
+  "description" : "When his brother dies under mysterious circumstances in a car accident, London gangster Jack Carter travels to Newcastle to investigate.",
+  "genres" : [ "Crime", "Thriller" ],
+  "cast" : [ "Michael Caine", "Ian Hendry", "Britt Ekland", "John Osborne", "Tony Beckley", "George Sewell", "Geraldine Moffat", "Dorothy White", "Rosemarie Dunham", "Petra Markham", "Alun Armstrong", "Bryan Mosley", "Glynn Edwards", "Bernard Hepton", "Terence Rigby", "John Bindon", "Godfrey Quigley", "Kevin Brennan", "Maxwell Deas", "Liz McKenzie", "John Hussey", "Ben Aris", "Kitty Atwood", "Denea Wilde", "Geraldine Sherman", "Joy Merlyn", "Yvonne Michaels", "Alan Hockey", "Karl Howard", "Ellis Dale", "Alexander Morton", "John Quarmby" ],
+  "tags" : [ ]
+}

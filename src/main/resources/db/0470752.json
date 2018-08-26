@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0470752",
+  "title" : "Ex Machina",
+  "releaseYear" : "2015",
+  "duration" : "1:48",
+  "rating" : "R",
+  "director" : "Alex Garland",
+  "imageUrl" : "0470752.jpg",
+  "description" : "A young programmer is selected to participate in a ground-breaking experiment in artificial intelligence by evaluating the human qualities of a breath-taking female A.I.",
+  "genres" : [ "Drama", "Sci-Fi" ],
+  "cast" : [ "Domhnall Gleeson", "Corey Johnson", "Oscar Isaac", "Alicia Vikander", "Sonoya Mizuno", "Claire Selby", "Symara A. Templeman", "Gana Bayarsaikhan", "Tiffany Pisani", "Elina Alminas", "Chelsea Li", "Ramzan Miah", "Caitlin Morton", "Deborah Rosan", "Johanna Thea", "Evie Wray" ],
+  "tags" : [ ]
+}

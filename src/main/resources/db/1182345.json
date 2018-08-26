@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1182345",
+  "title" : "Moon",
+  "releaseYear" : "2009",
+  "duration" : "1:37",
+  "rating" : "R",
+  "director" : "Duncan Jones",
+  "imageUrl" : "1182345.jpg",
+  "description" : "Astronaut Sam Bell has a quintessentially personal encounter toward the end of his three-year stint on the Moon, where he, working alongside his computer, GERTY, sends back to Earth parcels of a resource that has helped diminish our planet's power problems.",
+  "genres" : [ "Drama", "Mystery", "Sci-Fi" ],
+  "cast" : [ "Sam Rockwell", "Kevin Spacey", "Dominique McElligott", "Rosie Shaw", "Adrienne Shaw", "Kaya Scodelario", "Benedict Wong", "Matt Berry", "Malcolm Stewart", "Robin Chalk", "Gavin Rothery" ],
+  "tags" : [ ]
+}

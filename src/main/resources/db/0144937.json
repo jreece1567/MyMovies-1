@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0144937",
+  "title" : "Frank Lloyd Wright",
+  "releaseYear" : "1998",
+  "duration" : "2:26",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "0144937.jpg",
+  "description" : "A biography of the life and work of the American architect.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "Edward Herrmann", "Philip Bosco", "Julie Harris", "Sab Shimono", "William Cronon", "Brendan Gill", "Paul Goldberger", "Philip Johnson", "Maya Lin", "Vincent Scully", "Meryle Secrest", "Robert A.M. Stern", "Edgar Tafel", "Anne Whiston Spirn", "David Wright", "Eric Lloyd Wright", "Tim Wright" ],
+  "tags" : [ ]
+}

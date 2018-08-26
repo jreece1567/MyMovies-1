@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0285080",
+  "title" : "FDR",
+  "releaseYear" : "1994",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "David Grubin",
+  "imageUrl" : "0285080.jpg",
+  "description" : "Polio at age 39, president at age 50. Explore the public and private life of a determined man who steered this country through two monumental crises: the Depression and World War II. FDR served as president longer than any other, and his legacy still shapes our understanding of the role of government and the presidency.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Winston Churchill", "David McCullough", "Eleanor Roosevelt", "Franklin D. Roosevelt", "Joseph Stalin", "Harry S. Truman", "Geoffrey C. Ward" ],
+  "tags" : [ "President" ]
+}

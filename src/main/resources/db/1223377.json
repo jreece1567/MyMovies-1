@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1223377",
+  "title" : "The Machine That Made Us",
+  "releaseYear" : "2008",
+  "duration" : "0:59",
+  "rating" : "TV-G",
+  "director" : "Patrick McGrady",
+  "imageUrl" : "1223377.jpg",
+  "description" : "A look at the story of Johann Gutenberg, inventor of the world's first printing press in the 15th century, and an exploration of how and why the machine was invented.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Stephen Fry", "Barbara Rupp", "Cornelia Schneider", "Eva Hanebutt-Benz", "Alan May", "Martin Andrews", "John Man", "Stan Nelson", "Roberto Mazzucchelli", "Helmut Rohlfing" ],
+  "tags" : [ ]
+}

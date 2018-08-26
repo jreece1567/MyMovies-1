@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0086393",
+  "title" : "Superman III",
+  "releaseYear" : "1983",
+  "duration" : "2:05",
+  "rating" : "PG",
+  "director" : "Richard Lester",
+  "imageUrl" : "0086393.jpg",
+  "description" : "Synthetic kryptonite laced with tobacco tar splits Superman in two: good Clark Kent and bad Man of Steel.",
+  "genres" : [ "Action", "Comedy", "Fantasy" ],
+  "cast" : [ "Christopher Reeve", "Richard Pryor", "Jackie Cooper", "Marc McClure", "Annette O'Toole", "Annie Ross", "Pamela Stephenson", "Robert Vaughn", "Margot Kidder", "Gavan O'Herlihy", "Nancy Roberts", "Graham Stark", "Henry Woolf", "Gordon Rollings", "Peter Wear", "Justin Case", "Bob Todd", "Terry Camilleri", "Stefan Kalipha", "Helen Horton", "Lou Hirsch", "Bill Reimbold", "Shane Rimmer", "Al Matthews", "Barry Dennen", "Enid Saunders", "Kevin Harrison Cork", "Robert Henderson", "Paul Kaethler", "R.J. Bell", "Pamela Mandell", "Peter Whitman", "Ronnie Brody", "Sandra Dickinson", "Philip Gilbert", "Pat Starr", "Gordon Signer", "John Bluthal", "George Chisholm", "David Fielder", "Robert Beatty", "Christopher Malcolm", "Larry Lamb", "Frank Oz", "Roy Alon", "Stan Edmonds", "Les Kimber", "Grant Lowe", "Derek Lyons", "Mildred Shay", "Aaron Smolinski", "Geoffrey Steele", "David Winning", "Fred Wood" ],
+  "tags" : [ "DC" ]
+}

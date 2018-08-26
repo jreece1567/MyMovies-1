@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0077838",
+  "title" : "The Last Waltz",
+  "releaseYear" : "1978",
+  "duration" : "1:57",
+  "rating" : "PG",
+  "director" : "Martin Scorsese",
+  "imageUrl" : "0077838.jpg",
+  "description" : "A film account and presentation of the final concert of The Band.",
+  "genres" : [ "Documentary", "Music" ],
+  "cast" : [ "The Band", "Rick Danko", "Robbie Robertson", "Richard Manuel", "Levon Helm", "Garth Hudson", "Eric Clapton", "Neil Diamond", "Bob Dylan", "Joni Mitchell", "Neil Young", "Emmylou Harris", "Ringo Starr", "Paul Butterfield", "Dr. John", "Van Morrison", "Ronnie Hawkins", "The Staple Singers", "Muddy Waters", "Ron Wood", "Michael McClure", "Lawrence Ferlinghetti", "Martin Scorsese", "Jim Gordon", "Tom Malone", "Howard Johnson", "Jerry Hey", "Richard Cooper", "Charlie Keagle", "Larry Packer", "Bob Margolin", "Bill Graham", "Robert Charles Guidry", "Pinetop Perkins", "Carl Radle" ],
+  "tags" : [ ]
+}

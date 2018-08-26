@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0120737",
+  "title" : "The Lord of the Rings: The Fellowship of the Ring",
+  "releaseYear" : "2001",
+  "duration" : "2:58",
+  "rating" : "PG-13",
+  "director" : "Peter Jackson",
+  "imageUrl" : "0120737.jpg",
+  "description" : "A meek hobbit of The Shire and eight companions set out on a journey to Mount Doom to destroy the One Ring and the dark lord Sauron.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Alan Howard", "Elijah Wood", "Noel Appleby", "Sean Astin", "Sala Baker", "Sean Bean", "Cate Blanchett", "Orlando Bloom", "Billy Boyd", "Marton Csokas", "Megan Edwards", "Michael Elsworth", "Mark Ferguson", "Ian Holm", "Christopher Lee", "Lawrence Makoare", "Andy Serkis", "Brent McIntyre", "Ian McKellen", "Peter McKenzie", "Sarah McLeod", "Dominic Monaghan", "Viggo Mortensen", "Ian Mune", "Craig Parker", "Cameron Rhodes", "John Rhys-Davies", "Martyn Sanderson", "Harry Sinclair", "Liv Tyler", "David Weatherley", "Hugo Weaving", "Victoria Beynon-Cole", "Lee Hartley", "Sam La Hood", "Chris Streeter", "Phil Grieve", "Jonathan Jordan", "Semi Kuresa", "Clinton Ulyatt", "Paul Bryson", "Lance Fabian Kemp", "Jono Manks", "Ben Price", "Billy Jackson", "Katie Jackson", "Peter Corrigan", "Lori Dungey", "Norman Forsey", "William Johnson", "Elizabeth Moody", "Brian Sergent", "Timothy Bartlett", "Jarl Benzon", "Jørn Benzon", "Rachel Clentworth", "Sabine Crossen", "Taea Hartwell", "Peter Jackson", "Alan Lee", "Thomas McGinty", "Bret McKenzie", "Kate O'Rourke", "Shane Rangi" ],
+  "tags" : [ "Tolkien" ]
+}

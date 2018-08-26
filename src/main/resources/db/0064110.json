@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0064110",
+  "title" : "The Bridge at Remagen",
+  "releaseYear" : "1969",
+  "duration" : "1:55",
+  "rating" : "M",
+  "director" : "John Guillermin",
+  "imageUrl" : "0064110.jpg",
+  "description" : "As the Allied armies close in, the Nazis decide to blow up the last Rhine bridge, trapping their own men on the wrong side. But will it happen?",
+  "genres" : [ "Action", "Drama", "War" ],
+  "cast" : [ "George Segal", "Robert Vaughn", "Ben Gazzara", "Bradford Dillman", "E.G. Marshall", "Peter van Eyck", "Hans Christian Blech", "Heinz Reincke", "Joachim Hansen", "Sonja Ziemann", "Anna Gaël", "Vít Olmer", "Bo Hopkins", "Robert Logan", "Matt Clark", "Steve Sandor", "Frank Webb", "Tom Heaton", "Paul Prokop", "Richard Münch", "Günter Meisner", "Rudolf Kalina", "Rudolf Jelínek", "Fritz Ford", "Pavel Solty", "Rolf Jahncke", "Zdenek Braunschläger", "Jan Schánilec", "Václav Neuzil", "Vladimír T. Gottwald", "Heikedine Körting", "Karel Mares" ],
+  "tags" : [ "WW-II" ]
+}

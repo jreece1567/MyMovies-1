@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0800080",
+  "title" : "The Incredible Hulk",
+  "releaseYear" : "2008",
+  "duration" : "1:52",
+  "rating" : "PG-13",
+  "director" : "Louis Leterrier",
+  "imageUrl" : "0800080.jpg",
+  "description" : "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he emerges whenever he loses his temper. However, Banner then must fight a soldier who unleashes himself as a threat stronger than he.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Edward Norton", "Liv Tyler", "Tim Roth", "William Hurt", "Tim Blake Nelson", "Ty Burrell", "Christina Cabot", "Peter Mensah", "Lou Ferrigno", "Paul Soles", "Débora Nascimento", "Greg Bryk", "Chris Owens", "Al Vrkljan", "Adrian Hein", "John MacDonald", "Shaun McComb", "Simon Wong", "Pedro Salvín", "Julio Cesar Torres Dantas", "Raimundo Camargo Nascimento", "Nick Alachiotis", "Jason Burke", "Grant Nickalls", "Joris Jarsky", "Arnold Pinnock", "Tig Fong", "Jason Hunter", "Maxwell McCabe-Lokos", "David Collins", "John Carvalho", "Robin Wilcock", "Wayne Robson", "Javier Lambert", "Martin Starr", "Chris Ratz", "Todd Hofley", "Joe La Loggia", "Tamsen McDonough", "Michael Kenneth Williams", "Roberto Bakker", "Ruru Sacha", "James Downing", "Rickson Gracie", "Stephen Gartner", "Nicholas Rose", "Genelle Williams", "P.J. Kerr", "Jee-Yun Lee", "Desmond Campbell", "DeShaun Clarke", "Tony Nappo", "Aaron Berg", "David Meunier", "Tre Smith", "Moses Nyarko", "Carlos A. González", "Yan Regis", "Stephen Broussard", "Robert Morse", "Matt Purdy", "Lenka Matuska", "Scott Magee", "Wes Berger", "Carla Nascimento", "Krista Vendy", "Mila Stromboni", "Jim Annan", "John Atkin", "David Bianchi", "Bill Bixby", "John Campea", "Rick Cordeiro", "Brandon Cruz", "Fabio Dorea", "Robert Downey Jr.", "Kieran Gallant", "Jay Hunter", "Dave Kiner", "Stan Lee", "Richard D. Leko", "Kevin Lise", "Dan MacDonald", "François Mequer", "Ishan Morris", "Scott Murphy", "Billy Parrott", "Imali Perera", "Kristina Pesic", "Avi Phillips", "Jeffrey W. Pike", "T.J. Smith", "Dylan Taylor", "Max Topplin", "Miyoshi Umeki", "J.A. Worthington", "Russell Yuen" ],
+  "tags" : [ "Marvel" ]
+}

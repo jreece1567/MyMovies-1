@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0848228",
+  "title" : "The Avengers",
+  "releaseYear" : "2012",
+  "duration" : "2:23",
+  "rating" : "PG-13",
+  "director" : "Joss Whedon",
+  "imageUrl" : "0848228.jpg",
+  "description" : "Nick Fury of S.H.I.E.L.D. assembles a team of superhumans to save the planet from Loki and his army.",
+  "genres" : [ "Action", "Fantasy" ],
+  "cast" : [ "Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Scarlett Johansson", "Jeremy Renner", "Tom Hiddleston", "Clark Gregg", "Cobie Smulders", "Stellan Skarsgård", "Samuel L. Jackson", "Gwyneth Paltrow", "Paul Bettany", "Alexis Denisof", "Tina Benko", "Jerzy Skolimowski", "Kirill Nikiforov", "Jeff Wolfe", "M'laah Kaur Singh", "Rashmi Rustagi", "Powers Boothe", "Jenny Agutter", "Arthur Darbinyan", "Donald Li", "Warren Kole", "Alicia Sixtos", "Jesse Garcia", "Maximiliano Hernández", "Dieter Riesle", "Kenneth Tigar", "Walter Perez", "Harry Dean Stanton", "Josh Cowdery", "Ashley Johnson", "Katsumi Komatsu", "Yumiko Komatsu", "Momoko Komatsu", "Robert Clohessy", "Enver Gjokaj", "Fernanda Toker", "Andrea Vecchio", "Robin Swoboda", "Brent McGee", "Jamie McShane", "Michael Zhang", "William Christopher Stephens", "Kelley Robins", "Romy Rosemont", "James Eckhouse", "Stan Lee", "Pat Kiernan", "Damion Poitier", "Thomas Roberts", "Ricardo Andres", "Logan Bennett", "Mayank Bhatter", "Jeffrey Feingold", "Lou Ferrigno", "Eric Frank", "Alexander Christopher Jones", "Annette Lawless", "Kimberly J. Mahoney", "Todd Manes", "Jorge Mardel", "Jillian Morgese", "Joti Nagra", "Joseph O'Brien", "Nate Paige", "Alexander Daniel Pimentel", "Jaime Powers", "Robert B. Schneider IV", "Alonda Shevette", "Douglas Slygh", "Colin Strause", "Robert P. Thitoff", "Shane Thompson", "Jerry Lee Tucker", "Tai Urban", "Chris Vaina", "Sandra Weston" ],
+  "tags" : [ "Marvel" ]
+}

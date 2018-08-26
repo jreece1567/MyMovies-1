@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0120324",
+  "title" : "A Simple Plan",
+  "releaseYear" : "1999",
+  "duration" : "2:01",
+  "rating" : "R",
+  "director" : "Sam Raimi",
+  "imageUrl" : "0120324.jpg",
+  "description" : "When three blue collar acquaintances come across millions of dollars in lost cash they make a plan to keep their find from the authorities but find complications and mistrust weaving its way into their plan.",
+  "genres" : [ "Crime", "Drama", "Thriller" ],
+  "cast" : [ "Bill Paxton", "Bridget Fonda", "Billy Bob Thornton", "Brent Briscoe", "Jack Walsh", "Chelcie Ross", "Becky Ann Baker", "Gary Cole", "Bob Davis", "Peter Syvertsen", "Tom Carey", "John Paxton", "Marie Mathay", "Paul Magers", "Joan Steffand", "Jill Sayre", "Wayne A. Evenson", "Timothy Storms", "Terry Hempleman", "Jay Gjernes", "Grant Curtis", "Solomon Abrams", "Nina Kaczorowski", "Thomas Boedy", "Mary Woolever", "Rhiannon R. Sauers", "Christopher Gallus", "Eric Cegon", "Robert Martin Halverson", "Roger Watton", "Frank Beard", "Joel Edwards" ],
+  "tags" : [ ]
+}

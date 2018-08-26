@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0054387",
+  "title" : "The Time Machine (1960)",
+  "releaseYear" : "1960",
+  "duration" : "1:43",
+  "rating" : "APPROVED",
+  "director" : "George Pal",
+  "imageUrl" : "0054387.jpg",
+  "description" : "A Victorian Englishman travels to the far future and finds that humanity has divided into two hostile species.",
+  "genres" : [ "Adventure", "Fantasy", "Romance" ],
+  "cast" : [ "Rod Taylor", "Alan Young", "Yvette Mimieux", "Sebastian Cabot", "Tom Helmore", "Whit Bissell", "Doris Lloyd", "Bob Barran", "Paul Frees", "Josephine Powell", "James Skelly" ],
+  "tags" : [ ]
+}

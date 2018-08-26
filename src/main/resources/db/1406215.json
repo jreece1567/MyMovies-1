@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1406215",
+  "title" : "Nixon",
+  "releaseYear" : "1990",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "David Espar",
+  "imageUrl" : "1406215.jpg",
+  "description" : "Richard M. Nixon was one of American history's most powerful figures. Recalling events etched in U.S. memory, this three-hour program explores a fateful mix of strength and weakness that made him president, and then brought him down. Events revealing Nixon's distinctive signature in American politics, from a meteoric rise to Congress to the presidency and the morass of Watergate, unfold in three parts: The Quest, Triumph, and The Fall. This is the first of three parts.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Helen Gahagan", "Will Lyman", "Richard Nixon" ],
+  "tags" : [ "President" ]
+}

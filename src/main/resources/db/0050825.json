@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0050825",
+  "title" : "Paths of Glory",
+  "releaseYear" : "1957",
+  "duration" : "1:28",
+  "rating" : "APPROVED",
+  "director" : "Stanley Kubrick",
+  "imageUrl" : "0050825.jpg",
+  "description" : "When soldiers in World War I refuse to continue with an impossible attack, their superior officers decide to make an example of them.",
+  "genres" : [ "Drama", "War" ],
+  "cast" : [ "Kirk Douglas", "Ralph Meeker", "Adolphe Menjou", "George Macready", "Wayne Morris", "Richard Anderson", "Joe Turkel", "Christiane Kubrick", "Jerry Hausner", "Peter Capell", "Emile Meyer", "Bert Freed", "Kem Dibbs", "Timothy Carey", "Fred Bell", "John Stein", "Harold Benedict", "Leon Briggs", "Paul Bös", "Herbert Ellis", "Wally Friedrichs", "Halder Hanson", "James B. Harris", "Rolf Kralovitz", "Ira Moore", "Marshall Rainer", "Roger Vagnoid" ],
+  "tags" : [ "WW-I" ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0084726",
+  "title" : "Star Trek II: The Wrath of Khan",
+  "releaseYear" : "1982",
+  "duration" : "1:53",
+  "rating" : "PG",
+  "director" : "Nicholas Meyer",
+  "imageUrl" : "0084726.jpg",
+  "description" : "With the assistance of the Enterprise crew, Admiral Kirk must stop an old nemesis, Khan Noonien Singh, from using his son's life-generating device, the Genesis Device, as the ultimate weapon.",
+  "genres" : [ "Action", "Adventure", "Drama", "Sci-Fi" ],
+  "cast" : [ "William Shatner", "Leonard Nimoy", "DeForest Kelley", "James Doohan", "Walter Koenig", "George Takei", "Nichelle Nichols", "Bibi Besch", "Merritt Butrick", "Paul Winfield", "Kirstie Alley", "Ricardo Montalban", "Ike Eisenmann", "John Vargas", "John Winston", "Paul Kent", "Nicholas Guest", "Russell Takaki", "Kevin Rodney Sullivan", "Joel Marston", "Teresa E. Victor", "Dianne Harper", "David Ruprecht", "Marcy Vosburgh", "Laura Banks", "Steve Bond", "Brett Baxter Clark", "Tim Culbertson", "John Gibson", "James Horner", "Dennis Landry", "Cristian Letelier", "Jeff McBride", "Roger Menache", "Judson Scott", "Deney Terrio" ],
+  "tags" : [ "Star Trek" ]
+}

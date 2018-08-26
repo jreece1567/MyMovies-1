@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0058530",
+  "title" : "Robinson Crusoe on Mars",
+  "releaseYear" : "1964",
+  "duration" : "1:50",
+  "rating" : "NOT RATED",
+  "director" : "Byron Haskin",
+  "imageUrl" : "0058530.jpg",
+  "description" : "Stranded on Mars with only a monkey as a companion, an astronaut must figure out how to find oxygen, water, and food on the lifeless planet.",
+  "genres" : [ "Adventure", "Sci-Fi" ],
+  "cast" : [ "Paul Mantee", "Victor Lundin", "Adam West", "The Woolly Monkey" ],
+  "tags" : [ ]
+}

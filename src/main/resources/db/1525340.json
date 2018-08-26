@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1525340",
+  "title" : "D-Day to Berlin",
+  "releaseYear" : "2005",
+  "duration" : "2:30",
+  "rating" : "NOT RATED",
+  "director" : "",
+  "imageUrl" : "1525340.jpg",
+  "description" : "A 3-part BBC Miniseries depicting the Allied progress from the D-Day landings in Normandy all the way to Berlin. The Normandy breakout is covered, as well as the Battle of the Bulge and Operation Market Garden, to the eventual objective of Berlin. The Series is narrated by Actor Sean Bean.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Sean Bean", "Nickolas Grace", "Weodzimierz Matuszak", "Don McCorkindale" ],
+  "tags" : [ "WW-II" ]
+}

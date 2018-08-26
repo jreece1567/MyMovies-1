@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0266164",
+  "title" : "Napoleon",
+  "releaseYear" : "2002",
+  "duration" : "4:00",
+  "rating" : "NOT RATED",
+  "director" : "David McCullough",
+  "imageUrl" : "0266164.jpg",
+  "description" : "Documentary about the rise and fall of one of the greatest military geniuses of modern times from his Corsican childhood to final exile in St. Helena.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "David McCullough" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0088847",
+  "title" : "The Breakfast Club",
+  "releaseYear" : "1985",
+  "duration" : "1:37",
+  "rating" : "R",
+  "director" : "John Hughes",
+  "imageUrl" : "0088847.jpg",
+  "description" : "Five high school students, all different stereotypes, meet in detention, where they pour their hearts out to each other, and discover how they have a lot more in common than they thought.",
+  "genres" : [ "Comedy", "Drama" ],
+  "cast" : [ "Emilio Estevez", "Paul Gleason", "Anthony Michael Hall", "John Kapelos", "Judd Nelson", "Molly Ringwald", "Ally Sheedy", "Perry Crawford", "Mary Christian", "Ron Dean", "Tim Gamble", "Fran Gargano", "Mercedes Hall", "John Hughes" ],
+  "tags" : [ ]
+}

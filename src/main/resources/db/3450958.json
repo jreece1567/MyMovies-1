@@ -1,0 +1,13 @@
+{
+  "imdbId" : "3450958",
+  "title" : "War for the Planet of the Apes",
+  "releaseYear" : "2017",
+  "duration" : "2:20",
+  "rating" : "PG-13",
+  "director" : "Matt Reeves",
+  "imageUrl" : "3450958.jpg",
+  "description" : "After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.",
+  "genres" : [ "Action", "Adventure", "Drama" ],
+  "cast" : [ "Andy Serkis", "Woody Harrelson", "Steve Zahn", "Karin Konoval", "Amiah Miller", "Terry Notary", "Ty Olsson", "Michael Adamthwaite", "Toby Kebbell", "Gabriel Chavarria", "Judy Greer", "Sara Canning", "Devyn Dalton", "Aleks Paunovic", "Alessandro Juliani", "Max Lloyd-Jones", "Timothy Webber", "Lauro Chartrand", "Shaun Omaid", "Roger Cross", "Mercedes de la Zerda", "Doug Chapman", "James Pizzinato", "Chad Rook", "Dean Redman", "Steve Baran", "Sandy Robson", "Levi Meaden", "Billy Wickman", "Albert Nicholas", "Kyle Horton", "Paul Luongo", "Thomas Potter", "Mathew Yanagiya", "Skye Notary", "Willow Notary", "Finn Notary", "Phoenix Notary", "Sadie Aperlo", "Matilda Aperlo", "Andrew Alexander Reeves", "Emmanuel Amadeo Badal", "Michael Germant", "Kent R. Karemaker", "Paul Larouche", "Martin Lo Rimorin", "Tanner Scott", "Rhys Williams", "Sarah Ziolkowski" ],
+  "tags" : [ "POTA" ]
+}

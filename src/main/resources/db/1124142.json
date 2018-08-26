@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1124142",
+  "title" : "Westinghouse",
+  "releaseYear" : "2008",
+  "duration" : "1:52",
+  "rating" : "NOT RATED",
+  "director" : "Mark Bussler",
+  "imageUrl" : "1124142.jpg",
+  "description" : "Westinghouse is a feature-length documentary about the life and times of George Westinghouse, his companies, legacy, personality, partnership with Nikola Telsa and conflict with Thomas ...",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "David Cope", "Joseph G. Deley", "Thomas A. Edison", "Carol Lee Espy", "Betty Furness", "Edward J. Reis", "Quentin R. Skrabec Jr.", "Jim Sutherland", "William Terbo", "George Westinghouse" ],
+  "tags" : [ ]
+}

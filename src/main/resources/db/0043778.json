@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0043778",
+  "title" : "The Man from Planet X",
+  "releaseYear" : "1951",
+  "duration" : "1:10",
+  "rating" : "APPROVED",
+  "director" : "Edgar G. Ulmer",
+  "imageUrl" : "0043778.jpg",
+  "description" : "As a mysterious planet hurls itself toward earth, an enigmatic extraterrestrial scout arrives on a remote Scottish island with unknown intentions.",
+  "genres" : [ "Horror", "Romance", "Sci-Fi" ],
+  "cast" : [ "Robert Clarke", "Margaret Field", "Raymond Bond", "William Schallert", "Roy Engel", "David Ormont", "Gilbert Fallman", "Tom Daly", "June Jeffery", "Charles Davis", "Franklyn Farnum", "Pat Goldin", "Harold Gould", "Lars Hensen", "Ian Murray" ],
+  "tags" : [ ]
+}

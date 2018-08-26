@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0054215",
+  "title" : "Psycho",
+  "releaseYear" : "1960",
+  "duration" : "1:49",
+  "rating" : "TV-14",
+  "director" : "Alfred Hitchcock",
+  "imageUrl" : "0054215.jpg",
+  "description" : "A Phoenix secretary steals $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.",
+  "genres" : [ "Horror", "Mystery", "Thriller" ],
+  "cast" : [ "Anthony Perkins", "Vera Miles", "John Gavin", "Janet Leigh", "Martin Balsam", "John McIntire", "Simon Oakland", "Frank Albertson", "Patricia Hitchcock", "Vaughn Taylor", "Lurene Tuttle", "John Anderson", "Mort Mills", "Fletcher Allen", "Prudence Beers", "Kit Carson", "Francis De Sales", "George Dockstader", "George Eldredge", "Harper Flaherty", "Sam Flint", "Virginia Gregg", "Alfred Hitchcock", "Paul Jasmin", "Lee Kass", "Frank Killmond", "Ted Knight", "Pat McCaffrie", "Jeanette Nolan", "Lillian O'Malley", "Fred Scheiwiller", "Helen Wallace" ],
+  "tags" : [ ]
+}

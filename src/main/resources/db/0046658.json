@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0046658",
+  "title" : "Victory at Sea",
+  "releaseYear" : "1952",
+  "duration" : "30 minutes",
+  "rating" : "NOT RATED",
+  "director" : "",
+  "imageUrl" : "0046658.jpg",
+  "description" : "Twenty-six episode series about naval combat during World War Two. Famous for its music score, eloquent narration and combat footage.",
+  "genres" : [ "Documentary", "Action", "War" ],
+  "cast" : [ "Leonard Graves", "Franklin D. Roosevelt", "Adolf Hitler", "Chester W. Nimitz", "Winston Churchill", "Karl Dönitz", "Dwight D. Eisenhower", "Benito Mussolini", "Douglas MacArthur", "Henry Kent Hewitt", "Hirohito Hirohito", "Bernard L. Montgomery", "Jonathan M. Wainwright", "Erwin Rommel", "Charles de Gaulle", "William F. Halsey", "Louis Mountbatten", "Andrew Cunningham", "Hermann Göring", "Cordell Hull", "Ernest J. King", "George C. Marshall", "Chiuichi Nagumo", "Erich Raeder", "Hideki Tojo", "Isoroku Yamamoto", "Harlon Block", "John H. Bradley", "Kai-Shek Chiang", "James Forrestal", "Rene A. Gagnon", "Josef Goebbels", "Ira H. Hayes", "Heinrich Himmler", "King Victor Emmanuel III", "Hans Langsdorff", "William D. Leahy", "Charles A. Lockwood", "Marc A. Mitscher", "George S. Patton", "Arthur Percival", "Lewis B. Puller", "Holland M. Smith", "Franklin Sousley", "Raymond A. Spruance", "Mike Strank", "Michael Lewis" ],
+  "tags" : [ "WW-II" ]
+}

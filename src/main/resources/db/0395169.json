@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0395169",
+  "title" : "Hotel Rwanda",
+  "releaseYear" : "2005",
+  "duration" : "2:01",
+  "rating" : "PG-13",
+  "director" : "Terry George",
+  "imageUrl" : "0395169.jpg",
+  "description" : "The true story of Paul Rusesabagina, a hotel manager who housed over a thousand Tutsi refugees during their struggle against the Hutu militia in Rwanda.",
+  "genres" : [ "Biography", "Drama", "History" ],
+  "cast" : [ "Xolani Mali", "Don Cheadle", "Desmond Dube", "Hakeem Kae-Kazim", "Tony Kgoroge", "Rosie Motene", "Neil McCarthy", "Mabutho 'Kid' Sithole", "Nick Nolte", "Fana Mokoena", "Jeremiah Ndlovu", "Sophie Okonedo", "Lebo Mashile", "Antonio David Lyons", "Leleti Khumalo", "Kgomotso Seitshohlo", "Lerato Mokgotho", "Mosa Kaiser", "Mathabo Pieterson", "Ofentse Modiselle", "David O'Hara", "Joaquin Phoenix", "Lennox Mathabathe", "Mothusi Magano", "Noxolo Maqashalala", "Thulani Nyembe", "Simo Mogwaza", "Mirriam Ngomani", "Cara Seymour", "Harriet Lenabe", "Roberto Citran", "Mduduzi Mabaso", "Sonni Chidiebere", "Thomas Kariuki", "Sibusiso Mhlangu", "Ashleigh Tobias", "Jean Reno" ],
+  "tags" : [ ]
+}

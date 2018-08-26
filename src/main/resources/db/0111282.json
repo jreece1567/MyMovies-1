@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0111282",
+  "title" : "Stargate",
+  "releaseYear" : "1994",
+  "duration" : "2:01",
+  "rating" : "PG-13",
+  "director" : "Roland Emmerich",
+  "imageUrl" : "0111282.jpg",
+  "description" : "An interstellar teleportation device, found in Egypt, leads to a planet with humans resembling ancient Egyptians who worship the god Ra.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Kurt Russell", "James Spader", "Jaye Davidson", "Viveca Lindfors", "Alexis Cruz", "Mili Avital", "Leon Rippy", "John Diehl", "Carlos Lauchu", "Djimon Hounsou", "Erick Avari", "French Stewart", "Gianin Loffler", "Christopher John Fields", "Derek Webster", "Jack Moore", "Steve Giannelli", "David Pressman", "Scott Alan Smith", "Cecil Hoffman", "Rae Allen", "Richard Kind", "John Storey", "Lee Taylor-Allan", "George Gray", "Kelly Vint", "Erik Holland", "Nick Wilder", "Sayed Badreya", "Michael Concepcion", "Jerry Gilmore", "Michel Jean-Philippe", "Dialy N'Daiye", "Gladys Holland", "Roger Til", "Kenneth Danziger", "Christopher West", "Robert Ackerman", "Kairon John", "Dax Biagas", "Frank Welker", "Kit West" ],
+  "tags" : [ "Stargate" ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0066769",
+  "title" : "The Andromeda Strain",
+  "releaseYear" : "1971",
+  "duration" : "2:11",
+  "rating" : "G",
+  "director" : "Robert Wise",
+  "imageUrl" : "0066769.jpg",
+  "description" : "A group of scientists investigates a deadly new alien virus before it can spread.",
+  "genres" : [ "Sci-Fi", "Thriller" ],
+  "cast" : [ "Arthur Hill", "David Wayne", "James Olson", "Kate Reid", "Paula Kelly", "George Mitchell", "Ramon Bieri", "Peter Hobbs", "Kermit Murdock", "Richard O'Brien", "Eric Christmas", "Mark Jenkins", "Peter Helm", "Joe Di Reda", "Carl Reindel", "Ken Swofford", "Frances Reid", "Richard Bull", "John Carter", "Paul Ballantyne", "Ivor Barry", "Joe Billings", "Patty Bodeen", "Michael Bow", "Walter Brooke", "Susan Brown", "Jan Burrell", "Dee Carroll", "Duke Cigrang", "Rhodie Cogan", "Michael Crichton", "Lisa Daniels", "Sandra de Bruin", "Bill Dunbar", "Harold Dyrenforth", "Walker Edmiston", "Sandra Ego", "Don Ellis", "Judy Farrell", "Lance Fuller", "James W. Gavin", "Sheila Jo Guthrie", "Ray Harris", "Rob Hughes", "Jason Johnson", "Bart La Rue", "Jamie Lamb", "Glenn Langan", "Johnny Lee", "Theodore Lehmann", "Tom McDonough", "David McLean", "Cliff Medaugh", "Don Messick", "Victoria Paige Meyerink", "Midori Midori", "Carl B. Morrison", "Robert 'Bob' Olen", "Francisco Ortega", "Emory Parnell", "Michael Pataki", "Alma Platt", "Quinn K. Redeker", "Clark Savage", "Georgia Schmidt", "Reuben Singer", "Robert Soto", "Gilchrist Stuart", "Joan Swift", "Lorna Thayer", "Garry Walberg", "Len Wayland", "Gary Waynesmith", "Russ Whiteman" ],
+  "tags" : [ "Crichton" ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0060196",
+  "title" : "The Good, the Bad and the Ugly",
+  "releaseYear" : "1967",
+  "duration" : "2:41",
+  "rating" : "APPROVED",
+  "director" : "Sergio Leone",
+  "imageUrl" : "0060196.jpg",
+  "description" : "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+  "genres" : [ "Adventure", "Western" ],
+  "cast" : [ "Eli Wallach", "Clint Eastwood", "Lee Van Cleef", "Aldo Giuffrè", "Luigi Pistilli", "Rada Rassimov", "Enzo Petito", "Claudio Scarchilli", "John Bartha", "Livio Lorenzon", "Antonio Casale", "Sandro Scarchilli", "Benito Stefanelli", "Angelo Novi", "Antonio Casas", "Aldo Sambrell", "Al Mulock", "Sergio Mendizábal", "Antonio Molino Rojo", "Lorenzo Robledo", "Mario Brega", "Chelo Alonso", "Fortunato Arena", "Román Ariznavarreta", "Frank Braña", "Amerigo Castrighella", "Saturno Cerra", "Luigi Ciavarro", "William Conroy", "Tony Di Mitri", "Attilio Dottesio", "Veriano Ginesi", "Jesús Guzmán", "Víctor Israel", "Nazzareno Natale", "Ricardo Palacios", "Romano Puppo", "Antoñito Ruiz", "Aysanoa Runachagua", "Enrique Santiago", "José Terrón" ],
+  "tags" : [ ]
+}

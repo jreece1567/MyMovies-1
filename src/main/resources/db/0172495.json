@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0172495",
+  "title" : "Gladiator",
+  "releaseYear" : "2000",
+  "duration" : "2:35",
+  "rating" : "R",
+  "director" : "Ridley Scott",
+  "imageUrl" : "0172495.jpg",
+  "description" : "When a Roman general is betrayed and his family murdered by an emperor's corrupt son, he comes to Rome as a gladiator to seek revenge.",
+  "genres" : [ "Action", "Adventure", "Drama" ],
+  "cast" : [ "Russell Crowe", "Joaquin Phoenix", "Connie Nielsen", "Oliver Reed", "Richard Harris", "Derek Jacobi", "Djimon Hounsou", "David Schofield", "John Shrapnel", "Tomas Arana", "Ralf Moeller", "Spencer Treat Clark", "David Hemmings", "Tommy Flanagan", "Sven-Ole Thorsen", "Omid Djalili", "Nicholas McGaughey", "Chris Kell", "Tony Curran", "Mark Lewis", "John Quinn", "Alun Raglan", "davidbailie davidbailie", "Chick Allan", "David Nicholls", "Al Ashton", "Billy Dowd", "Ray Calleja", "Giannina Facio", "Giorgio Cantarini", "Allan Corduner", "Michael Mellinger", "Said Amel", "Adam Levy", "Gilly Gilchrist", "Malcolm Ellul", "James Fiddy", "Ruth Frendo", "Kjeld Gogosha-Clark", "Mehdi Kashani", "Tom Kay", "Nic Main", "Antonio Meitin", "João Costa Menezes", "Mike Mitchell", "Norman Campbell Rees", "Neil Roche", "Paul Sacks", "Michael Sheen", "Christian Simpson", "Brian Smyj", "Tony Tomlinson" ],
+  "tags" : [ ]
+}

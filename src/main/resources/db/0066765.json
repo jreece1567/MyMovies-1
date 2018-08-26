@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0066765",
+  "title" : "And Now for Something Completely Different",
+  "releaseYear" : "1971",
+  "duration" : "1:28",
+  "rating" : "PG",
+  "director" : "Ian MacNaughton",
+  "imageUrl" : "0066765.jpg",
+  "description" : "An anthology of the best sketches from the first and second seasons of Monty Python's Flying Circus",
+  "genres" : [ "Comedy" ],
+  "cast" : [ "Graham Chapman", "John Cleese", "Terry Gilliam", "Eric Idle", "Terry Jones", "Michael Palin", "Carol Cleveland", "Connie Booth", "Lewis Alexander", "Neville Chamberlain", "Winston Churchill", "Adolf Hitler", "Lesley Judd", "King George VI", "Roy Lansford", "Richard Nixon", "Queen Elizabeth the Queen Mother", "Fred Wood" ],
+  "tags" : [ ]
+}

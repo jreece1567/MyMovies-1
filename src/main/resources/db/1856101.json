@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1856101",
+  "title" : "Blade Runner 2049",
+  "releaseYear" : "2017",
+  "duration" : "2:44",
+  "rating" : "R",
+  "director" : "Denis Villeneuve",
+  "imageUrl" : "1856101.jpg",
+  "description" : "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
+  "genres" : [ "Mystery", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Ryan Gosling", "Dave Bautista", "Robin Wright", "Mark Arnold", "Vilma Szécsi", "Ana de Armas", "Wood Harris", "David Dastmalchian", "Tómas Lemarquis", "Sylvia Hoeks", "Edward James Olmos", "Jared Leto", "Sallie Harmsen", "Hiam Abbass", "Mackenzie Davis", "Krista Kosonen", "Elarica Johnson", "André Lukács Molnár", "István Göz", "Pál Nyári", "Joshua Tersoo Allagh", "Zoltán Béres", "Konstantin Pál", "Ferenc Györgyi", "Samuel Brown", "Lennie James", "Carla Juri", "Kincsö Sánta", "Barkhad Abdi", "Harrison Ford", "Ben Thompson", "Suzie Kennedy", "David Benson", "Stephen Triffitt", "Sean Young", "Loren Peta", "Kingston Taylor" ],
+  "tags" : [ ]
+}

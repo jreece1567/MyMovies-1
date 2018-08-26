@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0055031",
+  "title" : "Judgment at Nuremberg",
+  "releaseYear" : "1961",
+  "duration" : "3:06",
+  "rating" : "TV-14",
+  "director" : "Stanley Kramer",
+  "imageUrl" : "0055031.jpg",
+  "description" : "In 1948, an American court in occupied Germany tries four Nazi judges for war crimes.",
+  "genres" : [ "Drama", "History", "War" ],
+  "cast" : [ "Spencer Tracy", "Burt Lancaster", "Richard Widmark", "Marlene Dietrich", "Maximilian Schell", "Judy Garland", "Montgomery Clift", "William Shatner", "Werner Klemperer", "Kenneth MacKenna", "Torben Meyer", "Joseph Bernard", "Alan Baxter", "Edward Binns", "Virginia Christine", "Otto Waldis", "Karl Swenson", "Martin Brandt", "Ray Teal", "John Wengraf", "Ben Wright", "Howard Caine", "Olga Fabian", "Paul Busch", "Bernard Kates", "Frank Baker", "Oscar Beregi Jr.", "Chet Brandenburg", "Asher Brauner", "Sheila Bromley", "John Clarke", "Joseph Crehan", "Sayre Dearing", "Bess Flowers", "Herman Hack", "Sam Harris", "Colin Kenny", "William Meader", "Harold Miller", "Hans Moebus", "Ed Nelson", "William H. O'Brien", "Tony Regan", "Norbert Schiller", "Rudy Solari", "Bert Stevens", "Hal Taggart", "Jana Taylor" ],
+  "tags" : [ "WW-II" ]
+}

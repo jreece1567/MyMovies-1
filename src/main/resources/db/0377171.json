@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0377171",
+  "title" : "The Elegant Universe",
+  "releaseYear" : "2003",
+  "duration" : "1:00",
+  "rating" : "TV-G",
+  "director" : "Many",
+  "imageUrl" : "0377171.jpg",
+  "description" : "A documentary examining string theory.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Michael Duff", "Michael B. Green", "Brian Greene", "Walter Lewin", "Joseph Lykken", "Amanda Peet", "John Schwarz", "Maria Spiropulu", "Leonard Susskind", "Cumrun Vafa", "Gabriele Veneziano", "Steven Weinberg", "Edward Witten" ],
+  "tags" : [ "Science" ]
+}

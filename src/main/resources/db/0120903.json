@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0120903",
+  "title" : "X-Men",
+  "releaseYear" : "2000",
+  "duration" : "1:44",
+  "rating" : "PG-13",
+  "director" : "Bryan Singer",
+  "imageUrl" : "0120903.jpg",
+  "description" : "Two mutants come to a private academy for their kind whose resident superhero team must oppose a terrorist organization with similar powers.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Hugh Jackman", "Patrick Stewart", "Ian McKellen", "Famke Janssen", "James Marsden", "Halle Berry", "Anna Paquin", "Tyler Mane", "Ray Park", "Rebecca Romijn", "Bruce Davison", "Matthew Sharp", "Brett Morris", "Rhona Shekter", "Kenneth McGregor", "Shawn Roberts", "Donna Goodhand", "John Nelles", "George Buza", "Darren McGuire", "Carson Manning", "Scott Leva", "Aron Tager", "Kevin Rushton", "Doug Lennox", "David Nichols", "Malcolm Nefsky", "Sumela Kay", "Shawn Ashmore", "Katrina Florece", "Alex Burton", "Quinn Wright", "Daniel Magder", "Matt Weinberg", "Madison Lanc", "Stan Lee", "Marsha Graham", "Amy Leland", "Adam Robitel", "David Brown", "Ben Jensen", "Tom DeSanto", "Todd Dulmage", "Dan Duran", "Elias Zarou", "David Black", "Robert R. Snow", "David Hayter", "Cecil Phillips", "Dave Allen Clark", "Deryck Blake", "Ilke Hincer", "Ron Sham", "Jay Yoo", "Grigori Miakouchkine", "Eleanor Comes", "Giuseppe Gallaccio", "Rupinder Brar", "Abi Ganem", "Joey Purpura", "Manuel Verge", "Wolfgang Müller", "Ralph Zuljan", "Andy Grote", "Denis Bellingham", "Eric Bryson", "Cheryl De Luca", "Wesley Finucan", "Kyler Fisher", "Marc Gagne", "Matthew Galliford", "Gary Goddard", "Matt Granger", "Donald Mackinnon", "Brian Peck", "Daniel Vivian", "Quentin Wright" ],
+  "tags" : [ "Marvel" ]
+}

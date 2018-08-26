@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0120184",
+  "title" : "Sphere",
+  "releaseYear" : "1998",
+  "duration" : "2:14",
+  "rating" : "PG-13",
+  "director" : "Barry Levinson",
+  "imageUrl" : "0120184.jpg",
+  "description" : "A spaceship is discovered under three hundred years' worth of coral growth at the bottom of the ocean.",
+  "genres" : [ "Drama", "Mystery", "Sci-Fi" ],
+  "cast" : [ "Dustin Hoffman", "Sharon Stone", "Samuel L. Jackson", "Peter Coyote", "Liev Schreiber", "Queen Latifah", "Marga Gómez", "Huey Lewis", "Bernard Hocke", "James Pickens Jr.", "Michael Keys Hall", "Ralph Tabakin" ],
+  "tags" : [ "Crichton" ]
+}

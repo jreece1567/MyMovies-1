@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0019777",
+  "title" : "The Cocoanuts",
+  "releaseYear" : "1929",
+  "duration" : "1:36",
+  "rating" : "PASSED",
+  "director" : "Robert Florey",
+  "imageUrl" : "0019777.jpg",
+  "description" : "During the Florida land boom, the Marx brothers run a hotel, auction off some land, thwart a jewel robbery, and generally act like themselves.",
+  "genres" : [ "Comedy", "Musical" ],
+  "cast" : [ "The Marx Brothers", "Zeppo Marx", "Groucho Marx", "Harpo Marx", "Chico Marx", "Oscar Shaw", "Mary Eaton", "Cyril Ring", "Kay Francis", "Margaret Dumont", "Basil Ruysdael", "Gamby-Hale Ballet Girls", "Allan K. Foster Girls", "Sylvan Lee", "Barton MacLane" ],
+  "tags" : [ ]
+}

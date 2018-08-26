@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0326315",
+  "title" : "Truman",
+  "releaseYear" : "1997",
+  "duration" : "2:19",
+  "rating" : "NOT RATED",
+  "director" : "David Grubin",
+  "imageUrl" : "0326315.jpg",
+  "description" : "Biography of U.S. President Harry S Truman.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Charles Babcock", "Winston Churchill", "Robert Farren", "Mike Fennelly", "Sue Gentry", "Ruth Gruber", "Alonzo Hamby", "Vernon Jarrett", "David McCullough", "Vyacheslav Molotov", "Tom Pendergast", "Victor Reuther", "Jason Robards", "Joseph Stalin", "Bess Truman", "Harry S. Truman", "Margaret Truman", "McKinley Wooden" ],
+  "tags" : [ "President" ]
+}

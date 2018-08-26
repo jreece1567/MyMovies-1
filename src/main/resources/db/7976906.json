@@ -1,0 +1,13 @@
+{
+  "imdbId" : "7976906",
+  "title" : "The Gilded Age",
+  "releaseYear" : "2018",
+  "duration" : "2:00",
+  "rating" : "TV-PG",
+  "director" : "Sarah Colt",
+  "imageUrl" : "7976906.jpg",
+  "description" : "As national wealth expands in the U.S. disparities among the nation's population spark debates that continue to rage in modern day America.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "H.W. Brands", "Rebecca Edwards", "Steve Fraser", "Paula Giddings", "Sylvia Hoffert", "Richard John", "Michael Kazin", "Jackson Lears", "Noam Maggor", "David Nasaw", "Edward O'Donnell", "Julia Ott", "Nell Irvin Painter", "Susie J. Pak", "Oliver Platt", "John Kuo Wei Tchen", "Amy Ulrich", "Richard White" ],
+  "tags" : [ ]
+}

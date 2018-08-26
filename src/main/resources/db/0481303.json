@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0481303",
+  "title" : "World War 1 in Colour",
+  "releaseYear" : "2003",
+  "duration" : "6:12",
+  "rating" : "NOT RATED",
+  "director" : "",
+  "imageUrl" : "0481303.jpg",
+  "description" : "Documentary using computer colorized footage from World War I to give the audience the feel of how it really looked back during the war.",
+  "genres" : [ "Documentary", "History", "War" ],
+  "cast" : [ "Arthur Barraclough", "Kenneth Branagh", "Arthur Halestrap", "Harry Patch", "Hubert Williams", "Gary Sheffield", "Bill Stone", "Malcolm Brown", "Malcom Brown", "Fred Bunday", "Fredrick Henry Bundy", "Jack Davis", "Taff Gillingham", "Peter Hart", "Andrew Lambert", "Norman Stone", "Richard Woodman", "Emperor Franz Josef", "Tsar Nicholas II" ],
+  "tags" : [ "WW-I" ]
+}

@@ -1,0 +1,19 @@
+[{
+  "imdbId" : "0080242",
+  "season" : "1",
+  "episodeNumber" : "1",
+  "title" : "The Expeditions",
+  "description" : "The exploration of Mars begins with two failed expeditions. Colonel Wilder then leads a crew to discover the secret of Mars - only to find all the Martians dead from chicken pox."
+}, {
+  "imdbId" : "0080242",
+  "season" : "1",
+  "episodeNumber" : "2",
+  "title" : "The Settlers",
+  "description" : "With native Martians wiped out by disease, thousands of humans now colonize the red planet and attempt to create a second Earth."
+}, {
+  "imdbId" : "0080242",
+  "season" : "1",
+  "episodeNumber" : "3",
+  "title" : "The Martians",
+  "description" : "With Earth destroyed in a nuclear war, Colonel Wilder finds himself alone with his family on Mars. To rebuild what he has lost, Wilder chooses to make Mars his new home."
+}]

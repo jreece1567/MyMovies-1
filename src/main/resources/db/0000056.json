@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0000056",
+  "title" : "The Fabric of the Cosmos",
+  "releaseYear" : "2014",
+  "duration" : "3:00",
+  "rating" : "TV-G",
+  "director" : "Many",
+  "imageUrl" : "0000056.jpg",
+  "description" : "The Fabric of the Cosmos, based on the book by physicist and author Brian Greene, takes us to the frontiers of physics to see how scientists are piecing together the most complete picture yet of space, time and the universe.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Brian Greene" ],
+  "tags" : [ "Science" ]
+}

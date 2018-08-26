@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0133093",
+  "title" : "The Matrix",
+  "releaseYear" : "1999",
+  "duration" : "2:16",
+  "rating" : "R",
+  "director" : "Andy Wachowski",
+  "imageUrl" : "0133093.jpg",
+  "description" : "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving", "Gloria Foster", "Joe Pantoliano", "Marcus Chong", "Julian Arahanga", "Matt Doran", "Belinda McClory", "Anthony Ray Parker", "Paul Goddard", "Robert Taylor", "David Aston", "Marc Aden Gray", "Ada Nicodemou", "Deni Gordon", "Rowan Witt", "Eleanor Witt", "Tamara Brown", "Janaya Pender", "Adryn White", "Natalie Tjen", "Bill Young", "David O'Connor", "Jeremy Ball", "Fiona Johnson", "Harry Lawrence", "Steve Dodd", "Luke Quinton", "Lawrence Woodward", "Michael Butcher", "Bernard Ledger", "Robert Simper", "Chris Pattinson", "Nigel Harbach", "Rana Morrison" ],
+  "tags" : [ ]
+}

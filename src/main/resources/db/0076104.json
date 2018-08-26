@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0076104",
+  "title" : "The Grateful Dead",
+  "releaseYear" : "1977",
+  "duration" : "2:11",
+  "rating" : "PG",
+  "director" : "Jerry Garcia",
+  "imageUrl" : "0076104.jpg",
+  "description" : "The Grateful Dead performs live at Winterland in San Francisco in October 1974.",
+  "genres" : [ "Documentary", "Music" ],
+  "cast" : [ "Jerry Garcia", "Donna Godchaux", "Keith Godchaux", "Mickey Hart", "Bill Kreutzmann", "Phil Lesh", "Bob Weir" ],
+  "tags" : [ ]
+}

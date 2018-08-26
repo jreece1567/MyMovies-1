@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1170358",
+  "title" : "The Hobbit: The Desolation of Smaug",
+  "releaseYear" : "2013",
+  "duration" : "2:41",
+  "rating" : "PG-13",
+  "director" : "Peter Jackson",
+  "imageUrl" : "1170358.jpg",
+  "description" : "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.",
+  "genres" : [ "Adventure", "Fantasy" ],
+  "cast" : [ "Ian McKellen", "Martin Freeman", "Richard Armitage", "Ken Stott", "Graham McTavish", "William Kircher", "James Nesbitt", "Stephen Hunter", "Dean O'Gorman", "Aidan Turner", "John Callen", "Peter Hambleton", "Jed Brophy", "Mark Hadlow", "Adam Brown", "Orlando Bloom", "Evangeline Lilly", "Lee Pace", "Cate Blanchett", "Benedict Cumberbatch", "Mikael Persbrandt", "Sylvester McCoy", "Luke Evans", "Stephen Fry", "Ryan Gage", "John Bell", "Peggy Nesbitt", "Mary Nesbitt", "Manu Bennett", "Lawrence Makoare", "Ben Mitchell", "Stephen Ure", "Craig Hall", "Robin Kerr", "Eli Kent", "Simon London", "Brian Sergent", "Peter Vere-Jones", "Mark Mitchinson", "Kelly Kilgour", "Sarah Peirse", "Nick Blake", "Dallas Barnett", "Matt Smith", "Katie Jackson", "Richard Whiteside", "Greg Ellis", "Ray Henwood", "Tim Gordon", "Jabez Olssen", "Stephen Colbert", "Evelyn McGee", "Peter Colbert", "John Colbert", "Norman Kali", "Carter Nixon", "Zane Weiner", "Allan Smith", "Jim Baltaxe", "Paul Craze", "Karl Dickson", "Chris Hewer", "Christian Hipolito", "Kathryn Briggs Hobbs", "Alex Ishikawa", "Peter Jackson", "Carlton McRae", "Liz Merton", "Joseph Mika-Hunt", "Keith Mole", "Terry Notary", "Stephen O'Neill", "Lise Perichon", "Daniel Rathbon", "Gabriela Roque López", "Ed Sheeran", "Antony Sher", "Tim Simpson", "Jeff Slaven", "Dianne Smith", "Emma Smith", "Jeffrey Thomas", "Royd Tolkien", "Rosalie van Horik", "Manuela Vetters", "Christopher Winchester", "Nikky Winchester" ],
+  "tags" : [ "Tolkien" ]
+}

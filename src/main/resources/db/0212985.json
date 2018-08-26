@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0212985",
+  "title" : "Hannibal",
+  "releaseYear" : "2001",
+  "duration" : "2:11",
+  "rating" : "R",
+  "director" : "Ridley Scott",
+  "imageUrl" : "0212985.jpg",
+  "description" : "Hannibal returns to America and attempts to make contact with disgraced Agent Starling and survive a vengeful victim's plan.",
+  "genres" : [ "Crime", "Drama", "Thriller" ],
+  "cast" : [ "Anthony Hopkins", "Julianne Moore", "Gary Oldman", "Ray Liotta", "Frankie Faison", "Giancarlo Giannini", "Francesca Neri", "Zeljko Ivanek", "Hazelle Goodman", "David Andrews", "Francis Guinan", "James Opher", "Enrico Lo Verso", "Ivano Marescotti", "Fabrizio Gifuni", "Alex Corrado", "Marco Greco", "Robert Rietty", "Terry Serpico", "Boyd Kestner", "Peter Shaw", "Kent Linville", "Don McManus", "Harold Ginn", "Ted Koch", "William Powell-Blair", "Aaron Craig", "Andrea Piedimonte", "Ennio Coltorti", "Ian Iwataki", "Mark Margolis", "Ajay Naidu", "Kelly Piper", "Bruce MacVittie", "Giannina Facio", "Andrew C. Boothby", "Kenneth W. Smith", "Judie Aronson", "Tom Trigo", "Sam Wells", "Ricardo Miguel Young", "Joseph M. West Jr.", "Roberta Armani", "Johannes Kiebranz", "Bruno Lazzaretti", "Danielle de Niese", "Ray Bullock", "Heidi Burger", "Robert Randolph Caton", "Douglas Crosby", "Renne Gjoni", "Gano Grills", "Jamie Harrold", "Chuck Jeffreys", "Cal Johnson", "Raymond H. Johnson", "Rick Kain", "Jalil Jay Lynch", "Phil Neilson", "Frank Principe", "Franco Maria Salamon", "Derrick Simmons", "Brian Smyj", "Sebastiano Somma", "Anthony Wanzer", "Gus Williams" ],
+  "tags" : [ ]
+}

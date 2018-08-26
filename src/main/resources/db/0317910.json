@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0317910",
+  "title" : "The Fog of War: Eleven Lessons from the Life of Robert S. McNamara",
+  "releaseYear" : "2004",
+  "duration" : "1:35",
+  "rating" : "PG-13",
+  "director" : "Errol Morris",
+  "imageUrl" : "0317910.jpg",
+  "description" : "A film about the former US Secretary of Defense and the various difficult lessons he learned about the nature and conduct of modern war.",
+  "genres" : [ "Documentary", "War" ],
+  "cast" : [ "Robert McNamara", "Fidel Castro", "Barry Goldwater", "Lyndon Johnson", "John F. Kennedy", "Nikita Khrushchev", "Curtis LeMay", "Errol Morris", "Richard Nixon", "Harry Reasoner", "Franklin D. Roosevelt", "Woodrow Wilson" ],
+  "tags" : [ ]
+}

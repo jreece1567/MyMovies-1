@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0080360",
+  "title" : "Altered States",
+  "releaseYear" : "1980",
+  "duration" : "1:42",
+  "rating" : "R",
+  "director" : "Ken Russell",
+  "imageUrl" : "0080360.jpg",
+  "description" : "A Harvard scientist conducts experiments on himself with a hallucinatory drug and an isolation chamber that may be causing him to regress genetically.",
+  "genres" : [ "Horror", "Sci-Fi", "Thriller" ],
+  "cast" : [ "William Hurt", "Blair Brown", "Bob Balaban", "Charles Haid", "Thaao Penghlis", "Miguel Godreau", "Dori Brenner", "Peter Brandon", "Charles White-Eagle", "Drew Barrymore", "Megan Jeffers", "Jack Murdock", "Francis X. McCarthy", "Deborah Baltzell", "Evan Richards", "Hap Lawrence", "John Walter Davis", "Cynthia Burr", "Susan Bredhoff", "John Larroquette", "George Gaynes", "Ora Rubinstein", "Paul Larsson", "Eric Forst", "Adriana Shaw", "Martin Fiscoe", "Olivia Michelle" ],
+  "tags" : [ ]
+}

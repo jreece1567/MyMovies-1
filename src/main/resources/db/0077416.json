@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0077416",
+  "title" : "The Deer Hunter",
+  "releaseYear" : "1979",
+  "duration" : "3:02",
+  "rating" : "R",
+  "director" : "Michael Cimino",
+  "imageUrl" : "0077416.jpg",
+  "description" : "An in-depth examination of the way that the Vietnam war affects the lives of people in a small industrial town in the USA.",
+  "genres" : [ "Drama", "War" ],
+  "cast" : [ "Robert De Niro", "John Cazale", "John Savage", "Christopher Walken", "Meryl Streep", "George Dzundza", "Chuck Aspegren", "Shirley Stoler", "Rutanya Alda", "Pierre Segui", "Mady Kaplan", "Amy Wright", "Mary Ann Haenel", "Richard Kuss", "Joe Grifasi", "Christopher Colombi Jr.", "Victoria Karnafel", "Jack Scardino", "Joe Strnad", "Helen Tomko", "Paul D'Amato", "Dennis Watlington", "Charlene Darrow", "Jane-Colette Disko", "Michael Wollet", "Robert Beard", "Joe Dzizmba", "Stephen Kopestonsky", "John F. Buchmelter III", "Frank Devore", "Tom Becker", "Lynn Kongkham", "Nongnuj Timruang", "Po Pao Pee", "Dale Burroughs", "Parris Hicks", "Samui Muang-Intata", "Sapox Colisium", "Vitoon Winwitoon", "Somsak Sengvilai", "Charan Nusvanon", "Jiam Gongtongsmoot", "Chai Peyawan", "Mana Hansa", "Sombot Jumpanoi", "Phip Manee", "Ding Santos", "Krieng Chaiyapuk", "Ot Palapoo", "Chok Chai Mahasoke", "Hilary Brown", "Joe Cummings", "Gary Jones", "James Kall", "Tom Madden", "Kurtwood Smith", "Joel Thingvall" ],
+  "tags" : [ "Vietnam" ]
+}
