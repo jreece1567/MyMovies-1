@@ -1,11 +1,9 @@
 package com.sandy.mymovies.repositories;
 
+import com.sandy.mymovies.models.domain.Genre;
 import java.util.List;
-
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-
-import com.sandy.mymovies.models.domain.Genre;
 
 /**
  * JPA interface to Genre table.

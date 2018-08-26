@@ -1,8 +1,14 @@
 package com.sandy.mymovies.controllers;
 
+import com.sandy.mymovies.models.dto.Cast;
+import com.sandy.mymovies.models.dto.Episode;
+import com.sandy.mymovies.models.dto.Index;
+import com.sandy.mymovies.models.dto.Key;
+import com.sandy.mymovies.models.dto.Movie;
+import com.sandy.mymovies.models.dto.Title;
+import com.sandy.mymovies.services.MyMoviesService;
 import java.util.List;
 import java.util.NoSuchElementException;
-
 import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,14 +19,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.sandy.mymovies.models.dto.Cast;
-import com.sandy.mymovies.models.dto.Episode;
-import com.sandy.mymovies.models.dto.Index;
-import com.sandy.mymovies.models.dto.Key;
-import com.sandy.mymovies.models.dto.Movie;
-import com.sandy.mymovies.models.dto.Title;
-import com.sandy.mymovies.services.MyMoviesService;
 
 @RestController
 public class MyMoviesController {
@@ -113,7 +111,7 @@ public class MyMoviesController {
       @PathVariable("key") final String key) {
 
     final Index idx = Index.valueOf(index); // will throw IllegalArgumentException if the 'index' is
-                                            // not
+    // not
     // valid
     return service.readTitlesByIndexAndKey(idx, key);
   }
@@ -128,7 +126,7 @@ public class MyMoviesController {
       @RequestParam("name") final String key) {
 
     final Index idx = Index.valueOf(index); // will throw IllegalArgumentException if the 'index' is
-                                            // not
+    // not
     // valid
     return service.readTitlesByIndexAndKey(idx, key);
   }

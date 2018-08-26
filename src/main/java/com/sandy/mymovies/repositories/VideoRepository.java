@@ -1,11 +1,9 @@
 package com.sandy.mymovies.repositories;
 
+import com.sandy.mymovies.models.domain.Video;
 import java.util.List;
-
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-
-import com.sandy.mymovies.models.domain.Video;
 
 /**
  * JPA interface to Video table.

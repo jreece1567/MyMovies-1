@@ -1,7 +1,6 @@
 package com.sandy.mymovies.models.dto;
 
 import java.util.List;
-
 import lombok.Data;
 
 /**
