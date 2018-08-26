@@ -4,10 +4,10 @@ import org.junit.Test;
 
 //@RunWith(SpringRunner.class
 //@SpringBootTest
-public class MymoviesApplicationTests {
+public class MyMoviesApplicationTests {
 
-    @Test
-    public void contextLoads() {
-    }
+  @Test
+  public void contextLoads() {
+  }
 
 }

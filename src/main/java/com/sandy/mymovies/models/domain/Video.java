@@ -1,6 +1,5 @@
 package com.sandy.mymovies.models.domain;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Index;
@@ -13,6 +12,7 @@ import lombok.NoArgsConstructor;
  * Bean describing a movie. Note that several movie attributes (Cast,Genres,Tags) are maintained
  * separately.
  *
+ * @see com.sandy.mymovies.models.dto.Movie
  * @see com.sandy.mymovies.models.domain.Actor
  * @see com.sandy.mymovies.models.domain.Genre
  * @see com.sandy.mymovies.models.domain.Tag
@@ -27,49 +27,45 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Video {
 
+  /**
+   * The unique IMDB-id identifying this movie.
+   */
   @Id
   private String imdbId;
 
   /**
    * The movie title.
    */
-  @Column
   private String title;
 
   /**
    * The year that the movie was released.
    */
-  @Column
   private Integer releaseYear;
 
   /**
    * The length of the movie in hours:minutes format.
    */
-  @Column
   private String duration;
 
   /**
    * The MPAA rating of the movie.
    */
-  @Column
   private String rating;
 
   /**
    * The name of the director.
    */
-  @Column
   private String director;
 
   /**
    * The URL of the poster-image for the movie.
    */
-  @Column
   private String imageUrl;
 
   /**
    * The description of the movie.
    */
-  @Column
   private String description;
 
 }

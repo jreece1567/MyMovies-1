@@ -1,5 +1,9 @@
 package com.sandy.mymovies;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sandy.mymovies.models.domain.Chapter;
 import com.sandy.mymovies.models.domain.Video;
 import com.sandy.mymovies.models.dto.Episode;
@@ -16,6 +20,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.logging.Level;
+import lombok.extern.java.Log;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Log
 @SpringBootApplication
