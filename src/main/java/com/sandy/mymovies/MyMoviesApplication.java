@@ -62,6 +62,7 @@ public class MyMoviesApplication implements CommandLineRunner {
     // test repository setup - remove this when repos are validated
     testRepos();
     // test file-access setup - remove this when validated.
+    testFileAccess();
 
     // un-comment the 'loadAllxxx()' calls below when ready to load everything
     // Load files, create movie beans
@@ -135,6 +136,9 @@ public class MyMoviesApplication implements CommandLineRunner {
 
   }
 
+  /**
+   * Temporary method to test file-access functionality - remove this before loading real data.
+   */
   private void testFileAccess() {
 
     BufferedReader indexReader = new BufferedReader(

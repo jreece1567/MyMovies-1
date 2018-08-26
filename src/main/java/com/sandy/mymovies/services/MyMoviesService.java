@@ -48,9 +48,10 @@ public class MyMoviesService {
   }
 
   /**
-   * Creates a Movie.
+   * Create a movie, if the supplied imdbId does not already exist.
    *
-   * @return the created movie, if one was created, or the existing movie if it already exists.
+   * @param movie the movie to be created.
+   * @return the created movie, or the existing movie if it already exists.
    */
   public Movie createMovie(final Movie movie) {
 
@@ -84,9 +85,14 @@ public class MyMoviesService {
   }
 
   /**
-   * Creates an Episode, if one with provided imdbId/season/episodeNumber does not exist
+   * Create an episode, if one for the imdbId/season/episodeNumber does not already exist.
    *
-   * @return created episode
+   * @param imdbId the unique IMDB-id of the movie.
+   * @param season the season number.
+   * @param episodeNumber the episode number.
+   * @param title the title of the episode.
+   * @param description the description of the episode.
+   * @return the created episode, or the existing episode if it already exists.
    */
   public Episode createEpisode(final String imdbId, final String season,
       final String episodeNumber, final String title, final String description) {
@@ -112,9 +118,10 @@ public class MyMoviesService {
   }
 
   /**
-   * Verify and return a Movie given a imdbId
+   * Return a Movie given an imdbId.
    *
-   * @return the found movie
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return the found movie.
    */
   public Movie readMovie(final String imdbId) {
 
@@ -156,9 +163,10 @@ public class MyMoviesService {
   }
 
   /**
+   * Return a Title given an imdbId.
    *
-   * @param imdbId
-   * @return
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return the found title.
    */
   public Title readTitle(final String imdbId) {
 
@@ -172,9 +180,10 @@ public class MyMoviesService {
   }
 
   /**
+   * Return the Cast (list of actor names) given an imdbId.
    *
-   * @param imdbId
-   * @return
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return the found cast.
    */
   public Cast readCast(final String imdbId) {
     final List<String> actors = actorRepository.findAllByImdbId(imdbId);
@@ -187,9 +196,10 @@ public class MyMoviesService {
   }
 
   /**
+   * Return all Episodes given an imdbId.
    *
-   * @param imdbId
-   * @return
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return the list of Episodes found.
    */
   public List<Episode> readEpisodes(final String imdbId) {
 
@@ -201,10 +211,11 @@ public class MyMoviesService {
   }
 
   /**
+   * Return all Episodes given an imdbId and season number.
    *
-   * @param imdbId
-   * @param seasonNumber
-   * @return
+   * @param imdbId the unique IMDB-id of the movie.
+   * @param seasonNumber the season number.
+   * @return the list of Episodes found.
    */
   public List<Episode> readEpisodes(final String imdbId, final Integer seasonNumber) {
 
@@ -219,9 +230,10 @@ public class MyMoviesService {
   }
 
   /**
+   * Return all seasons (season numbers) given an imdbId.
    *
-   * @param imdbId
-   * @return
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return the list of season numbers.
    */
   public List<String> readSeasons(final String imdbId) {
 
@@ -229,9 +241,10 @@ public class MyMoviesService {
   }
 
   /**
+   * Return all distinct keys for a given Index.
    *
-   * @param index
-   * @return
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @return the list of distinct key values (genres, ratings, tags, etc.).
    */
   public List<String> readIndex(final Index index) {
 
@@ -275,10 +288,11 @@ public class MyMoviesService {
   }
 
   /**
+   * Return all Titles under a given Index and key-value.
    *
-   * @param index
-   * @param key
-   * @return
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key value (a genre, a rating, a tag, etc.).
+   * @return the list of Titles under the given Index and key-value.
    */
   public List<Title> readTitlesByIndexAndKey(final Index index, final String key) {
 
@@ -324,7 +338,9 @@ public class MyMoviesService {
   }
 
   /**
-   * @param index the index (tag,actor,genre,director,rating,etc.)
+   * Return all Key values for a given Index.
+   *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
    * @return a list of the distinct values for the index, and the imdbIds associated with each
    * distinct value.
    */
@@ -405,10 +421,11 @@ public class MyMoviesService {
   }
 
   /**
+   * Return a 'Key', which is a list of all imdbIds under a given Index and key-value.
    *
-   * @param index
-   * @param key
-   * @return
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key-value (a genre, a rating, a tag, etc.).
+   * @return the Key, containing the key-value and list of associated imdbIds.
    */
   public Key readIdsByIndexAndKey(final Index index, final String key) {
 
@@ -457,12 +474,12 @@ public class MyMoviesService {
     return keyResult;
   }
 
-
   /**
+   * Search a given Index for a given query value. All matches (partial and complete) are valid.
    *
-   * @param index
-   * @param query
-   * @return
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param query the query value (a partial/complete genre-name, tag-name, actor-name, etc.).
+   * @return the list of matches for the given query on the given index.
    */
   public List<String> searchByIndex(final Index index, final String query) {
 

@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -47,7 +48,8 @@ public class MyMoviesController {
 
   /**
    * Exception handler if IllegalArgumentException is thrown
-   *
+
+   * @param ex the thrown exception.
    * @return Error message String.
    */
   @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
@@ -60,6 +62,7 @@ public class MyMoviesController {
   /**
    * Exception handler if NoSuchElementException is thrown
    *
+   * @param ex the thrown exception.
    * @return Error message String.
    */
   @ResponseStatus(HttpStatus.NOT_FOUND)
@@ -72,6 +75,7 @@ public class MyMoviesController {
   /**
    * Exception handler if NotYetImplementedException is thrown
    *
+   * @param ex the thrown exception.
    * @return Error message String.
    */
   @ResponseStatus(HttpStatus.NOT_IMPLEMENTED)
@@ -82,7 +86,23 @@ public class MyMoviesController {
   }
 
   /**
-   * @return Individual movie
+   * Create a Movie.
+   *
+   * @param movie the movie to be created.
+   * @return The created movie.
+   */
+  @RequestMapping(method = RequestMethod.POST, path = "/movie")
+  @ResponseStatus(HttpStatus.OK)
+  public Movie postMovie(@RequestBody() final Movie movie) {
+
+    return service.createMovie(movie);
+  }
+
+  /**
+   * Fetch a Movie.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return the found movie.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/movie/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
@@ -92,7 +112,10 @@ public class MyMoviesController {
   }
 
   /**
-   * @return Individual movie title
+   * Fetch a Title.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return the found title.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/title/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
@@ -102,8 +125,11 @@ public class MyMoviesController {
   }
 
   /**
+   * Fetch a list of Titles associated with a given Index and key-value.
    * Used where 'key' can be a path param.
    *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key value (a genre, a rating, a tag, etc.).
    * @return Titles associated with an index and key.
    */
   @RequestMapping(method = RequestMethod.GET, path = "{/titles/{index}/{key}")
@@ -117,8 +143,11 @@ public class MyMoviesController {
   }
 
   /**
+   * Fetch a list of Titles associated with a given Index and key-value.
    * Used where the 'key' cannot be a path-param and instead is a query-param named 'name'.
    *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key value (a genre, a rating, a tag, etc.).
    * @return Titles associated with an index and key.
    */
   @RequestMapping(method = RequestMethod.GET, path = "{/titles/{index}")
@@ -132,6 +161,9 @@ public class MyMoviesController {
   }
 
   /**
+   * Fetch the cast (list of actor-names) for a given imdbId.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
    * @return Cast associated with a single movie (list of strings)
    */
   @RequestMapping(method = RequestMethod.GET, path = "{/cast/{imdbId}}")
@@ -142,7 +174,25 @@ public class MyMoviesController {
   }
 
   /**
-   * @return All episodes associated with a show
+   * Create an Episode.
+   *
+   * @param episode the Episode to be created.
+   * @return The created episode.
+   */
+  @RequestMapping(method = RequestMethod.POST, path = "/episodes")
+  @ResponseStatus(HttpStatus.OK)
+  public Episode postEpisode(@RequestBody() final Episode episode) {
+
+    return service
+        .createEpisode(episode.getImdbId(), episode.getSeason(), episode.getEpisodeNumber(),
+            episode.getTitle(), episode.getDescription());
+  }
+
+  /**
+   * Fetch all Episodes associated with a given imdbId.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return All episodes associated with a show.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
@@ -152,7 +202,11 @@ public class MyMoviesController {
   }
 
   /**
-   * @return Episodes associated with a show and season
+   * Fetch all Episodes associated with a given imdbId and season.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @param seasonNumber the season number.
+   * @return Episodes associated with a show and season.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbId}/{seasonNumber}")
   @ResponseStatus(HttpStatus.OK)
@@ -163,7 +217,10 @@ public class MyMoviesController {
   }
 
   /**
-   * @return A list of seasons associated with a show
+   * Fetch all seasons (list of season numbers) associated with a given imdbId.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @return A list of seasons associated with a show.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/seasons/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
@@ -173,7 +230,10 @@ public class MyMoviesController {
   }
 
   /**
-   * @return A list of keys associated with an index-name
+   * Fetch all distinct keys for a given Index.
+   *
+   * @param name the name of the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @return the list of distinct key values (genres, ratings, tags, etc.).
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/keys/{name}")
   @ResponseStatus(HttpStatus.OK)
@@ -184,7 +244,11 @@ public class MyMoviesController {
   }
 
   /**
-   * @return A list of keys and imdbIds associated with an index-name
+   * Fetch all Key values for a given Index.
+   *
+   * @param name the index name (actor,director,genre,rating,tag,title,year,etc.).
+   * @return a list of the distinct values for the index, and the imdbIds associated with each
+   * distinct value.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/{name}")
   @ResponseStatus(HttpStatus.OK)
@@ -195,7 +259,11 @@ public class MyMoviesController {
   }
 
   /**
-   * @return A list of titles associated with an index-name and key-value.
+   * Fetch a 'Key', which is a list of all imdbIds under a given Index and key-value.
+   *
+   * @param name the index name (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key-value (a genre, a rating, a tag, etc.).
+   * @return the Key, containing the key-value and list of associated imdbIds.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/{name}/{key}")
   @ResponseStatus(HttpStatus.OK)
@@ -207,7 +275,11 @@ public class MyMoviesController {
   }
 
   /**
-   * @return A search result for a search on an index.
+   * Search a given Index for a given query value. All matches (partial and complete) are valid.
+   *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param query the query value (a partial/complete genre-name, tag-name, actor-name, etc.).
+   * @return the list of matches for the given query on the given index.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/search/{index}")
   @ResponseStatus(HttpStatus.OK)
