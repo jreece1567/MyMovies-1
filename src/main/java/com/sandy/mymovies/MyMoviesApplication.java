@@ -4,27 +4,17 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sandy.mymovies.models.domain.Actor;
-import com.sandy.mymovies.models.domain.Chapter;
-import com.sandy.mymovies.models.domain.Genre;
-import com.sandy.mymovies.models.domain.Tag;
-import com.sandy.mymovies.models.domain.Video;
 import com.sandy.mymovies.models.dto.Episode;
 import com.sandy.mymovies.models.dto.Movie;
-import com.sandy.mymovies.repositories.ActorRepository;
-import com.sandy.mymovies.repositories.ChapterRepository;
-import com.sandy.mymovies.repositories.GenreRepository;
-import com.sandy.mymovies.repositories.TagRepository;
-import com.sandy.mymovies.repositories.VideoRepository;
 import com.sandy.mymovies.services.MyMoviesService;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.logging.Level;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,19 +26,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MyMoviesApplication implements CommandLineRunner {
 
-  // remove these repository references along with the 'testRepos' method below when repo-testing is complete.
-  @Autowired
-  ActorRepository actorRepository;
-  @Autowired
-  ChapterRepository chapterRepository;
-  @Autowired
-  GenreRepository genreRepository;
-  @Autowired
-  TagRepository tagRepository;
-  @Autowired
-  VideoRepository videoRepository;
-
-  // the service is the only interface needed by this class in normal situations
   @Autowired
   MyMoviesService movieService;
 
@@ -59,86 +36,20 @@ public class MyMoviesApplication implements CommandLineRunner {
   @Override
   public void run(final String... args) throws Exception {
 
-    // test repository setup - remove this when repos are validated
-    testRepos();
-
-    // un-comment the 'loadAllxxx()' calls below when ready to load everything
     // Load files, create movie beans
-    //loadAllMovies();
+    loadAllMovies();
     // Load files, create Episode beans
-    //loadAllEpisodes();
-  }
+    loadAllEpisodes();
 
-  /**
-   * Temporary method to test low-level repo functionality - remove this before loading real data.
-   */
-  private void testRepos() {
-
-    // test 'Actor' (Cast) repo
-    actorRepository.save(new Actor("Matt Damon", "0128442"));
-    actorRepository.save(new Actor("Gretchen Mol", "0128442"));
-
-    final List<String> actorImdbIds = actorRepository.findAllByName("Matt Damon");
-    if (!actorImdbIds.isEmpty()) {
-      log.info("Found: " + actorImdbIds.toString());
-    } else {
-      log.info(
-          "Unable to load actor with name: " + "Matt Damon");
-    }
-
-    // test 'Chapter' (Episode) repo
-    chapterRepository.save(new Chapter("4052886", 1, 1, "Pilot",
-        "Lucifer has left Hell to take up a life on Earth. When a friend of his is murdered Lucifer joins forces with the good side of the law to discover who the perpetrators are and to give them what they rightfully deserve."));
-
-    final Optional<Chapter> chapter = chapterRepository
-        .findByImdbIdAndSeasonAndEpisodeNumber("4052886", 1, 1);
-    if (chapter.isPresent()) {
-      log.info("Found: " + chapter.get().toString());
-    } else {
-      log.info(
-          "Unable to load episode with id: " + "4052886" + " season " + "1" + " episode " + "1");
-    }
-
-    // test 'Genre' (Genres) repo
-    genreRepository.save(new Genre("Crime", "0128442"));
-
-    final List<String> genreImdbIds = genreRepository.findAllByGenre("Crime");
-    if (!genreImdbIds.isEmpty()) {
-      log.info("Found: " + genreImdbIds.toString());
-    } else {
-      log.info(
-          "Unable to load genre with name: " + "Crime");
-    }
-
-    // test 'Tag' (Tags) repo
-    tagRepository.save(new Tag("TV", "4052886"));
-
-    final List<String> tagImdbIds = tagRepository.findAllByTag("TV");
-    if (!tagImdbIds.isEmpty()) {
-      log.info("Found: " + tagImdbIds.toString());
-    } else {
-      log.info(
-          "Unable to load tag with name: " + "TV");
-    }
-
-    // test 'Video' (Movie) repo
-    videoRepository.save(new Video("0128442", "Rounders", 1998, "2:01", "R", "John Dahl",
-        "0128442.jpg",
-        "A young man is a reformed gambler who must return to playing big stakes poker to help a friend pay off loan sharks."));
-
-    final Optional<Video> video = videoRepository.findById("0128442");
-    if (video.isPresent()) {
-      log.info("Found: " + video.get().toString());
-    } else {
-      log.info("Unable to load movie with id: " + "0128442");
-    }
-
+    log.info("MyMovies service ready for use !!!");
   }
 
   /**
    * Load all 'Movies' from the filesystem-based DB into our DB.
    */
   private void loadAllMovies() {
+
+    SimpleTimer timer = new SimpleTimer().start();
 
     // load up the list of imdbid's in the filesystem-based DB
     BufferedReader indexReader = new BufferedReader(
@@ -156,12 +67,12 @@ public class MyMoviesApplication implements CommandLineRunner {
       return;
     }
 
-    log.info("Loading " + map.size() + " movies ...");
+    log.info("Loading " + map.keySet().size() + " movies ...");
     final Map<String, Integer> moviesLoaded = new HashMap<>();  // use a map so that we can update it from within a closure.
 
     // walk the list of imdbid's, loading each 'Movie' JSON file and storing it in our DB
     map.keySet().forEach(imdbId -> {
-      BufferedReader movieReader = new BufferedReader(
+      final BufferedReader movieReader = new BufferedReader(
           new InputStreamReader(getClass().getResourceAsStream("/db/" + imdbId + ".json")));
       Movie movie = null;
       try {
@@ -171,16 +82,16 @@ public class MyMoviesApplication implements CommandLineRunner {
         moviesLoaded
             .put(imdbId, 1);  // do this so that we can keep a count from inside this closure.
       } catch (JsonMappingException | JsonParseException e) {
-        log.log(Level.ALL, "Error reading " + imdbId + ".json", e);
+        log.info("Error reading " + imdbId + ".json - " + e.getMessage());
       } catch (IOException e) {
-        log.log(Level.ALL, "Error reading " + imdbId + ".json", e);
+        log.info("Error reading " + imdbId + ".json - " + e.getMessage());
       }
       if (movie != null) {
         movieService.createMovie(movie);
       }
     });
 
-    log.info("Loaded " + moviesLoaded.size() + " movies ...");
+    log.info("Loaded " + moviesLoaded.size() + " movies in " + timer.stop().duration() + "ms.");
   }
 
   /**
@@ -188,8 +99,10 @@ public class MyMoviesApplication implements CommandLineRunner {
    */
   private void loadAllEpisodes() {
 
+    SimpleTimer timer = new SimpleTimer().start();
+
     // load up the list of imdbid's-with-episodes in the filesystem-based DB
-    BufferedReader indexReader = new BufferedReader(
+    final BufferedReader indexReader = new BufferedReader(
         new InputStreamReader(getClass().getResourceAsStream("/db/index_episode.json")));
     Map<String, List<Episode>> map = new HashMap<>();
     try {
@@ -219,7 +132,37 @@ public class MyMoviesApplication implements CommandLineRunner {
       });
     }
 
-    log.info("Loaded " + episodesLoaded + " episodes for " + map.size() + " titles.");
+    log.info(
+        "Loaded " + episodesLoaded + " episodes for " + map.size() + " titles in " + timer.stop()
+            .duration() + "ms.");
   }
 
+  /**
+   * Simple execution-time timer.
+   */
+  class SimpleTimer {
+
+    private long start;
+    private long stop;
+
+    public SimpleTimer() {
+      this.start = new Date().getTime();
+      this.stop = this.start;
+    }
+
+    public SimpleTimer start() {
+      this.start = new Date().getTime();
+      this.stop = this.start;
+      return this;
+    }
+
+    public SimpleTimer stop() {
+      this.stop = new Date().getTime();
+      return this;
+    }
+
+    public long duration() {
+      return this.stop - this.start;
+    }
+  }
 }

@@ -18,4 +18,13 @@ public enum Index {
     return value;
   }
 
+  public static Index fromValue(String value) {
+    for (Index index : values()) {
+      if (index.getValue().equals(value)) {
+        return index;
+      }
+    }
+    throw new IllegalArgumentException(
+        "No enum constant in " + Index.class.getName() + " for value '" + value + "'");
+  }
 }

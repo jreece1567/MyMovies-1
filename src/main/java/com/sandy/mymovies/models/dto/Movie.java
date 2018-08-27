@@ -62,12 +62,12 @@ public class Movie {
   /**
    * The list of genres associated with the movie.
    */
-  private Genres genre;
+  private Genres genres;
 
   /**
    * The list of tags associated with the movie.
    */
-  private Tags tag;
+  private Tags tags;
 
   /**
    * The list of actor-names associated with the movie.

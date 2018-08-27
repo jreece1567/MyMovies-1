@@ -1,5 +1,6 @@
 package com.sandy.mymovies.models.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Index;
@@ -66,6 +67,7 @@ public class Video {
   /**
    * The description of the movie.
    */
+  @Column(length = 2048)
   private String description;
 
 }

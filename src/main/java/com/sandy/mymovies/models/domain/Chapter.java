@@ -1,5 +1,6 @@
 package com.sandy.mymovies.models.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -46,6 +47,7 @@ public class Chapter {
   /**
    * The description the episode.
    */
+  @Column(length = 2048)
   private String description;
 
   /**

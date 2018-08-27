@@ -64,11 +64,11 @@ public class MyMoviesService {
         actorRepository.save(new Actor(actorName, movie.getImdbId()));
       }
       // save the Tags
-      for (final String tag : movie.getTag()) {
+      for (final String tag : movie.getTags()) {
         tagRepository.save(new Tag(tag, movie.getImdbId()));
       }
       // save the Genres
-      for (final String genre : movie.getGenre()) {
+      for (final String genre : movie.getGenres()) {
         genreRepository.save(new Genre(genre, movie.getImdbId()));
       }
       // save the Video
@@ -147,12 +147,12 @@ public class MyMoviesService {
     // populate the Movie genres
     final Genres genres = new Genres();
     genres.addAll(genreRepository.findAllByImdbId(movie.getImdbId()));
-    movie.setGenre(genres);
+    movie.setGenres(genres);
 
     // populate the Movie tags
     final Tags tags = new Tags();
     tags.addAll(tagRepository.findAllByImdbId(movie.getImdbId()));
-    movie.setTag(tags);
+    movie.setTags(tags);
 
     // populate the Movie cast
     final Cast cast = new Cast();

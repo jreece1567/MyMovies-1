@@ -136,7 +136,8 @@ public class MyMoviesController {
   public List<Title> getTitlesByIndexAndKey(@PathVariable("index") final String index,
       @PathVariable("key") final String key) {
 
-    final Index idx = Index.valueOf(index); // will throw IllegalArgumentException if the 'index' is
+    final Index idx = Index
+        .fromValue(index); // will throw IllegalArgumentException if the 'index' is
     // not
     // valid
     return service.readTitlesByIndexAndKey(idx, key);
@@ -154,7 +155,8 @@ public class MyMoviesController {
   public List<Title> getTitlesByIndexAndName(@PathVariable("index") final String index,
       @RequestParam("name") final String key) {
 
-    final Index idx = Index.valueOf(index); // will throw IllegalArgumentException if the 'index' is
+    final Index idx = Index
+        .fromValue(index); // will throw IllegalArgumentException if the 'index' is
     // not
     // valid
     return service.readTitlesByIndexAndKey(idx, key);
@@ -239,7 +241,7 @@ public class MyMoviesController {
   @ResponseStatus(HttpStatus.OK)
   public List<String> getKeysByIndex(@PathVariable("name") final String name) {
 
-    final Index idx = Index.valueOf(name);
+    final Index idx = Index.fromValue(name);
     return service.readIndex(idx);
   }
 
@@ -254,7 +256,7 @@ public class MyMoviesController {
   @ResponseStatus(HttpStatus.OK)
   public List<Key> getIdsByIndex(@PathVariable("name") final String name) {
 
-    final Index idx = Index.valueOf(name);
+    final Index idx = Index.fromValue(name);
     return service.readIdsByIndex(idx);
   }
 
@@ -270,7 +272,7 @@ public class MyMoviesController {
   public Key getIdsByIndex(@PathVariable("name") final String name,
       @PathVariable("key") final String key) {
 
-    final Index idx = Index.valueOf(name);
+    final Index idx = Index.fromValue(name);
     return service.readIdsByIndexAndKey(idx, key);
   }
 
@@ -286,7 +288,7 @@ public class MyMoviesController {
   public List<String> searchByIndex(@PathVariable("index") final String index,
       @RequestParam("q") final String query) {
 
-    final Index idx = Index.valueOf(index);
+    final Index idx = Index.fromValue(index);
     return service.searchByIndex(idx, query);
   }
 
