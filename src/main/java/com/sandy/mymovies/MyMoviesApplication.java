@@ -127,8 +127,8 @@ public class MyMoviesApplication implements CommandLineRunner {
       List<Episode> episodes = map.get(imdbId);
       episodesLoaded = episodesLoaded + episodes.size();
       episodes.forEach(episode -> {
-        movieService.createEpisode(episode.getImdbId(), episode.getSeason(),
-            episode.getEpisodeNumber(), episode.getTitle(), episode.getDescription());
+        movieService.createEpisode(new Episode(episode.getImdbId(), episode.getSeason(),
+            episode.getEpisodeNumber(), episode.getTitle(), episode.getDescription()));
       });
     }
 

@@ -87,20 +87,16 @@ public class MyMoviesService {
   /**
    * Create an episode, if one for the imdbId/season/episodeNumber does not already exist.
    *
-   * @param imdbId the unique IMDB-id of the movie.
-   * @param season the season number.
-   * @param episodeNumber the episode number.
-   * @param title the title of the episode.
-   * @param description the description of the episode.
+   * @param episode the Episode to be created.
    * @return the created episode, or the existing episode if it already exists.
    */
-  public Episode createEpisode(final String imdbId, final String season,
-      final String episodeNumber, final String title, final String description) {
+  public Episode createEpisode(final Episode episode) {
 
     final Optional<Chapter> chapter =
         chapterRepository
-            .findByImdbIdAndSeasonAndEpisodeNumber(imdbId, Integer.parseInt(season),
-                Integer.parseInt(episodeNumber));
+            .findByImdbIdAndSeasonAndEpisodeNumber(episode.getImdbId(),
+                Integer.parseInt(episode.getSeason()),
+                Integer.parseInt(episode.getEpisodeNumber()));
     if (chapter.isPresent()) {
       return new Episode(chapter.get().getImdbId(), String.valueOf(chapter.get().getSeason()),
           String.valueOf(chapter.get().getEpisodeNumber()), chapter.get().getTitle(),
@@ -109,8 +105,9 @@ public class MyMoviesService {
 
     final Chapter newChapter =
         chapterRepository.save(
-            new Chapter(imdbId, Integer.parseInt(season), Integer.parseInt(episodeNumber),
-                title, description));
+            new Chapter(episode.getImdbId(), Integer.parseInt(episode.getSeason()),
+                Integer.parseInt(episode.getEpisodeNumber()),
+                episode.getTitle(), episode.getDescription()));
 
     return new Episode(newChapter.getImdbId(), String.valueOf(newChapter.getSeason()),
         String.valueOf(newChapter.getEpisodeNumber()), newChapter.getTitle(),

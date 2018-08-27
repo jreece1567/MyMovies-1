@@ -136,18 +136,14 @@ public class MyMoviesController {
   public List<Title> getTitlesByIndexAndKey(@PathVariable("index") final String index,
       @PathVariable("key") final String key) {
 
-    final Index idx = Index
-        .fromValue(index); // will throw IllegalArgumentException if the 'index' is
-    // not
-    // valid
-    return service.readTitlesByIndexAndKey(idx, key);
+    return service.readTitlesByIndexAndKey(Index.fromValue(index), key);
   }
 
   /**
    * Fetch a list of Titles associated with a given Index and key-value. Used where the 'key' cannot
    * be a path-param and instead is a query-param named 'name'.
    *
-   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
    * @param key the key value (a genre, a rating, a tag, etc.).
    * @return Titles associated with an index and key.
    */
@@ -155,11 +151,7 @@ public class MyMoviesController {
   public List<Title> getTitlesByIndexAndName(@PathVariable("index") final String index,
       @RequestParam("name") final String key) {
 
-    final Index idx = Index
-        .fromValue(index); // will throw IllegalArgumentException if the 'index' is
-    // not
-    // valid
-    return service.readTitlesByIndexAndKey(idx, key);
+    return service.readTitlesByIndexAndKey(Index.fromValue(index), key);
   }
 
   /**
@@ -185,9 +177,7 @@ public class MyMoviesController {
   @ResponseStatus(HttpStatus.OK)
   public Episode postEpisode(@RequestBody() final Episode episode) {
 
-    return service
-        .createEpisode(episode.getImdbId(), episode.getSeason(), episode.getEpisodeNumber(),
-            episode.getTitle(), episode.getDescription());
+    return service.createEpisode(episode);
   }
 
   /**
@@ -234,52 +224,49 @@ public class MyMoviesController {
   /**
    * Fetch all distinct keys for a given Index.
    *
-   * @param name the name of the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
    * @return the list of distinct key values (genres, ratings, tags, etc.).
    */
-  @RequestMapping(method = RequestMethod.GET, path = "/index/keys/{name}")
+  @RequestMapping(method = RequestMethod.GET, path = "/index/keys/{index}")
   @ResponseStatus(HttpStatus.OK)
-  public List<String> getKeysByIndex(@PathVariable("name") final String name) {
+  public List<String> getKeysByIndex(@PathVariable("index") final String index) {
 
-    final Index idx = Index.fromValue(name);
-    return service.readIndex(idx);
+    return service.readIndex(Index.fromValue(index));
   }
 
   /**
    * Fetch all Key values for a given Index.
    *
-   * @param name the index name (actor,director,genre,rating,tag,title,year,etc.).
+   * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
    * @return a list of the distinct values for the index, and the imdbIds associated with each
    * distinct value.
    */
-  @RequestMapping(method = RequestMethod.GET, path = "/index/{name}")
+  @RequestMapping(method = RequestMethod.GET, path = "/index/{index}")
   @ResponseStatus(HttpStatus.OK)
-  public List<Key> getIdsByIndex(@PathVariable("name") final String name) {
+  public List<Key> getIdsByIndex(@PathVariable("index") final String index) {
 
-    final Index idx = Index.fromValue(name);
-    return service.readIdsByIndex(idx);
+    return service.readIdsByIndex(Index.fromValue(index));
   }
 
   /**
    * Fetch a 'Key', which is a list of all imdbIds under a given Index and key-value.
    *
-   * @param name the index name (actor,director,genre,rating,tag,title,year,etc.).
+   * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
    * @param key the key-value (a genre, a rating, a tag, etc.).
    * @return the Key, containing the key-value and list of associated imdbIds.
    */
-  @RequestMapping(method = RequestMethod.GET, path = "/index/{name}/{key}")
+  @RequestMapping(method = RequestMethod.GET, path = "/index/{index}/{key}")
   @ResponseStatus(HttpStatus.OK)
-  public Key getIdsByIndex(@PathVariable("name") final String name,
+  public Key getIdsByIndex(@PathVariable("index") final String index,
       @PathVariable("key") final String key) {
 
-    final Index idx = Index.fromValue(name);
-    return service.readIdsByIndexAndKey(idx, key);
+    return service.readIdsByIndexAndKey(Index.fromValue(index), key);
   }
 
   /**
    * Search a given Index for a given query value. All matches (partial and complete) are valid.
    *
-   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
    * @param query the query value (a partial/complete genre-name, tag-name, actor-name, etc.).
    * @return the list of matches for the given query on the given index.
    */
@@ -288,8 +275,7 @@ public class MyMoviesController {
   public List<String> searchByIndex(@PathVariable("index") final String index,
       @RequestParam("q") final String query) {
 
-    final Index idx = Index.fromValue(index);
-    return service.searchByIndex(idx, query);
+    return service.searchByIndex(Index.fromValue(index), query);
   }
 
   // -- Remaining endpoints --
