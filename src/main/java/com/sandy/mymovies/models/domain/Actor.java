@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
-import lombok.Builder;
 import lombok.Data;
 
 /**
@@ -15,7 +14,6 @@ import lombok.Data;
 @Table(indexes = {@Index(name = "IDX_ACTOR_NAME", columnList = "name"),
     @Index(name = "IDX_ACTOR_IMDBID", columnList = "imdbId")})
 @Data
-@Builder
 public class Actor {
 
   /**
