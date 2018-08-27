@@ -138,29 +138,44 @@ public class MyMoviesApplication implements CommandLineRunner {
   }
 
   /**
-   * Simple execution-time timer.
+   * Simple reusable execution-time timer.
    */
   class SimpleTimer {
 
     private long start;
     private long stop;
 
+    /**
+     * Create a new SimpleTimer instance.
+     */
     public SimpleTimer() {
       this.start = new Date().getTime();
       this.stop = this.start;
     }
 
+    /**
+     * Start the timer.
+     * @return this SimpleTimer instance.
+     */
     public SimpleTimer start() {
       this.start = new Date().getTime();
       this.stop = this.start;
       return this;
     }
 
+    /**
+     * Stop the timer.
+     * @return this SimpleTimer instance.
+     */
     public SimpleTimer stop() {
       this.stop = new Date().getTime();
       return this;
     }
 
+    /**
+     * Return the duration recorded by the timer.
+     * @return the duration in milliseconds.
+     */
     public long duration() {
       return this.stop - this.start;
     }
