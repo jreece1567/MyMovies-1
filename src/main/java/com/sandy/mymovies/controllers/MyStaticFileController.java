@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+/**
+ * Provides HTTP 'transport layer' support for the application. Any type of static file can be
+ * served from this class (JPG, CSS, JS, etc.).
+ */
 @Controller
 public class MyStaticFileController {
 

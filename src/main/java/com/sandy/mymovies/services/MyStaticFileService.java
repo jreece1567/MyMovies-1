@@ -8,6 +8,9 @@ import java.util.NoSuchElementException;
 import lombok.extern.java.Log;
 import org.springframework.stereotype.Service;
 
+/**
+ * Provides access to static-file resources.
+ */
 @Log
 @Service
 public class MyStaticFileService {

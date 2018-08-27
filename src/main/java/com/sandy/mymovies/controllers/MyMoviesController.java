@@ -21,6 +21,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Provides HTTP/JSON 'transport layer' support for the application.
+ */
 @RestController
 public class MyMoviesController {
 

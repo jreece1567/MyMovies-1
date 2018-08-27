@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * JPA interface to Video table.
+ * JPA interface to the Video table.
  */
 @Repository
 public interface VideoRepository extends CrudRepository<Video, String> {

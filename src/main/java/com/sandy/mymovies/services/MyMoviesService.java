@@ -26,6 +26,10 @@ import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * Provides 'business logic' for the application. Mediates between the 'transport' layer and the
+ * 'persistence' layer.
+ */
 @Service
 public class MyMoviesService {
 
@@ -60,17 +64,15 @@ public class MyMoviesService {
       // create a new movie in the DB
 
       // save the Cast
-      for (final String actorName : movie.getCast()) {
-        actorRepository.save(new Actor(actorName, movie.getImdbId()));
-      }
+      movie.getCast()
+          .forEach(actorName -> actorRepository.save(new Actor(actorName, movie.getImdbId())));
+
       // save the Tags
-      for (final String tag : movie.getTags()) {
-        tagRepository.save(new Tag(tag, movie.getImdbId()));
-      }
+      movie.getTags().forEach(tag -> tagRepository.save(new Tag(tag, movie.getImdbId())));
+
       // save the Genres
-      for (final String genre : movie.getGenres()) {
-        genreRepository.save(new Genre(genre, movie.getImdbId()));
-      }
+      movie.getGenres().forEach(genre -> genreRepository.save(new Genre(genre, movie.getImdbId())));
+
       // save the Video
       videoRepository
           .save(new Video(movie.getImdbId(), movie.getTitle(), movie.getReleaseYear(),

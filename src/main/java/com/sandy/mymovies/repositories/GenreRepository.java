@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * JPA interface to Genre table.
+ * JPA interface to the Genre table.
  */
 @Repository
 public interface GenreRepository extends CrudRepository<Genre, String> {

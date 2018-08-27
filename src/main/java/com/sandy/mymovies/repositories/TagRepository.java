@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * JPA interface to Tag table.
+ * JPA interface to the Tag table.
  */
 @Repository
 public interface TagRepository extends CrudRepository<Tag, String> {

@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * JPA interface to Actor table.
+ * JPA interface to the Actor table.
  */
 @Repository
 public interface ActorRepository extends CrudRepository<Actor, String> {

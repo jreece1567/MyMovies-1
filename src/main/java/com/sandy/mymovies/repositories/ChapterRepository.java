@@ -8,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * JPA interface to Chapter table.
+ * JPA interface to the Chapter table.
  */
 @Repository
 public interface ChapterRepository extends CrudRepository<Chapter, String> {
