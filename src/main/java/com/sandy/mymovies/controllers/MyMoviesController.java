@@ -48,7 +48,7 @@ public class MyMoviesController {
 
   /**
    * Exception handler if IllegalArgumentException is thrown
-
+   *
    * @param ex the thrown exception.
    * @return Error message String.
    */
@@ -125,8 +125,8 @@ public class MyMoviesController {
   }
 
   /**
-   * Fetch a list of Titles associated with a given Index and key-value.
-   * Used where 'key' can be a path param.
+   * Fetch a list of Titles associated with a given Index and key-value. Used where 'key' can be a
+   * path param.
    *
    * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
    * @param key the key value (a genre, a rating, a tag, etc.).
@@ -143,8 +143,8 @@ public class MyMoviesController {
   }
 
   /**
-   * Fetch a list of Titles associated with a given Index and key-value.
-   * Used where the 'key' cannot be a path-param and instead is a query-param named 'name'.
+   * Fetch a list of Titles associated with a given Index and key-value. Used where the 'key' cannot
+   * be a path-param and instead is a query-param named 'name'.
    *
    * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
    * @param key the key value (a genre, a rating, a tag, etc.).

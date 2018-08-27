@@ -75,8 +75,8 @@ public class MyMoviesApplication implements CommandLineRunner {
   private void testRepos() {
 
     // test 'Actor' (Cast) repo
-    actorRepository.save(new Actor("Matt Damon","0128442"));
-    actorRepository.save(new Actor("Gretchen Mol","0128442"));
+    actorRepository.save(new Actor("Matt Damon", "0128442"));
+    actorRepository.save(new Actor("Gretchen Mol", "0128442"));
 
     final List<String> actorImdbIds = actorRepository.findAllByName("Matt Damon");
     if (!actorImdbIds.isEmpty()) {
@@ -100,7 +100,7 @@ public class MyMoviesApplication implements CommandLineRunner {
     }
 
     // test 'Genre' (Genres) repo
-    genreRepository.save(new Genre("Crime","0128442"));
+    genreRepository.save(new Genre("Crime", "0128442"));
 
     final List<String> genreImdbIds = genreRepository.findAllByGenre("Crime");
     if (!genreImdbIds.isEmpty()) {
@@ -111,7 +111,7 @@ public class MyMoviesApplication implements CommandLineRunner {
     }
 
     // test 'Tag' (Tags) repo
-    tagRepository.save(new Tag("TV","4052886"));
+    tagRepository.save(new Tag("TV", "4052886"));
 
     final List<String> tagImdbIds = tagRepository.findAllByTag("TV");
     if (!tagImdbIds.isEmpty()) {

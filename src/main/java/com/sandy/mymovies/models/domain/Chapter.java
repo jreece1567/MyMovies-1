@@ -5,10 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * Bean associating an episode with an imdbId and season.
@@ -61,7 +59,8 @@ public class Chapter {
    * @param title The title of the episode.
    * @param description The description the episode.
    */
-  public Chapter(final String imdbId, final Integer season, final Integer episodeNumber, final String title, final String description) {
+  public Chapter(final String imdbId, final Integer season, final Integer episodeNumber,
+      final String title, final String description) {
     this.imdbId = imdbId;
     this.season = season;
     this.episodeNumber = episodeNumber;
