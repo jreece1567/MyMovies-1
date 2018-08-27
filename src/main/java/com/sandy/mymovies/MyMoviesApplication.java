@@ -155,6 +155,7 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     /**
      * Start the timer.
+     *
      * @return this SimpleTimer instance.
      */
     public SimpleTimer start() {
@@ -165,6 +166,7 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     /**
      * Stop the timer.
+     *
      * @return this SimpleTimer instance.
      */
     public SimpleTimer stop() {
@@ -174,6 +176,7 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     /**
      * Return the duration recorded by the timer.
+     *
      * @return the duration in milliseconds.
      */
     public long duration() {

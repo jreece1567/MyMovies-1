@@ -52,8 +52,10 @@ public class MyImageController {
       int len = 0;
       do {
         len = imageReader.read(buffer);
-        contentLength = contentLength + len;
-        baos.write(buffer, 0, len);
+        if (len != -1) {
+          contentLength = contentLength + len;
+          baos.write(buffer, 0, len);
+        }
       } while (len != -1);
 
     } catch (IOException ex) {
