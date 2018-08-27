@@ -1,9 +1,12 @@
 package com.sandy.mymovies.models.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,12 +14,18 @@ import lombok.NoArgsConstructor;
  * Bean associating an actor-name with an imdbId.
  */
 @Entity
-@Table(indexes = {@Index(name = "IDX_NAME", columnList = "name"),
-    @Index(name = "IDX_IMDBID", columnList = "imdbId")})
+@Table(indexes = {@Index(name = "IDX_ACTOR_NAME", columnList = "name"),
+    @Index(name = "IDX_ACTOR_IMDBID", columnList = "imdbId")})
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Builder
 public class Actor {
+
+  /**
+   * The unique row-id.
+   */
+  @Id
+  @GeneratedValue
+  private long id;
 
   /**
    * The actor name.
@@ -28,4 +37,14 @@ public class Actor {
    */
   private String imdbId;
 
+  /**
+   * All-args constructor (can't use lombok since this bean has an auto-generated 'id' field).
+   *
+   * @param name The actor name.
+   * @param imdbId The imdbId of a movie in which the actor appears.
+   */
+  public Actor(final String name, final String imdbId) {
+    this.name = name;
+    this.imdbId = imdbId;
+  }
 }

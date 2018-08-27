@@ -61,8 +61,6 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // test repository setup - remove this when repos are validated
     testRepos();
-    // test file-access setup - remove this when validated.
-    testFileAccess();
 
     // un-comment the 'loadAllxxx()' calls below when ready to load everything
     // Load files, create movie beans
@@ -78,6 +76,7 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // test 'Actor' (Cast) repo
     actorRepository.save(new Actor("Matt Damon","0128442"));
+    actorRepository.save(new Actor("Gretchen Mol","0128442"));
 
     final List<String> actorImdbIds = actorRepository.findAllByName("Matt Damon");
     if (!actorImdbIds.isEmpty()) {
@@ -134,28 +133,6 @@ public class MyMoviesApplication implements CommandLineRunner {
       log.info("Unable to load movie with id: " + "0128442");
     }
 
-  }
-
-  /**
-   * Temporary method to test file-access functionality - remove this before loading real data.
-   */
-  private void testFileAccess() {
-
-    BufferedReader indexReader = new BufferedReader(
-        new InputStreamReader(getClass().getResourceAsStream("/db/index_id.json")));
-    Map<String, List<String>> map = new HashMap<>();
-    try {
-      map = new ObjectMapper()
-          .readValue(indexReader, new TypeReference<HashMap<String, List<String>>>() {
-          });
-    } catch (JsonMappingException | JsonParseException e) {
-      log.log(Level.ALL, "Error reading index_id.json", e);
-      return;
-    } catch (IOException e) {
-      log.log(Level.ALL, "Error reading index_id.json", e);
-      return;
-    }
-    log.info("Loaded file: "+map.toString());
   }
 
   /**

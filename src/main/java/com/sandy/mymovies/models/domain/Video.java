@@ -5,6 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -18,13 +19,14 @@ import lombok.NoArgsConstructor;
  * @see com.sandy.mymovies.models.domain.Tag
  */
 @Entity
-@Table(indexes = {@Index(name = "IDX_TITLE", columnList = "title"),
-    @Index(name = "IDX_RELEASE_YEAR", columnList = "releaseYear"),
-    @Index(name = "IDX_RATING", columnList = "rating"),
-    @Index(name = "IDX_DIRECTOR", columnList = "director")})
+@Table(indexes = {@Index(name = "IDX_VIDEO_TITLE", columnList = "title"),
+    @Index(name = "IDX_VIDEO_RELEASE_YEAR", columnList = "releaseYear"),
+    @Index(name = "IDX_VIDEO_RATING", columnList = "rating"),
+    @Index(name = "IDX_VIDEO_DIRECTOR", columnList = "director")})
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Video {
 
   /**
