@@ -10,6 +10,10 @@ buildscript {
     }
 }
 
+plugins {
+    id 'io.franzbecker.gradle-lombok' version '1.14'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -34,10 +38,32 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
+import io.franzbecker.gradle.lombok.task.DelombokTask
+
+task delombok(type: DelombokTask, dependsOn: compileJava) {
+    ext.outputDir = file("$buildDir/delombok")
+    outputs.dir(outputDir)
+    sourceSets.main.java.srcDirs.each {
+        inputs.dir(it)
+        args(it, "-d", outputDir)
+    }
+    doFirst {
+        outputDir.deleteDir()
+    }
+}
+
+task delombokHelp(type: DelombokTask) {
+    args "--help"
+}
+
 javadoc {
-    source = sourceSets.main.allJava
+    dependsOn delombok
+    source = delombok.outputDir // sourceSets.main.allJava
     classpath = configurations.compile
     options.overview = "src/main/resources/doc/overview.html"
+    options.links "http://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/api/"
+    options.links "http://docs.spring.io/spring/docs/5.0.8.RELEASE/javadoc-api/"
+    options.addStringOption('Xdoclint:none', '-quiet')
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
