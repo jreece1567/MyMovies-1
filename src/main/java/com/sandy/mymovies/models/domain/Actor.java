@@ -23,7 +23,7 @@ public class Actor {
    */
   @Id
   @GeneratedValue
-  private long id;
+  private Long id;
 
   /**
    * The actor name.

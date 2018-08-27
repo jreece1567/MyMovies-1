@@ -23,7 +23,7 @@ public class Chapter {
    */
   @Id
   @GeneratedValue
-  private long id;
+  private Long id;
 
   /**
    * The unique IMDB-id identifying this movie.

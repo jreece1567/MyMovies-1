@@ -23,7 +23,7 @@ public class Genre {
    */
   @Id
   @GeneratedValue
-  private long id;
+  private Long id;
 
   /**
    * The name of the genre.
