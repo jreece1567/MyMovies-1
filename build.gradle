@@ -37,6 +37,7 @@ dependencies {
 javadoc {
     source = sourceSets.main.allJava
     classpath = configurations.compile
+    options.overview = "src/main/resources/doc/overview.html"
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
