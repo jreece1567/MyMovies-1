@@ -50,7 +50,7 @@ public class MyMoviesController {
   }
 
   /**
-   * Exception handler if IllegalArgumentException is thrown
+   * Exception handler if IllegalArgumentException is thrown.
    *
    * @param ex the thrown exception.
    * @return Error message String.
@@ -63,7 +63,7 @@ public class MyMoviesController {
   }
 
   /**
-   * Exception handler if NoSuchElementException is thrown
+   * Exception handler if NoSuchElementException is thrown.
    *
    * @param ex the thrown exception.
    * @return Error message String.
@@ -76,7 +76,7 @@ public class MyMoviesController {
   }
 
   /**
-   * Exception handler if NotYetImplementedException is thrown
+   * Exception handler if NotYetImplementedException is thrown.
    *
    * @param ex the thrown exception.
    * @return Error message String.
@@ -241,8 +241,7 @@ public class MyMoviesController {
    * Fetch all Key values for a given Index.
    *
    * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
-   * @return a list of the distinct values for the index, and the imdbIds associated with each
-   * distinct value.
+   * @return a list of the distinct values for the index, and the imdbIds associated with each.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/{index}")
   @ResponseStatus(HttpStatus.OK)

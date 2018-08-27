@@ -14,11 +14,19 @@ public enum Index {
     this.value = value;
   }
 
-  public String getValue() {
-    return value;
-  }
+  /**
+   * Convert a string value to the associated enum instance, if possible.
+   *
+   * @param value the string value.
+   * @return the enum constant with the specified value.
+   * @throws IllegalArgumentException if this enum type has no constant with the specified value.
+   * @throws NullPointerException if the supplied value is null.
+   */
+  public static Index fromValue(final String value) {
 
-  public static Index fromValue(String value) {
+    if (value == null) {
+      throw new NullPointerException();
+    }
     for (Index index : values()) {
       if (index.getValue().equals(value)) {
         return index;
@@ -26,5 +34,14 @@ public enum Index {
     }
     throw new IllegalArgumentException(
         "No enum constant in " + Index.class.getName() + " for value '" + value + "'");
+  }
+
+  /**
+   * Return the value of this enum constant.
+   *
+   * @return the value.
+   */
+  public String getValue() {
+    return value;
   }
 }

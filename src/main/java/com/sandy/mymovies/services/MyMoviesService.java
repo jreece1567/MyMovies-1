@@ -39,6 +39,15 @@ public class MyMoviesService {
   private final TagRepository tagRepository;
   private final GenreRepository genreRepository;
 
+  /**
+   * Construct a new service instance.
+   *
+   * @param videoRepository JPA interface to the Video table.
+   * @param chapterRepository JPA interface to the Chapter table.
+   * @param actorRepository JPA interface to the Actor table.
+   * @param tagRepository JPA interface to the Tag table.
+   * @param genreRepository JPA interface to the Genre table.
+   */
   @Autowired
   public MyMoviesService(final VideoRepository videoRepository,
       final ChapterRepository chapterRepository, final ActorRepository actorRepository,
@@ -340,8 +349,7 @@ public class MyMoviesService {
    * Return all Key values for a given Index.
    *
    * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
-   * @return a list of the distinct values for the index, and the imdbIds associated with each
-   * distinct value.
+   * @return a list of the distinct values for the index, and the imdbIds associated with each.
    */
   public List<Key> readIdsByIndex(final Index index) {
 

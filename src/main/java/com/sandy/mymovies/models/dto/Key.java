@@ -16,12 +16,12 @@ import lombok.NoArgsConstructor;
 public class Key {
 
   /**
-   * The key associated with the list of imdbIds
+   * The key associated with the list of imdbIds.
    */
   private String key;
 
   /**
-   * The list of imdbIds
+   * The list of imdbIds.
    */
   private List<String> ids;
 }

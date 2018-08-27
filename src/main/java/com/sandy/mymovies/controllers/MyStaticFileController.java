@@ -29,7 +29,7 @@ public class MyStaticFileController {
   }
 
   /**
-   * Exception handler if NoSuchElementException is thrown
+   * Exception handler if NoSuchElementException is thrown.
    *
    * @param ex the thrown exception.
    * @return Error message String.

@@ -49,7 +49,7 @@ public class MyMoviesApplication implements CommandLineRunner {
    */
   private void loadAllMovies() {
 
-    SimpleTimer timer = new SimpleTimer().start();
+    final SimpleTimer timer = new SimpleTimer().start();
 
     // load up the list of imdbid's in the filesystem-based DB
     BufferedReader indexReader = new BufferedReader(
@@ -68,7 +68,7 @@ public class MyMoviesApplication implements CommandLineRunner {
     }
 
     log.info("Loading " + map.keySet().size() + " movies ...");
-    final Map<String, Integer> moviesLoaded = new HashMap<>();  // use a map so that we can update it from within a closure.
+    final Map<String, Integer> moviesLoaded = new HashMap<>();
 
     // walk the list of imdbid's, loading each 'Movie' JSON file and storing it in our DB
     map.keySet().forEach(imdbId -> {
@@ -99,7 +99,7 @@ public class MyMoviesApplication implements CommandLineRunner {
    */
   private void loadAllEpisodes() {
 
-    SimpleTimer timer = new SimpleTimer().start();
+    final SimpleTimer timer = new SimpleTimer().start();
 
     // load up the list of imdbid's-with-episodes in the filesystem-based DB
     final BufferedReader indexReader = new BufferedReader(
@@ -120,7 +120,8 @@ public class MyMoviesApplication implements CommandLineRunner {
     log.info("Loading episodes for " + map.size() + " titles ...");
     int episodesLoaded = 0;
 
-    // walk the list of imdbid's, loading the episodes associated with each imdbId, and saving them in our DB.
+    // walk the list of imdbid's, load the episodes associated with each imdbId,
+    // and save the episodes in our DB.
     Iterator<String> iterator = map.keySet().iterator();
     while (iterator.hasNext()) {
       String imdbId = iterator.next();
