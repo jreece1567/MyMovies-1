@@ -19,6 +19,9 @@ import com.sandy.mymovies.repositories.GenreRepository;
 import com.sandy.mymovies.repositories.TagRepository;
 import com.sandy.mymovies.repositories.VideoRepository;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -208,6 +211,7 @@ public class MyMoviesService {
     if (!video.isPresent()) {
       throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
     }
+
     return new Title(video.get().getImdbId(), video.get().getTitle(),
         video.get().getReleaseYear(),
         video.get().getImageUrl());
@@ -221,16 +225,20 @@ public class MyMoviesService {
    * @throws NoSuchElementException if the supplied imdbId has no associated actors.
    */
   public Cast readCast(final String imdbId) {
+
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
       throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
     }
+
     final List<String> actors = actorRepository.findAllByImdbId(imdbId);
     if (actors == null || actors.isEmpty()) {
       throw new NoSuchElementException(String.format("Cast for movie %s not found.", imdbId));
     }
+
     final Cast cast = new Cast();
     cast.addAll(actors);
+
     return cast;
   }
 
@@ -246,10 +254,23 @@ public class MyMoviesService {
     if (!video.isPresent()) {
       throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
     }
+
     final List<Chapter> chapters = chapterRepository.findAllByImdbId(imdbId);
     final List<Episode> episodes = new ArrayList<>();
     chapters.forEach(c -> episodes.add(new Episode(c.getImdbId(), String.valueOf(c.getSeason()),
         String.valueOf(c.getEpisodeNumber()), c.getTitle(), c.getDescription())));
+
+    Collections.sort(episodes, new Comparator<Episode>() {
+      @Override
+      public int compare(Episode o1, Episode o2) {
+        int compareSeasons = o1.getSeason().compareTo(o2.getSeason());
+        if (compareSeasons != 0) {
+          return compareSeasons;
+        }
+        return o1.getEpisodeNumber().compareTo(o2.getEpisodeNumber());
+      }
+    });
+
     return episodes;
   }
 
@@ -266,17 +287,27 @@ public class MyMoviesService {
     if (!video.isPresent()) {
       throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
     }
+
     final List<Chapter> chapters = chapterRepository
         .findAllByImdbIdAndSeason(imdbId, seasonNumber);
     if (chapters.isEmpty()) {
       throw new NoSuchElementException(
           String.format("No seasons found for movie with id %s.", imdbId));
     }
+
     final List<Episode> episodes = new ArrayList<>();
     chapters.forEach(chapter -> episodes
         .add(new Episode(chapter.getImdbId(), String.valueOf(chapter.getSeason()),
             String.valueOf(chapter.getEpisodeNumber()), chapter.getTitle(),
             chapter.getDescription())));
+
+    Collections.sort(episodes, new Comparator<Episode>() {
+      @Override
+      public int compare(Episode o1, Episode o2) {
+        return o1.getEpisodeNumber().compareTo(o2.getEpisodeNumber());
+      }
+    });
+
     return episodes;
   }
 
@@ -328,7 +359,11 @@ public class MyMoviesService {
       throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
     }
 
-    return chapterRepository.findDistinctSeasonsByImdbId(imdbId);
+    final List<String> seasons = chapterRepository.findDistinctSeasonsByImdbId(imdbId);
+
+    Collections.sort(seasons);
+
+    return seasons;
   }
 
   /**
@@ -339,41 +374,39 @@ public class MyMoviesService {
    */
   public List<String> readIndex(final Index index) {
 
-    List<String> keys = new ArrayList<>();
+    final List<String> keys = new ArrayList<>();
 
     switch (index) {
       case ALL:
-        for (final Index idx : Index.values()) {
-          keys.add(idx.getValue());
-        }
+        Arrays.asList(Index.values()).forEach(idx -> keys.add(idx.getValue()));
         break;
       case ACTOR:
         keys.addAll(actorRepository.findAllDistinctActors());
         break;
       case DIRECTOR:
-        keys = videoRepository.findAllDistinctDirectors();
+        keys.addAll(videoRepository.findAllDistinctDirectors());
         break;
       case GENRE:
         keys.addAll(genreRepository.findAllDistinctGenres());
         break;
       case RATING:
-        keys = videoRepository.findAllDistinctRatings();
+        keys.addAll(videoRepository.findAllDistinctRatings());
         break;
       case TAG:
         keys.addAll(tagRepository.findAllDistinctTags());
         break;
       case TITLE:
-        keys = videoRepository.findAllDistinctTitles();
+        keys.addAll(videoRepository.findAllDistinctTitles());
         break;
       case YEAR:
-        final List<Integer> years = videoRepository.findAllDistinctReleaseYears();
-        for (final Integer year : years) {
-          keys.add(String.valueOf(year));
-        }
+        videoRepository.findAllDistinctReleaseYears()
+            .forEach(year -> keys.add(String.valueOf(year)));
         break;
       default:
         break;
     }
+
+    Collections.sort(keys);
 
     return keys;
   }
@@ -387,35 +420,33 @@ public class MyMoviesService {
    */
   public List<Title> readTitlesByIndexAndKey(final Index index, final String key) {
 
-    List<Video> videos = new ArrayList<>();
+    final List<Video> videos = new ArrayList<>();
 
     switch (index) {
       case ACTOR:
-        for (final String imdbId : actorRepository.findAllByName(key)) {
-          videos.add(videoRepository.findById(imdbId).get());
-        }
+        actorRepository.findAllByName(key)
+            .forEach(imdbId -> videos.add(videoRepository.findById(imdbId).get()));
         break;
       case DIRECTOR:
-        videos = videoRepository.findAllByDirector(key);
+        videoRepository.findAllByDirector(key).forEach(video -> videos.add(video));
         break;
       case GENRE:
-        for (final String imdbId : genreRepository.findAllByGenre(key)) {
-          videos.add(videoRepository.findById(imdbId).get());
-        }
+        genreRepository.findAllByGenre(key)
+            .forEach(imdbId -> videos.add(videoRepository.findById(imdbId).get()));
         break;
       case RATING:
-        videos = videoRepository.findAllByRating(key);
+        videoRepository.findAllByRating(key).forEach(video -> videos.add(video));
         break;
       case TAG:
-        for (final String imdbId : tagRepository.findAllByTag(key)) {
-          videos.add(videoRepository.findById(imdbId).get());
-        }
+        tagRepository.findAllByTag(key)
+            .forEach(imdbId -> videos.add(videoRepository.findById(imdbId).get()));
         break;
       case TITLE:
-        videos = videoRepository.findAllByTitle(key);
+        videoRepository.findAllByTitle(key).forEach(video -> videos.add(video));
         break;
       case YEAR:
-        videos = videoRepository.findAllByReleaseYear(Integer.valueOf(key));
+        videoRepository.findAllByReleaseYear(Integer.valueOf(key))
+            .forEach(video -> videos.add(video));
         break;
       default:
         break;
@@ -424,6 +455,13 @@ public class MyMoviesService {
     final List<Title> titles = new ArrayList<>();
     videos.forEach(video -> titles.add(new Title(video.getImdbId(), video.getTitle(),
         video.getReleaseYear(), video.getImageUrl())));
+
+    Collections.sort(titles, new Comparator<Title>() {
+      @Override
+      public int compare(Title o1, Title o2) {
+        return o1.getTitle().compareTo(o2.getTitle());
+      }
+    });
 
     return titles;
   }
@@ -507,6 +545,13 @@ public class MyMoviesService {
         break;
     }
 
+    Collections.sort(keys, new Comparator<Key>() {
+      @Override
+      public int compare(Key o1, Key o2) {
+        return o1.getKey().compareTo(o2.getKey());
+      }
+    });
+
     return keys;
   }
 
@@ -519,42 +564,36 @@ public class MyMoviesService {
    */
   public Key readIdsByIndexAndKey(final Index index, final String key) {
 
-    Key keyResult = new Key();
+    final Key keyResult = new Key();
     keyResult.setKey(key);
-    List<String> imdbIds = new ArrayList<>();
+
+    final List<String> imdbIds = new ArrayList<>();
 
     switch (index) {
       case ACTOR:
         keyResult.setIds(actorRepository.findAllByName(key));
         break;
       case DIRECTOR:
-        for (Video video : videoRepository.findAllByDirector(key)) {
-          imdbIds.add(video.getImdbId());
-        }
+        videoRepository.findAllByDirector(key).forEach(video -> imdbIds.add(video.getImdbId()));
         keyResult.setIds(imdbIds);
         break;
       case GENRE:
         keyResult.setIds(genreRepository.findAllByGenre(key));
         break;
       case RATING:
-        for (Video video : videoRepository.findAllByRating(key)) {
-          imdbIds.add(video.getImdbId());
-        }
+        videoRepository.findAllByRating(key).forEach(video -> imdbIds.add(video.getImdbId()));
         keyResult.setIds(imdbIds);
         break;
       case TAG:
         keyResult.setIds(tagRepository.findAllByTag(key));
         break;
       case TITLE:
-        for (Video video : videoRepository.findAllByTitle(key)) {
-          imdbIds.add(video.getImdbId());
-        }
+        videoRepository.findAllByTitle(key).forEach(video -> imdbIds.add(video.getImdbId()));
         keyResult.setIds(imdbIds);
         break;
       case YEAR:
-        for (Video video : videoRepository.findAllByReleaseYear(Integer.valueOf(key))) {
-          imdbIds.add(video.getImdbId());
-        }
+        videoRepository.findAllByReleaseYear(Integer.valueOf(key))
+            .forEach(video -> imdbIds.add(video.getImdbId()));
         keyResult.setIds(imdbIds);
         break;
       default:
@@ -597,4 +636,5 @@ public class MyMoviesService {
     throw new NotYetImplementedException("Searching is not yet implemented.");
     // return results;
   }
+
 }

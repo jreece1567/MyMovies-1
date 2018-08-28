@@ -29,20 +29,6 @@ public class MyMoviesController {
 
   private final MyMoviesService service;
 
-  // -- Basic crud endpoints --
-  // /title/{imdbId}
-  // /titles/{index}/{key}
-  // /movies/{imdbId}
-  // /movies/{index}
-  // /cast/{imdbId}
-  // /episodes/{imdbId}/{season}
-  // /episodes/{imdbId}
-  // /season/{imdbId}
-  // -- Index endpoints --
-  // /index/keys/{name}
-  // /index/{name}
-  // /index/{name}/{key}
-
   @Autowired
   public MyMoviesController(final MyMoviesService service) {
 
@@ -147,7 +133,7 @@ public class MyMoviesController {
    * @param key the key value (a genre, a rating, a tag, etc.).
    * @return Titles associated with an index and key.
    */
-  @RequestMapping(method = RequestMethod.GET, path = "{/titles/{index}/{key}")
+  @RequestMapping(method = RequestMethod.GET, path = "/titles/{index}/{key}")
   public List<Title> getTitlesByIndexAndKey(@PathVariable("index") final String index,
       @PathVariable("key") final String key) {
 
@@ -162,7 +148,7 @@ public class MyMoviesController {
    * @param key the key value (a genre, a rating, a tag, etc.).
    * @return Titles associated with an index and key.
    */
-  @RequestMapping(method = RequestMethod.GET, path = "{/titles/{index}")
+  @RequestMapping(method = RequestMethod.GET, path = "/titles/{index}")
   public List<Title> getTitlesByIndexAndName(@PathVariable("index") final String index,
       @RequestParam("name") final String key) {
 
@@ -175,7 +161,7 @@ public class MyMoviesController {
    * @param imdbId the unique IMDB-id of the movie.
    * @return Cast associated with a single movie (list of strings)
    */
-  @RequestMapping(method = RequestMethod.GET, path = "{/cast/{imdbId}}")
+  @RequestMapping(method = RequestMethod.GET, path = "/cast/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
   public Cast getCastByImdbId(@PathVariable("imdbId") final String imdbId) {
 
