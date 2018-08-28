@@ -22,4 +22,15 @@ public interface ChapterRepository extends CrudRepository<Chapter, String> {
 
   @Query("SELECT DISTINCT season FROM Chapter WHERE imdbId=?1")
   List<String> findDistinctSeasonsByImdbId(String imdbId);
+
+  @Query("DELETE FROM Chapter WHERE imdbId=?1")
+  void deleteChaptersByImdbId(String imdbId);
+
+  @Query("DELETE FROM Chapter WHERE imdbId=?1 AND season=?2")
+  void deleteChaptersByImdbIdAndSeason(String imdbId, Integer season);
+
+  @Query("DELETE FROM Chapter WHERE imdbId=?1 AND season=?2 AND episodeNumber=?3")
+  void deleteChaptersByImdbIdAndSeasonAndEpisodeNumber(String imdbId, Integer season,
+      Integer episodeNumber);
+
 }

@@ -21,4 +21,7 @@ public interface TagRepository extends CrudRepository<Tag, String> {
   @Query("SELECT DISTINCT tag FROM Tag")
   List<String> findAllDistinctTags();
 
+  @Query("DELETE FROM Tag WHERE imdbId=?1")
+  void deleteTagsByImdbId(String imdbId);
+
 }

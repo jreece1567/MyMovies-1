@@ -52,4 +52,7 @@ public interface VideoRepository extends CrudRepository<Video, String> {
   @Query("SELECT DISTINCT title FROM Video")
   List<String> findAllDistinctTitles();
 
+  @Query("DELETE FROM Video WHERE imdbId=?1")
+  void deleteVideosByImdbId(String imdbId);
+
 }

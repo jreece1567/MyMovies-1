@@ -96,6 +96,30 @@ public class MyMoviesService {
   }
 
   /**
+   * Delete a movie, if the supplied imdbId exists.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @throws NoSuchElementException if the supplied imdbId does not exist.
+   */
+  public void deleteMovie(final String imdbId) {
+
+    final Optional<Video> video = videoRepository.findById(imdbId);
+    if (video.isPresent()) {
+      // delete a movie from the DB
+
+      actorRepository.deleteActorsByImdbId(imdbId);
+      tagRepository.deleteTagsByImdbId(imdbId);
+      genreRepository.deleteGenresByImdbId(imdbId);
+      chapterRepository.deleteChaptersByImdbId(imdbId);
+      videoRepository.deleteVideosByImdbId(imdbId);
+
+    } else {
+
+      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+    }
+  }
+
+  /**
    * Create an episode, if one for the imdbId/season/episodeNumber does not already exist.
    *
    * @param episode the Episode to be created.
@@ -130,6 +154,7 @@ public class MyMoviesService {
    *
    * @param imdbId the unique IMDB-id of the movie.
    * @return the found movie.
+   * @throws NoSuchElementException if the supplied imdbId does not exist.
    */
   public Movie readMovie(final String imdbId) {
 
@@ -175,6 +200,7 @@ public class MyMoviesService {
    *
    * @param imdbId the unique IMDB-id of the movie.
    * @return the found title.
+   * @throws NoSuchElementException if the supplied imdbId does not exist.
    */
   public Title readTitle(final String imdbId) {
 
@@ -192,6 +218,7 @@ public class MyMoviesService {
    *
    * @param imdbId the unique IMDB-id of the movie.
    * @return the found cast.
+   * @throws NoSuchElementException if the supplied imdbId has no associated actors.
    */
   public Cast readCast(final String imdbId) {
     final List<String> actors = actorRepository.findAllByImdbId(imdbId);
@@ -235,6 +262,41 @@ public class MyMoviesService {
             String.valueOf(chapter.getEpisodeNumber()), chapter.getTitle(),
             chapter.getDescription())));
     return episodes;
+  }
+
+  /**
+   * Delete all Episodes given an imdbId.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   */
+  public void deleteEpisodes(final String imdbId) {
+
+    chapterRepository.deleteChaptersByImdbId(imdbId);
+  }
+
+  /**
+   * Delete all Episodes given an imdbId and season number.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @param seasonNumber the season number.
+   */
+  public void deleteEpisodes(final String imdbId, final Integer seasonNumber) {
+
+    chapterRepository.deleteChaptersByImdbIdAndSeason(imdbId, seasonNumber);
+  }
+
+  /**
+   * Delete all Episodes given an imdbId and season number and episode number.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @param seasonNumber the season number.
+   * @param episodeNumber the episode number.
+   */
+  public void deleteEpisodes(final String imdbId, final Integer seasonNumber,
+      final Integer episodeNumber) {
+
+    chapterRepository
+        .deleteChaptersByImdbIdAndSeasonAndEpisodeNumber(imdbId, seasonNumber, episodeNumber);
   }
 
   /**

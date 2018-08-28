@@ -115,6 +115,18 @@ public class MyMoviesController {
   }
 
   /**
+   * Delete a Movie. Note that if this movie has Episodes, those will also be deleted.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   */
+  @RequestMapping(method = RequestMethod.DELETE, path = "/movie/{imdbId}")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void deleteMovieByImdbId(@PathVariable("imdbId") final String imdbId) {
+
+    service.deleteMovie(imdbId);
+  }
+
+  /**
    * Fetch a Title.
    *
    * @param imdbId the unique IMDB-id of the movie.
@@ -197,6 +209,18 @@ public class MyMoviesController {
   }
 
   /**
+   * Delete all Episodes associated with a given imdbId.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   */
+  @RequestMapping(method = RequestMethod.DELETE, path = "/episodes/{imdbId}")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void deleteEpisodesByImdbId(@PathVariable("imdbId") final String imdbId) {
+
+    service.deleteEpisodes(imdbId);
+  }
+
+  /**
    * Fetch all Episodes associated with a given imdbId and season.
    *
    * @param imdbId the unique IMDB-id of the movie.
@@ -209,6 +233,37 @@ public class MyMoviesController {
       @PathVariable("seasonNumber") final Integer seasonNumber) {
 
     return service.readEpisodes(imdbId, seasonNumber);
+  }
+
+  /**
+   * Delete all Episodes associated with a given imdbId and season.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @param seasonNumber the season number.
+   */
+  @RequestMapping(method = RequestMethod.DELETE, path = "/episodes/{imdbId}/{seasonNumber}")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void deleteEpisodesByImdbIdAndSeason(@PathVariable("imdbId") final String imdbId,
+      @PathVariable("seasonNumber") final Integer seasonNumber) {
+
+    service.deleteEpisodes(imdbId, seasonNumber);
+  }
+
+  /**
+   * Delete all Episodes associated with a given imdbId and season and episodeNumber.
+   *
+   * @param imdbId the unique IMDB-id of the movie.
+   * @param seasonNumber the season number.
+   */
+  @RequestMapping(method = RequestMethod.DELETE,
+      path = "/episodes/{imdbId}/{seasonNumber}/{episodeNumber}")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void deleteEpisodesByImdbIdAndSeasonAndEpisodeNumber(
+      @PathVariable("imdbId") final String imdbId,
+      @PathVariable("seasonNumber") final Integer seasonNumber,
+      @PathVariable("episodeNumber") final Integer episodeNumber) {
+
+    service.deleteEpisodes(imdbId, seasonNumber, episodeNumber);
   }
 
   /**
