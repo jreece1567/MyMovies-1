@@ -1,11 +1,15 @@
 package com.sandy.mymovies.services;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.CoreMatchers.nullValue;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import com.sandy.mymovies.models.dto.Movie;
+import java.util.NoSuchElementException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +24,7 @@ public class MyMoviesServiceTest {
   MyMoviesService moviesService;
 
   @Test
-  public void whenFindByImdbId_thenReturnMovie() {
+  public void whenFindByValidImdbId_thenReturnMovie() {
 
     Movie movie = moviesService.readMovie("0128442");
 
@@ -29,4 +33,19 @@ public class MyMoviesServiceTest {
     assertThat(movie.getTitle(), is("Rounders"));
 
   }
+
+  @Test
+  public void whenFindByInvalidImdbId_thenReturnError() {
+
+    try {
+
+      Movie movie = moviesService.readMovie("0999999");
+      fail("Unknown imdbId should throw NoSuchElementException");
+
+    } catch(NoSuchElementException ex) {
+
+    }
+
+  }
+
 }
