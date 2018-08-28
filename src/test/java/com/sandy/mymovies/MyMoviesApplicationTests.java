@@ -6,7 +6,7 @@ import org.junit.Test;
 //@SpringBootTest
 public class MyMoviesApplicationTests {
 
-  @Test
+  //@Test
   public void contextLoads() {
   }
 

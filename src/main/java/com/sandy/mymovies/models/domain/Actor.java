@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Bean associating an actor-name with an imdbId.
@@ -14,6 +15,7 @@ import lombok.Data;
 @Table(indexes = {@Index(name = "IDX_ACTOR_NAME", columnList = "name"),
     @Index(name = "IDX_ACTOR_IMDBID", columnList = "imdbId")})
 @Data
+@NoArgsConstructor
 public class Actor {
 
   /**
@@ -43,4 +45,5 @@ public class Actor {
     this.name = name;
     this.imdbId = imdbId;
   }
+
 }

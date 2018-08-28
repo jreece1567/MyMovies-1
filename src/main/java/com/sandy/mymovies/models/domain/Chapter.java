@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Bean associating an episode with an imdbId and season.
@@ -15,6 +16,7 @@ import lombok.Data;
 @Table(indexes = {@Index(name = "IDX_CHAPTER_IMDBID", columnList = "imdbId"),
     @Index(name = "IDX_CHAPTER_SEASON", columnList = "season")})
 @Data
+@NoArgsConstructor
 public class Chapter {
 
   /**
@@ -67,4 +69,5 @@ public class Chapter {
     this.title = title;
     this.description = description;
   }
+
 }

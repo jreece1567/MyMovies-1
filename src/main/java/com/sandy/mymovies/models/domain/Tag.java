@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Bean associating a tag with an imdbId.
@@ -14,6 +15,7 @@ import lombok.Data;
 @Table(indexes = {@Index(name = "IDX_TAG_TAG", columnList = "tag"),
     @Index(name = "IDX_TAG_IMDBID", columnList = "imdbId")})
 @Data
+@NoArgsConstructor
 public class Tag {
 
   /**
