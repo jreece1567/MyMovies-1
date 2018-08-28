@@ -12,13 +12,13 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TagRepository extends CrudRepository<Tag, String> {
 
-  @Query("SELECT tag FROM Tag WHERE imdbId = ?1")
+  @Query("SELECT tag FROM Tag WHERE imdbId = ?1 ORDER BY tag")
   List<String> findAllByImdbId(String imdbId);
 
   @Query("SELECT imdbId FROM Tag WHERE tag = ?1")
   List<String> findAllByTag(String tag);
 
-  @Query("SELECT DISTINCT tag FROM Tag")
+  @Query("SELECT DISTINCT tag FROM Tag ORDER BY tag")
   List<String> findAllDistinctTags();
 
   @Query("DELETE FROM Tag WHERE imdbId=?1")

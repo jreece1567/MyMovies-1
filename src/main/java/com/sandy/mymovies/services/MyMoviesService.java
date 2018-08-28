@@ -221,6 +221,10 @@ public class MyMoviesService {
    * @throws NoSuchElementException if the supplied imdbId has no associated actors.
    */
   public Cast readCast(final String imdbId) {
+    final Optional<Video> video = videoRepository.findById(imdbId);
+    if (!video.isPresent()) {
+      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+    }
     final List<String> actors = actorRepository.findAllByImdbId(imdbId);
     if (actors == null || actors.isEmpty()) {
       throw new NoSuchElementException(String.format("Cast for movie %s not found.", imdbId));
@@ -238,6 +242,10 @@ public class MyMoviesService {
    */
   public List<Episode> readEpisodes(final String imdbId) {
 
+    final Optional<Video> video = videoRepository.findById(imdbId);
+    if (!video.isPresent()) {
+      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+    }
     final List<Chapter> chapters = chapterRepository.findAllByImdbId(imdbId);
     final List<Episode> episodes = new ArrayList<>();
     chapters.forEach(c -> episodes.add(new Episode(c.getImdbId(), String.valueOf(c.getSeason()),
@@ -254,8 +262,16 @@ public class MyMoviesService {
    */
   public List<Episode> readEpisodes(final String imdbId, final Integer seasonNumber) {
 
+    final Optional<Video> video = videoRepository.findById(imdbId);
+    if (!video.isPresent()) {
+      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+    }
     final List<Chapter> chapters = chapterRepository
         .findAllByImdbIdAndSeason(imdbId, seasonNumber);
+    if (chapters.isEmpty()) {
+      throw new NoSuchElementException(
+          String.format("No seasons found for movie with id %s.", imdbId));
+    }
     final List<Episode> episodes = new ArrayList<>();
     chapters.forEach(chapter -> episodes
         .add(new Episode(chapter.getImdbId(), String.valueOf(chapter.getSeason()),
@@ -306,6 +322,11 @@ public class MyMoviesService {
    * @return the list of season numbers.
    */
   public List<String> readSeasons(final String imdbId) {
+
+    final Optional<Video> video = videoRepository.findById(imdbId);
+    if (!video.isPresent()) {
+      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+    }
 
     return chapterRepository.findDistinctSeasonsByImdbId(imdbId);
   }

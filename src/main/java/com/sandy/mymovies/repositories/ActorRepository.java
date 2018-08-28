@@ -15,10 +15,10 @@ public interface ActorRepository extends CrudRepository<Actor, String> {
   @Query("SELECT imdbId FROM Actor WHERE name=?1")
   List<String> findAllByName(String name);
 
-  @Query("SELECT name FROM Actor WHERE imdbId=?1")
+  @Query("SELECT name FROM Actor WHERE imdbId=?1 ORDER BY name")
   List<String> findAllByImdbId(String imdbId);
 
-  @Query("SELECT DISTINCT name FROM Actor")
+  @Query("SELECT DISTINCT name FROM Actor ORDER BY name")
   List<String> findAllDistinctActors();
 
   @Query("DELETE FROM Actor WHERE imdbId=?1")

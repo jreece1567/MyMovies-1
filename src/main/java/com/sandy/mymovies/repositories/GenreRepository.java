@@ -12,13 +12,13 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface GenreRepository extends CrudRepository<Genre, String> {
 
-  @Query("SELECT genre FROM Genre WHERE imdbId = ?1")
+  @Query("SELECT genre FROM Genre WHERE imdbId = ?1 ORDER BY genre")
   List<String> findAllByImdbId(String imdbId);
 
   @Query("SELECT imdbId FROM Genre WHERE genre = ?1")
   List<String> findAllByGenre(String genre);
 
-  @Query("SELECT DISTINCT genre FROM Genre")
+  @Query("SELECT DISTINCT genre FROM Genre ORDER BY genre")
   List<String> findAllDistinctGenres();
 
   @Query("DELETE FROM Genre WHERE imdbId=?1")

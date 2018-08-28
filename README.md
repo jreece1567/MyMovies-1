@@ -68,7 +68,22 @@
         <h2>Building the app</h2>
         The application is a Gradle project. The 'build' goal is used to build a self-contained 'shaded' JAR, which contains all dependencies.<br/>
         No 'webapp container' (eg. Tomcat, Glassfish, etc.) is needed to run the app. The 'shaded' JAR contains embedded-Tomcat to provide HTTP/HTTPS server support.<br/>
-        In addition, the application JAR contains the entire 'video database' and all images - no external resources are required (internet access is not required to run the app).<br/>
+        In addition, the application JAR contains the entire 'video database' and all images - no external resources are required (internet access is not required to run the app).<br/><br/>
+        To build the application and run all tests:<br/>
+        <pre>./gradlew clean build</pre>
+        To run the application:<br/>
+        <pre>./gradlew bootRun</pre>
+        To build the application and skip all tests:<br/>
+        <pre>./gradlew clean build -x test</pre>
+        <h2>Gradle build output</h2>
+        The application, and its 'sources' and 'javadoc' JAR files are in:
+        <pre>./build/libs</pre>
+        The unpacked 'javadoc' files are in:
+        <pre>./build/docs/javadoc</pre>
+        The 'checkstyle' report files are in:
+        <pre>./build/reports/checkstyle</pre>
+        The application 'test' output is in:
+        <pre>./build/reports/tests/test</pre>
         <h2>Configuring the app</h2>
         The app is configured using the SpringBoot-standard mechanism, a 'properties' file, <b>application.properties</b>. This configuration file contains reasonable default values for all configurable settings. In addition to application-level configuration parameters, this file also contains 'server-level' parameters, for example port-assignments and logging settings. See the <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html" target="new">SpringBoot-configuration documentation</a> for details. Values specified in the <b>application.properties</b> file can be overridden at service-startup by supplying them as defined values on the command-line, for example:<br/>
         <pre>
@@ -79,7 +94,7 @@
         <pre>
             <a href="http://localhost:8080/health" target="new">http://localhost:8080/health</a>
         </pre>
-        This is the SpringBoot-standard 'actuator' interface, which allows you to see various statistics on the application as it runs (service-endpoint timings, JVM stats, etc.). See the <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html">Actuator documentation</a> for details.<br/>
+        This is the SpringBoot-standard 'actuator' interface, which allows you to see various statistics on the application as it runs (service-endpoint timings, JVM stats, etc.). See the <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html" target="new">Actuator documentation</a> for details.<br/>
         <h2>Source code organization</h2>
         </ul>
         The Java code is organized into the following packages (under <b>src/main/java</b>):
