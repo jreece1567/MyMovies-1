@@ -56,4 +56,21 @@ public class MyStaticFileController {
     return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).contentLength(imageBytes.length)
         .body(imageBytes);
   }
+
+  /**
+   * Fetch the favicon.ico.
+   *
+   * @return the image-bytes, with appropriate content-type and content-length headers.
+   */
+  @RequestMapping(path = "/favicon.ico", method = RequestMethod.GET)
+  @ResponseStatus(HttpStatus.OK)
+  public ResponseEntity<byte[]> fetchFavicon() {
+
+    byte[] imageBytes = staticFileService.fetchFavicon();
+
+    return ResponseEntity.ok().contentType(new MediaType("image", "x-icon"))
+        .contentLength(imageBytes.length)
+        .body(imageBytes);
+  }
+
 }
