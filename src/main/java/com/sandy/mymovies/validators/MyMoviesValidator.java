@@ -22,7 +22,7 @@ public class MyMoviesValidator implements Validator {
   public boolean supports(Class theClass) {
 
     // we can validate any class from the 'models.dto' package
-    return theClass.getPackage().getName().startsWith("com.sandy.mymovied.models.dto");
+    return theClass.getPackage().getName().startsWith("com.sandy.mymovies.models.dto");
   }
 
   /**
