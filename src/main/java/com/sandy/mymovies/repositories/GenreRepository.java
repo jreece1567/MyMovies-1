@@ -21,6 +21,9 @@ public interface GenreRepository extends CrudRepository<Genre, String> {
   @Query("SELECT DISTINCT genre FROM Genre ORDER BY genre")
   List<String> findAllDistinctGenres();
 
+  @Query("SELECT genre FROM Genre WHERE genre LIKE '%?1%'")
+  List<String> searchGenres(String searchArg);
+
   @Query("DELETE FROM Genre WHERE imdbId=?1")
   void deleteGenresByImdbId(String imdbId);
 

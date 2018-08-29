@@ -21,6 +21,9 @@ public interface TagRepository extends CrudRepository<Tag, String> {
   @Query("SELECT DISTINCT tag FROM Tag ORDER BY tag")
   List<String> findAllDistinctTags();
 
+  @Query("SELECT tag FROM Tag WHERE tag LIKE '%?1%'")
+  List<String> searchTags(String searchArg);
+
   @Query("DELETE FROM Tag WHERE imdbId=?1")
   void deleteTagsByImdbId(String imdbId);
 

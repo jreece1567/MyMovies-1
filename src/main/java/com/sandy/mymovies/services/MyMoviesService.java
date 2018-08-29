@@ -25,7 +25,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
-import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -616,25 +615,34 @@ public class MyMoviesService {
 
     switch (index) {
       case ACTOR:
+        results.addAll(actorRepository.searchActors(query));
         break;
       case DIRECTOR:
+        results.addAll(videoRepository.searchDirectors(query));
         break;
       case GENRE:
+        results.addAll(genreRepository.searchGenres(query));
         break;
       case RATING:
+        results.addAll(videoRepository.searchRatings(query));
         break;
       case TAG:
+        results.addAll(tagRepository.searchTags(query));
         break;
       case TITLE:
+        results.addAll(videoRepository.searchTitles(query));
         break;
       case YEAR:
+        final List<String> years = new ArrayList<>();
+        videoRepository.searchReleaseYears(Integer.valueOf(query))
+            .forEach(year -> years.add(String.valueOf(year)));
+        results.addAll(years);
         break;
       default:
         break;
     }
 
-    throw new NotYetImplementedException("Searching is not yet implemented.");
-    // return results;
+    return results;
   }
 
 }

@@ -21,6 +21,9 @@ public interface ActorRepository extends CrudRepository<Actor, String> {
   @Query("SELECT DISTINCT name FROM Actor ORDER BY name")
   List<String> findAllDistinctActors();
 
+  @Query("SELECT name FROM Actor WHERE name LIKE '%?1%'")
+  List<String> searchActors(String searchArg);
+
   @Query("DELETE FROM Actor WHERE imdbId=?1")
   void deleteActorsByImdbId(String imdbId);
 }
