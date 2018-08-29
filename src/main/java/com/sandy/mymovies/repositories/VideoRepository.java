@@ -22,7 +22,7 @@ public interface VideoRepository extends CrudRepository<Video, String> {
   @Query("SELECT DISTINCT releaseYear FROM Video ORDER BY releaseYear")
   List<Integer> findAllDistinctReleaseYears();
 
-  @Query("SELECT releaseYear FROM Video WHERE releaseYear LIKE %?1%")
+  @Query("SELECT releaseYear FROM Video WHERE releaseYear = ?1")
   List<Integer> searchReleaseYears(Integer searchArg);
 
   // Video.director-related methods
@@ -35,7 +35,7 @@ public interface VideoRepository extends CrudRepository<Video, String> {
   @Query("SELECT DISTINCT director FROM Video ORDER BY director")
   List<String> findAllDistinctDirectors();
 
-  @Query("SELECT director FROM Video WHERE director LIKE '%?1%'")
+  @Query("SELECT director FROM Video WHERE director LIKE %?1%")
   List<String> searchDirectors(String searchArg);
 
   // Video.rating-related methods
@@ -48,7 +48,7 @@ public interface VideoRepository extends CrudRepository<Video, String> {
   @Query("SELECT DISTINCT rating FROM Video ORDER BY rating")
   List<String> findAllDistinctRatings();
 
-  @Query("SELECT rating FROM Video WHERE rating LIKE '%?1%'")
+  @Query("SELECT rating FROM Video WHERE rating LIKE %?1%")
   List<String> searchRatings(String searchArg);
 
   // Video.title-related methods
@@ -61,7 +61,7 @@ public interface VideoRepository extends CrudRepository<Video, String> {
   @Query("SELECT DISTINCT title FROM Video ORDER BY title")
   List<String> findAllDistinctTitles();
 
-  @Query("SELECT title FROM Video WHERE title LIKE '%?1%'")
+  @Query("SELECT title FROM Video WHERE title LIKE %?1%")
   List<String> searchTitles(String searchArg);
 
   @Query("DELETE FROM Video WHERE imdbId=?1")
