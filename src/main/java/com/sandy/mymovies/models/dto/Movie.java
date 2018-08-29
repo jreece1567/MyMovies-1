@@ -101,6 +101,8 @@ public class Movie {
   /**
    * The list of tags associated with the movie.
    */
+  @Valid
+  @NotNull
   private Tags tags;
 
   /**
