@@ -92,9 +92,15 @@
         <h2>Monitoring the app</h2>
         Once the application is running, you can check its status at any time from a browser using the SpringBoot 'Actuator' endpoints, for example:<br/>
         <pre>
-            <a href="http://localhost:8080/health" target="new">http://localhost:8080/health</a>
+            <a href="http://localhost:8080/actuator/health" target="new">http://localhost:8080/actuator/health</a>
         </pre>
         This is the SpringBoot-standard 'actuator' interface, which allows you to see various statistics on the application as it runs (service-endpoint timings, JVM stats, etc.). See the <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html" target="new">Actuator documentation</a> for details.<br/>
+        <br/><pre>
+            <a href="http://localhost:8080/actuator" target="new">http://localhost:8080/actuator</a> 
+        </pre><br/>
+        <pre>
+            <a href="http://localhost:8080/profile" target="new">http://localhost:8080/profile</a>
+        </pre>
         <h2>Source code organization</h2>
         </ul>
         The Java code is organized into the following packages (under <b>src/main/java</b>):
