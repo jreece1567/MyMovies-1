@@ -23,11 +23,11 @@ public class MyMoviesRequestLoggingConfig {
   @Bean
   public CommonsRequestLoggingFilter logFilter() {
 
-    /*
     final CommonsRequestLoggingFilter filter = new CommonsRequestLoggingFilter() {
       @Override
       protected void beforeRequest(HttpServletRequest request, String message) {
-        logger.debug(message);
+        String msg = message.replaceAll("Before request", "Request: " + request.getMethod());
+        logger.debug(msg);
       }
 
       @Override
@@ -35,8 +35,8 @@ public class MyMoviesRequestLoggingConfig {
         // do nothing
       }
 
-      //@Override
-      protected void zdoFilterInternal(HttpServletRequest request, HttpServletResponse response,
+      @Override
+      protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
           FilterChain filterChain) throws ServletException, IOException {
 
         //same mechanism as for request caching in superclass
@@ -50,8 +50,14 @@ public class MyMoviesRequestLoggingConfig {
         super.doFilterInternal(request, responseToUse, filterChain);
 
         //log outgoing response
-        String msg = getResponseMessage(responseToUse);
-        logger.debug(msg);
+        String message =
+            this.createMessage(request, "Response To Request: " + request.getMethod() + " [", "]")
+                + getResponseMessage(responseToUse);
+        logger.debug(message);
+
+        if (responseToUse instanceof ContentCachingResponseWrapper) {
+          ((ContentCachingResponseWrapper) responseToUse).copyBodyToResponse();
+        }
       }
 
       //equivalent to super.createMessage() for request logging
@@ -59,21 +65,11 @@ public class MyMoviesRequestLoggingConfig {
 
         StringBuilder msg = new StringBuilder();
 
-        msg.append("headers={");
-        rsp.getHeaderNames().forEach(headerName -> {
-          msg.append(headerName);
-          msg.append("=[");
-          msg.append(rsp.getHeader(headerName));
-          msg.append("]");
-          msg.append(", ");
-        });
-        msg.setLength(msg.length() - 2);
-        msg.append("}");
-
         ContentCachingResponseWrapper wrapper =
             WebUtils.getNativeResponse(rsp, ContentCachingResponseWrapper.class);
 
         if (wrapper != null) {
+
           if (rsp.getContentType() != null && !rsp.getContentType()
               .startsWith("image") && !rsp.getContentType()
               .startsWith("application/octet-stream")) {
@@ -96,16 +92,14 @@ public class MyMoviesRequestLoggingConfig {
 
         return msg.toString();
       }
-    };
-    */
 
-    final CommonsRequestLoggingFilter filter = new CommonsRequestLoggingFilter();
+    };
+
     filter.setIncludeQueryString(true);
     filter.setIncludePayload(true);
     filter.setMaxPayloadLength(65536);
     filter.setIncludeHeaders(true);
     filter.setIncludeClientInfo(true);
-    //filter.setAfterMessagePrefix("REQUEST DATA : ");
 
     return filter;
   }

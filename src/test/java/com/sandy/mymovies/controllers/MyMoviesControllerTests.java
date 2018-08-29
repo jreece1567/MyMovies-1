@@ -10,13 +10,7 @@ import com.sandy.mymovies.models.dto.Movie;
 import com.sandy.mymovies.models.dto.Tags;
 import com.sandy.mymovies.services.MyMoviesService;
 import java.util.Arrays;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 //@RunWith(SpringRunner.class)
@@ -28,6 +22,9 @@ public class MyMoviesControllerTests {
   //@Autowired
   private MockMvc mockMvc;
 
+  /**
+   * See if we can fetch a movie.
+   */
   //@Test
   public void fetchMovie_returnsMovie() {
 
