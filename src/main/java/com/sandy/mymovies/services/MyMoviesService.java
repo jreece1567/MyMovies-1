@@ -633,14 +633,14 @@ public class MyMoviesService {
         results.addAll(videoRepository.searchTitles(query));
         break;
       case YEAR:
-        final List<String> years = new ArrayList<>();
         videoRepository.searchReleaseYears(Integer.valueOf(query))
-            .forEach(year -> years.add(String.valueOf(year)));
-        results.addAll(years);
+            .forEach(year -> results.add(String.valueOf(year)));
         break;
       default:
         break;
     }
+
+    Collections.sort(results);
 
     return results;
   }
