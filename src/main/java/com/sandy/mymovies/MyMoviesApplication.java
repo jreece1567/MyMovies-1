@@ -15,7 +15,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -38,6 +37,7 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // Load files, create movie beans
     loadAllMovies();
+
     // Load files, create Episode beans
     loadAllEpisodes();
 
@@ -52,7 +52,7 @@ public class MyMoviesApplication implements CommandLineRunner {
     final SimpleTimer timer = new SimpleTimer().start();
 
     // load up the list of imdbid's in the filesystem-based DB
-    BufferedReader indexReader = new BufferedReader(
+    final BufferedReader indexReader = new BufferedReader(
         new InputStreamReader(getClass().getResourceAsStream("/db/index_id.json")));
     Map<String, List<String>> map = new HashMap<>();
     try {
@@ -60,10 +60,10 @@ public class MyMoviesApplication implements CommandLineRunner {
           .readValue(indexReader, new TypeReference<HashMap<String, List<String>>>() {
           });
     } catch (JsonMappingException | JsonParseException e) {
-      log.log(Level.ALL, "Error reading index_id.json", e);
+      log.info("Error reading index_id.json - " + e.getMessage());
       return;
     } catch (IOException e) {
-      log.log(Level.ALL, "Error reading index_id.json", e);
+      log.info("Error reading index_id.json - " + e.getMessage());
       return;
     }
 
@@ -74,20 +74,18 @@ public class MyMoviesApplication implements CommandLineRunner {
     map.keySet().forEach(imdbId -> {
       final BufferedReader movieReader = new BufferedReader(
           new InputStreamReader(getClass().getResourceAsStream("/db/" + imdbId + ".json")));
-      Movie movie = null;
       try {
-        movie = new ObjectMapper()
+        final Movie movie = new ObjectMapper()
             .readValue(movieReader, new TypeReference<Movie>() {
             });
         moviesLoaded
             .put(imdbId, 1);  // do this so that we can keep a count from inside this closure.
+        // create the movie in our DB
+        movieService.createMovie(movie);
       } catch (JsonMappingException | JsonParseException e) {
         log.info("Error reading " + imdbId + ".json - " + e.getMessage());
       } catch (IOException e) {
         log.info("Error reading " + imdbId + ".json - " + e.getMessage());
-      }
-      if (movie != null) {
-        movieService.createMovie(movie);
       }
     });
 
@@ -110,10 +108,10 @@ public class MyMoviesApplication implements CommandLineRunner {
           .readValue(indexReader, new TypeReference<HashMap<String, List<Episode>>>() {
           });
     } catch (JsonMappingException | JsonParseException e) {
-      log.log(Level.ALL, "Error reading index_episode.json", e);
+      log.info("Error reading index_episode.json - " + e.getMessage());
       return;
     } catch (IOException e) {
-      log.log(Level.ALL, "Error reading index_episode.json", e);
+      log.info("Error reading index_episode.json - " + e.getMessage());
       return;
     }
 
@@ -122,10 +120,10 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // walk the list of imdbid's, load the episodes associated with each imdbId,
     // and save the episodes in our DB.
-    Iterator<String> iterator = map.keySet().iterator();
+    final Iterator<String> iterator = map.keySet().iterator();
     while (iterator.hasNext()) {
-      String imdbId = iterator.next();
-      List<Episode> episodes = map.get(imdbId);
+      final String imdbId = iterator.next();
+      final List<Episode> episodes = map.get(imdbId);
       episodesLoaded = episodesLoaded + episodes.size();
       episodes.forEach(episode -> {
         movieService.createEpisode(new Episode(episode.getImdbId(), episode.getSeason(),
