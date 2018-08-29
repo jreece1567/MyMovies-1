@@ -22,7 +22,7 @@ public class MyMoviesSearchTests {
   @Test
   public void searchActor_returnsValues() {
 
-    List<String> results = moviesService.searchByIndex(Index.ACTOR,"Matt");
+    List<String> results = moviesService.searchByIndex(Index.ACTOR, "Matt");
 
     assertThat(results, is(notNullValue()));
 
@@ -33,7 +33,7 @@ public class MyMoviesSearchTests {
   @Test
   public void searchDirector_returnsValues() {
 
-    List<String> results = moviesService.searchByIndex(Index.DIRECTOR,"Stan");
+    List<String> results = moviesService.searchByIndex(Index.DIRECTOR, "Stan");
 
     assertThat(results, is(notNullValue()));
 
@@ -44,7 +44,7 @@ public class MyMoviesSearchTests {
   @Test
   public void searchGenre_returnsValues() {
 
-    List<String> results = moviesService.searchByIndex(Index.GENRE,"Fa");
+    List<String> results = moviesService.searchByIndex(Index.GENRE, "Fa");
 
     assertThat(results, is(notNullValue()));
 
@@ -55,7 +55,7 @@ public class MyMoviesSearchTests {
   @Test
   public void searchRating_returnsValues() {
 
-    List<String> results = moviesService.searchByIndex(Index.RATING,"PG");
+    List<String> results = moviesService.searchByIndex(Index.RATING, "PG");
 
     assertThat(results, is(notNullValue()));
 
@@ -66,7 +66,7 @@ public class MyMoviesSearchTests {
   @Test
   public void searchTag_returnsValues() {
 
-    List<String> results = moviesService.searchByIndex(Index.TAG,"Star");
+    List<String> results = moviesService.searchByIndex(Index.TAG, "Star");
 
     assertThat(results, is(notNullValue()));
 
@@ -77,7 +77,7 @@ public class MyMoviesSearchTests {
   @Test
   public void searchTitle_returnsValues() {
 
-    List<String> results = moviesService.searchByIndex(Index.TITLE,"Jur");
+    List<String> results = moviesService.searchByIndex(Index.TITLE, "Jur");
 
     assertThat(results, is(notNullValue()));
 
@@ -88,7 +88,7 @@ public class MyMoviesSearchTests {
   @Test
   public void searchYear_returnsValues() {
 
-    List<String> results = moviesService.searchByIndex(Index.YEAR,"1960");
+    List<String> results = moviesService.searchByIndex(Index.YEAR, "1960");
 
     assertThat(results, is(notNullValue()));
 

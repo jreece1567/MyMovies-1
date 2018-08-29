@@ -7,11 +7,18 @@ import com.sandy.mymovies.models.dto.Key;
 import com.sandy.mymovies.models.dto.Movie;
 import com.sandy.mymovies.models.dto.Title;
 import com.sandy.mymovies.services.MyMoviesService;
+import com.sandy.mymovies.validators.MyMoviesValidator;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.hibernate.cfg.NotYetImplementedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.BeanPropertyBindingResult;
+import org.springframework.validation.Errors;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,11 +35,19 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyMoviesController {
 
   private final MyMoviesService service;
+  private final MyMoviesValidator validator;
 
+  /**
+   * Construct a new controller instance.
+   *
+   * @param service the 'service' layer
+   * @param validator the JSR-303 bean-validator
+   */
   @Autowired
-  public MyMoviesController(final MyMoviesService service) {
+  public MyMoviesController(final MyMoviesService service, final MyMoviesValidator validator) {
 
     this.service = service;
+    this.validator = validator;
   }
 
   /**
@@ -83,6 +98,16 @@ public class MyMoviesController {
   @RequestMapping(method = RequestMethod.POST, path = "/movie")
   @ResponseStatus(HttpStatus.OK)
   public Movie postMovie(@RequestBody() final Movie movie) {
+
+    Errors errors = new BeanPropertyBindingResult(movie, movie.getClass().getName());
+    validator.validate(movie, errors);
+    if (errors.hasErrors()) {
+      Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
+          .groupingBy(
+              FieldError::getField,
+              Collectors.mapping(FieldError::getDefaultMessage, Collectors.toSet())));
+      throw new IllegalArgumentException(errorsMap.toString());
+    }
 
     return service.createMovie(movie);
   }
@@ -177,6 +202,16 @@ public class MyMoviesController {
   @RequestMapping(method = RequestMethod.POST, path = "/episodes")
   @ResponseStatus(HttpStatus.OK)
   public Episode postEpisode(@RequestBody() final Episode episode) {
+
+    Errors errors = new BeanPropertyBindingResult(episode, episode.getClass().getName());
+    validator.validate(episode, errors);
+    if (errors.hasErrors()) {
+      Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
+          .groupingBy(
+              FieldError::getField,
+              Collectors.mapping(FieldError::getDefaultMessage, Collectors.toSet())));
+      throw new IllegalArgumentException(errorsMap.toString());
+    }
 
     return service.createEpisode(episode);
   }
