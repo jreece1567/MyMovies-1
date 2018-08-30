@@ -59,10 +59,16 @@ task delombokHelp(type: DelombokTask) {
 javadoc {
     dependsOn delombok
     source = delombok.outputDir // sourceSets.main.allJava
-    classpath = configurations.compile
+    // classpath = sourceSets.main.compileClasspath // configurations.compile
     options.overview = "src/main/resources/doc/overview.html"
-    options.links "http://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/api/"
-    options.links "http://docs.spring.io/spring/docs/5.0.8.RELEASE/javadoc-api/"
+    options.links "https://docs.oracle.com/javaee/7/api/"
+    options.links "https://docs.oracle.com/javase/8/docs/api/"
+    options.links "https://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/api/"
+    options.links "https://docs.spring.io/spring/docs/5.0.8.RELEASE/javadoc-api/"
+    options.links "https://docs.spring.io/spring-boot/docs/current/api/"
+    options.links "https://docs.spring.io/spring/docs/current/javadoc-api"
+    options.links "https://docs.spring.io/spring-data/commons/docs/current/api/"
+    options.links "https://docs.spring.io/spring-data/jpa/docs/current/api/"
     options.addStringOption('Xdoclint:none', '-quiet')
 }
 
@@ -88,3 +94,9 @@ checkstyle {
     maxErrors 0
 }
 
+//println "sourceSets.main.compileClasspath"
+//sourceSets.main.compileClasspath.each { println it }
+//println()
+//  println "configurations.compile"
+//configurations.compile.resolve().each { println it }
+//println()
