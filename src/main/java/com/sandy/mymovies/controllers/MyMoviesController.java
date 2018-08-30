@@ -1,6 +1,7 @@
 package com.sandy.mymovies.controllers;
 
 import com.sandy.mymovies.models.dto.Cast;
+import com.sandy.mymovies.models.dto.Count;
 import com.sandy.mymovies.models.dto.Episode;
 import com.sandy.mymovies.models.dto.Index;
 import com.sandy.mymovies.models.dto.Key;
@@ -356,7 +357,19 @@ public class MyMoviesController {
     return service.searchByIndex(Index.fromValue(index), query);
   }
 
-  // -- Remaining endpoints --
-  // /count/{index}
+  /**
+   * Fetch the count of titles associated with a given Index and key-value.
+   *
+   * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key value (a genre, a rating, a tag, etc.).
+   * @return The Count of titles associated with an index and key.
+   */
+  @RequestMapping(method = RequestMethod.GET, path = "/count/{index}")
+  public Count getCountByIndexAndName(@PathVariable("index") final String index,
+      @RequestParam("name") final String key) {
+
+    return service.countByIndexAndKey(Index.fromValue(index), key);
+  }
+
 
 }

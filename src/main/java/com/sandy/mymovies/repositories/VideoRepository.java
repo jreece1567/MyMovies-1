@@ -19,6 +19,9 @@ public interface VideoRepository extends CrudRepository<Video, String> {
   @Query("SELECT imdbId FROM Video WHERE releaseYear = ?1")
   List<String> findAllImdbIdsByReleaseYear(Integer releaseYear);
 
+  @Query("SELECT COUNT(imdbId) FROM Video WHERE releaseYear = ?1")
+  Integer countAllByReleaseYear(Integer releaseYear);
+
   @Query("SELECT DISTINCT releaseYear FROM Video ORDER BY releaseYear")
   List<Integer> findAllDistinctReleaseYears();
 
@@ -31,6 +34,9 @@ public interface VideoRepository extends CrudRepository<Video, String> {
 
   @Query("SELECT imdbId FROM Video WHERE director = ?1")
   List<String> findAllImdbIdsByDirector(String director);
+
+  @Query("SELECT COUNT(imdbId) FROM Video WHERE director = ?1")
+  Integer countAllByDirector(String director);
 
   @Query("SELECT DISTINCT director FROM Video ORDER BY director")
   List<String> findAllDistinctDirectors();
@@ -45,6 +51,9 @@ public interface VideoRepository extends CrudRepository<Video, String> {
   @Query("SELECT imdbId FROM Video WHERE rating = ?1")
   List<String> findAllImdbIdsByRating(String rating);
 
+  @Query("SELECT COUNT(imdbId) FROM Video WHERE rating = ?1")
+  Integer countAllByRating(String rating);
+
   @Query("SELECT DISTINCT rating FROM Video ORDER BY rating")
   List<String> findAllDistinctRatings();
 
@@ -57,6 +66,9 @@ public interface VideoRepository extends CrudRepository<Video, String> {
 
   @Query("SELECT imdbId FROM Video WHERE title = ?1")
   List<String> findAllImdbIdsByTitle(String title);
+
+  @Query("SELECT COUNT(imdbId) FROM Video WHERE title = ?1")
+  Integer countAllByTitle(String title);
 
   @Query("SELECT DISTINCT title FROM Video ORDER BY title")
   List<String> findAllDistinctTitles();

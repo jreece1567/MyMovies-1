@@ -6,6 +6,7 @@ import com.sandy.mymovies.models.domain.Genre;
 import com.sandy.mymovies.models.domain.Tag;
 import com.sandy.mymovies.models.domain.Video;
 import com.sandy.mymovies.models.dto.Cast;
+import com.sandy.mymovies.models.dto.Count;
 import com.sandy.mymovies.models.dto.Episode;
 import com.sandy.mymovies.models.dto.Genres;
 import com.sandy.mymovies.models.dto.Index;
@@ -643,6 +644,46 @@ public class MyMoviesService {
     Collections.sort(results);
 
     return results;
+  }
+
+  /**
+   * Return the count of a value under a given Index.
+   *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param value the value to be counted.
+   * @return a Count instance containing the value, and the count of the value in the index.
+   */
+  public Count countByIndexAndKey(final Index index, final String value) {
+
+    Integer count = 0;
+
+    switch (index) {
+      case ACTOR:
+        count = actorRepository.countAllByName(value);
+        break;
+      case DIRECTOR:
+        count = videoRepository.countAllByDirector(value);
+        break;
+      case GENRE:
+        count = genreRepository.countAllByGenre(value);
+        break;
+      case RATING:
+        count = videoRepository.countAllByRating(value);
+        break;
+      case TAG:
+        count = tagRepository.countAllByTag(value);
+        break;
+      case TITLE:
+        count = videoRepository.countAllByTitle(value);
+        break;
+      case YEAR:
+        count = videoRepository.countAllByReleaseYear(Integer.valueOf(value));
+        break;
+      default:
+        break;
+    }
+
+    return new Count(value, count);
   }
 
 }

@@ -15,6 +15,9 @@ public interface ActorRepository extends CrudRepository<Actor, String> {
   @Query("SELECT imdbId FROM Actor WHERE name=?1")
   List<String> findAllByName(String name);
 
+  @Query("SELECT COUNT(imdbId) FROM Actor WHERE name=?1")
+  Integer countAllByName(String name);
+
   @Query("SELECT name FROM Actor WHERE imdbId=?1 ORDER BY name")
   List<String> findAllByImdbId(String imdbId);
 

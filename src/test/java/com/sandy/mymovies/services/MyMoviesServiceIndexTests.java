@@ -4,6 +4,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
 
+import com.sandy.mymovies.models.dto.Count;
 import com.sandy.mymovies.models.dto.Index;
 import com.sandy.mymovies.models.dto.Key;
 import com.sandy.mymovies.models.dto.Title;
@@ -415,6 +416,90 @@ public class MyMoviesServiceIndexTests {
     assertThat(key.getIds().size(), is(6));
 
     assertThat(key.getKey(), is("1960"));
+  }
+
+  @Test
+  public void countIdsWithIndexAndKey_withActor_returnsCount() {
+
+    Count count = moviesService.countByIndexAndKey(Index.ACTOR, "Matt Damon");
+
+    assertThat(count, is(notNullValue()));
+
+    assertThat(count.getCount(), is(20));
+
+    assertThat(count.getValue(), is("Matt Damon"));
+  }
+
+  @Test
+  public void countIdsWithIndexAndKey_withDirector_returnsCount() {
+
+    Count count = moviesService.countByIndexAndKey(Index.DIRECTOR, "Stanley Kubrick");
+
+    assertThat(count, is(notNullValue()));
+
+    assertThat(count.getCount(), is(6));
+
+    assertThat(count.getValue(), is("Stanley Kubrick"));
+  }
+
+  @Test
+  public void countIdsWithIndexAndKey_withGenre_returnsCount() {
+
+    Count count = moviesService.countByIndexAndKey(Index.GENRE, "Family");
+
+    assertThat(count, is(notNullValue()));
+
+    assertThat(count.getCount(), is(11));
+
+    assertThat(count.getValue(), is("Family"));
+  }
+
+  @Test
+  public void countIdsWithIndexAndKey_withRating_returnsCount() {
+
+    Count count = moviesService.countByIndexAndKey(Index.RATING, "M");
+
+    assertThat(count, is(notNullValue()));
+
+    assertThat(count.getCount(), is(8));
+
+    assertThat(count.getValue(), is("M"));
+  }
+
+  @Test
+  public void countIdsWithIndexAndKey_withTag_returnsCount() {
+
+    Count count = moviesService.countByIndexAndKey(Index.TAG, "Science");
+
+    assertThat(count, is(notNullValue()));
+
+    assertThat(count.getCount(), is(21));
+
+    assertThat(count.getValue(), is("Science"));
+  }
+
+  @Test
+  public void countIdsWithIndexAndKey_withTitle_returnsCount() {
+
+    Count count = moviesService.countByIndexAndKey(Index.TITLE, "Ex Machina");
+
+    assertThat(count, is(notNullValue()));
+
+    assertThat(count.getCount(), is(1));
+
+    assertThat(count.getValue(), is("Ex Machina"));
+  }
+
+  @Test
+  public void countIdsWithIndexAndKey_withYear_returnsCount() {
+
+    Count count = moviesService.countByIndexAndKey(Index.YEAR, "1960");
+
+    assertThat(count, is(notNullValue()));
+
+    assertThat(count.getCount(), is(6));
+
+    assertThat(count.getValue(), is("1960"));
   }
 
 }

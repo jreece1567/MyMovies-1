@@ -18,6 +18,9 @@ public interface TagRepository extends CrudRepository<Tag, String> {
   @Query("SELECT imdbId FROM Tag WHERE tag = ?1")
   List<String> findAllByTag(String tag);
 
+  @Query("SELECT COUNT(imdbId) FROM Tag WHERE tag = ?1")
+  Integer countAllByTag(String tag);
+
   @Query("SELECT DISTINCT tag FROM Tag ORDER BY tag")
   List<String> findAllDistinctTags();
 

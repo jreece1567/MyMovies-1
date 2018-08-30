@@ -18,6 +18,9 @@ public interface GenreRepository extends CrudRepository<Genre, String> {
   @Query("SELECT imdbId FROM Genre WHERE genre = ?1")
   List<String> findAllByGenre(String genre);
 
+  @Query("SELECT COUNT(imdbId) FROM Genre WHERE genre = ?1")
+  Integer countAllByGenre(String genre);
+
   @Query("SELECT DISTINCT genre FROM Genre ORDER BY genre")
   List<String> findAllDistinctGenres();
 
