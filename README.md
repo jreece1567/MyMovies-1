@@ -25,12 +25,13 @@
         </ul>
         A number of fields are indexed, providing access to:
         <ul>
-            <li>Movies by 'genre'</li>
-            <li>Movies by 'year'</li>
             <li>Movies by 'actor'</li>
             <li>Movies by 'director'</li>
+            <li>Movies by 'genre'</li>
             <li>Movies by 'MPAA rating'</li>
             <li>Movies by 'tag'</li>
+            <li>Movies by 'title'</li>
+            <li>Movies by 'year'</li>
         </ul>
         <hr/>
         <h2>Usage</h2>
