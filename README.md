@@ -53,21 +53,21 @@
         <h2>Technical Details</h2>
         The application is written in Java, using the <a href="http://spring.io/projects/spring-boot" target="new">Spring Boot framework</a>, version 2.0.4. See the <a href="http://spring.io/projects/spring-boot" target="new">Spring Boot documentation</a> for more details.<br/><br/>
         The application architecture is pure MVC, and is completely stateless on the server-side, and supports a REST/JSON API.<br/>
-        To access a REST/JSON endpoint, you would issue an HTTP-GET to the following URL:
+        For example, to access a REST/JSON endpoint, you would issue an HTTP-GET to the following URL:
         <pre>
             <a href="http://localhost:8080/index/keys/all" target="new">http://localhost:8080/index/keys/all</a>
         </pre>
         <h2>Client-side caching</h2>
-        Responses from the service are delivered with 'Cache-Control' and 'Expires' headers to ensure that these assets are cached appropriately.<br/>
+        Responses from the service are delivered with 'Cache-Control' and 'Expires' headers to ensure that these assets are cached appropriately.<br/><br/>
         The max-client-cache-age value (in seconds) is configurable via <b>application.properties</b> using the <b>clientCacheMaxAge</b> property.
         <h2>CORS support for REST/JSON endpoints</h2>
-        Access to the REST/JSON endpoints is controlled by a CORS filter. By default, this filter will only allow REST access from 'localhost'.<br/>
-        The allowed CORS origins and preflight-max-age are configurable via <b>application.properties</b> using the <b>corsPreflightMaxAge</b> and <b>corsAllowedOrigins</b> properties.<br/>
-        <b>corsPreflightMaxAge</b> is specified in seconds.<br/>
-        <b>corsAllowedOrigins</b> is a comma-delimited list of strings specifying the allowed hosts.<br/>
+        Access to the REST/JSON endpoints is controlled by a CORS filter. By default, this filter will only allow REST access from 'localhost'.<br/><br/>
+        The allowed CORS origins and preflight-max-age are configurable via <b>application.properties</b> using the <b>cors.maxAge</b> and <b>cors.allowedHosts</b> properties.<br/><br/>
+        <b>cors.maxAge</b> is specified in seconds.<br/>
+        <b>cors.allowedHosts</b> is a comma-delimited list of strings specifying the allowed hosts.<br/>
         <h2>Building the app</h2>
-        The application is a Gradle project. The 'build' goal is used to build a self-contained 'shaded' JAR, which contains all dependencies.<br/>
-        No 'webapp container' (eg. Tomcat, Glassfish, etc.) is needed to run the app. The 'shaded' JAR contains embedded-Tomcat to provide HTTP/HTTPS server support.<br/>
+        The application is a Gradle project. The 'build' goal is used to build a self-contained 'shaded' JAR, which contains all dependencies.<br/><br/>
+        No 'webapp container' (eg. Tomcat, Glassfish, etc.) is needed to run the app. The 'shaded' JAR contains embedded-Tomcat to provide HTTP/HTTPS server support.<br/><br/>
         In addition, the application JAR contains the entire 'video database' and all images - no external resources are required (internet access is not required to run the app).<br/><br/>
         To build the application and run all tests:<br/>
         <pre>./gradlew clean build</pre>
