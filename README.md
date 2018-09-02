@@ -59,8 +59,8 @@
             <a href="http://localhost:8080/index/keys/all" target="new">http://localhost:8080/index/keys/all</a>
         </pre>
         <h2>Client-side caching</h2>
-        Responses from the service are delivered with 'Cache-Control' and 'Expires' headers to ensure that these assets are cached appropriately.<br/><br/>
-        The max-client-cache-age value (in seconds) is configurable via <b>application.properties</b> using the <b>clientCacheMaxAge</b> property.
+        Responses from the service are delivered 'Cache-Control' headers to ensure that these assets are cached appropriately.<br/><br/>
+        The max-client-cache-age value (in seconds) is configurable via <b>application.properties</b> using the <b>cache.clientCacheMaxAge</b> property.
         <h2>CORS support for REST/JSON endpoints</h2>
         Access to the REST/JSON endpoints is controlled by a CORS filter. By default, this filter will only allow REST access from 'localhost'.<br/><br/>
         The allowed CORS origins and preflight-max-age are configurable via <b>application.properties</b> using the <b>cors.maxAge</b> and <b>cors.allowedHosts</b> properties.<br/><br/>

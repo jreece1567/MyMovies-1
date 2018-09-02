@@ -371,5 +371,4 @@ public class MyMoviesController {
     return service.countByIndexAndKey(Index.fromValue(index), key);
   }
 
-
 }
