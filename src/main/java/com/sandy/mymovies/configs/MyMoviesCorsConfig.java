@@ -16,17 +16,17 @@ public class MyMoviesCorsConfig implements WebMvcConfigurer {
    * The CORS pre-flight-request maxAge, in seconds. Defaults to 3600, meaning 1 hour.
    */
   @Value("${cors.maxAge:3600}")
-  Long maxAge;
+  private transient Long maxAge;
 
   /**
    * The CORS allowed-origins, as a list of hostnames (e.g. "http://myhost.com,http://yourhost.com").
    * Defaults to '*', meaning 'all hosts'.
    */
   @Value("${cors.allowedOrigins:*}")
-  String[] allowedOrigins;
+  private transient String[] allowedOrigins;
 
   @Override
-  public void addCorsMappings(CorsRegistry registry) {
+  public void addCorsMappings(final CorsRegistry registry) {
 
     // apply these CORS rules to all paths.
     final CorsRegistration registration = registry.addMapping("/**");

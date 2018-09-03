@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  */
 @Log
 @Service
-public class MyStaticFileService {
+public final class MyStaticFileService {
 
   /**
    * Read and return the poster-image bytes for given imdbId.
@@ -21,16 +21,16 @@ public class MyStaticFileService {
    * @param imdbId the unique IMDB-id of the movie.
    * @return the image bytes.
    */
-  public byte[] fetchPosterImage(String imdbId) {
+  public byte[] fetchPosterImage(final String imdbId) {
 
     final String filename = "/db/" + imdbId + ".jpg";
-    final InputStream imageInput = getClass().getResourceAsStream(filename);
-    if (imageInput == null) {
-      throw new NoSuchElementException(filename + " not found.");
-    }
-
     byte[] imageBytes;
-    try {
+
+    try (final InputStream imageInput = getClass().getResourceAsStream(filename)) {
+
+      if (imageInput == null) {
+        throw new NoSuchElementException(filename + " not found.");
+      }
 
       imageBytes = fetchImageBytes(imageInput);
 
@@ -50,13 +50,13 @@ public class MyStaticFileService {
   public byte[] fetchFavicon() {
 
     final String filename = "/images/" + "favicon.ico";
-    final InputStream imageInput = getClass().getResourceAsStream(filename);
-    if (imageInput == null) {
-      throw new NoSuchElementException(filename + " not found.");
-    }
-
     byte[] imageBytes;
-    try {
+
+    try (final InputStream imageInput = getClass().getResourceAsStream(filename)) {
+
+      if (imageInput == null) {
+        throw new NoSuchElementException(filename + " not found.");
+      }
 
       imageBytes = fetchImageBytes(imageInput);
 
@@ -74,13 +74,13 @@ public class MyStaticFileService {
    * @param imageInput the input stream.
    * @return a byte array containing the image bytes.
    */
-  private byte[] fetchImageBytes(InputStream imageInput) throws IOException {
+  private byte[] fetchImageBytes(final InputStream imageInput) throws IOException {
 
     final BufferedInputStream imageReader = new BufferedInputStream(imageInput);
 
     final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
-    byte[] buffer = new byte[8192];
+    final byte[] buffer = new byte[8192];
 
     int len = 0;
     do {

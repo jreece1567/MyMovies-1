@@ -100,10 +100,10 @@ public class MyMoviesController {
   @ResponseStatus(HttpStatus.OK)
   public Movie postMovie(@RequestBody() final Movie movie) {
 
-    Errors errors = new BeanPropertyBindingResult(movie, movie.getClass().getName());
+    final Errors errors = new BeanPropertyBindingResult(movie, movie.getClass().getName());
     validator.validate(movie, errors);
     if (errors.hasErrors()) {
-      Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
+      final Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
           .groupingBy(
               FieldError::getField,
               Collectors.mapping(FieldError::getDefaultMessage, Collectors.toSet())));
@@ -204,10 +204,10 @@ public class MyMoviesController {
   @ResponseStatus(HttpStatus.OK)
   public Episode postEpisode(@RequestBody() final Episode episode) {
 
-    Errors errors = new BeanPropertyBindingResult(episode, episode.getClass().getName());
+    final Errors errors = new BeanPropertyBindingResult(episode, episode.getClass().getName());
     validator.validate(episode, errors);
     if (errors.hasErrors()) {
-      Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
+      final Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
           .groupingBy(
               FieldError::getField,
               Collectors.mapping(FieldError::getDefaultMessage, Collectors.toSet())));

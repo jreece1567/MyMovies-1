@@ -25,19 +25,20 @@ public class MyMoviesRequestLoggingConfig {
 
     final CommonsRequestLoggingFilter filter = new CommonsRequestLoggingFilter() {
       @Override
-      protected void beforeRequest(HttpServletRequest request, String message) {
+      protected void beforeRequest(final HttpServletRequest request, final String message) {
         String msg = message.replaceAll("Before request", "Request: " + request.getMethod());
         logger.debug(msg);
       }
 
       @Override
-      protected void afterRequest(HttpServletRequest request, String message) {
+      protected void afterRequest(final HttpServletRequest request, final String message) {
         // do nothing
       }
 
       @Override
-      protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
-          FilterChain filterChain) throws ServletException, IOException {
+      protected void doFilterInternal(final HttpServletRequest request,
+          final HttpServletResponse response,
+          final FilterChain filterChain) throws ServletException, IOException {
 
         //same mechanism as for request caching in superclass
         HttpServletResponse responseToUse = response;
@@ -61,7 +62,7 @@ public class MyMoviesRequestLoggingConfig {
       }
 
       //equivalent to super.createMessage() for request logging
-      private String getResponseMessage(HttpServletResponse rsp) {
+      private String getResponseMessage(final HttpServletResponse rsp) {
 
         StringBuilder msg = new StringBuilder();
 
@@ -85,8 +86,8 @@ public class MyMoviesRequestLoggingConfig {
               msg.append(";payload=[").append(payload).append("]");
             }
           } else {
-            msg.append(";payload=");
-            msg.append("[not logging response of media-type: " + rsp.getContentType() + "]");
+            msg.append(";payload=")
+                .append("[not logging response of media-type: " + rsp.getContentType() + "]");
           }
         }
 

@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyStaticFileController {
 
-  private final MyStaticFileService staticFileService;
-  private final MyMoviesCacheConfig cacheConfig;
+  private final transient MyStaticFileService staticFileService;
+  private final transient MyMoviesCacheConfig cacheConfig;
 
   /**
    * Construct a new controller instance.
@@ -31,8 +31,8 @@ public class MyStaticFileController {
    * @param cacheConfig the cache-control.
    */
   @Autowired
-  public MyStaticFileController(MyStaticFileService staticFileService,
-      MyMoviesCacheConfig cacheConfig) {
+  public MyStaticFileController(final MyStaticFileService staticFileService,
+      final MyMoviesCacheConfig cacheConfig) {
 
     this.staticFileService = staticFileService;
     this.cacheConfig = cacheConfig;
@@ -58,9 +58,9 @@ public class MyStaticFileController {
    */
   @RequestMapping(path = "/image/{imdbId}", method = RequestMethod.GET)
   @ResponseStatus(HttpStatus.OK)
-  public ResponseEntity<byte[]> fetchImageForImdbId(@PathVariable("imdbId") String imdbId) {
+  public ResponseEntity<byte[]> fetchImageForImdbId(@PathVariable("imdbId") final String imdbId) {
 
-    byte[] imageBytes = staticFileService.fetchPosterImage(imdbId);
+    final byte[] imageBytes = staticFileService.fetchPosterImage(imdbId);
 
     return ResponseEntity.ok().cacheControl(cacheConfig.cacheControl())
         .contentType(MediaType.IMAGE_JPEG)
@@ -77,7 +77,7 @@ public class MyStaticFileController {
   @ResponseStatus(HttpStatus.OK)
   public ResponseEntity<byte[]> fetchFavicon() {
 
-    byte[] imageBytes = staticFileService.fetchFavicon();
+    final byte[] imageBytes = staticFileService.fetchFavicon();
 
     return ResponseEntity.ok().cacheControl(cacheConfig.cacheControl())
         .contentType(new MediaType("image", "x-icon"))

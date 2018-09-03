@@ -36,11 +36,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyMoviesService {
 
-  private final VideoRepository videoRepository;
-  private final ChapterRepository chapterRepository;
-  private final ActorRepository actorRepository;
-  private final TagRepository tagRepository;
-  private final GenreRepository genreRepository;
+  private final transient VideoRepository videoRepository;
+  private final transient ChapterRepository chapterRepository;
+  private final transient ActorRepository actorRepository;
+  private final transient TagRepository tagRepository;
+  private final transient GenreRepository genreRepository;
 
   /**
    * Construct a new service instance.
@@ -262,8 +262,8 @@ public class MyMoviesService {
 
     Collections.sort(episodes, new Comparator<Episode>() {
       @Override
-      public int compare(Episode o1, Episode o2) {
-        int compareSeasons = o1.getSeason().compareTo(o2.getSeason());
+      public int compare(final Episode o1, final Episode o2) {
+        final int compareSeasons = o1.getSeason().compareTo(o2.getSeason());
         if (compareSeasons != 0) {
           return compareSeasons;
         }
@@ -303,7 +303,7 @@ public class MyMoviesService {
 
     Collections.sort(episodes, new Comparator<Episode>() {
       @Override
-      public int compare(Episode o1, Episode o2) {
+      public int compare(final Episode o1, final Episode o2) {
         return o1.getEpisodeNumber().compareTo(o2.getEpisodeNumber());
       }
     });
@@ -458,7 +458,7 @@ public class MyMoviesService {
 
     Collections.sort(titles, new Comparator<Title>() {
       @Override
-      public int compare(Title o1, Title o2) {
+      public int compare(final Title o1, final Title o2) {
         return o1.getTitle().compareTo(o2.getTitle());
       }
     });
@@ -547,7 +547,7 @@ public class MyMoviesService {
 
     Collections.sort(keys, new Comparator<Key>() {
       @Override
-      public int compare(Key o1, Key o2) {
+      public int compare(final Key o1, final Key o2) {
         return o1.getKey().compareTo(o2.getKey());
       }
     });

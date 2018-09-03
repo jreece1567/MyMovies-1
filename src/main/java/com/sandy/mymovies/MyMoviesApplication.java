@@ -10,11 +10,13 @@ import com.sandy.mymovies.services.MyMoviesService;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -26,7 +28,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MyMoviesApplication implements CommandLineRunner {
 
   @Autowired
-  MyMoviesService movieService;
+  private transient MyMoviesService movieService;
 
   public static void main(final String[] args) {
     SpringApplication.run(MyMoviesApplication.class, args);
@@ -53,7 +55,8 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // load up the list of imdbid's in the filesystem-based DB
     final BufferedReader indexReader = new BufferedReader(
-        new InputStreamReader(getClass().getResourceAsStream("/db/index_id.json")));
+        new InputStreamReader(getClass().getResourceAsStream("/db/index_id.json"),
+            StandardCharsets.UTF_8));
     Map<String, List<String>> map = new HashMap<>();
     try {
       map = new ObjectMapper()
@@ -73,7 +76,8 @@ public class MyMoviesApplication implements CommandLineRunner {
     // walk the list of imdbid's, loading each 'Movie' JSON file and storing it in our DB
     map.keySet().forEach(imdbId -> {
       final BufferedReader movieReader = new BufferedReader(
-          new InputStreamReader(getClass().getResourceAsStream("/db/" + imdbId + ".json")));
+          new InputStreamReader(getClass().getResourceAsStream("/db/" + imdbId + ".json"),
+              StandardCharsets.UTF_8));
       try {
         final Movie movie = new ObjectMapper()
             .readValue(movieReader, new TypeReference<Movie>() {
@@ -101,7 +105,8 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // load up the list of imdbid's-with-episodes in the filesystem-based DB
     final BufferedReader indexReader = new BufferedReader(
-        new InputStreamReader(getClass().getResourceAsStream("/db/index_episode.json")));
+        new InputStreamReader(getClass().getResourceAsStream("/db/index_episode.json"),
+            StandardCharsets.UTF_8));
     Map<String, List<Episode>> map = new HashMap<>();
     try {
       map = new ObjectMapper()
@@ -120,12 +125,11 @@ public class MyMoviesApplication implements CommandLineRunner {
 
     // walk the list of imdbid's, load the episodes associated with each imdbId,
     // and save the episodes in our DB.
-    final Iterator<String> iterator = map.keySet().iterator();
+    final Iterator<Entry<String, List<Episode>>> iterator = map.entrySet().iterator();
     while (iterator.hasNext()) {
-      final String imdbId = iterator.next();
-      final List<Episode> episodes = map.get(imdbId);
-      episodesLoaded = episodesLoaded + episodes.size();
-      episodes.forEach(episode -> {
+      final Entry<String, List<Episode>> entry = iterator.next();
+      episodesLoaded = episodesLoaded + entry.getValue().size();
+      entry.getValue().forEach(episode -> {
         movieService.createEpisode(new Episode(episode.getImdbId(), episode.getSeason(),
             episode.getEpisodeNumber(), episode.getTitle(), episode.getDescription()));
       });
@@ -139,17 +143,17 @@ public class MyMoviesApplication implements CommandLineRunner {
   /**
    * Simple reusable execution-time timer.
    */
-  class SimpleTimer {
+  static class SimpleTimer {
 
-    private long start;
-    private long stop;
+    private transient long startTime;
+    private transient long stopTime;
 
     /**
      * Create a new SimpleTimer instance.
      */
     public SimpleTimer() {
-      this.start = new Date().getTime();
-      this.stop = this.start;
+      this.startTime = new Date().getTime();
+      this.stopTime = this.startTime;
     }
 
     /**
@@ -158,8 +162,8 @@ public class MyMoviesApplication implements CommandLineRunner {
      * @return this SimpleTimer instance.
      */
     public SimpleTimer start() {
-      this.start = new Date().getTime();
-      this.stop = this.start;
+      this.startTime = new Date().getTime();
+      this.stopTime = this.startTime;
       return this;
     }
 
@@ -169,7 +173,7 @@ public class MyMoviesApplication implements CommandLineRunner {
      * @return this SimpleTimer instance.
      */
     public SimpleTimer stop() {
-      this.stop = new Date().getTime();
+      this.stopTime = new Date().getTime();
       return this;
     }
 
@@ -179,7 +183,7 @@ public class MyMoviesApplication implements CommandLineRunner {
      * @return the duration in milliseconds.
      */
     public long duration() {
-      return this.stop - this.start;
+      return this.stopTime - this.startTime;
     }
   }
 }
