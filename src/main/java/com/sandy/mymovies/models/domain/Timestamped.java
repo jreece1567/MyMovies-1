@@ -44,4 +44,22 @@ public class Timestamped {
   protected void onUpdate() {
     updatedAt = new Date();
   }
+
+  /**
+   * Return the created-timestamp.
+   *
+   * @return the createdAt field.
+   */
+  public Date getCreatedAt() {
+    return this.createdAt;
+  }
+
+  /**
+   * Return the updated-timestamp.
+   *
+   * @return the updatedAt field.
+   */
+  public Date getUpdatedAt() {
+    return this.updatedAt;
+  }
 }
