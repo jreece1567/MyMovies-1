@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
@@ -17,7 +18,8 @@ import lombok.NoArgsConstructor;
     @Index(name = "IDX_CHAPTER_SEASON", columnList = "season")})
 @Data
 @NoArgsConstructor
-public class Chapter {
+@EqualsAndHashCode(callSuper = false)
+public class Chapter extends Timestamped {
 
   /**
    * The unique row-id.

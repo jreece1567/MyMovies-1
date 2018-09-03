@@ -7,6 +7,7 @@ import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
@@ -26,7 +27,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Video {
+@EqualsAndHashCode(callSuper = false)
+public class Video extends Timestamped {
 
   /**
    * The unique IMDB-id identifying this movie.

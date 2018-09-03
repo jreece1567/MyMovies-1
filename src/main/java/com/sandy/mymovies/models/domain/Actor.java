@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
@@ -16,7 +17,8 @@ import lombok.NoArgsConstructor;
     @Index(name = "IDX_ACTOR_IMDBID", columnList = "imdbId")})
 @Data
 @NoArgsConstructor
-public class Actor {
+@EqualsAndHashCode(callSuper = false)
+public class Actor extends Timestamped {
 
   /**
    * The unique row-id.
