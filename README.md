@@ -85,6 +85,7 @@
         <pre>./build/reports/checkstyle</pre>
         The application 'test' output is in:
         <pre>./build/reports/tests/test</pre>
+        <i>To view all build output, open the <b>buildout.html</b> file in the project root folder.</i>
         <h2>Configuring the app</h2>
         The app is configured using the SpringBoot-standard mechanism, a 'properties' file, <b>application.properties</b>. This configuration file contains reasonable default values for all configurable settings. In addition to application-level configuration parameters, this file also contains 'server-level' parameters, for example port-assignments and logging settings. See the <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html" target="new">SpringBoot-configuration documentation</a> for details. Values specified in the <b>application.properties</b> file can be overridden at service-startup by supplying them as defined values on the command-line, for example:<br/>
         <pre>
