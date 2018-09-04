@@ -36,6 +36,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyMoviesService {
 
+  private static final String NOT_FOUND_MSG = "Movie with id %s not found.";
+
   private final VideoRepository videoRepository;
   private final ChapterRepository chapterRepository;
   private final ActorRepository actorRepository;
@@ -118,7 +120,7 @@ public class MyMoviesService {
 
     } else {
 
-      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+      throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
   }
 
@@ -164,7 +166,7 @@ public class MyMoviesService {
     // validate the imdbId, fetch the existing Video data
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
-      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+      throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
 
     // construct a Movie for the response
@@ -209,7 +211,7 @@ public class MyMoviesService {
 
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
-      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+      throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
 
     return new Title(video.get().getImdbId(), video.get().getTitle(),
@@ -228,7 +230,7 @@ public class MyMoviesService {
 
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
-      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+      throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
 
     final List<String> actors = actorRepository.findAllByImdbId(imdbId);
@@ -252,7 +254,7 @@ public class MyMoviesService {
 
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
-      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+      throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
 
     final List<Chapter> chapters = chapterRepository.findAllByImdbId(imdbId);
@@ -285,7 +287,7 @@ public class MyMoviesService {
 
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
-      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+      throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
 
     final List<Chapter> chapters = chapterRepository
@@ -356,7 +358,7 @@ public class MyMoviesService {
 
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
-      throw new NoSuchElementException(String.format("Movie with id %s not found.", imdbId));
+      throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
 
     final List<String> seasons = chapterRepository.findDistinctSeasonsByImdbId(imdbId);

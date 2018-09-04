@@ -15,6 +15,8 @@ import org.springframework.stereotype.Service;
 @Service
 public final class MyStaticFileService {
 
+  private static final String ERROR_MSG = "Error reading image from ";
+
   /**
    * Read and return the poster-image bytes for given imdbId.
    *
@@ -35,8 +37,8 @@ public final class MyStaticFileService {
       imageBytes = fetchImageBytes(imageInput);
 
     } catch (IOException ex) {
-      log.info("Error reading image from " + filename + " - " + ex.getMessage());
-      throw new NoSuchElementException("Error reading image from " + filename);
+      log.info(ERROR_MSG + filename + " - " + ex.getMessage());
+      throw new NoSuchElementException(ERROR_MSG + filename);
     }
 
     return imageBytes;
@@ -61,8 +63,8 @@ public final class MyStaticFileService {
       imageBytes = fetchImageBytes(imageInput);
 
     } catch (IOException ex) {
-      log.info("Error reading image from " + filename + " - " + ex.getMessage());
-      throw new NoSuchElementException("Error reading image from " + filename);
+      log.info(ERROR_MSG + filename + " - " + ex.getMessage());
+      throw new NoSuchElementException(ERROR_MSG + filename);
     }
 
     return imageBytes;

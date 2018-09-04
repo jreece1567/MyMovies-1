@@ -64,7 +64,7 @@ public class MyMoviesRequestLoggingConfig {
       //equivalent to super.createMessage() for request logging
       private String getResponseMessage(final HttpServletResponse rsp) {
 
-        final StringBuilder msg = new StringBuilder();
+        final StringBuilder msg = new StringBuilder(64);
 
         final ContentCachingResponseWrapper wrapper =
             WebUtils.getNativeResponse(rsp, ContentCachingResponseWrapper.class);
@@ -83,11 +83,12 @@ public class MyMoviesRequestLoggingConfig {
               } catch (UnsupportedEncodingException ex) {
                 payload = "[unknown]";
               }
-              msg.append(";payload=[").append(payload).append("]");
+              msg.append(";payload=[").append(payload).append("] ");
             }
           } else {
-            msg.append(";payload=")
-                .append("[not logging response of media-type: " + rsp.getContentType() + "]");
+            msg.append(";payload=[not logging response of media-type: ")
+                .append(rsp.getContentType())
+                .append("] ");
           }
         }
 

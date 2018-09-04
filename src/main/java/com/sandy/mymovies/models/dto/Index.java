@@ -20,13 +20,9 @@ public enum Index {
    * @param value the string value.
    * @return the enum constant with the specified value.
    * @throws IllegalArgumentException if this enum type has no constant with the specified value.
-   * @throws NullPointerException if the supplied value is null.
    */
   public static Index fromValue(final String value) {
 
-    if (value == null) {
-      throw new NullPointerException();
-    }
     for (Index index : values()) {
       if (index.getValue().equals(value)) {
         return index;
