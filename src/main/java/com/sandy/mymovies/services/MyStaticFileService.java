@@ -77,9 +77,7 @@ public final class MyStaticFileService {
   private byte[] fetchImageBytes(final InputStream imageInput) throws IOException {
 
     final BufferedInputStream imageReader = new BufferedInputStream(imageInput);
-
     final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
     final byte[] buffer = new byte[8192];
 
     int len = 0;

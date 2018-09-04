@@ -26,7 +26,7 @@ public class MyMoviesRequestLoggingConfig {
     final CommonsRequestLoggingFilter filter = new CommonsRequestLoggingFilter() {
       @Override
       protected void beforeRequest(final HttpServletRequest request, final String message) {
-        String msg = message.replaceAll("Before request", "Request: " + request.getMethod());
+        final String msg = message.replaceAll("Before request", "Request: " + request.getMethod());
         logger.debug(msg);
       }
 
@@ -51,7 +51,7 @@ public class MyMoviesRequestLoggingConfig {
         super.doFilterInternal(request, responseToUse, filterChain);
 
         //log outgoing response
-        String message =
+        final String message =
             this.createMessage(request, "Response To Request: " + request.getMethod() + " [", "]")
                 + getResponseMessage(responseToUse);
         logger.debug(message);
@@ -64,9 +64,9 @@ public class MyMoviesRequestLoggingConfig {
       //equivalent to super.createMessage() for request logging
       private String getResponseMessage(final HttpServletResponse rsp) {
 
-        StringBuilder msg = new StringBuilder();
+        final StringBuilder msg = new StringBuilder();
 
-        ContentCachingResponseWrapper wrapper =
+        final ContentCachingResponseWrapper wrapper =
             WebUtils.getNativeResponse(rsp, ContentCachingResponseWrapper.class);
 
         if (wrapper != null) {
@@ -74,9 +74,9 @@ public class MyMoviesRequestLoggingConfig {
           if (rsp.getContentType() != null && !rsp.getContentType()
               .startsWith("image") && !rsp.getContentType()
               .startsWith("application/octet-stream")) {
-            byte[] buf = wrapper.getContentAsByteArray();
+            final byte[] buf = wrapper.getContentAsByteArray();
             if (buf.length > 0) {
-              int length = Math.min(buf.length, getMaxPayloadLength());
+              final int length = Math.min(buf.length, getMaxPayloadLength());
               String payload;
               try {
                 payload = new String(buf, 0, length, wrapper.getCharacterEncoding());
