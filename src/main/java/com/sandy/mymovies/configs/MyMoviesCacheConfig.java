@@ -10,7 +10,7 @@ import org.springframework.http.CacheControl;
 public class MyMoviesCacheConfig {
 
   @Value("${cache.clientCacheMaxAge:604800}")
-  private transient Long cacheMaxAge;
+  private Long cacheMaxAge;
 
   /**
    * Configure and return the CacheControl instance to be used for JSON and JPG responses. The

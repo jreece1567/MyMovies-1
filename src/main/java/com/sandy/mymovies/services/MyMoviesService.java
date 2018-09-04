@@ -36,11 +36,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyMoviesService {
 
-  private final transient VideoRepository videoRepository;
-  private final transient ChapterRepository chapterRepository;
-  private final transient ActorRepository actorRepository;
-  private final transient TagRepository tagRepository;
-  private final transient GenreRepository genreRepository;
+  private final VideoRepository videoRepository;
+  private final ChapterRepository chapterRepository;
+  private final ActorRepository actorRepository;
+  private final TagRepository tagRepository;
+  private final GenreRepository genreRepository;
 
   /**
    * Construct a new service instance.

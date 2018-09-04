@@ -7,11 +7,13 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import lombok.Getter;
 
 /**
  * Superclass that adds create/update timestamping to all tables that inherit from this class.
  */
 @MappedSuperclass
+@Getter
 public class Timestamped {
 
   /**

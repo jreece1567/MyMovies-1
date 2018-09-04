@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyStaticFileController {
 
-  private final transient MyStaticFileService staticFileService;
-  private final transient MyMoviesCacheConfig cacheConfig;
+  private final MyStaticFileService staticFileService;
+  private final MyMoviesCacheConfig cacheConfig;
 
   /**
    * Construct a new controller instance.

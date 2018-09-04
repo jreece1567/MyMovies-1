@@ -28,7 +28,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MyMoviesApplication implements CommandLineRunner {
 
   @Autowired
-  private transient MyMoviesService movieService;
+  private MyMoviesService movieService;
 
   public static void main(final String[] args) {
     SpringApplication.run(MyMoviesApplication.class, args);
@@ -145,8 +145,8 @@ public class MyMoviesApplication implements CommandLineRunner {
    */
   static class SimpleTimer {
 
-    private transient long startTime;
-    private transient long stopTime;
+    private long startTime;
+    private long stopTime;
 
     /**
      * Create a new SimpleTimer instance.

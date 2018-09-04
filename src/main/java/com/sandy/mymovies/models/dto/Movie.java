@@ -56,7 +56,7 @@ public class Movie {
    */
   @Valid
   @NotNull
-  @Pattern(regexp = "\\d{1}:[0-5][0-9]")
+  @Pattern(regexp = "[0-9]:[0-5][0-9]")
   private String duration;
 
   /**

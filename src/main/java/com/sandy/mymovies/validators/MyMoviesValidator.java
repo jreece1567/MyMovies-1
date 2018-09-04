@@ -11,7 +11,7 @@ import org.springframework.validation.beanvalidation.SpringValidatorAdapter;
 @Component
 public class MyMoviesValidator implements Validator {
 
-  private final transient SpringValidatorAdapter validator;
+  private final SpringValidatorAdapter validator;
 
   public MyMoviesValidator(final SpringValidatorAdapter validator) {
     super();
