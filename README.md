@@ -83,6 +83,10 @@
         <pre>./build/docs/javadoc</pre>
         The 'checkstyle' report files are in:
         <pre>./build/reports/checkstyle</pre>
+        The 'findbugs' report files are in:
+        <pre>./build/reports/findbugs</pre>
+        The 'pmd' report files are in:
+        <pre>./build/reports/pmd</pre>
         The application 'test' output is in:
         <pre>./build/reports/tests/test</pre>
         <i>To view all build output, open the <b>buildout.html</b> file in the project root folder.</i>
@@ -100,6 +104,7 @@
         <br/><pre>
             <a href="http://localhost:8080/actuator" target="new">http://localhost:8080/actuator</a> 
         </pre><br/>
+        An endpoint is also exposed describing each 'repository' in the application. See the <a href="https://docs.spring.io/spring-data/rest/docs/current/reference/html/#metadata.alps">Spring Data Rest documentation</a> for details.
         <pre>
             <a href="http://localhost:8080/profile" target="new">http://localhost:8080/profile</a>
         </pre>
@@ -108,12 +113,14 @@
         The Java code is organized into the following packages (under <b>src/main/java</b>):
         <ul>
             <li><b>com.sandy.mymovies</b> - the root package, contains the Spring Boot 'Application' class - i.e. the application entry point.</li>
+            <li><b>com.sandy.mymovies.configs</b> - contains the Spring 'Configuration' classes which configure settings for Cache-Control, CORS, and request/response logging.</li>
             <li><b>com.sandy.mymovies.controllers</b> - contains the Spring 'Rest Controller' classes which accept HTTP requests to defined endpoints.</li>
             <li><b>com.sandy.mymovies.models</b> - root package for Java beans (POJOs).</li>
             <li><b>com.sandy.mymovies.models.domain</b> - contains Java Beans (POJOs) describing the 'domain' (DB) entities.</li>
             <li><b>com.sandy.mymovies.models.dto</b> - contains Java beans (POJOs) describing the 'data transfer object' (DTO) entities used to interact with the REST API.</li>
             <li><b>com.sandy.mymovies.repositories</b> - contains Spring 'repository' classes which define the data-access layer between the service and the actual DB.</li>
             <li><b>com.sandy.mymovies.services</b> - contains Spring 'service' classes which mediate between the 'transport' layer (i.e. the 'controllers') and the 'persistence' layer (i.e. the 'repositories').</li>
+            <li><b>com.sandy.mymovies.validators</b> - contains Spring 'validator' classes which perform JSR-303 bean validation against DTO beans.</li>
         </ul>
         <hr/>
     </body>
