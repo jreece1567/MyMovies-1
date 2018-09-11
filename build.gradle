@@ -1,3 +1,5 @@
+import io.franzbecker.gradle.lombok.task.DelombokTask
+
 buildscript {
     ext {
         springBootVersion = '2.0.4.RELEASE'
@@ -11,16 +13,15 @@ buildscript {
 }
 
 plugins {
+    id 'java'
+    id 'eclipse'
+    id 'org.springframework.boot' version '2.0.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+    id 'checkstyle'
+    id 'pmd'
+    id 'findbugs'
     id 'io.franzbecker.gradle-lombok' version '1.14'
 }
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
-apply plugin: 'checkstyle'
-apply plugin: 'pmd'
-apply plugin: 'findbugs'
 
 group = 'com.sandy'
 version = '0.0.1-SNAPSHOT'
@@ -40,8 +41,6 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
-import io.franzbecker.gradle.lombok.task.DelombokTask
-
 task delombok(type: DelombokTask, dependsOn: compileJava) {
     ext.outputDir = file("$buildDir/delombok")
     outputs.dir(outputDir)
@@ -60,8 +59,7 @@ task delombokHelp(type: DelombokTask) {
 
 javadoc {
     dependsOn delombok
-    source = delombok.outputDir // sourceSets.main.allJava
-    // classpath = sourceSets.main.compileClasspath // configurations.compile
+    source = delombok.outputDir 
     options.overview = "src/main/resources/doc/overview.html"
     options.links "https://docs.oracle.com/javaee/7/api/"
     options.links "https://docs.oracle.com/javase/8/docs/api/"
