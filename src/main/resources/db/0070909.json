@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0070909",
+  "title" : "Westworld",
+  "releaseYear" : "1973",
+  "duration" : "1:28",
+  "rating" : "PG",
+  "director" : "Michael Crichton",
+  "imageUrl" : "0070909.jpg",
+  "description" : "A robot malfunction creates havoc and terror for unsuspecting vacationers at a futuristic, adult-themed amusement park.",
+  "genres" : [ "Action", "Sci-Fi", "Thriller", "Western" ],
+  "cast" : [ "Yul Brynner", "Richard Benjamin", "James Brolin", "Norman Bartold", "Alan Oppenheimer", "Victoria Shaw", "Dick Van Patten", "Linda Gaye Scott", "Steve Franken", "Michael T. Mikler", "Terry Wilson", "Majel Barrett", "Anne Randall", "Julie Marcus", "Sharyn Wynters", "Anne Bellamy", "Chris Holter", "Charles Seel", "Wade Crosby", "Nora Marlowe", "Lin Henson", "Orville Sherman", "C. Lindsay Workman", "Lauren Gilbert", "Davis Roberts", "Howard Platt", "Richard Roat", "Kenneth Washington", "Jared Martin", "Robert Patten", "David M. Frank", "Kip King", "David Man", "Larry Delaney", "Will J. White", "Ben Young", "Tom Falk", "Tony Brubaker", "Barry Cahill", "Bill Catching", "Jaye Durkus", "Louie Elias", "Robert Hitchcock", "Robert Hogan", "Paul King", "Rod McGaughy", "Mindi Miller", "Robert Nichols", "Monty O'Grady", "Charlie Picerni", "Leoda Richards", "Paul Sorensen" ],
+  "tags" : [ "Crichton" ]
+}

@@ -9,13 +9,13 @@
   "season" : "1",
   "episodeNumber" : "2",
   "title" : "Fifteen Million Merits",
-  "description" : "In a world where people's lives consist of riding excercise bikes to gain credits, Bing tries to help a woman get on to a singing competition show."
+  "description" : "In a world where people's lives consist of riding exercise bikes to gain credits, Bing tries to help a woman get on to a singing competition show."
 }, {
   "imdbId" : "2085059",
   "season" : "1",
   "episodeNumber" : "3",
   "title" : "The Entire History of You",
-  "description" : "In the near future, everyone has access to a memory implant that records everything they do, see and hear - a sort of Sky Plus for the brain. You need never forget a face again - but is that always a good thing?"
+  "description" : "In the near future, everyone has access to a memory implant that records everything they do, see and hear - a sort of Sky Plus (Digital Video Recorder) for the brain. You need never forget a face again - but is that always a good thing?"
 }, {
   "imdbId" : "2085059",
   "season" : "2",
@@ -76,4 +76,40 @@
   "episodeNumber" : "6",
   "title" : "Hated in the Nation",
   "description" : "In near-future London, police detective Karin Parke, and her tech-savvy sidekick Blue, investigate a string of mysterious deaths with a sinister link to social media."
+}, {
+  "imdbId" : "2085059",
+  "season" : "4",
+  "episodeNumber" : "1",
+  "title" : "USS Callister",
+  "description" : "A woman wakes up on a Star Trek-esque ship where the crew praise their all knowing and fearless captain."
+}, {
+  "imdbId" : "2085059",
+  "season" : "4",
+  "episodeNumber" : "2",
+  "title" : "Arkangel",
+  "description" : "After nearly losing her daughter, a mother invests in a new technology that allows her to keep track of her."
+}, {
+  "imdbId" : "2085059",
+  "season" : "4",
+  "episodeNumber" : "3",
+  "title" : "Crocodile",
+  "description" : "A woman interviews various people using a device that allows her to access their memories."
+}, {
+  "imdbId" : "2085059",
+  "season" : "4",
+  "episodeNumber" : "4",
+  "title" : "Hang the DJ",
+  "description" : "Paired up by a dating program that puts an expiration date on all relationships, Frank and Amy soon begin to question the system's logic."
+}, {
+  "imdbId" : "2085059",
+  "season" : "4",
+  "episodeNumber" : "5",
+  "title" : "Metalhead",
+  "description" : "In the post-apocalyptic landscape of the Scottish Moors, a woman attempts to survive the land full of \"dogs\"."
+}, {
+  "imdbId" : "2085059",
+  "season" : "4",
+  "episodeNumber" : "6",
+  "title" : "Black Museum",
+  "description" : "A woman enters the Black Museum, where the proprietor tells his stories relating to the artefacts."
 }]

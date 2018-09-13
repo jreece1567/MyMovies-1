@@ -6,8 +6,8 @@
   "rating" : "PG-13",
   "director" : "Kevin Reynolds",
   "imageUrl" : "0245844.jpg",
-  "description" : "A young man, falsely imprisoned by his jealous 'friend', escapes and uses a hidden treasure to exact his revenge.",
-  "genres" : [ "Action", "Adventure", "Drama" ],
+  "description" : "A young man, falsely imprisoned by his jealous \"friend\", escapes and uses a hidden treasure to exact his revenge.",
+  "genres" : [ "Action", "Adventure", "Drama", "Romance", "Thriller" ],
   "cast" : [ "Jim Caviezel", "Guy Pearce", "Richard Harris", "James Frain", "Dagmara Dominczyk", "Michael Wincott", "Luis Guzmán", "Christopher Adamson", "JB Blanc", "Guy Carleton", "Alex Norton", "Barry Cassin", "Henry Cavill", "Zahara Moufid", "Brendan Costello", "Patrick Godfrey", "Katherine Holme", "Freddie Jones", "Joe Hanley", "Mairead Devlin", "Stella Feeley", "Joseph Kelly", "Ivan Kennedy", "Alvaro Lucchesi", "Helen McCrory", "Karl O'Neill", "Robert Price", "Derek Reid", "Eric Stovell", "Jude Sweeney", "Brian Thunder", "Gregor Truter", "Andrew Woodall", "Albie Woodington", "Jeff Nowinski" ],
   "tags" : [ ]
 }

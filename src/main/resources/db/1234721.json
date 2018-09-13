@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1234721",
+  "title" : "RoboCop (2014)",
+  "releaseYear" : "2014",
+  "duration" : "1:57",
+  "rating" : "PG-13",
+  "director" : "Jose Padilha",
+  "imageUrl" : "1234721.jpg",
+  "description" : "In 2028 Detroit, when Alex Murphy, a loving husband, father and good cop, is critically injured in the line of duty, the multinational conglomerate OmniCorp sees their chance for a part-man, part-robot police officer.",
+  "genres" : [ "Action", "Crime", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Joel Kinnaman", "Gary Oldman", "Michael Keaton", "Abbie Cornish", "Jackie Earle Haley", "Michael Kenneth Williams", "Jennifer Ehle", "Jay Baruchel", "Marianne Jean-Baptiste", "Samuel L. Jackson", "Aimee Garcia", "Douglas Urbanski", "John Paul Ruttan", "Patrick Garrow", "K.C. Collins", "Daniel Kash", "Zach Grenier", "Maura Grierson", "Stewart Arnott", "Matt Cooke", "Steve Cumyn", "Noorin Gulamgaus", "Marjan Neshat", "Sam Motazedi", "Khaliya Hosein", "Savana Hosein", "Philip Akin", "Paul Haywood", "Adrian Griffin", "Rick Hughes", "Raffi Altounian", "Melanie Scrofano", "Kelvin Wheeler", "Alex Mallari Jr.", "Dwayne McLean", "Tattiawna Jones", "Wayne Downer", "Robert Thomas", "Jordan Johnson-Hinds", "Ian Peters", "Ricardo Betancourt", "Evan Stern", "Ishan Morris", "Ambrose Wong", "Mark McKay", "Aurora Browne", "Rory O'Shea", "Shondra Kayd", "Stacey Unsworth", "Jeana Lowes", "Kanu Giddings", "Tamara Almeida", "Shane Invervary", "Paul Sun-Hyung Lee", "Thomas Mitchell", "Ian Butcher", "Rocky Anderson", "Dalias Blake", "Barry Nerling", "Dean Redman", "Demord Dann", "Darcy Hinds", "Sean Francis", "Steve Wright", "Kirby Morrow", "David Harcourt", "Kevin Hare", "Carlyn Burchell", "Markus Parilo", "Jessica Booker", "Joe Merritt", "Raiden Eastman", "Aaliyah Cinello", "Meghan Hoople", "Prince Massey", "Emeka Agada", "Mark Baldesarra", "Jason Bigio", "Sharon Canovas", "Tommy Chang", "Jimmy Chimarios", "Jourdan Chow", "Raven Cinello", "Brian Cranstone", "Hooman Esmailzadeh", "Tazito Garcia", "WBBrown II", "Shane Clinton Jarvis", "Kevin Kirkham", "Puang David Ngo-Trong", "Veronika Paz", "Stephen Quammie", "Diezel Ramos", "Jon Rhys", "Rebecca Rodley", "Matthew Sauvé", "Azra Valani", "Mark Van Woert", "Joe Vercillo", "Joshua William James", "Peter Yan", "Matt Yantha" ],
+  "tags" : [ ]
+}
