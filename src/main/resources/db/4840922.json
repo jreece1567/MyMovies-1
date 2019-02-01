@@ -1,0 +1,13 @@
+{
+  "imdbId" : "4840922",
+  "title" : "The Bomb",
+  "releaseYear" : "2015",
+  "duration" : "1:55",
+  "rating" : "PG",
+  "director" : "Rushmore DeNooyer",
+  "imageUrl" : "4840922.jpg",
+  "description" : "See how America developed the most destructive invention in human history - the nuclear bomb - how it changed the world and how it continues to loom large in our lives. Hear from historians and those who experienced the dawn of the atomic age.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Jonathan Adams", "John Andersen", "Hal Behl", "Walter Boyne", "Alan Carr", "Lynn Eden", "John Hopkins", "Lilli Hornig", "Sergei Khrushchev", "Amy Knight", "Charles Loeber", "Elaine Tyler May", "Glen McDuff", "Laura McEnaney", "Robert Norris", "William J. Perry", "Roger Rasmussen", "Richard Rhodes", "Svetlana Savranskaya", "Martin J. Sherwin", "George Shultz", "Lester Tenney", "Jonathan Weisgall" ],
+  "tags" : [ ]
+}

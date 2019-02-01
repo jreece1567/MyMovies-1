@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0065522",
+  "title" : "Captain Nemo and the Underwater City",
+  "releaseYear" : "1969",
+  "duration" : "1:45",
+  "rating" : "G",
+  "director" : "James Hill",
+  "imageUrl" : "0065522.jpg",
+  "description" : "When Captain Nemo saves the passengers of a sinking ship and takes them to his Utopian underwater city he discovers that not all of his guests agree to remain there forever.",
+  "genres" : [ "Adventure", "Family", "Fantasy", "Sci-Fi" ],
+  "cast" : [ "Robert Ryan", "Chuck Connors", "Nanette Newman", "Luciana Paluzzi", "John Turner", "Bill Fraser", "Kenneth Connor", "Allan Cuthbertson", "Christopher Hartstone", "Ian Ramsey", "John Moore", "Anthony Bailey", "Alan Barry", "Vincent Harding", "Margot Ley", "Michael McGovern", "Ralph Nossek", "Ann Patrice", "Patsy Snell" ],
+  "tags" : [ ]
+}

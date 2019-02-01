@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0114728",
+  "title" : "Trinity and Beyond: The Atomic Bomb Movie",
+  "releaseYear" : "1995",
+  "duration" : "1:32",
+  "rating" : "NOT RATED",
+  "director" : "Peter Kuran",
+  "imageUrl" : "0114728.jpg",
+  "description" : "A documentary presenting mankind's most ambitious effort at perfecting the means to its own annihilation. Featuring newly unclassified atomic test footage.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "William Shatner", "Edward Teller", "W.H.P. Blandy", "Frank H. Shelton", "Dwight D. Eisenhower", "Adlai Stevenson", "Randall William Cook", "Nikolai Bulganin", "Winston Churchill", "Everett Dirksen", "Albert Einstein", "Enrico Fermi", "Reed Hadley", "Averell Harriman", "Adolf Hitler", "Hubert H. Humphrey", "John F. Kennedy", "Nikita Khrushchev", "Zedong Mao", "Anastas Mikoyan", "Marilyn Monroe", "J. Robert Oppenheimer", "Franklin D. Roosevelt", "Dean Rusk", "Woodrow P. Swancutt", "Leó Szilárd", "Mark Tapscott", "Paul Tibbets", "Wernher von Braun", "John von Neumann", "Roy Neal" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0060126",
+  "title" : "Around the World Under the Sea",
+  "releaseYear" : "1966",
+  "duration" : "1:50",
+  "rating" : "G",
+  "director" : "Andrew Marton",
+  "imageUrl" : "0060126.jpg",
+  "description" : "The crew of a five-man submarine travels the world oceans, planting sensors on the ocean floor to warn scientists of any impending earthquakes.",
+  "genres" : [ "Action", "Adventure", "Sci-Fi" ],
+  "cast" : [ "Lloyd Bridges", "Brian Kelly", "Shirley Eaton", "David McCallum", "Keenan Wynn", "Marshall Thompson", "Gary Merrill", "Ron Hayes", "George Shibata", "Donald Linton", "Frank Logan", "Don Wells", "Jack Ewalt", "George De Vries", "Tony Gulliver", "Joey Carter", "Celeste Yarnall", "Paul Gray" ],
+  "tags" : [ ]
+}

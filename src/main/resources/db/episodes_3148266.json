@@ -201,7 +201,7 @@
   "season" : "3",
   "episodeNumber" : "8",
   "title" : "Masks",
-  "description" : "Former friends, now enemies, race to find the Witness in 1904, who, at last, reveals his face."
+  "description" : "Hunted by the future, Cole and Cassie arrive in 1899 London in search of their son."
 }, {
   "imdbId" : "3148266",
   "season" : "3",
@@ -214,4 +214,70 @@
   "episodeNumber" : "10",
   "title" : "Witness",
   "description" : "The final battle with the Witness begins."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "1",
+  "title" : "The End",
+  "description" : "The final conflict with the Army of the 12 Monkeys begins when the Witness returns to Project Splinter."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "2",
+  "title" : "Ouroboros",
+  "description" : "Travelers come face to face with ghosts from their past when they find themselves maneuvering around their own timelines."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "3",
+  "title" : "45 RPM",
+  "description" : "Cassie travels back in time to confront a younger Olivia; Cole helps Jennifer find the meaning behind her final Primary vision."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "4",
+  "title" : "Legacy",
+  "description" : "Team Splinter goes back in time to the wild frontier in search of a weapon to destroy the Witness."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "5",
+  "title" : "After",
+  "description" : "A clue to breaking the cycle leads Cole and Cassie to the 1960s; Zalmon Shaw returns."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "6",
+  "title" : "Die Glocke",
+  "description" : "The team infiltrates a Nazi gala to steal an artifact as \"Die Glocke\"; their operation comes undone when French Resistance interferes and an unexpected guest arrives."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "7",
+  "title" : "Daughters",
+  "description" : "Jones sends Hannah back in time to 2007 on a personal mission that could be the key to everything."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "8",
+  "title" : "Demons",
+  "description" : "Everything changes when the team finally climbs the steps and rings the bell in the Middle Ages."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "9",
+  "title" : "One Minute More",
+  "description" : "The beginning of the end approaches as Cole and Cassie embark on their final mission."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "10",
+  "title" : "The Beginning Part 1",
+  "description" : "The final battle against the Witness begins as the fate of time and mankind hangs in the balance; all the pieces finally come together to mark the end of the beginning."
+}, {
+  "imdbId" : "3148266",
+  "season" : "4",
+  "episodeNumber" : "11",
+  "title" : "The Beginning Part 2",
+  "description" : "When all hope is lost, Cole must complete his cycle so that his younger self will one day arrive at the end with the answer."
 }]

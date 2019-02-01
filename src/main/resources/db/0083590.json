@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0083590",
+  "title" : "The Atomic Cafe",
+  "releaseYear" : "1982",
+  "duration" : "1:26",
+  "rating" : "NOT RATED",
+  "director" : "Jayne Loader",
+  "imageUrl" : "0083590.jpg",
+  "description" : "Disturbing collection of 1940s and 1950s United States government-issued propaganda films designed to reassure Americans that the atomic bomb was not a threat to their safety.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Paul Tibbets", "Harry S. Truman", "W.H.P. Blandy", "Brien McMahon", "Lloyd Bentsen", "Owen Brewster", "Julius Rosenberg", "Ethel Rosenberg", "Val Peterson", "Lyndon Johnson", "Lewis Strauss", "George Molan", "George Portell", "Jerry Schneider", "Sergeant Weaver", "Seymour Melman", "Mario Salvadori", "Nikita Khrushchev", "Hugh Beaumont", "Albert Einstein", "Dwight D. Eisenhower", "J. Edgar Hoover", "Douglas MacArthur", "Joseph McCarthy", "Richard Nixon", "William H. Peterson", "Ronald Reagan", "George A. Smathers", "Joseph Stalin", "James E. Van Zandt" ],
+  "tags" : [ ]
+}

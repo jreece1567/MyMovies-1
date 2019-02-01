@@ -1,6 +1,6 @@
 {
   "imdbId" : "0000013",
-  "title" : "Little Feat - Skin It Back",
+  "title" : "Little Feat: Skin It Back",
   "releaseYear" : "1977",
   "duration" : "1:37",
   "rating" : "NOT RATED",
@@ -8,6 +8,6 @@
   "imageUrl" : "0000013.jpg",
   "description" : "Filmed at the Grugahalle in Essen in 1977, just a few days before the recording of their legendary live album 'Waiting For Columbus', this video captures the classic seventies Little Feat line-up led by the late Lowell George at the very peak of their powers.",
   "genres" : [ "Music" ],
-  "cast" : [ "Lowell George" ],
+  "cast" : [ "Little Feat", "Lowell George" ],
   "tags" : [ ]
 }

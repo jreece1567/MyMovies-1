@@ -1,6 +1,6 @@
 {
   "imdbId" : "0084503",
-  "title" : "Pink Floyd The Wall",
+  "title" : "Pink Floyd: The Wall",
   "releaseYear" : "1982",
   "duration" : "1:35",
   "rating" : "R",
@@ -8,6 +8,6 @@
   "imageUrl" : "0084503.jpg",
   "description" : "A troubled rock star descends into madness in the midst of his physical and social isolation from everyone.",
   "genres" : [ "Drama", "Musical", "Music" ],
-  "cast" : [ "Bob Geldof", "Christine Hargreaves", "James Laurenson", "Eleanor David", "Kevin McKeon", "Bob Hoskins", "David Bingham", "Jenny Wright", "Alex McAvoy", "Ellis Dale", "James Hazeldine", "Ray Mort", "Margery Mason", "Robert Bridges", "Michael Ensign", "Marie Passarelli", "Winston Rose", "Joanne Whalley", "Nell Campbell", "Emma Longfellow", "Lorna Barton", "Rod Bedall", "Peter Jonfield", "Philip Davis", "Gary Olsen", "Eddie Tagoe", "Dennis Fletcher", "Jonathan Scott", "Joanna Dickens", "John Scott Martin", "Marilyn Thomas", "Brenda Cowling", "Michael Burrell", "Malcolm Rogers", "John Broughton", "Jon Paul Morgan", "Albert Moses", "Vincent Wong", "Marc Atwood", "Lucita Lijertwood", "Betty Whelan", "David Fleeshman", "Joanna Andrews", "Diana King", "Roger Kemp", "David Smythe", "Keith Wray", "Alan Bowyer", "Harry Fielder", "Debbie King", "Roger Waters" ],
+  "cast" : [ "Pink Floyd", "Bob Geldof", "Christine Hargreaves", "James Laurenson", "Eleanor David", "Kevin McKeon", "Bob Hoskins", "David Bingham", "Jenny Wright", "Alex McAvoy", "Ellis Dale", "James Hazeldine", "Ray Mort", "Margery Mason", "Robert Bridges", "Michael Ensign", "Marie Passarelli", "Winston Rose", "Joanne Whalley", "Nell Campbell", "Emma Longfellow", "Lorna Barton", "Rod Bedall", "Peter Jonfield", "Philip Davis", "Gary Olsen", "Eddie Tagoe", "Dennis Fletcher", "Jonathan Scott", "Joanna Dickens", "John Scott Martin", "Marilyn Thomas", "Brenda Cowling", "Michael Burrell", "Malcolm Rogers", "John Broughton", "Jon Paul Morgan", "Albert Moses", "Vincent Wong", "Marc Atwood", "Lucita Lijertwood", "Betty Whelan", "David Fleeshman", "Joanna Andrews", "Diana King", "Roger Kemp", "David Smythe", "Keith Wray", "Alan Bowyer", "Harry Fielder", "Debbie King", "Roger Waters" ],
   "tags" : [ ]
 }
