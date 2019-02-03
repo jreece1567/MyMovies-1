@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0076210",
+  "title" : "The Island of Dr. Moreau",
+  "releaseYear" : "1977",
+  "duration" : "1:39",
+  "rating" : "PG",
+  "director" : "Don Taylor",
+  "imageUrl" : "0076210.jpg",
+  "description" : "A shipwrecked survivor discovers a remote island owned by a crazed scientist who is carrying out sinister experiments on the island's inhabitants.",
+  "genres" : [ "Adventure", "Fantasy", "Horror", "Romance", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Burt Lancaster", "Michael York", "Nigel Davenport", "Barbara Carrera", "Richard Basehart", "Nick Cravat", "The Great John L.", "Bob Ozman", "Fumio Demura", "Gary Baxley", "John Gillespie", "David S. Cass Sr." ],
+  "tags" : [ ]
+}
