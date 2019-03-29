@@ -1,0 +1,13 @@
+{
+  "imdbId" : "8760684",
+  "title" : "Apollo 11",
+  "releaseYear" : "2019",
+  "duration" : "1:33",
+  "rating" : "G",
+  "director" : "Todd Douglas Miller",
+  "imageUrl" : "8760684.jpg",
+  "description" : "A look at the Apollo 11 mission to land on the moon led by commander Neil Armstrong and pilots Buzz Aldrin & Michael Collins.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Buzz Aldrin", "Joan Ann Archer", "Janet Armstrong", "Neil Armstrong", "Johnny Carson", "Clifford E. Charlesworth", "Michael Collins", "Michael Collins", "Walter Cronkite", "Charles Duke", "Lyndon Johnson", "Gene Kranz", "Jim Lovell", "Glynn Lunney", "Bruce McCandless II", "Richard Nixon", "Deke Slayton" ],
+  "tags" : [ ]
+}

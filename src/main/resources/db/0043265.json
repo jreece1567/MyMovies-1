@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0043265",
+  "title" : "The African Queen",
+  "releaseYear" : "1952",
+  "duration" : "1:45",
+  "rating" : "PG",
+  "director" : "John Huston",
+  "imageUrl" : "0043265.jpg",
+  "description" : "In Africa during World War I, a gin-swilling riverboat captain is persuaded by a strait-laced missionary to use his boat to attack an enemy warship.",
+  "genres" : [ "Adventure", "Drama", "Romance", "War" ],
+  "cast" : [ "Humphrey Bogart", "Katharine Hepburn", "Robert Morley", "Peter Bull", "Theodore Bikel", "Walter Gotell", "Peter Swanwick", "Richard Marner", "Errol John", "Gerald Onn", "John von Kotze" ],
+  "tags" : [ ]
+}

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0069280",
+  "title" : "Slaughterhouse-Five",
+  "releaseYear" : "1972",
+  "duration" : "1:44",
+  "rating" : "R",
+  "director" : "George Roy Hill",
+  "imageUrl" : "0069280.jpg",
+  "description" : "A man named Billy Pilgrim tells the story of how he became unstuck in time and was abducted by aliens.",
+  "genres" : [ "Comedy", "Drama", "Sci-Fi", "War" ],
+  "cast" : [ "Michael Sacks", "Ron Leibman", "Eugene Roche", "Sharon Gans", "Valerie Perrine", "Holly Near", "Perry King", "Kevin Conway", "Friedrich von Ledebur", "Ekkehardt Belle", "Sorrell Booke", "Roberts Blossom", "John Dehner", "Gary Waynesmith", "Richard Schaal", "Gilmer McCormick", "Stan Gottlieb", "Karl-Otto Alberty", "Henry Bumstead", "Lucille Benson", "John Wood", "Ladislav Jakim", "Otto Sevcík", "Alexander Allerson", "Robert Anthony", "David Carlile", "Bill Cole", "Harald Dietl", "Ronnie Elliott", "Walter Feuchtenberg", "Barbara Frey", "Warren Frost", "John Goddard", "Paul Hansard", "Bob Harks", "Bob 'Tiger' Hemond", "Emil Iserle", "Frank Jamus", "William Kanady", "Otto Konrad", "Bill Lee", "Joshua Hill Lewis", "Bryan Montgomery", "Kent O'Dell", "Hank Robinson", "George Skaff", "Richard Stahl", "Charles Stapley", "Joan Swift", "Werner Umberg", "James Wheeler" ],
+  "tags" : [ ]
+}

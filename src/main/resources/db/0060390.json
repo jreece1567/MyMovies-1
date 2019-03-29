@@ -3,11 +3,11 @@
   "title" : "Fahrenheit 451",
   "releaseYear" : "1966",
   "duration" : "1:52",
-  "rating" : "UNRATED",
-  "director" : "Francois Truffaut",
+  "rating" : "Not Rated",
+  "director" : "François Truffaut",
   "imageUrl" : "0060390.jpg",
   "description" : "In an oppressive future, a fireman whose duty is to destroy all books begins to question his task.",
-  "genres" : [ "Drama", "Sci-Fi", "Thriller" ],
-  "cast" : [ "Julie Christie", "Oskar Werner", "Cyril Cusack", "Anton Diffring", "Jeremy Spenser", "Bee Duffell", "Alex Scott", "Gillian Aldam", "Michael Balfour", "Ann Bell", "Yvonne Blake", "Arthur Cox", "Frank Cox", "Fred Cox", "Noel Davis", "Judith Drinan", "Kevin Elder", "Joan Francis", "Denis Gilmore", "David Glover", "Arthur Haynes", "Caroline Hunt", "Edward Kaye", "Mark Lester", "Gillian Lewis", "Eric Mason", "Charlie McFadden", "Roma Milne", "Michael Mundell", "Anna Palk", "Donald Pickering", "John Rae", "Tom Watson", "Chris William", "Earl Younger" ],
+  "genres" : [ "Drama", "Sci-Fi" ],
+  "cast" : [ "Julie Christie", "Oskar Werner", "Cyril Cusack", "Anton Diffring", "Jeremy Spenser", "Bee Duffell", "Alex Scott", "Gillian Aldam", "Michael Balfour", "Ann Bell", "Yvonne Blake", "Arthur Cox", "Frank Cox", "Fred Cox", "Noel Davis", "Judith Drinan", "Kevin Eldon", "Joan Francis", "Denis Gilmore", "David Glover", "Tina Hart", "Arthur Haynes", "Caroline Hunt", "Edward Kaye", "Mark Lester", "Aileen Lewis", "Gillian Lewis", "Eric Mason", "Charlie McFadden", "Roma Milne", "Michael Mundell", "Anna Palk", "Donald Pickering", "John Rae", "Terry Sartain", "Arnold Schulkes", "Reg Thomason", "Tom Watson", "Chris William", "Earl Younger" ],
   "tags" : [ ]
 }
