@@ -3,7 +3,7 @@
   "season" : "1",
   "episodeNumber" : "1",
   "title" : "Winter Is Coming",
-  "description" : "Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jon's place. Across the sea, Viserys Targaryen plans to wed his sister to a nomadic warlord in exchange for an army."
+  "description" : "Eddard Stark is torn between his family and an old friend when asked to serve at the side of King Robert Baratheon; Viserys plans to wed his sister to a nomadic warlord in exchange for an army."
 }, {
   "imdbId" : "0944947",
   "season" : "1",
@@ -15,7 +15,7 @@
   "season" : "1",
   "episodeNumber" : "3",
   "title" : "Lord Snow",
-  "description" : "Lord Stark and his daughters arrive at King's Landing to discover the intrigues of the king's realm."
+  "description" : "Jon begins his training with the Night's Watch; Ned confronts his past and future at King's Landing; Daenerys finds herself at odds with Viserys."
 }, {
   "imdbId" : "0944947",
   "season" : "1",
@@ -45,7 +45,7 @@
   "season" : "1",
   "episodeNumber" : "8",
   "title" : "The Pointy End",
-  "description" : "Eddard and his men are betrayed and captured by the Lannisters. When word reaches Robb, he plans to go to war to rescue them. The White Walkers attack the Wall. Tyrion returns to his father with some new friends."
+  "description" : "The Lannisters press their advantage over the Starks; Robb rallies his father's northern allies and heads south to war; The White Walkers attack the Wall; Tyrion returns to his father with some new friends."
 }, {
   "imdbId" : "0944947",
   "season" : "1",
@@ -57,7 +57,7 @@
   "season" : "1",
   "episodeNumber" : "10",
   "title" : "Fire and Blood",
-  "description" : "With Ned dead, Robb vows to get revenge on the Lannisters. Jon must officially decide if his place is with Robb or the Night's Watch. Daenerys says her final goodbye to Drogo."
+  "description" : "Robb vows to get revenge on the Lannisters. Jon must officially decide if his place is with Robb or the Night's Watch. Daenerys says her final goodbye to Drogo."
 }, {
   "imdbId" : "0944947",
   "season" : "2",
@@ -195,7 +195,7 @@
   "season" : "4",
   "episodeNumber" : "3",
   "title" : "Breaker of Chains",
-  "description" : "Tyrion is arrested for the murder of Joffery and awaits trial. Sansa escapes King's Landing. Sam sends Gilly to Mole's Town as the Night's Watch finds itself in a tight spot. Meereen challenges Daenerys."
+  "description" : "Tyrion is arrested for the murder of Joffrey and awaits trial. Sansa escapes King's Landing. Sam sends Gilly to Mole's Town as the Night's Watch finds itself in a tight spot. Meereen challenges Daenerys."
 }, {
   "imdbId" : "0944947",
   "season" : "4",
@@ -387,7 +387,7 @@
   "season" : "7",
   "episodeNumber" : "5",
   "title" : "Eastwatch",
-  "description" : "Darnerys demands loyalty from the surviving Lannister soldiers; Jon heeds Bran's warning about White Walkers on the move; Cersei vows to vanquish anyone or anything that stands in her way."
+  "description" : "Daenerys demands loyalty from the surviving Lannister soldiers; Jon heeds Bran's warning about White Walkers on the move; Cersei vows to vanquish anyone or anything that stands in her way."
 }, {
   "imdbId" : "0944947",
   "season" : "7",
@@ -400,4 +400,40 @@
   "episodeNumber" : "7",
   "title" : "The Dragon and the Wolf",
   "description" : "Everyone meets in King's Landing to discuss the fate of the realm. In Winterfell, Sansa confronts Arya. Sam reaches Winterfell, where he and Bran discover a shocking secret about Jon Snow."
+}, {
+  "imdbId" : "0944947",
+  "season" : "8",
+  "episodeNumber" : "1",
+  "title" : "Winterfell",
+  "description" : "Jon and Daenerys arrive in Winterfell and are met with skepticism. Sam learns about the fate of his family. Cersei gives Euron the reward he aims for. Theon follows his heart."
+}, {
+  "imdbId" : "0944947",
+  "season" : "8",
+  "episodeNumber" : "2",
+  "title" : "A Knight of the Seven Kingdoms",
+  "description" : "Jaime faces judgment and Winterfell prepares for the battle to come."
+}, {
+  "imdbId" : "0944947",
+  "season" : "8",
+  "episodeNumber" : "3",
+  "title" : "The Long Night",
+  "description" : "The Night King and his army have arrived at Winterfell and the great battle begins."
+}, {
+  "imdbId" : "0944947",
+  "season" : "8",
+  "episodeNumber" : "4",
+  "title" : "The Last of the Starks",
+  "description" : "The Battle of Winterfell is over and a new chapter for Westeros begins."
+}, {
+  "imdbId" : "0944947",
+  "season" : "8",
+  "episodeNumber" : "5",
+  "title" : "The Bells",
+  "description" : "Forces have arrived at King's Landing for the final battle."
+}, {
+  "imdbId" : "0944947",
+  "season" : "8",
+  "episodeNumber" : "6",
+  "title" : "The Iron Throne",
+  "description" : "In the aftermath of the devastating attack on King's Landing, Daenerys must face the survivors."
 }]

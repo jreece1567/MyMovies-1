@@ -177,7 +177,7 @@
   "season" : "2",
   "episodeNumber" : "9",
   "title" : "Three-Letter Day",
-  "description" : "After sorting through thousands of letters all requesting something of president, the White House staff are assigned three, with Emily, Seth, Aaron, Llyor and Kendra joining forces to get answers and possibly save a life. Meanwhile, Hannah and Damian continue to chase down leads to exonerate the first lady, but in the end, Hannah learns the truth may be closer than she thinks."
+  "description" : "After sorting through thousands of letters all requesting something of the president, the White House staff are assigned three, with Emily, Seth, Aaron, Lyor and Kendra joining forces to get answers and possibly save a life. Meanwhile, Hannah and Damian continue to chase down leads to exonerate the first lady, but in the end, Hannah learns the truth may be closer than she thinks."
 }, {
   "imdbId" : "5296406",
   "season" : "2",
@@ -256,4 +256,64 @@
   "episodeNumber" : "22",
   "title" : "Run",
   "description" : "A natural disaster endangers two White House staffers while President Kirkman makes an announcement no one saw coming, as well as dealing with turmoil from the hacker and congressional investigation."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "1",
+  "title" : "#thesystemisbroken",
+  "description" : "Now running for office for the first time, Kirkman and his nascent campaign stumble out of the gate. Wells gets a critical reassignment."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "2",
+  "title" : "#slipperyslope",
+  "description" : "A heated debate over child marriage roils Kirkman's staff; Opioid addiction hits home for Mars; A biohacker turns Wells onto a chilling new threat."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "3",
+  "title" : "#privacyplease",
+  "description" : "A political attack on Kirkman puts privacy and transgender rights in the spotlight; Aaron weighs a major decision; Wells and Eli track a bioterrorist."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "4",
+  "title" : "#makehistory",
+  "description" : "Aaron's heritage and a widespread teachers' strike become polarizing issues, and Wells discovers a sinister pattern in a flu outbreak."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "5",
+  "title" : "#nothingpersonal",
+  "description" : "Emotions run high after a despicable news story goes viral, Isabel makes waves with a controversial appeal, and Wells finds a clue pointing to conspiracy."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "6",
+  "title" : "#whocares",
+  "description" : "A dying Guatemalan child in a Texas hospital brings immigration to the fore. A mugging opens Kirkman's eyes to the realities of life in the Capital."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "7",
+  "title" : "#identity/crisis",
+  "description" : "A stray Russian bomber jeopardizes Seattle, Mars crusades against a drug company, and an event from Aaron's childhood vexes Kirkman's campaign."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "8",
+  "title" : "#scaredsh*tless",
+  "description" : "Kirkman mobilizes a frantic hunt for the bioterrorist. Lorraine plays hardball and pushes the opioid epidemic into the campaign fray."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "9",
+  "title" : "#undecided",
+  "description" : "Trailing in the polls, Kirkman weighs forcing the FBI's hand over the bioterrorism plot. Emily struggles with her mother's final wishes."
+}, {
+  "imdbId" : "5296406",
+  "season" : "3",
+  "episodeNumber" : "10",
+  "title" : "#truthorconsequences",
+  "description" : "On election day, Kirkman turns to his therapist to assuage his conscience about the events - and his own decisions - of the momentous prior 36 hours."
 }]

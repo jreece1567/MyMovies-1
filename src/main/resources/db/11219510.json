@@ -1,0 +1,13 @@
+{
+  "imdbId" : "11219510",
+  "title" : "Rise of the Mammals",
+  "releaseYear" : "2019",
+  "duration" : "1:00",
+  "rating" : "TV-PG",
+  "director" : "John Rubin",
+  "imageUrl" : "11219510.jpg",
+  "description" : "A new trove of fossils reveals how mammals took over after an asteroid wiped out the dinosaurs 66 million years ago.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Keith David" ],
+  "tags" : [ "Science" ]
+}

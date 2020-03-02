@@ -1,0 +1,13 @@
+{
+  "imdbId" : "2219472",
+  "title" : "Mystery of Easter Island",
+  "releaseYear" : "2012",
+  "duration" : "1:00",
+  "rating" : "TV-G",
+  "director" : "Andy Awes",
+  "imageUrl" : "2219472.jpg",
+  "description" : "Easter Island has mystified the world ever since the first Europeans arrived in 1722.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Lance Lewman", "Carl Lipo", "Sergio A. Rapu Haoa", "Terry Hunt", "Umi Kai", "Max Beach", "James Diedesch", "Rod Hall", "John Flenley", "Patrick Kirch", "William Pitt" ],
+  "tags" : [ "Science" ]
+}

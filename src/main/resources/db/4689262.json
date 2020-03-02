@@ -1,0 +1,13 @@
+{
+  "imdbId" : "4689262",
+  "title" : "Nuclear Meltdown Disaster",
+  "releaseYear" : "2015",
+  "duration" : "1:00",
+  "rating" : "TV-PG",
+  "director" : "Miles O'Brien",
+  "imageUrl" : "4689262.jpg",
+  "description" : "Four years after one of history's worst nuclear accidents, NOVA reveals the minute-by-minute story of the Fukushima nuclear crisis and its ongoing aftermath, told by the brave workers who stayed behind as an earthquake and tsunami crippled the plant.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Chuck Casto", "Masatoshi Fukura", "Takeyuki Inagaki", "Naoto Kan", "David Lochbaum", "Naohiro Masuda", "Takaki Mishima", "Yutaka Miyazawa", "Miles O'Brien", "Carl Pillitteri", "Masao Yoshida" ],
+  "tags" : [ ]
+}

@@ -3,7 +3,7 @@
   "season" : "1",
   "episodeNumber" : "1",
   "title" : "Old Wounds",
-  "description" : "Newly promoted Captain, Ed, is taken back when his ex-wife is assigned as his First Officer."
+  "description" : "Newly promoted Captain, Ed, is taken aback when his ex-wife is assigned as his First Officer."
 }, {
   "imdbId" : "5691552",
   "season" : "1",
@@ -70,4 +70,88 @@
   "episodeNumber" : "12",
   "title" : "Mad Idolatry",
   "description" : "The crew crash land on a planet from another universe; Ed and Kelly consider getting back together."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "1",
+  "title" : "Ja'loja",
+  "description" : "The crew face personal challenges on their way to witness Bortus perform a Moclan ceremony on his homeworld."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "2",
+  "title" : "Primal Urges",
+  "description" : "The crew race to save a small group of survivors on a planet about to be destroyed by its sun."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "3",
+  "title" : "Home",
+  "description" : "Ed, Gordon and Alara visit Alara's home planet of Xelayah."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "4",
+  "title" : "Nothing Left on Earth Excepting Fishes",
+  "description" : "Ed finds himself behind enemy lines when he crash lands on a mysterious planet; Kelly questions why Gordon wants to take the Command Test."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "5",
+  "title" : "All the World Is Birthday Cake",
+  "description" : "The Orville makes First Contact; A new crew member joins the ship."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "6",
+  "title" : "A Happy Refrain",
+  "description" : "Claire's personal life takes an unexpected turn; Gordon makes an unusual grooming suggestion to Bortus."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "7",
+  "title" : "Deflectors",
+  "description" : "The ship's deflectors upgrade leads to conflict between the Moclan culture and the crew."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "8",
+  "title" : "Identity, Part I",
+  "description" : "When Issac shuts down, the crew head to his home planet to fix him, and uncover a shocking secret that was better off hidden."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "9",
+  "title" : "Identity, Part II",
+  "description" : "The Kaylons take control of the Orville with the intention of destroying all biological lifeforms."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "10",
+  "title" : "Blood of Patriots",
+  "description" : "Ed must initiate peace talks with the Krill."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "11",
+  "title" : "Lasting Impressions",
+  "description" : "The crew opens a time capsule from 2015."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "12",
+  "title" : "Sanctuary",
+  "description" : "Ed discovers that Moclans aboard the Orville are harboring a secret."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "13",
+  "title" : "Tomorrow, and Tomorrow, and Tomorrow",
+  "description" : "A time distortion affects Ed and Kelly's relationship."
+}, {
+  "imdbId" : "5691552",
+  "season" : "2",
+  "episodeNumber" : "14",
+  "title" : "The Road Not Taken",
+  "description" : "The crew must contend with the disastrous fallout from Kelly's decision."
 }]

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1870151",
+  "title" : "Japan's Killer Quake",
+  "releaseYear" : "2011",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "Stephanie Kern",
+  "imageUrl" : "1870151.jpg",
+  "description" : "On March 11, 2011, a magnitude 9.0 earthquake struck Japan resulting in waves up to 130 ft. (40 m.) that devastated coastal villages and initiated meltdowns, gas explosions and the release of radioactive materials at the Fukushima nuclear power plant.",
+  "genres" : [ "Documentary", "Biography" ],
+  "cast" : [ "Roger Bilham", "Simon Boxall", "Chris Goldfinger", "Corey Johnson", "Charles McCreery", "Bill McGuire", "Costas Emmanuel Synolakis", "Jim Walsh" ],
+  "tags" : [ ]
+}

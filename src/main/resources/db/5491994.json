@@ -1,0 +1,13 @@
+{
+  "imdbId" : "5491994",
+  "title" : "Planet Earth II",
+  "releaseYear" : "2016",
+  "duration" : "1:00",
+  "rating" : "TV-G",
+  "director" : "David Attenborough",
+  "imageUrl" : "5491994.jpg",
+  "description" : "David Attenborough returns in this breathtaking documentary showcasing life on Planet Earth.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "David Attenborough" ],
+  "tags" : [ "Science" ]
+}

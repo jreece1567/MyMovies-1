@@ -21,7 +21,7 @@
   "season" : "1",
   "episodeNumber" : "4",
   "title" : "Manly Whatnots",
-  "description" : "In an effort to get over his infatuation with Chloe, Lucifer decides that he must seduce her. Meanwhile, the two team up on a missing girl case and Amenadiel confronts Maze about his concerns about Lucifer."
+  "description" : "In an effort to get over his infatuation with Chloe, Lucifer decides that he must seduce her. Meanwhile, the two team up on a missing girl case and Amenadiel confronts Maze about his concerns with Lucifer."
 }, {
   "imdbId" : "4052886",
   "season" : "1",
@@ -225,7 +225,7 @@
   "season" : "3",
   "episodeNumber" : "7",
   "title" : "Off The Record",
-  "description" : "A reporter seeks revenge after he discovers that Lucifer has been sleeping with his estranged wife. However, when it's revealed that Linda is the reporter's estranged wife, things get messy. Lucifer's reputation and safety are on the line, especially when a serial killer from the past resurfaces."
+  "description" : "A reporter seeks revenge after he discovers that Lucifer has been sleeping with his estranged wife. However, when it's revealed who the estranged wife is, things get messy. Lucifer's reputation and safety are on the line, especially when a serial killer from the past resurfaces."
 }, {
   "imdbId" : "4052886",
   "season" : "3",
@@ -267,7 +267,7 @@
   "season" : "3",
   "episodeNumber" : "14",
   "title" : "My Brother's Keeper",
-  "description" : "One of Ella's brothers is suspected of being a diamond thief."
+  "description" : "While investigating a death of a diamond thief, Chloe and Lucifer hone in an unexpected suspect. Meanwhile, Charlotte upsets Linda with a request."
 }, {
   "imdbId" : "4052886",
   "season" : "3",
@@ -340,4 +340,64 @@
   "episodeNumber" : "26",
   "title" : "Once Upon a Time",
   "description" : "Set in an alternate universe where God changed one little thing, which affects Lucifer, Chloe and the people around them."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "1",
+  "title" : "Everything's Okay",
+  "description" : "While investigating a beekeeper's murder with Lucifer, Chloe insists that she's completely fine with his devilish revelation."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "2",
+  "title" : "Somebody's Been Reading Dante's Inferno",
+  "description" : "Chloe continues her investigation into Lucifer's true identity while they investigate a murder on a reality TV set."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "3",
+  "title" : "O, Ye of Little Faith, Father",
+  "description" : "After an encounter with a priest, Lucifer suspects Chloe of betraying him. Meanwhile, the team investigates the murder of a former gang member."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "4",
+  "title" : "All About Eve",
+  "description" : "After Chloe and Lucifer's falling out, they each set out individually to solve a case involving a stolen necklace, which might have a connection to Lucifer's old flame."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "5",
+  "title" : "Expire Erect",
+  "description" : "After a collector of classic cars is killed, Lucifer and Chloe search for the culprit - as well as some closure to their relationship."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "6",
+  "title" : "Orgy Pants to Work",
+  "description" : "While Lucifer and Chloe search for a connection between a murdered auditor and a nudist colony, Amenadiel plays host to an unexpected visitor."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "7",
+  "title" : "Devil Is as Devil Does",
+  "description" : "Eve takes a more active role in her main man's professional life. Meanwhile, Lucifer gets back to basics and Amenadiel fights for his family."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "8",
+  "title" : "Super Bad Boyfriend",
+  "description" : "Lucifer and Chloe investigate a teacher's murder. Meanwhile, Lucifer goes to extremes to convince Eve to dump him, and Amenadiel mentors a teen."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "9",
+  "title" : "Save Lucifer",
+  "description" : "Lucifer's so-called epiphany has Chloe worried, but it's his physical transformation that's really freaking her out. Also, Maze gives Eve a pep talk."
+}, {
+  "imdbId" : "4052886",
+  "season" : "4",
+  "episodeNumber" : "10",
+  "title" : "Who's da New King of Hell?",
+  "description" : "With murderous demons on the loose in Los Angeles, it's up to Lucifer to reign in the chaos and protect the ones he most cares about."
 }]

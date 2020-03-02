@@ -1,0 +1,13 @@
+{
+  "imdbId" : "9708550",
+  "title" : "Country Music",
+  "releaseYear" : "2019",
+  "duration" : "1:52",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "9708550.jpg",
+  "description" : "The story of the creation of modern Country music.",
+  "genres" : [ "Documentary", "Music" ],
+  "cast" : [ "Peter Coyote", "Garth Brooks", "Rosanne Cash", "Emmylou Harris", "Dolly Parton", "Ricky Skaggs", "Marty Stuart", "Hank Williams Jr.", "Dwight Yoakam" ],
+  "tags" : [ ]
+}

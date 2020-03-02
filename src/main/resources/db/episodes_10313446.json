@@ -1,0 +1,37 @@
+[{
+  "imdbId" : "10313446",
+  "season" : "1",
+  "episodeNumber" : "1",
+  "title" : "The telescope",
+  "description" : "Meet the brilliant minds throughout history, from Galileo to Edwin Hubble, responsible for creating the telescope. Today, their invention allows humanity to reach the furthest limits of seeing - 13 billion light-years out."
+}, {
+  "imdbId" : "10313446",
+  "season" : "1",
+  "episodeNumber" : "2",
+  "title" : "The airplane",
+  "description" : "Take to the sky with the dreamers whose work gave humans the ability to fly. From Leonardo da Vinci's 'flying machines' to the modern commercial plane, without these inventions, we may have never left the ground."
+}, {
+  "imdbId" : "10313446",
+  "season" : "1",
+  "episodeNumber" : "3",
+  "title" : "The Robot",
+  "description" : "Learn how robots were first conceptualized in ancient Rome and see how their use has evolved over the centuries, from the calculator to the Roomba. Then, take a sneak peek at what future robots will be able to do."
+}, {
+  "imdbId" : "10313446",
+  "season" : "1",
+  "episodeNumber" : "4",
+  "title" : "The Car",
+  "description" : ""
+}, {
+  "imdbId" : "10313446",
+  "season" : "1",
+  "episodeNumber" : "5",
+  "title" : "The Rocket",
+  "description" : "Learn the explosive history of the rocket, from its origin in ancient China, to its use as a weapon of war, to how adding hydrogen allowed it to carry astronauts all the way to the moon."
+}, {
+  "imdbId" : "10313446",
+  "season" : "1",
+  "episodeNumber" : "6",
+  "title" : "The Smartphone",
+  "description" : ""
+}]

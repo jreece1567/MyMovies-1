@@ -14,7 +14,7 @@
   "imdbId" : "5171438",
   "season" : "1",
   "episodeNumber" : "3",
-  "title" : "Context is for Kings",
+  "title" : "Context Is for Kings",
   "description" : "Burnham finds herself aboard the U.S.S. Discovery, where she quickly realizes things are not as they seem, including the mysterious Captain Gabriel Lorca."
 }, {
   "imdbId" : "5171438",
@@ -74,7 +74,7 @@
   "imdbId" : "5171438",
   "season" : "1",
   "episodeNumber" : "13",
-  "title" : "What's Past is Prologue",
+  "title" : "What's Past Is Prologue",
   "description" : "Lorca plans to move forward with a coup against the Emperor, propelling Burnham to make a quick decision to save not only herself, but the U.S.S. Discovery."
 }, {
   "imdbId" : "5171438",
@@ -88,4 +88,88 @@
   "episodeNumber" : "15",
   "title" : "Will You Take My Hand?",
   "description" : "With Georgiou at the helm of the plan to end the Klingon war once and for all, the USS Discovery crew struggles to fathom and tolerate her hostile tactics. Memories of past hardships are rekindled within Burnham."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "1",
+  "title" : "Brother",
+  "description" : "The crew of the U.S.S. Discovery joins forces with Captain Pike to unravel the mystery of seven mysterious red signals that have appeared across the universe."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "2",
+  "title" : "New Eden",
+  "description" : "A new signal brings the Discovery to a distant planet, Terralysium, that is inhabited by the descendants of human survivors of World War III, which was fought on Earth 200 years earlier."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "3",
+  "title" : "Point of Light",
+  "description" : "A surprise visitor to the U.S.S. Discovery brings shocking news about Spock and dredges up past regrets for Burnham. Following the asteroid incident, Tilly struggles to keep a grip on her reality. L'Rell's authority on Qo'noS is threatened."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "4",
+  "title" : "An Obol for Charon",
+  "description" : "A mysterious sphere threatens the U.S.S. Discovery even as May, in her original form, implements a plan that puts Tilly's life in danger. Saru and Burnham's bond grows when Saru is forced to acknowledge a deeply unsettling Kelpien truth. Pike receives new intel on Spock from a loyal friend."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "5",
+  "title" : "Saints of Imperfection",
+  "description" : "Burnham and the crew navigate a dangerous alien landscape in a race against time to save Tilly's life, but Stamets is not at all prepared for what they find in the process. Section 31 is assigned to help track down Spock, much to Pike's dismay."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "6",
+  "title" : "The Sound of Thunder",
+  "description" : "When a new signal appears over Saru's home planet, Burnham, Saru and the crew embark on a perilous mission that puts Saru in danger and raises questions about the Red Angel's intentions. Hugh struggles to come to terms with his new reality."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "7",
+  "title" : "Light and Shadows",
+  "description" : "Burnham goes to Vulcan in search of Spock, where she unearths surprising family secrets. In researching what is left of the Red Angel's signal over Kaminar, Pike and Tyler end up in battle with time itself. Georgiou has a few tricks up her sleeve for Leland and Section 31."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "8",
+  "title" : "If Memory Serves",
+  "description" : "Spock and Burnham head to Talos IV, where the process of healing Spock forces the siblings to confront their troubled past. Stamets desperately tries to reconnect with an increasingly disconnected Hugh, while Tyler struggles to shed the crew's suspicions of him due to his past as Voq."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "9",
+  "title" : "Project Daedalus",
+  "description" : "The Discovery crew infiltrates Section 31's headquarters and suspicions arise that the crew may have a traitor in their midst. Meanwhile, Burnham tries to help Spock, but her efforts don't go as planned."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "10",
+  "title" : "The Red Angel",
+  "description" : "Burnham is stunned when she learns her ties to Section 31 run deeper than she ever fathomed. Armed with the identity of the Red Angel, the U.S.S. Discovery goes to work on its most critical mission to date."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "11",
+  "title" : "Perpetual Infinity",
+  "description" : "Burnham receives the reunion she's been longing for, but it doesn't go quite as she imagined. Georgiou and Tyler sense a disturbing change in Leland."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "12",
+  "title" : "Through the Valley of Shadows",
+  "description" : "A fourth signal leads the U.S.S. Discovery to an insular world, where Pike is forced to make a life-changing choice. Burnham and Spock investigate a Section 31 ship gone rogue, leading to a discovery with catastrophic consequences."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "13",
+  "title" : "Such Sweet Sorrow",
+  "description" : "When the U.S.S. Discovery's crucial mission does not go according to plan, Burnham realizes what must ultimately be done. The crew prepares for the battle of a lifetime as Leland's Control ships get closer."
+}, {
+  "imdbId" : "5171438",
+  "season" : "2",
+  "episodeNumber" : "14",
+  "title" : "Such Sweet Sorrow: Part 2",
+  "description" : "The U.S.S. Discovery battles against Control in a fight not only for their lives but for the future, with a little help from some unexpected friends. Spock and Burnham discern vital new connections between the red signals while Burnham faces one of life's harshest truths: the right decisions are often the hardest to make."
 }]

@@ -1,0 +1,13 @@
+{
+  "imdbId" : "5294046",
+  "title" : "Bonnie & Clyde",
+  "releaseYear" : "2016",
+  "duration" : "1:00",
+  "rating" : "TV-PG",
+  "director" : "John Maggio",
+  "imageUrl" : "5294046.jpg",
+  "description" : "Bonnie Parker and Clyde Barrow embark on a two-year crime spree during the Great Depression and become known as the most famous criminal couple in U.S. history.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "Michael Murphy", "Jeff Guinn", "Buddy Barrow", "Rhea Leen Linder", "Jeanine Basinger", "Freda Dillard", "John Neal Phillips", "Linton Jay Hinton", "Claire Potter", "Thomas Doherty", "Bryan Burrough" ],
+  "tags" : [ ]
+}

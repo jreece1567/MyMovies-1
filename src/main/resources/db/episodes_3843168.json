@@ -252,12 +252,6 @@
   "description" : "The gang reunites and faces the biggest battle yet."
 }, {
   "imdbId" : "3843168",
-  "season" : "3",
-  "episodeNumber" : "15",
-  "title" : "Episode #3.15",
-  "description" : "Know what this is about?"
-}, {
-  "imdbId" : "3843168",
   "season" : "4",
   "episodeNumber" : "1",
   "title" : "Warren's Dream",
@@ -334,4 +328,82 @@
   "episodeNumber" : "13",
   "title" : "The Black Rainbow",
   "description" : "The secret of Warren's dream is unlocked when they reach their final destination, the \"Black Rainbow\" facility."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "1",
+  "title" : "Welcome to the Newpocalypse",
+  "description" : "Warren recovers from the drone crash with handsome, mysterious Cooper; Doc and the others finally arrive in Newmerica, where they meet George, who is helping form the new country."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "2",
+  "title" : "A New Life",
+  "description" : "Warren must leave her new life behind and find her way to Newmerica, reuniting with Murphy and the other heroes, while discovering George is an old friend."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "3",
+  "title" : "Escape from Altura",
+  "description" : "10K nearly loses everything as Panic and anti-Talker sentiments flare after an explosion derails the vote."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "4",
+  "title" : "Pacifica",
+  "description" : "Warren, Doc and George find evidence of vigilante violence against Talkers, and Lt. Dante may be part of an underground network helping Talkers flee humans."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "5",
+  "title" : "Killing All the Books",
+  "description" : "Pacifica is bombed and the heroes decide to follow the Talker Underground to stop whoever is behind the attacks."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "6",
+  "title" : "Limbo",
+  "description" : "Warren and the gang find Limbo and are reunited with an old friend. Murphy and his band of Blends runs the casino there which also serves as a sanctuary for the Talkers."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "7",
+  "title" : "Doc's Stoned History",
+  "description" : "Skeezy and Sketchy re-enact Doc's stories of the Founding Fathers. Warren and the others search for the bizkit bakery and the secret ingredient in them."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "8",
+  "title" : "Heartland",
+  "description" : "The heroes arrive in the farming outpost that produces flour for bizkits and find it overrun by zombies."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "9",
+  "title" : "Water Keepers",
+  "description" : "Doc must spirit walk again to help save the Chief of the Water Keepers and get the water flowing to Newmerica."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "10",
+  "title" : "State of Mine",
+  "description" : "Talkers are forced by the Altura militiamen to mine a hazardous landfill for the secret ingredient to bizkits."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "11",
+  "title" : "Hackerville",
+  "description" : "With some help from an outpost of renegade hackers, Warren and George hack Altura's defenses and discover Estes' secret plan."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "12",
+  "title" : "At All Cost",
+  "description" : "Estes imprisons the captive Talkers and Blends, while Warren and George plan their attack on Altura."
+}, {
+  "imdbId" : "3843168",
+  "season" : "5",
+  "episodeNumber" : "13",
+  "title" : "The End of Everything",
+  "description" : "The heroes try to bring Estes and Pandora to justice. Cooper reappears and shocks Warren with a new revelation."
 }]

@@ -99,7 +99,7 @@
   "season" : "2",
   "episodeNumber" : "4",
   "title" : "Many Happy Returns",
-  "description" : "Clarke choose betrayal. Meanwhile, Bellamy, Finn, Murphy, Sterling and Monroe race against time to save a survivor of the Ark crash, and Raven struggles to cope with her paralysis."
+  "description" : "Clarke faces betrayal. Meanwhile, Bellamy, Finn, Murphy, Sterling and Monroe race against time to save a survivor of the Ark crash, and Raven struggles to cope with her paralysis."
 }, {
   "imdbId" : "2661044",
   "season" : "2",
@@ -416,12 +416,90 @@
   "imdbId" : "2661044",
   "season" : "5",
   "episodeNumber" : "12",
-  "title" : "Damocles: Part 1",
+  "title" : "Damocles: Part One",
   "description" : "In part one of the fifth season finale, Octavia leads her people into war. While behind enemy lines, our heroes must overcome their differences to save Wonkru from extinction."
 }, {
   "imdbId" : "2661044",
   "season" : "5",
   "episodeNumber" : "13",
-  "title" : "Damocles: Part 2",
+  "title" : "Damocles: Part Two",
   "description" : "Clarke and her friends must risk everything to fight one last battle for survival, only to glimpse an even darker threat to the last living valley on earth."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "1",
+  "title" : "Sanctum",
+  "description" : "Still reeling after receiving Monty's message, a small group goes down to explore the mysterious new planet. Back on the Mothership, several members of Wonkru face the consequences of their decisions."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "2",
+  "title" : "Red Sun Rising",
+  "description" : "The team on the ground fights to survive the threat they face on the new planet. Meanwhile, Raven must join forces with an unlikely ally to save everyone on board the Mothership."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "3",
+  "title" : "The Children of Gabriel",
+  "description" : "Clarke tries to win over the leaders of Sanctum in order to let her people stay. Meanwhile, Bellamy, Octavia, and Echo discover a new threat while on a mission to retrieve the transport ship."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "4",
+  "title" : "The Face Behind the Glass",
+  "description" : "As Clarke and the others try to integrate themselves into the Sanctum, Octavia and Diyoza fight for their lives against an opposing faction of survivors."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "5",
+  "title" : "The Gospel of Josephine",
+  "description" : "Jordan investigates Sanctum. Meanwhile, Octavia and Diyoza discover the threats of the new planet firsthand. Lastly, Bellamy and Clarke butt heads."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "6",
+  "title" : "Memento Mori",
+  "description" : "Diyoza learns more about the mysterious Children of Gabriel while Abby continues to search for a way to save Kane."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "7",
+  "title" : "Nevermind",
+  "description" : "Clarke's past catches up to her."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "8",
+  "title" : "The Old Man and the Anomaly",
+  "description" : "Octavia and Diyoza make their way to the mysterious anomaly in search of the Old Man. Meanwhile, Murphy has an offer for Emori."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "9",
+  "title" : "What You Take with You",
+  "description" : "Bellamy must venture into enemy territory with an unlikely companion. Meanwhile, Octavia is forced to confront her past."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "10",
+  "title" : "Matryoshka",
+  "description" : "Russell seeks justice. Meanwhile, Gabriel must make a difficult choice. Lastly, the Blake siblings reunite."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "11",
+  "title" : "Ashes to Ashes",
+  "description" : "Bellamy and Octavia must put aside any differences and work together to save their friends. Meanwhile, Echo confronts her past."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "12",
+  "title" : "Adjustment Protocol",
+  "description" : "A special Naming Day changes everything in Sanctum. Gabriel comes face to face with an old friend."
+}, {
+  "imdbId" : "2661044",
+  "season" : "6",
+  "episodeNumber" : "13",
+  "title" : "The Blood of Sanctum",
+  "description" : "Sanctum becomes a battleground between the devout and the non-believers. The mystery of the anomaly deepens."
 }]

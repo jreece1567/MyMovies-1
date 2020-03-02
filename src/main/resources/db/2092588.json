@@ -1,0 +1,13 @@
+{
+  "imdbId" : "2092588",
+  "title" : "Frozen Planet",
+  "releaseYear" : "2011",
+  "duration" : "1:00",
+  "rating" : "TV-PG",
+  "director" : "David Attenborough",
+  "imageUrl" : "2092588.jpg",
+  "description" : "Focuses on life and the environment in both the Arctic and Antarctic.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "David Attenborough", "Alec Baldwin", "Chadden Hunter", "Ted Giffords", "John Aitchison", "Doug Allan", "Doug Anderson", "Miles Barton", "Vanessa Berlowitz", "Lewis Brower", "John Durban", "Faye Hicks", "Alun Hubbard", "Michael Kelem", "Mark Linfield", "Red McBrian", "Jamie McPherson", "Hugh Miller", "Paul Murphy", "Didier Noirot", "Bob Pitman", "Dan Rees", "Adam Scott", "Andy Smith", "Mark Smith", "Matthew Swarbrick", "Niobe Thompson", "Gavin Thurston", "Jeff Turner", "Jeff Wilson", "Robert Bindschadler", "Laura Gladstone", "Jamin Greenbaum", "Gordon MacDonald", "Nick Morgan", "Lane Patterson" ],
+  "tags" : [ "Science" ]
+}

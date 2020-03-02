@@ -1,0 +1,13 @@
+{
+  "imdbId" : "10691858",
+  "title" : "The Planets",
+  "releaseYear" : "2019",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "Stephen Cooter",
+  "imageUrl" : "10691858.jpg",
+  "description" : "The four planets closest to the sun, called the rocky planets, were born from the same material in the same era. Only on Earth do we find the unique conditions for life as we know it. But why only here? Were Earth's neighbors always so extreme? And is there somewhere else in the solar system life might flourish?",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Zachary Quinto", "Anjali Tripathi", "David Grinspoon", "Suzanne Smrekar", "Nancy Chabot", "Brett Denevi", "Larry Nittler", "Carrie Anderson", "Lynnae Quick", "Lynn Rothschild", "Jonathan Lunine" ],
+  "tags" : [ "Science" ]
+}

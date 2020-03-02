@@ -9,13 +9,13 @@
   "season" : "1",
   "episodeNumber" : "2",
   "title" : "eps1.1_ones-and-zer0es.mpeg",
-  "description" : "Elliot is torn between accepting a lucrative yet problematic job offer and joining the fsociety hacker group."
+  "description" : "Elliot is hesitant about fsociety; Elliot is offered a new job; Elliot worries about Shayla's association with Fernando Vera; Ollie is given a CD outside of Allsafe; Mr. Robot makes Elliot talk about his father."
 }, {
   "imdbId" : "4158110",
   "season" : "1",
   "episodeNumber" : "3",
   "title" : "eps1.2_d3bug.mkv",
-  "description" : "Elliot attempts to lead a normal life, but cannot escape fsociety, while Gideon grows suspicious, and Tyrell plays dirty."
+  "description" : "Elliot tries to live a bug-free life, but is quickly drawn back in; Tyrell takes matters into his own hands when the CTO position becomes available; Ollie gets blackmailed; Gideon starts getting suspicious of the infected server."
 }, {
   "imdbId" : "4158110",
   "season" : "1",
@@ -159,7 +159,7 @@
   "season" : "3",
   "episodeNumber" : "5",
   "title" : "eps3.4_runtime-err0r.r00",
-  "description" : "E Corp is in chaos; Elliot is on the run; Darlene tries to help."
+  "description" : "Elliot tries to piece everything together and stop Stage 2 as chaos quickly unfolds at E Corp; Angela tries to do a job intended for Elliot while avoiding imminent threats; Darlene brings Elliot up to speed and tells him the truth."
 }, {
   "imdbId" : "4158110",
   "season" : "3",
@@ -177,7 +177,7 @@
   "season" : "3",
   "episodeNumber" : "8",
   "title" : "eps3.7_dont-delete-me.ko",
-  "description" : "Elliot tries to get ghosted; it is the day of all days."
+  "description" : "Elliot nearly loses all hope after the recent tragedy, but ends up having to take Trenton's brother to the movies; Elliot wants to pay his respects to Trenton and Mobley; Elliot receives an important email."
 }, {
   "imdbId" : "4158110",
   "season" : "3",
@@ -190,4 +190,82 @@
   "episodeNumber" : "10",
   "title" : "shutdown -r",
   "description" : "Elliot tries to save Darlene, but things don't go as planned; Mr Robot must decide whether to step up or step back."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "1",
+  "title" : "401 Unauthorized",
+  "description" : "During the Christmas season, Elliot and Mr. Robot make their return; Darlene deals with real trouble; Tyrell is bored; Dom becomes paranoid."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "2",
+  "title" : "402 Payment Required",
+  "description" : "Elliot and Darlene reconnect; Price gives Elliot some background info and plays his hand; Dom completes the interview, but her lack of confidence raises suspicion with Janice; Some unexpected threats become known to Elliot and Mr. Robot."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "3",
+  "title" : "403 Forbidden",
+  "description" : "Elliot's newest hack helps him share his emotions; Whiterose puts the pieces in motion; Elliot and Darlene have a disagreement; Vera plans his next move; In flashbacks, some key moments in Whiterose's life are revealed."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "4",
+  "title" : "404 Not Found",
+  "description" : "Tyrell, Elliot, and Mr. Robot go on a perilous journey through the woods; Darlene deals with her feelings when she has to take a drunk Santa home; Dom is aroused and has a nightmare."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "5",
+  "title" : "405 Method Not Allowed",
+  "description" : "Dom has an unpleasant Christmas. Darlene and Elliot perform a daring infiltration. Krista prepares for a date."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "6",
+  "title" : "406 Not Acceptable",
+  "description" : "Elliot blackmails Olivia to make an important phone call; Dom struggles when she's ordered to do something distressing; Vera gets information out of Krista; Whiterose wants Elliot brought directly to her."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "7",
+  "title" : "407 Proxy Authentication Required",
+  "description" : "Vera holds Krista hostage as he tries to force Elliot into joining him by understanding Mr. Robot. Elliot realizes a shocking truth."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "8",
+  "title" : "408 Request Timeout",
+  "description" : "Janice tries to get Elliot's location from Dom and Darlene. Elliot goes to the Queens Museum."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "9",
+  "title" : "409 Conflict",
+  "description" : "Mr. Robot and Darlene attempt to take down the Deus group as Elliot remains unstable; Price faces off with Whiterose; Whiterose tries to manipulate Elliot; Mr. Robot struggles to figure out how to help Elliot find himself."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "10",
+  "title" : "410 Gone",
+  "description" : "Darlene and Dom hit the road. Elliot is not done yet."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "11",
+  "title" : "eXit",
+  "description" : "Enough is enough. Elliot goes to the Washington Township Power Plant."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "12",
+  "title" : "whoami",
+  "description" : "Elliot wakes up in an abandoned lot following the explosion at the Washington Township plant, which is no longer there."
+}, {
+  "imdbId" : "4158110",
+  "season" : "4",
+  "episodeNumber" : "13",
+  "title" : "Hello, Elliot",
+  "description" : "Elliot gets to Coney Island, and the delusion begins to slip. Mr. Robot reveals the truth."
 }]

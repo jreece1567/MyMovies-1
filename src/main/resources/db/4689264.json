@@ -1,0 +1,13 @@
+{
+  "imdbId" : "4689264",
+  "title" : "Chasing Pluto",
+  "releaseYear" : "2015",
+  "duration" : "0:54",
+  "rating" : "TV-G",
+  "director" : "Terri Randall",
+  "imageUrl" : "4689264.jpg",
+  "description" : "NOVA captures New Horizons' historic flyby of Pluto, the culmination of the spacecraft's nine-year, three-billion-mile journey to reveal the first ever detailed images of this strange, icy world at the very edge of our solar system.",
+  "genres" : [ "Documentary", "Biography" ],
+  "cast" : [ "Alice Bowman", "Mike Brown", "Andrew Cheng", "Sigrid Close", "Glen Fountain", "Mark Holdridge", "David Jewitt", "Jane Luu", "Cathy Olkin", "William Owen", "Joel Parker", "Caleb Scharf", "Craig Sechler", "John Spencer", "Alan Stern", "Mark Sykes", "Annette Tombaugh", "Hal Weaver", "Leslie Young" ],
+  "tags" : [ "NASA", "Science" ]
+}
