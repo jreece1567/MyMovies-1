@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0031448",
+  "title" : "The Hound of the Baskervilles",
+  "releaseYear" : "1939",
+  "duration" : "1:20",
+  "rating" : "Approved",
+  "director" : "Sidney Lanfield",
+  "imageUrl" : "0031448.jpg",
+  "description" : "Sherlock Holmes and Dr Watson investigate the legend of a supernatural hound, a beast that may be stalking a young heir on the fog-shrouded moorland that makes up his estate.",
+  "genres" : [ "Horror", "Mystery", "Thriller" ],
+  "cast" : [ "Richard Greene", "Basil Rathbone", "Wendy Barrie", "Nigel Bruce", "Lionel Atwill", "John Carradine", "Barlowe Borland", "Beryl Mercer", "Morton Lowry", "Ralph Forbes", "E.E. Clive", "Eily Malyon", "Lionel Pape", "Nigel De Brulier", "Mary Gordon", "Ian Maclaren", "Leonard Carey", "Jack Egger", "Kenneth Hunter", "Vesey O'Davoren", "Rita Page", "John Graham Spacey", "Ruth Terry", "David Thursby", "Peter Willes", "Mary Young" ],
+  "tags" : [ "Sherlock Holmes" ]
+}

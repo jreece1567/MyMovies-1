@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0037794",
+  "title" : "The House of Fear",
+  "releaseYear" : "1945",
+  "duration" : "1:9",
+  "rating" : "Passed",
+  "director" : "Roy William Neill",
+  "imageUrl" : "0037794.jpg",
+  "description" : "Sherlock Holmes investigates a series of deaths at a castle with each foretold by the delivery of orange pips to the victims.",
+  "genres" : [ "Crime", "Film-Noir", "Mystery", "Thriller" ],
+  "cast" : [ "Basil Rathbone", "Nigel Bruce", "Aubrey Mather", "Dennis Hoey", "Paul Cavanagh", "Holmes Herbert", "Harry Cording", "Sally Shepherd", "Gavin Muir", "Florette Hillier", "David Clyde", "Richard Alexander", "Wilson Benge", "Hobart Cavanaugh", "Alec Craig", "Cyril Delevanti", "Leslie Denison", "Bobbie Hale", "Doris Lloyd", "David Thursby" ],
+  "tags" : [ "Sherlock Holmes" ]
+}

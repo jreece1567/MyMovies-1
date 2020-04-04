@@ -2,12 +2,12 @@
   "imdbId" : "0039017",
   "title" : "Terror by Night",
   "releaseYear" : "1946",
-  "duration" : "1:00",
-  "rating" : "APPROVED",
+  "duration" : "PT1H",
+  "rating" : "Approved",
   "director" : "Roy William Neill",
   "imageUrl" : "0039017.jpg",
   "description" : "When the fabled Star of Rhodesia diamond is stolen on a London to Edinburgh train and the son of its owner is murdered, Sherlock Holmes must discover which of his suspicious fellow passengers is responsible.",
-  "genres" : [ "Mystery" ],
+  "genres" : [ "Crime", "Drama", "Film-Noir", "Mystery", "Thriller" ],
   "cast" : [ "Basil Rathbone", "Nigel Bruce", "Alan Mowbray", "Dennis Hoey", "Renee Godfrey", "Frederick Worlock", "Mary Forbes", "Skelton Knaggs", "Billy Bevan", "Geoffrey Steele", "Gilbert Allen", "Harry Cording", "Boyd Davis", "Gerald Hamer", "Leyland Hodgson", "Stuart Holmes", "Colin Kenny", "Charles Knight", "Janet Murdoch", "Tom Pilkington", "C. Aubrey Smith", "Bobby Wissler" ],
-  "tags" : [ ]
+  "tags" : [ "Sherlock Holmes" ]
 }

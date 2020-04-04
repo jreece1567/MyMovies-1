@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0031022",
+  "title" : "The Adventures of Sherlock Holmes",
+  "releaseYear" : "1939",
+  "duration" : "1:25",
+  "rating" : "Approved",
+  "director" : "Alfred L. Werker",
+  "imageUrl" : "0031022.jpg",
+  "description" : "The master sleuth hunts his archenemy, Professor Moriarty, who is planning the crime of the century.",
+  "genres" : [ "Crime", "Mystery", "Thriller" ],
+  "cast" : [ "Basil Rathbone", "Nigel Bruce", "Ida Lupino", "Alan Marshal", "Terry Kilburn", "George Zucco", "Henry Stephenson", "E.E. Clive", "Arthur Hohl", "May Beatty", "Peter Willes", "Mary Gordon", "Holmes Herbert", "George Regas", "Mary Forbes", "Frank Dawson", "William Austin", "Anthony Kemble-Cooper", "Frank Baker", "Frank Benson", "Ted Billings", "Harry Cording", "Robert Cory", "Neil Fitzgerald", "Denis Green", "Gordon Hart", "Ivo Henderson", "Keith Hitchcock", "Leyland Hodgson", "Boyd Irwin", "Charles Irwin", "Leonard Mudie", "Sol Murgi", "Robert Nobel", "Ivan F. Simpson", "Robert R. Stephenson", "Eric Wilton" ],
+  "tags" : [ "Sherlock Holmes" ]
+}

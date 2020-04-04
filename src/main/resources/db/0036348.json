@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0036348",
+  "title" : "Sherlock Holmes Faces Death",
+  "releaseYear" : "1943",
+  "duration" : "1:8",
+  "rating" : "Passed",
+  "director" : "Roy William Neill",
+  "imageUrl" : "0036348.jpg",
+  "description" : "During WWII several murders occur at a convalescent home where Dr. Watson has volunteered his services. He summons Holmes for help and the master detective proceeds to solve the crime from a long list of suspects including the owners of the home, the staff and the patients recovering there.",
+  "genres" : [ "Crime", "Film-Noir", "Mystery", "Romance", "Thriller" ],
+  "cast" : [ "Basil Rathbone", "Nigel Bruce", "Dennis Hoey", "Arthur Margetson", "Hillary Brooke", "Halliwell Hobbes", "Minna Phillips", "Milburn Stone", "Gavin Muir", "Gerald Hamer", "Vernon Downing", "Olaf Hytten", "Frederick Worlock", "Martin Ashe", "Joan Blair", "Charles Coleman", "Harold De Becker", "Mary Gordon", "Peter Lawford", "Dick Rush", "Eric Snowden", "Norma Varden", "Heather Wilde" ],
+  "tags" : [ "Sherlock Holmes" ]
+}

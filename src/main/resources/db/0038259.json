@@ -3,11 +3,11 @@
   "title" : "The Woman in Green",
   "releaseYear" : "1945",
   "duration" : "1:08",
-  "rating" : "APPROVED",
+  "rating" : "Approved",
   "director" : "Roy William Neill",
   "imageUrl" : "0038259.jpg",
-  "description" : "Sherlock Holmes investigates when young women around London turn up murdered, each with a finger severed off. Scotland Yard suspects a madman, but Holmes believes the killings to be part of a diabolical plot.",
-  "genres" : [ "Mystery" ],
-  "cast" : [ "Basil Rathbone", "Nigel Bruce", "Hillary Brooke", "Henry Daniell", "Paul Cavanagh", "Matthew Boulton", "Eve Amber", "Frederick Worlock", "Coulter Irwin", "Sally Shepherd", "Mary Gordon", "Fred Aldrich", "Eve Ashley", "John Burton", "Harold De Becker", "Leslie Denison", "Tony Ellis", "Kay Harding", "Alec Harford", "Ivo Henderson", "Tommy Hughes", "Colin Hunter", "Olaf Hytten", "Boyd Irwin", "Eric Mayne", "William H. O'Brien", "Violet Seaton", "Arthur Stenning", "Percival Vivian" ],
-  "tags" : [ ]
+  "description" : "Sherlock Holmes investigates when young women around London turn up murdered, each with a finger severed. Scotland Yard suspects a madman, but Holmes believes the killings to be part of a diabolical plot.",
+  "genres" : [ "Drama", "Mystery" ],
+  "cast" : [ "Basil Rathbone", "Nigel Bruce", "Hillary Brooke", "Henry Daniell", "Paul Cavanagh", "Matthew Boulton", "Eve Amber", "Frederick Worlock", "Coulter Irwin", "Sally Shepherd", "Mary Gordon", "Fred Aldrich", "Eve Ashley", "John Burton", "Harold De Becker", "Leslie Denison", "Tony Ellis", "Kay Harding", "Alec Harford", "Ivo Henderson", "Tommy Hughes", "Colin Hunter", "Olaf Hytten", "Boyd Irwin", "Kermit Maynard", "Eric Mayne", "William H. O'Brien", "Paul Power", "Violet Seton", "Count Stefenelli", "Arthur Stenning", "Percival Vivian" ],
+  "tags" : [ "Sherlock Holmes" ]
 }

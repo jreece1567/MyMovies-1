@@ -1,6 +1,6 @@
 {
   "imdbId" : "0052905",
-  "title" : "The Hound of the Baskervilles",
+  "title" : "The Hound of the Baskervilles (1959)",
   "releaseYear" : "1959",
   "duration" : "1:27",
   "rating" : "APPROVED",
@@ -9,5 +9,5 @@
   "description" : "When a nobleman is threatened by a family curse on his newly inherited estate, detective Sherlock Holmes is hired to investigate.",
   "genres" : [ "Horror", "Mystery" ],
   "cast" : [ "Peter Cushing", "André Morell", "Christopher Lee", "Marla Landi", "David Oxley", "Francis De Wolff", "Miles Malleson", "Ewen Solon", "John Le Mesurier", "Helen Goss", "Sam Kydd", "Michael Hawkins", "Judi Moyens", "Michael Mulcaster", "David Birks", "Elizabeth Gott", "Ian Hewitson" ],
-  "tags" : [ ]
+  "tags" : [ "Sherlock Holmes" ]
 }
