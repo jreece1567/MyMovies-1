@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0057413",
+  "title" : "The Pink Panther",
+  "releaseYear" : "1963",
+  "duration" : "1:55",
+  "rating" : "Not Rated",
+  "director" : "Blake Edwards",
+  "imageUrl" : "0057413.jpg",
+  "description" : "The bumbling Inspector Clouseau travels to Rome to catch a notorious jewel thief known as \"The Phantom\" before he conducts his most daring heist yet: a princess' priceless diamond with one slight imperfection, known as \"The Pink Panther\".",
+  "genres" : [ "Comedy", "Crime", "Romance" ],
+  "cast" : [ "David Niven", "Peter Sellers", "Robert Wagner", "Capucine", "Brenda de Banzie", "Colin Gordon", "John Le Mesurier", "James Lanphier", "Guy Thomajan", "Michael Trubshawe", "Riccardo Billi", "Meri Welles", "Martin Miller", "Fran Jeffries", "Claudia Cardinale", "John Bartha", "William Bryant", "Mario Fabrizi", "Philip H. Lathrop", "Francesco Tensi", "Eugene Walter", "Wael Zuaiter" ],
+  "tags" : [ "Pink Panther" ]
+}

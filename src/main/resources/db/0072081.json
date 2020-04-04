@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0072081",
+  "title" : "The Return of the Pink Panther",
+  "releaseYear" : "1975",
+  "duration" : "1:53",
+  "rating" : "G",
+  "director" : "Blake Edwards",
+  "imageUrl" : "0072081.jpg",
+  "description" : "Inspector Jacque Clouseau (Peter Sellers) is put on the case when the Pink Panther diamond is stolen, with the Phantom's trademark glove the only clue.",
+  "genres" : [ "Comedy", "Crime", "Mystery" ],
+  "cast" : [ "Peter Sellers", "Christopher Plummer", "Catherine Schell", "Herbert Lom", "Peter Arne", "Peter Jeffrey", "Grégoire Aslan", "David Lodge", "Graham Stark", "Eric Pohlmann", "André Maranne", "Burt Kwouk", "Victor Spinetti", "John Bluthal", "Mike Grady", "Peter Jones", "Herb Tanney", "Mollie Maureen", "Nadim Sawalha", "Andre Charisse", "Michael Nightingale", "Pamela Abbott", "Francis Mortimer", "Yashar Adem", "Milton Reid", "Hugo De Vernier", "Claire Davenport", "Carol Cleveland", "Tony Adams", "Parrot", "Bess Rogers", "Peter Samuelson", "Reg Thomason" ],
+  "tags" : [ "Pink Panther" ]
+}
