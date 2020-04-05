@@ -45,7 +45,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(83586));
+    assertThat(keys.size(), is(83603));
 
     assertThat(keys.get(20), is("A. Philip Randolph"));
   }
@@ -59,9 +59,9 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(774));
+    assertThat(keys.size(), is(776));
 
-    assertThat(keys.get(36), is("Andy Mikita"));
+    assertThat(keys.get(37), is("Andy Mikita"));
   }
 
   @Test
@@ -117,7 +117,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(1582));
+    assertThat(keys.size(), is(1584));
 
     assertThat(keys.get(21), is("300"));
 
@@ -245,7 +245,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(83586));
+    assertThat(keys.size(), is(83603));
   }
 
   @Test
@@ -257,7 +257,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(774));
+    assertThat(keys.size(), is(776));
   }
 
   @Test
@@ -305,7 +305,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(1582));
+    assertThat(keys.size(), is(1584));
   }
 
   @Test
