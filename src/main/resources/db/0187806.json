@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0187806",
+  "title" : "Death of a Salesman",
+  "releaseYear" : "1966",
+  "duration" : "1:40",
+  "rating" : "Not Rated",
+  "director" : "Alex Segal",
+  "imageUrl" : "0187806.jpg",
+  "description" : "An abridged award-winning television adaptation of a famous play about an aging travelling salesman who's on the verge of a nervous breakdown. His job is gone, and his family hates him for never being there. He tries mending things with them.",
+  "genres" : [ "Drama" ],
+  "cast" : [ "Stanley Adams", "Edward Andrews", "Lee J. Cobb", "Albert Dekker", "Mildred Dunnock", "James Farentino", "Marc Fiorini", "June Foray", "Bernie Kopell", "Joan Patrick", "Marge Redmond", "George Segal", "Karen Steele", "Gene Wilder" ],
+  "tags" : [ ]
+}
