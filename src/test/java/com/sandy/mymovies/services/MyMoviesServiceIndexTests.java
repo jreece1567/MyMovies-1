@@ -19,6 +19,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class MyMoviesServiceIndexTests {
 
+  private static final Integer ACTOR_COUNT = 83885;
+  private static final Integer DIRECTOR_COUNT = 779;
+  private static final Integer GENRE_COUNT = 26;
+  private static final Integer RATING_COUNT = 20;
+  private static final Integer TAG_COUNT = 23;
+  private static final Integer TITLE_COUNT = 1591;
+  private static final Integer YEAR_COUNT = 91;
+
   @Autowired
   MyMoviesService moviesService;
 
@@ -45,7 +53,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(83806));
+    assertThat(keys.size(), is(ACTOR_COUNT));
 
     assertThat(keys.get(20), is("A. Philip Randolph"));
   }
@@ -59,7 +67,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(776));
+    assertThat(keys.size(), is(DIRECTOR_COUNT));
 
     assertThat(keys.get(37), is("Andy Mikita"));
   }
@@ -73,7 +81,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(25));
+    assertThat(keys.size(), is(GENRE_COUNT));
 
     assertThat(keys.get(4), is("Comedy"));
   }
@@ -87,7 +95,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(20));
+    assertThat(keys.size(), is(RATING_COUNT));
 
     assertThat(keys.get(8), is("PASSED"));
 
@@ -102,7 +110,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(23));
+    assertThat(keys.size(), is(TAG_COUNT));
 
     assertThat(keys.get(17), is("TV"));
 
@@ -117,7 +125,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(1585));
+    assertThat(keys.size(), is(TITLE_COUNT));
 
     assertThat(keys.get(21), is("300"));
 
@@ -132,7 +140,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(91));
+    assertThat(keys.size(), is(YEAR_COUNT));
 
     assertThat(keys.get(88), is("2018"));
 
@@ -245,7 +253,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(83806));
+    assertThat(keys.size(), is(ACTOR_COUNT));
   }
 
   @Test
@@ -257,7 +265,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(776));
+    assertThat(keys.size(), is(DIRECTOR_COUNT));
   }
 
   @Test
@@ -269,7 +277,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(25));
+    assertThat(keys.size(), is(GENRE_COUNT));
   }
 
   @Test
@@ -281,7 +289,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(20));
+    assertThat(keys.size(), is(RATING_COUNT));
   }
 
   @Test
@@ -293,7 +301,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(23));
+    assertThat(keys.size(), is(TAG_COUNT));
   }
 
   @Test
@@ -305,7 +313,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(1585));
+    assertThat(keys.size(), is(TITLE_COUNT));
   }
 
   @Test
@@ -317,7 +325,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(91));
+    assertThat(keys.size(), is(YEAR_COUNT));
   }
 
   @Test
