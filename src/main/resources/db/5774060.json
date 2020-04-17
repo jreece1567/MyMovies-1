@@ -1,0 +1,13 @@
+{
+  "imdbId" : "5774060",
+  "title" : "Underwater",
+  "releaseYear" : "2020",
+  "duration" : "1:35",
+  "rating" : "PG-13",
+  "director" : "William Eubank",
+  "imageUrl" : "5774060.jpg",
+  "description" : "A crew of oceanic researchers working for a deep sea drilling company try to get to safety after a mysterious earthquake devastates their deepwater research and drilling facility located at the bottom of the Mariana Trench.",
+  "genres" : [ "Action", "Drama", "Horror", "Sci-Fi", "Thriller" ],
+  "cast" : [ "Kristen Stewart", "Vincent Cassel", "T.J. Miller", "Jessica Henwick", "John Gallagher Jr.", "Mamoudou Athie", "Fiona Rene", "Gunner Wright", "Amanda Troop" ],
+  "tags" : [ ]
+}
