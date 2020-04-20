@@ -19,12 +19,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class MyMoviesServiceIndexTests {
 
-  private static final Integer ACTOR_COUNT = 83885;
+  private static final Integer ACTOR_COUNT = 83987;
   private static final Integer DIRECTOR_COUNT = 779;
-  private static final Integer GENRE_COUNT = 26;
+  private static final Integer GENRE_COUNT = 25;
   private static final Integer RATING_COUNT = 20;
   private static final Integer TAG_COUNT = 23;
-  private static final Integer TITLE_COUNT = 1591;
+  private static final Integer TITLE_COUNT = 1595;
   private static final Integer YEAR_COUNT = 91;
 
   @Autowired
@@ -211,7 +211,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(41));
+    assertThat(titles.size(), is(42));
 
     assertThat(titles.get(28).getTitle(), is("The Blue Planet"));
   }
@@ -393,7 +393,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(41));
+    assertThat(key.getIds().size(), is(42));
 
     assertThat(key.getKey(), is("Science"));
   }
@@ -481,7 +481,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(41));
+    assertThat(count.getCount(), is(42));
 
     assertThat(count.getValue(), is("Science"));
   }
