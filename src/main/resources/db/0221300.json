@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0221300",
+  "title" : "Jazz",
+  "releaseYear" : "2001",
+  "duration" : "1:00",
+  "rating" : "NOT RATED",
+  "director" : "Ken Burns",
+  "imageUrl" : "0221300.jpg",
+  "description" : "A survey of the musical form's history and major talents.",
+  "genres" : [ "Documentary", "History", "Music" ],
+  "cast" : [ "Keith David", "Wynton Marsalis", "Gary Giddins", "Kevin Conway", "Delroy Lindo", "Philip Bosco", "Gerald Early", "Samuel L. Jackson", "Stanley Crouch", "Margo Jefferson", "Jimmy Rowles", "Artie Shaw", "Arvell Shaw", "James Lincoln Collier", "Ann Duquesnay", "Branford Marsalis", "Jackie McLean", "Courtney B. Vance", "George Wein", "Sidney Bechet", "Lester Bowie", "Harry Connick Jr.", "Michael Cuscuna", "Ossie Davis", "Duke Ellington", "Mercedes Ellington", "Matt Glaser", "Lorraine Gordon", "Milt Hinton", "Stan Levey", "James Maher", "Phil Schaap", "Studs Terkel", "Cassandra Wilson", "Louis Armstrong", "Vernel Bagneris", "Bix Beiderbecke", "Buddy Bolden", "Tom Bower", "Matthew Broderick", "Avery Brooks", "Dave Brubeck", "Hodding Carter III", "Helen Oakley Dance", "Charles Durning", "Harry Edison", "James Reese Europe", "Benny Goodman", "Fletcher Henderson", "Jon Hendricks", "Earl 'Fatha' Hines", "Billie Holiday", "Derek Jacobi", "Phoebe Jacobs", "James P. Johnson", "Joe Lovano", "Wendy Makkena", "Frankie Manning", "Jay McShann", "Norma Miller", "Ferdinand 'Jelly Roll' Morton", "Joe Morton", "James Naughton", "Buck O'Neil", "King Oliver", "Joshua Redman", "Joya Sherrill", "Bessie Smith", "Willie 'The Lion' Smith", "Bertrand Tavernier", "Quincy Troupe", "Ethel Waters", "Paul Whiteman", "Adam Arkin", "James Carter", "Regina Carter", "Ron Carter", "Doc Cheatham", "Jimmy Cobb", "Johnny Collins", "Bruce Davison", "Eric George", "Allen Ginsberg", "Keith Lee Grant", "Lionel Hampton", "Herbie Hancock", "Jerry Jerome", "Cherry Jones", "Eriq La Salle", "Anthony LaPaglia", "Gene Lees", "Abbey Lincoln", "Amy Madigan", "Dan Morgenstern", "Nicholas Payton", "Kevin Ramsey", "Dianne Reeves", "Gonzalo Rubalcaba", "John Sanders", "M.C. Solaar", "Richard M. Sudhalter", "Frances Taylor", "Clark Terry", "Benny Waters", "Richard Nixon", "Charles J. Correll", "Freeman F. Gosden", "Edward R. Murrow", "Franklin D. Roosevelt" ],
+  "tags" : [ "TV" ]
+}

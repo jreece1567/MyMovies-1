@@ -7,7 +7,7 @@
   "director" : "Ken Burns",
   "imageUrl" : "12104262.jpg",
   "description" : "Weaves together science, history & personal stories for a historical biography of the human genome, while also exploring breakthroughs for diagnosis & treatment of genetic diseases & the complex ethical questions they raise.",
-  "genres" : [ "Documentary", "Science" ],
+  "genres" : [ "Documentary" ],
   "cast" : [ "David Costabile" ],
-  "tags" : [ "TV" ]
+  "tags" : [ "Science", "TV" ]
 }

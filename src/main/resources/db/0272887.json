@@ -1,0 +1,13 @@
+ {
+  "imdbId" : "0272887",
+  "title" : "Thomas Hart Benton",
+  "releaseYear" : "1988",
+  "duration" : "1:25",
+  "rating" : "TV-PG",
+  "director" : "Ken Burns",
+  "imageUrl" : "0272887.jpg",
+  "description" : "Thomas Hart Benton's paintings were energetic and uncompromising. Today his works are in museums, but Benton hung them in saloons for ordinary people to appreciate.",
+  "genres" : [ "Documentary", "Biography" ],
+  "cast" : [ "Henry Adams", "Thomas Hart Benton", "Arthur Danto", "Burl Ives", "Hilton Kramer", "Karal Marling", "Edward R. Murrow", "Jason Robards", "Raphael Soyer" ],
+  "tags" : [ ]
+}
