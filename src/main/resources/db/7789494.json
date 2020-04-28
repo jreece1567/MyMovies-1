@@ -1,0 +1,13 @@
+{
+  "imdbId" : "7789494",
+  "title" : "Day the Dinosaurs Died",
+  "releaseYear" : "2017",
+  "duration" : "1:00",
+  "rating" : "TV-PG",
+  "director" : "Sarah Holt",
+  "imageUrl" : "7789494.jpg",
+  "description" : "Investigate how an asteroid vanquished the dinosaurs 66 million years ago. Join scientists as they drill into the impact crater and, for the first time, reconstruct the hell on earth that unfolded in the minutes, hours and months after the impact.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Mark B. Boslough", "Timothy Bralower", "Stephen Brusatte", "Philippe Claeys", "David S. Dearborn", "Chris Delahunty", "William Gallagher", "Sean Gulick", "Kirk Johnson", "Kenneth Lacovara", "Marcelo Leppe", "Lawrence Livermore", "Joanna Morgan", "Mark Norell", "Craig Sechler", "Sonia Tikoo", "Brian Toon", "Thomas Williamson" ],
+  "tags" : [ "TV" ]
+}

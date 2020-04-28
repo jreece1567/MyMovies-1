@@ -1,0 +1,13 @@
+{
+  "imdbId" : "11817212",
+  "title" : "Amazon Empire: The Rise and Reign of Jeff Bezos",
+  "releaseYear" : "2020",
+  "duration" : "2:00",
+  "rating" : "TV-PG",
+  "director" : "James Jacoby",
+  "imageUrl" : "11817212.jpg",
+  "description" : "Examine Amazon CEO Jeff Bezos' ascent to power and the global impact of the empire he built.",
+  "genres" : [ "Documentary" ],
+  "cast" : [ "Will Lyman", "Jeff Bezos", "Priyanka Boghani", "Sarah Childress", "Christian Davenport", "Franklin Foer", "Robert Frederick", "James Jacoby", "Brad Stone", "Amy Webb", "Andreas Weigend", "Joshua Weinstein", "Katie Worth" ],
+  "tags" : [ "TV" ]
+}

@@ -19,12 +19,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class MyMoviesServiceIndexTests {
 
-  private static final Integer ACTOR_COUNT = 83987;
-  private static final Integer DIRECTOR_COUNT = 779;
+  private static final Integer ACTOR_COUNT = 84030;
+  private static final Integer DIRECTOR_COUNT = 780;
   private static final Integer GENRE_COUNT = 25;
   private static final Integer RATING_COUNT = 20;
   private static final Integer TAG_COUNT = 23;
-  private static final Integer TITLE_COUNT = 1595;
+  private static final Integer TITLE_COUNT = 1599;
   private static final Integer YEAR_COUNT = 91;
 
   @Autowired
