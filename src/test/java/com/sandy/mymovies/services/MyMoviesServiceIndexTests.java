@@ -22,7 +22,7 @@ public class MyMoviesServiceIndexTests {
   private static final Integer ACTOR_COUNT = 84030;
   private static final Integer DIRECTOR_COUNT = 780;
   private static final Integer GENRE_COUNT = 25;
-  private static final Integer RATING_COUNT = 20;
+  private static final Integer RATING_COUNT = 15;
   private static final Integer TAG_COUNT = 23;
   private static final Integer TITLE_COUNT = 1599;
   private static final Integer YEAR_COUNT = 91;
@@ -97,7 +97,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.size(), is(RATING_COUNT));
 
-    assertThat(keys.get(8), is("PASSED"));
+    assertThat(keys.get(6), is("PASSED"));
 
   }
 
