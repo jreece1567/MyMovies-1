@@ -20,6 +20,7 @@ plugins {
     id 'checkstyle'
     id 'pmd'
     id 'findbugs'
+    id 'jacoco'
     id 'io.franzbecker.gradle-lombok' version '1.14'
 }
 
@@ -111,6 +112,21 @@ tasks.withType(FindBugs) {
     reports {
         xml.enabled false
         html.enabled true
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/reports/jacoco")
+    }
+
+    afterEvaluate {
+        classDirectories = files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['com/sandy/mymovies/models/**'])
+        })
+
     }
 }
 

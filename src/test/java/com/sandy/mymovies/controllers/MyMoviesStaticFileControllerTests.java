@@ -49,4 +49,14 @@ public class MyMoviesStaticFileControllerTests {
     }
   }
 
+  @Test
+  public void fetchFavicon_returnsImage() {
+    try {
+      mockMvc.perform(get("/favicon.ico").contentType(MediaType.IMAGE_JPEG))
+          .andExpect(status().isOk());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+  }
+
 }

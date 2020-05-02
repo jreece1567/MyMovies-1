@@ -7,6 +7,7 @@ import static org.junit.Assert.assertThat;
 import com.sandy.mymovies.models.dto.Count;
 import com.sandy.mymovies.models.dto.Index;
 import com.sandy.mymovies.models.dto.Key;
+import com.sandy.mymovies.models.dto.Movie;
 import com.sandy.mymovies.models.dto.Title;
 import java.util.List;
 import org.junit.Test;
@@ -242,6 +243,104 @@ public class MyMoviesServiceIndexTests {
     assertThat(titles.size(), is(6));
 
     assertThat(titles.get(3).getTitle(), is("Psycho"));
+  }
+
+  @Test
+  public void readMoviesWithIndexAndKey_withActor_returnsMovies() {
+
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.ACTOR, "Matt Damon");
+
+    assertThat(movies, is(notNullValue()));
+
+    assertThat(movies.isEmpty(), is(false));
+
+    assertThat(movies.size(), is(24));
+
+    assertThat(movies.get(21).getTitle(), is("The Martian"));
+  }
+
+  @Test
+  public void readMoviesWithIndexAndKey_withDirector_returnsMovies() {
+
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.DIRECTOR, "Stanley Kubrick");
+
+    assertThat(movies, is(notNullValue()));
+
+    assertThat(movies.isEmpty(), is(false));
+
+    assertThat(movies.size(), is(6));
+
+    assertThat(movies.get(3).getTitle(), is("Full Metal Jacket"));
+  }
+
+  @Test
+  public void readMoviesWithIndexAndKey_withGenre_returnsMovies() {
+
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.GENRE, "Family");
+
+    assertThat(movies, is(notNullValue()));
+
+    assertThat(movies.isEmpty(), is(false));
+
+    assertThat(movies.size(), is(18));
+
+    assertThat(movies.get(17).getTitle(), is("WALL-E"));
+  }
+
+  @Test
+  public void readMoviesWithIndexAndKey_withRating_returnsMovies() {
+
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.RATING, "M");
+
+    assertThat(movies, is(notNullValue()));
+
+    assertThat(movies.isEmpty(), is(false));
+
+    assertThat(movies.size(), is(8));
+
+    assertThat(movies.get(3).getTitle(), is("Outrageous Fortune"));
+  }
+
+  @Test
+  public void readMoviesWithIndexAndKey_withTag_returnsMovies() {
+
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.TAG, "Science");
+
+    assertThat(movies, is(notNullValue()));
+
+    assertThat(movies.isEmpty(), is(false));
+
+    assertThat(movies.size(), is(42));
+
+    assertThat(movies.get(28).getTitle(), is("The Blue Planet"));
+  }
+
+  @Test
+  public void readMoviesWithIndexAndKey_withTitle_returnsMovies() {
+
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.TITLE, "Ex Machina");
+
+    assertThat(movies, is(notNullValue()));
+
+    assertThat(movies.isEmpty(), is(false));
+
+    assertThat(movies.size(), is(1));
+
+    assertThat(movies.get(0).getTitle(), is("Ex Machina"));
+  }
+
+  @Test
+  public void readMoviesWithIndexAndKey_withYear_returnsMovies() {
+
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.YEAR, "1960");
+
+    assertThat(movies, is(notNullValue()));
+
+    assertThat(movies.isEmpty(), is(false));
+
+    assertThat(movies.size(), is(6));
+
+    assertThat(movies.get(3).getTitle(), is("Psycho"));
   }
 
   @Test

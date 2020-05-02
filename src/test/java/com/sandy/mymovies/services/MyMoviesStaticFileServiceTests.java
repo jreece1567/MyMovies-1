@@ -40,4 +40,13 @@ public class MyMoviesStaticFileServiceTests {
     }
 
   }
+
+  @Test
+  public void fetchFaviconImage_returnsImage() {
+
+    byte[] imageBytes = staticFileService.fetchFavicon();
+
+    assertThat(imageBytes.length, greaterThan(0));
+  }
+
 }
