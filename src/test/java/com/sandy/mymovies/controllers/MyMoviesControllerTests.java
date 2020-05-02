@@ -158,7 +158,7 @@ public class MyMoviesControllerTests {
   public void searchIndexEntry_withvalidquery_returnsIndexEntries() {
 
     try {
-      mockMvc.perform(get("/search/genre?q=Doc").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(get("/search/genre?q=cum").contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[0]", is("Documentary")));
@@ -173,6 +173,65 @@ public class MyMoviesControllerTests {
 
     try {
       mockMvc.perform(get("/search/genre?q=zzzz").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(content().string("[]"));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void countIndexEntry_withvalidquery_returnsCount() {
+
+    try {
+      mockMvc.perform(get("/count/genre?name=Family").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(jsonPath("$.value", is("Family")))
+          .andExpect(jsonPath("$.count", is(18)));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void countIndexEntry_withinvalidquery_returnsZero() {
+
+    try {
+      mockMvc.perform(get("/count/genre?name=zzzz").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(jsonPath("$.value", is("zzzz")))
+          .andExpect(jsonPath("$.count", is(0)));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void getSeasons_withvalidquery_returnsSeasons() {
+
+    try {
+      mockMvc.perform(get("/seasons/5651844").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(jsonPath("$[0]", is(1)))
+          .andExpect(jsonPath("$[1]]", is(2)));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void getSeasons_withinvalidquery_returnsEmptyArray() {
+
+    try {
+      mockMvc.perform(get("/seasons/0128442").contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(content().string("[]"));

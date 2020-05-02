@@ -171,7 +171,7 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void readSeasons_withValidImdbId_returnsSeasons() {
 
-    List<String> seasons = moviesService.readSeasons("0060028");
+    List<Integer> seasons = moviesService.readSeasons("0060028");
 
     assertThat(seasons, is(notNullValue()));
 
@@ -186,7 +186,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      List<String> seasons = moviesService.readSeasons("0999999");
+      List<Integer> seasons = moviesService.readSeasons("0999999");
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {

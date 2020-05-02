@@ -354,14 +354,14 @@ public class MyMoviesService {
    * @param imdbId the unique IMDB-id of the movie.
    * @return the list of season numbers.
    */
-  public List<String> readSeasons(final String imdbId) {
+  public List<Integer> readSeasons(final String imdbId) {
 
     final Optional<Video> video = videoRepository.findById(imdbId);
     if (!video.isPresent()) {
       throw new NoSuchElementException(String.format(NOT_FOUND_MSG, imdbId));
     }
 
-    final List<String> seasons = chapterRepository.findDistinctSeasonsByImdbId(imdbId);
+    final List<Integer> seasons = chapterRepository.findDistinctSeasonsByImdbId(imdbId);
 
     Collections.sort(seasons);
 
@@ -411,6 +411,60 @@ public class MyMoviesService {
     Collections.sort(keys);
 
     return keys;
+  }
+
+  /**
+   * Return all Movies under a given Index and key-value.
+   *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key value (a genre, a rating, a tag, etc.).
+   * @return the list of Movies under the given Index and key-value.
+   */
+  public List<Movie> readMoviesByIndexAndKey(final Index index, final String key) {
+
+    final List<Video> videos = new ArrayList<>();
+
+    switch (index) {
+      case ACTOR:
+        actorRepository.findAllByName(key)
+            .forEach(imdbId -> videos.add(videoRepository.findById(imdbId).get()));
+        break;
+      case DIRECTOR:
+        videoRepository.findAllByDirector(key).forEach(video -> videos.add(video));
+        break;
+      case GENRE:
+        genreRepository.findAllByGenre(key)
+            .forEach(imdbId -> videos.add(videoRepository.findById(imdbId).get()));
+        break;
+      case RATING:
+        videoRepository.findAllByRating(key).forEach(video -> videos.add(video));
+        break;
+      case TAG:
+        tagRepository.findAllByTag(key)
+            .forEach(imdbId -> videos.add(videoRepository.findById(imdbId).get()));
+        break;
+      case TITLE:
+        videoRepository.findAllByTitle(key).forEach(video -> videos.add(video));
+        break;
+      case YEAR:
+        videoRepository.findAllByReleaseYear(Integer.valueOf(key))
+            .forEach(video -> videos.add(video));
+        break;
+      default:
+        break;
+    }
+
+    Collections.sort(videos, new Comparator<Video>() {
+      @Override
+      public int compare(final Video o1, final Video o2) {
+        return o1.getTitle().compareTo(o2.getTitle());
+      }
+    });
+
+    final List<Movie> movies = new ArrayList<>();
+    videos.forEach(video -> movies.add(readMovie(video.getImdbId())));
+
+    return movies;
   }
 
   /**

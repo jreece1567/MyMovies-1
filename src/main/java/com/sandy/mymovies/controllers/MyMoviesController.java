@@ -152,6 +152,36 @@ public class MyMoviesController {
   }
 
   /**
+   * Fetch a list of Movies associated with a given Index and key-value. Used where 'key' can be a
+   * path param.
+   *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key value (a genre, a rating, a tag, etc.).
+   * @return Titles associated with an index and key.
+   */
+  @RequestMapping(method = RequestMethod.GET, path = "/movies/{index}/{key}")
+  public List<Movie> getMoviesByIndexAndKey(@PathVariable("index") final String index,
+      @PathVariable("key") final String key) {
+
+    return service.readMoviesByIndexAndKey(Index.fromValue(index), key);
+  }
+
+  /**
+   * Fetch a list of Movies associated with a given Index and key-value. Used where 'key' can be a
+   * path param.
+   *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @param key the key value (a genre, a rating, a tag, etc.).
+   * @return Titles associated with an index and key.
+   */
+  @RequestMapping(method = RequestMethod.GET, path = "/movies/{index}")
+  public List<Movie> getMoviesByIndexAndName(@PathVariable("index") final String index,
+      @RequestParam("name") final String key) {
+
+    return service.readMoviesByIndexAndKey(Index.fromValue(index), key);
+  }
+
+  /**
    * Fetch a list of Titles associated with a given Index and key-value. Used where 'key' can be a
    * path param.
    *
@@ -296,7 +326,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/seasons/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
-  public List<String> getSeasonsByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public List<Integer> getSeasonsByImdbId(@PathVariable("imdbId") final String imdbId) {
 
     return service.readSeasons(imdbId);
   }
