@@ -31,6 +31,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyMoviesController {
 
+  private static final String IMDBID = "imdbId";
+  private static final String INDEX = "index";
+  private static final String KEY = "key";
+  private static final String NAME = "name";
+  private static final String SEASON_NUMBER = "seasonNumber";
+  private static final String EPISODE_NUMBER = "episodeNumber";
+  private static final String Q = "q";
+
   private final MyMoviesService service;
   private final MyMoviesValidator validator;
 
@@ -111,7 +119,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/movie/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
-  public Movie getMovieByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public Movie getMovieByImdbId(@PathVariable(IMDBID) final String imdbId) {
 
     return service.readMovie(imdbId);
   }
@@ -123,7 +131,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.DELETE, path = "/movie/{imdbId}")
   @ResponseStatus(HttpStatus.NO_CONTENT)
-  public void deleteMovieByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public void deleteMovieByImdbId(@PathVariable(IMDBID) final String imdbId) {
 
     service.deleteMovie(imdbId);
   }
@@ -136,7 +144,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/title/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
-  public Title getTitleByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public Title getTitleByImdbId(@PathVariable(IMDBID) final String imdbId) {
 
     return service.readTitle(imdbId);
   }
@@ -150,8 +158,8 @@ public class MyMoviesController {
    * @return Titles associated with an index and key.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/movies/{index}/{key}")
-  public List<Movie> getMoviesByIndexAndKey(@PathVariable("index") final String index,
-      @PathVariable("key") final String key) {
+  public List<Movie> getMoviesByIndexAndKey(@PathVariable(INDEX) final String index,
+      @PathVariable(KEY) final String key) {
 
     return service.readMoviesByIndexAndKey(Index.fromValue(index), key);
   }
@@ -165,8 +173,8 @@ public class MyMoviesController {
    * @return Titles associated with an index and key.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/movies/{index}")
-  public List<Movie> getMoviesByIndexAndName(@PathVariable("index") final String index,
-      @RequestParam("name") final String key) {
+  public List<Movie> getMoviesByIndexAndName(@PathVariable(INDEX) final String index,
+      @RequestParam(NAME) final String key) {
 
     return service.readMoviesByIndexAndKey(Index.fromValue(index), key);
   }
@@ -180,8 +188,8 @@ public class MyMoviesController {
    * @return Titles associated with an index and key.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/titles/{index}/{key}")
-  public List<Title> getTitlesByIndexAndKey(@PathVariable("index") final String index,
-      @PathVariable("key") final String key) {
+  public List<Title> getTitlesByIndexAndKey(@PathVariable(INDEX) final String index,
+      @PathVariable(KEY) final String key) {
 
     return service.readTitlesByIndexAndKey(Index.fromValue(index), key);
   }
@@ -195,8 +203,8 @@ public class MyMoviesController {
    * @return Titles associated with an index and key.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/titles/{index}")
-  public List<Title> getTitlesByIndexAndName(@PathVariable("index") final String index,
-      @RequestParam("name") final String key) {
+  public List<Title> getTitlesByIndexAndName(@PathVariable(INDEX) final String index,
+      @RequestParam(NAME) final String key) {
 
     return service.readTitlesByIndexAndKey(Index.fromValue(index), key);
   }
@@ -209,7 +217,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/cast/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
-  public Cast getCastByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public Cast getCastByImdbId(@PathVariable(IMDBID) final String imdbId) {
 
     return service.readCast(imdbId);
   }
@@ -241,7 +249,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
-  public List<Episode> getEpisodesByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public List<Episode> getEpisodesByImdbId(@PathVariable(IMDBID) final String imdbId) {
 
     return service.readEpisodes(imdbId);
   }
@@ -253,7 +261,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.DELETE, path = "/episodes/{imdbId}")
   @ResponseStatus(HttpStatus.NO_CONTENT)
-  public void deleteEpisodesByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public void deleteEpisodesByImdbId(@PathVariable(IMDBID) final String imdbId) {
 
     service.deleteEpisodes(imdbId);
   }
@@ -267,8 +275,8 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/episodes/{imdbId}/{seasonNumber}")
   @ResponseStatus(HttpStatus.OK)
-  public List<Episode> getEpisodesByImdbIdAndSeason(@PathVariable("imdbId") final String imdbId,
-      @PathVariable("seasonNumber") final Integer seasonNumber) {
+  public List<Episode> getEpisodesByImdbIdAndSeason(@PathVariable(IMDBID) final String imdbId,
+      @PathVariable(SEASON_NUMBER) final Integer seasonNumber) {
 
     return service.readEpisodes(imdbId, seasonNumber);
   }
@@ -281,8 +289,8 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.DELETE, path = "/episodes/{imdbId}/{seasonNumber}")
   @ResponseStatus(HttpStatus.NO_CONTENT)
-  public void deleteEpisodesByImdbIdAndSeason(@PathVariable("imdbId") final String imdbId,
-      @PathVariable("seasonNumber") final Integer seasonNumber) {
+  public void deleteEpisodesByImdbIdAndSeason(@PathVariable(IMDBID) final String imdbId,
+      @PathVariable(SEASON_NUMBER) final Integer seasonNumber) {
 
     service.deleteEpisodes(imdbId, seasonNumber);
   }
@@ -297,9 +305,9 @@ public class MyMoviesController {
       path = "/episodes/{imdbId}/{seasonNumber}/{episodeNumber}")
   @ResponseStatus(HttpStatus.NO_CONTENT)
   public void deleteEpisodesByImdbIdAndSeasonAndEpisodeNumber(
-      @PathVariable("imdbId") final String imdbId,
-      @PathVariable("seasonNumber") final Integer seasonNumber,
-      @PathVariable("episodeNumber") final Integer episodeNumber) {
+      @PathVariable(IMDBID) final String imdbId,
+      @PathVariable(SEASON_NUMBER) final Integer seasonNumber,
+      @PathVariable(EPISODE_NUMBER) final Integer episodeNumber) {
 
     service.deleteEpisode(imdbId, seasonNumber, episodeNumber);
   }
@@ -312,7 +320,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/seasons/{imdbId}")
   @ResponseStatus(HttpStatus.OK)
-  public List<Integer> getSeasonsByImdbId(@PathVariable("imdbId") final String imdbId) {
+  public List<Integer> getSeasonsByImdbId(@PathVariable(IMDBID) final String imdbId) {
 
     return service.readSeasons(imdbId);
   }
@@ -325,7 +333,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/keys/{index}")
   @ResponseStatus(HttpStatus.OK)
-  public List<String> getKeysByIndex(@PathVariable("index") final String index) {
+  public List<String> getKeysByIndex(@PathVariable(INDEX) final String index) {
 
     return service.readIndex(Index.fromValue(index));
   }
@@ -338,7 +346,7 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/{index}")
   @ResponseStatus(HttpStatus.OK)
-  public List<Key> getIdsByIndex(@PathVariable("index") final String index) {
+  public List<Key> getIdsByIndex(@PathVariable(INDEX) final String index) {
 
     return service.readIdsByIndex(Index.fromValue(index));
   }
@@ -352,8 +360,8 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/index/{index}/{key}")
   @ResponseStatus(HttpStatus.OK)
-  public Key getIdsByIndex(@PathVariable("index") final String index,
-      @PathVariable("key") final String key) {
+  public Key getIdsByIndex(@PathVariable(INDEX) final String index,
+      @PathVariable(KEY) final String key) {
 
     return service.readIdsByIndexAndKey(Index.fromValue(index), key);
   }
@@ -367,8 +375,8 @@ public class MyMoviesController {
    */
   @RequestMapping(method = RequestMethod.GET, path = "/search/{index}")
   @ResponseStatus(HttpStatus.OK)
-  public List<String> searchByIndex(@PathVariable("index") final String index,
-      @RequestParam("q") final String query) {
+  public List<String> searchByIndex(@PathVariable(INDEX) final String index,
+      @RequestParam(Q) final String query) {
 
     return service.searchByIndex(Index.fromValue(index), query);
   }
@@ -381,8 +389,8 @@ public class MyMoviesController {
    * @return The Count of titles associated with an index and key.
    */
   @RequestMapping(method = RequestMethod.GET, path = "/count/{index}")
-  public Count getCountByIndexAndName(@PathVariable("index") final String index,
-      @RequestParam("name") final String key) {
+  public Count getCountByIndexAndName(@PathVariable(INDEX) final String index,
+      @RequestParam(NAME) final String key) {
 
     return service.countByIndexAndKey(Index.fromValue(index), key);
   }
