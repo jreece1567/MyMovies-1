@@ -12,6 +12,7 @@ import com.sandy.mymovies.models.dto.Movie;
 import com.sandy.mymovies.models.dto.Title;
 import java.util.List;
 import java.util.NoSuchElementException;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -193,6 +194,39 @@ public class MyMoviesServiceMovieTests {
       assertThat(ex, instanceOf(NoSuchElementException.class));
     }
 
+  }
+
+  @Test
+  public void deleteMovie_withvalidImdbId_succeeds() {
+
+    Movie movie = moviesService.readMovie("5774060");
+
+    moviesService.deleteMovie("5774060");
+
+    try {
+
+      moviesService.readMovie("5774060");
+      fail("Unknown imdbId should throw NoSuchElementException");
+
+    } catch (NoSuchElementException ex) {
+      assertThat(ex, instanceOf(NoSuchElementException.class));
+    }
+
+    Movie newMovie = moviesService.createMovie(movie);
+    Assert.assertEquals(movie,newMovie);
+  }
+
+  @Test
+  public void deleteMovie_withinvalidImdbId_returnsException() {
+
+    try {
+
+      moviesService.deleteMovie("0999999");
+      fail("Unknown imdbId should throw NoSuchElementException");
+
+    } catch (NoSuchElementException ex) {
+      assertThat(ex, instanceOf(NoSuchElementException.class));
+    }
   }
 
 }

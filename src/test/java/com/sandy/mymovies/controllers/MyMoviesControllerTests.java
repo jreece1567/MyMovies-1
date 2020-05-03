@@ -4,6 +4,7 @@ import static junit.framework.TestCase.fail;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.CoreMatchers.nullValue;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -471,6 +472,30 @@ public class MyMoviesControllerTests {
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$.value", is("zzzz")))
           .andExpect(jsonPath("$.count", is(0)));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void deleteMovie_withvalidmovieid_returns204() {
+
+    try {
+      mockMvc.perform(delete("/movie/0055630").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isNoContent());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void deleteMovie_withinvalidmovieid_returns404() {
+
+    try {
+      mockMvc.perform(get("/movie/9999999").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isNotFound());
     } catch (Exception ex) {
       fail(ex.getMessage());
     }

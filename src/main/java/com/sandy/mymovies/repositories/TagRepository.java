@@ -2,9 +2,11 @@ package com.sandy.mymovies.repositories;
 
 import com.sandy.mymovies.models.domain.Tag;
 import java.util.List;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * JPA interface to the Tag table.
@@ -27,6 +29,8 @@ public interface TagRepository extends CrudRepository<Tag, String> {
   @Query("SELECT DISTINCT tag FROM Tag WHERE tag LIKE %?1%")
   List<String> searchTags(String searchArg);
 
+  @Transactional
+  @Modifying
   @Query("DELETE FROM Tag WHERE imdbId=?1")
   void deleteTagsByImdbId(String imdbId);
 
