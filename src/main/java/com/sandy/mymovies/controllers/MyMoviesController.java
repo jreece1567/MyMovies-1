@@ -395,4 +395,15 @@ public class MyMoviesController {
     return service.countByIndexAndKey(Index.fromValue(index), key);
   }
 
+  /**
+   * Throw NotYetImplemented exception to test response processing.
+   *
+   * @throws NotYetImplementedException in all cases
+   */
+  @RequestMapping(method = RequestMethod.GET, path = "/movie/notimplemented")
+  public void getNotImplemented() {
+
+    throw new NotYetImplementedException();
+  }
+
 }

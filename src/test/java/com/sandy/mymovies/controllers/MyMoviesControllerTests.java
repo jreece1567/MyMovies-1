@@ -717,4 +717,15 @@ public class MyMoviesControllerTests {
 
   }
 
+  @Test
+  public void notImplemented_succeeds() {
+
+    try {
+      mockMvc.perform(get("/movie/notimplemented")
+          .contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isNotImplemented());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+  }
 }
