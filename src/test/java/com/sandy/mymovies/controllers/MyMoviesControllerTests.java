@@ -1,24 +1,39 @@
 package com.sandy.mymovies.controllers;
 
+import static junit.framework.Assert.assertTrue;
+import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.fail;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.hamcrest.CoreMatchers.nullValue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.request;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sandy.mymovies.MyMoviesApplication;
+import com.sandy.mymovies.models.dto.Cast;
+import com.sandy.mymovies.models.dto.Episode;
+import com.sandy.mymovies.models.dto.Genres;
+import com.sandy.mymovies.models.dto.Movie;
+import com.sandy.mymovies.models.dto.Tags;
 import com.sandy.mymovies.repositories.ActorRepository;
 import com.sandy.mymovies.repositories.ChapterRepository;
 import com.sandy.mymovies.repositories.GenreRepository;
 import com.sandy.mymovies.repositories.TagRepository;
 import com.sandy.mymovies.repositories.VideoRepository;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import org.hamcrest.collection.IsEmptyCollection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,6 +41,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = MyMoviesApplication.class)
@@ -33,6 +49,9 @@ import org.springframework.test.web.servlet.MockMvc;
 @TestPropertySource(
     locations = "classpath:application-integrationTest.properties")
 public class MyMoviesControllerTests {
+
+  private static final ObjectMapper objectMapper = new ObjectMapper();
+  private static final Logger logger = LoggerFactory.getLogger(MyMoviesControllerTests.class);
 
   @Autowired
   private MockMvc mockMvc;
@@ -160,7 +179,8 @@ public class MyMoviesControllerTests {
   public void fetchIndex_withvalidkey_returnsIndexKeys() {
 
     try {
-      mockMvc.perform(get("/index/keys/genre").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(get("/index/keys/genre")
+          .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[6]", is("Documentary")));
@@ -496,6 +516,201 @@ public class MyMoviesControllerTests {
     try {
       mockMvc.perform(get("/movie/9999999").contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNotFound());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void deleteEpisodes_withvalidmovieid_returns204() {
+
+    try {
+      mockMvc.perform(delete("/episodes/0060028").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isNoContent());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void deleteEpisodes_withvalidmovieidandseason_returns204() {
+
+    try {
+      mockMvc.perform(delete("/episodes/0060028/2").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isNoContent());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void deleteEpisodes_withvalidmovieidandseasonandepisode_returns204() {
+
+    try {
+      mockMvc.perform(delete("/episodes/0060028/2/3").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isNoContent());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void createMovie_withvalidmovie_returns200() throws JsonProcessingException {
+
+    Movie movie = new Movie();
+    movie.setImdbId("1234567");
+    movie.setCast(new Cast(Arrays.asList("me","myself")));
+    movie.setDescription("A movie about a test.");
+    movie.setDirector("Q.A. Tester");
+    movie.setDuration("1:00");
+    movie.setGenres(new Genres(Arrays.asList("Family")));
+    movie.setImageUrl("test_image.jpg");
+    movie.setRating("GP");
+    movie.setReleaseYear(2020);
+    movie.setTags(new Tags(Arrays.asList("TV")));
+    movie.setTitle("Test Movie");
+
+    String requestBody = null;
+    try {
+      requestBody = objectMapper.writeValueAsString(movie);
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+      throw e;
+    }
+
+    try {
+      mockMvc.perform(post("/movie")
+          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+          .andExpect(status().isOk());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+    try {
+      mockMvc.perform(delete("/movie/1234567").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isNoContent());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void createMovie_withinvalidmovie_returns422() throws JsonProcessingException {
+
+    Movie movie = new Movie();
+    movie.setImdbId("1234567");
+    movie.setCast(new Cast(Arrays.asList("me","myself")));
+    movie.setDescription("A movie about a test.");
+    movie.setDirector("Q.A. Tester");
+    movie.setDuration("1:00");
+    movie.setGenres(new Genres(Arrays.asList("Family")));
+    movie.setImageUrl("test_image.jpg");
+    movie.setRating("GP");
+    movie.setReleaseYear(null); // <<--- invalid value
+    movie.setTags(new Tags(Arrays.asList("TV")));
+    movie.setTitle("Test Movie");
+
+    String requestBody = null;
+    try {
+      requestBody = objectMapper.writeValueAsString(movie);
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+      throw e;
+    }
+
+    try {
+      mockMvc.perform(post("/movie")
+          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+          .andExpect(status().isUnprocessableEntity());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void createEpisode_withvalidmovie_returns200() throws JsonProcessingException {
+
+    Episode episode = new Episode();
+    episode.setImdbId("0060028");
+    episode.setSeason("2");
+    episode.setEpisodeNumber("4");
+    episode.setTitle("Test Episode");
+    episode.setDescription("This is a test episode description.");
+
+    String requestBody = null;
+    try {
+      requestBody = objectMapper.writeValueAsString(episode);
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+      throw e;
+    }
+
+    try {
+      mockMvc.perform(post("/episodes")
+          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+          .andExpect(status().isOk());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void createEpisode_withinvalidmovie_returns404() throws JsonProcessingException {
+
+    Episode episode = new Episode();
+    episode.setImdbId("0999999");
+    episode.setSeason("2");
+    episode.setEpisodeNumber("4");
+    episode.setTitle("Test Episode");
+    episode.setDescription("This is a test episode description.");
+
+    String requestBody = null;
+    try {
+      requestBody = objectMapper.writeValueAsString(episode);
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+      throw e;
+    }
+
+    try {
+      mockMvc.perform(post("/episodes")
+          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+          .andExpect(status().isNotFound());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void createEpisode_withinvalidepisode_returns422() throws JsonProcessingException {
+
+    Episode episode = new Episode();
+    episode.setImdbId("0060028");
+    episode.setSeason(null);  // <<<---- invalid value
+    episode.setEpisodeNumber("4");
+    episode.setTitle("Test Episode");
+    episode.setDescription("This is a test episode description.");
+
+    String requestBody = null;
+    try {
+      requestBody = objectMapper.writeValueAsString(episode);
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+      throw e;
+    }
+
+    try {
+      mockMvc.perform(post("/episodes")
+          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+          .andExpect(status().isUnprocessableEntity());
     } catch (Exception ex) {
       fail(ex.getMessage());
     }

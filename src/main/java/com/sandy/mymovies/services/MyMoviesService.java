@@ -341,7 +341,7 @@ public class MyMoviesService {
    * @param seasonNumber the season number.
    * @param episodeNumber the episode number.
    */
-  public void deleteEpisodes(final String imdbId, final Integer seasonNumber,
+  public void deleteEpisode(final String imdbId, final Integer seasonNumber,
       final Integer episodeNumber) {
 
     chapterRepository

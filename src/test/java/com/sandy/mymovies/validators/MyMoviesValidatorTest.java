@@ -49,4 +49,5 @@ public class MyMoviesValidatorTest {
     errors.reject("an error");
     MyMoviesValidator.processErrors(errors);
   }
+
 }

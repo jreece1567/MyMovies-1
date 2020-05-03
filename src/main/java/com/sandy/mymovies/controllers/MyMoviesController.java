@@ -228,6 +228,8 @@ public class MyMoviesController {
     validator.validate(episode, errors);
     MyMoviesValidator.processErrors(errors);
 
+    service.readMovie(episode.getImdbId());
+
     return service.createEpisode(episode);
   }
 
@@ -299,7 +301,7 @@ public class MyMoviesController {
       @PathVariable("seasonNumber") final Integer seasonNumber,
       @PathVariable("episodeNumber") final Integer episodeNumber) {
 
-    service.deleteEpisodes(imdbId, seasonNumber, episodeNumber);
+    service.deleteEpisode(imdbId, seasonNumber, episodeNumber);
   }
 
   /**
