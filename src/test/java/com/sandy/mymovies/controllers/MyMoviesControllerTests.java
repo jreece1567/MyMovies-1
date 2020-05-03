@@ -266,6 +266,92 @@ public class MyMoviesControllerTests {
   }
 
   @Test
+  public void fetchIndexEntry_withvalidindexqp_returnsIndexEntries() {
+
+    try {
+      mockMvc.perform(get("/titles/genre?name=Documentary").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(jsonPath("$[6].imdbId", is("0277457")));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void fetchIndexEntry_withinvalidindexqp_returnsEmptyArray() {
+
+    try {
+      mockMvc.perform(get("/titles/genre?name=Documentaryz")
+          .contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(content().string("[]"));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void fetchMovies_withvalidindex_returnsIndexEntries() {
+
+    try {
+      mockMvc.perform(get("/movies/genre/Documentary").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(jsonPath("$[6].imdbId", is("0277457")));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void fetchMovies_withinvalidindex_returnsEmptyArray() {
+
+    try {
+      mockMvc.perform(get("/movies/genre/Documentaryz").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(content().string("[]"));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void fetchMovies_withvalidindexqp_returnsIndexEntries() {
+
+    try {
+      mockMvc.perform(get("/movies/genre?name=Documentary").contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(jsonPath("$[6].imdbId", is("0277457")));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void fetchMovies_withinvalidindexqp_returnsEmptyArray() {
+
+    try {
+      mockMvc.perform(get("/movies/genre?name=Documentaryz")
+          .contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(content().string("[]"));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
   public void fetchSeasons_withvalidquery_returnsSeasons() {
 
     try {

@@ -1,7 +1,11 @@
 package com.sandy.mymovies.validators;
 
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
+import org.springframework.validation.FieldError;
 import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.SpringValidatorAdapter;
 
@@ -64,4 +68,18 @@ public class MyMoviesValidator implements Validator {
     // the result of the validation is in the 'errors' list.
   }
 
+  /**
+   * Evaluate any validation errors.
+   * @param errors the collection of errors from the JSR-303 validator
+   * @throws IllegalArgumentException if any errors are present
+   */
+  public static void processErrors(Errors errors) {
+    if (errors.hasErrors()) {
+      final Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
+          .groupingBy(
+              FieldError::getField,
+              Collectors.mapping(FieldError::getDefaultMessage, Collectors.toSet())));
+      throw new IllegalArgumentException(errorsMap.toString());
+    }
+  }
 }

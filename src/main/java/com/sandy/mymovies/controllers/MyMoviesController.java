@@ -102,13 +102,7 @@ public class MyMoviesController {
 
     final Errors errors = new BeanPropertyBindingResult(movie, movie.getClass().getName());
     validator.validate(movie, errors);
-    if (errors.hasErrors()) {
-      final Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
-          .groupingBy(
-              FieldError::getField,
-              Collectors.mapping(FieldError::getDefaultMessage, Collectors.toSet())));
-      throw new IllegalArgumentException(errorsMap.toString());
-    }
+    MyMoviesValidator.processErrors(errors);
 
     return service.createMovie(movie);
   }
@@ -236,13 +230,7 @@ public class MyMoviesController {
 
     final Errors errors = new BeanPropertyBindingResult(episode, episode.getClass().getName());
     validator.validate(episode, errors);
-    if (errors.hasErrors()) {
-      final Map<String, Set<String>> errorsMap = errors.getFieldErrors().stream().collect(Collectors
-          .groupingBy(
-              FieldError::getField,
-              Collectors.mapping(FieldError::getDefaultMessage, Collectors.toSet())));
-      throw new IllegalArgumentException(errorsMap.toString());
-    }
+    MyMoviesValidator.processErrors(errors);
 
     return service.createEpisode(episode);
   }
