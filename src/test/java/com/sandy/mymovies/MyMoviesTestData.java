@@ -1,6 +1,6 @@
 package com.sandy.mymovies;
 
-public class MyMoviesTestData {
+public final class MyMoviesTestData {
 
   public static final Integer ALL_COUNT = 8;
   public static final Integer ACTOR_COUNT = 84030;
@@ -43,4 +43,7 @@ public class MyMoviesTestData {
   public static final String INVALID_GENRE_KEY = "zzz";
   public static final String TEST_INDEX_KEY = "genre";
   public static final String INVALID_INDEX_KEY = "zzz";
+
+  private MyMoviesTestData() { }
+
 }

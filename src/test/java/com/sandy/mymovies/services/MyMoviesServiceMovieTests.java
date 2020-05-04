@@ -312,6 +312,14 @@ public class MyMoviesServiceMovieTests {
   }
 
   @Test
+  public void createMovie_withduplicatemovie_succeeds() {
+    Movie movie = moviesService.readMovie(TEST_IMDB_ID);
+
+    Movie newMovie = moviesService.createMovie(movie);
+    Assert.assertEquals(movie, newMovie);
+  }
+
+  @Test
   public void createEpisode_withvalidepisode_succeeds() {
 
     List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES, 2);
