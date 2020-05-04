@@ -1,938 +1,1148 @@
 {
-    "swagger": "2.0",
-    "info": {
-        "version": "1",
-        "title": "MyMovies Application",
-        "description": "Information about movies in my collection."
+  "swagger": "2.0",
+  "info": {
+    "version": "1",
+    "title": "MyMovies Application",
+    "description": "Information about movies in my collection."
+  },
+  "tags": [
+    {
+      "name": "MOVIES"
     },
-    "tags": [
-        {
-            "name": "MOVIES"
-        },
-        {
-            "name": "MOVIE_TITLES"
-        },
-        {
-            "name": "MOVIE_DETAILS"
-        },
-        {
-            "name": "MOVIE_SEASONS"
-        },
-        {
-            "name": "MOVIE_EPISODES"
-        },
-        {
-            "name": "MOVIE_INDICES"
-        }
-    ],
-    "schemes": [
-        "http"
-    ],
-    "host": "localhost:8080",
-    "basePath": "/",
-    "consumes": [
-        "application/json"
-    ],
-    "produces": [
-        "application/json"
-    ],
-    "securityDefinitions": {
-        "api_key": {
-            "description": "A an API-key.",
-            "type": "apiKey",
-            "name": "api_key",
-            "in": "query"
-        }
+    {
+      "name": "MOVIE_TITLES"
     },
-    "definitions": {
-        "index": {
-            "type": "object",
-            "description": "An index.",
-            "required": [
-                "key",
-                "ids"
-            ],
-            "properties": {
-                "key": {
-                    "description": "The index key.",
-                    "type": "string"
-                },
-                "ids": {
-                    "description": "The index values.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
-            }
+    {
+      "name": "MOVIE_DETAILS"
+    },
+    {
+      "name": "MOVIE_SEASONS"
+    },
+    {
+      "name": "MOVIE_EPISODES"
+    },
+    {
+      "name": "MOVIE_INDICES"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "host": "localhost:8080",
+  "basePath": "/",
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "api_key": {
+      "description": "A an API-key.",
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "query"
+    }
+  },
+  "definitions": {
+    "index": {
+      "type": "object",
+      "description": "An index.",
+      "required": [
+        "key",
+        "ids"
+      ],
+      "properties": {
+        "key": {
+          "description": "The index key.",
+          "type": "string"
         },
-        "indices": {
-            "description": "A list of indices.",
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/index"
-            }
+        "ids": {
+          "description": "The index values.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "indices": {
+      "description": "A list of indices.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/index"
+      }
+    },
+    "nvpair": {
+      "type": "object",
+      "description": "A name/value pair.",
+      "required": [
+        "value",
+        "data"
+      ],
+      "properties": {
+        "value": {
+          "description": "The value.",
+          "type": "string"
         },
-        "nvpair": {
-            "type": "object",
-            "description": "A name/value pair.",
-            "required": [
-                "value",
-                "data"
-            ],
-            "properties": {
-                "value": {
-                    "description": "The value.",
-                    "type": "string"
-                },
-                "data": {
-                    "description": "The data of the value.",
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false
-        },
-        "nvpairs": {
-            "description": "A list of name/value pairs.",
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/nvpair"
-            }
+        "data": {
+          "description": "The data of the value.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "nvpairs": {
+      "description": "A list of name/value pairs.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/nvpair"
+      }
+    },
+    "count": {
+      "type": "object",
+      "description": "A count.",
+      "required": [
+        "value",
+        "count"
+      ],
+      "properties": {
+        "value": {
+          "description": "The value being counted.",
+          "type": "string"
         },
         "count": {
-            "type": "object",
-            "description": "A count.",
-            "required": [
-                "value",
-                "count"
-            ],
-            "properties": {
-                "value": {
-                    "description": "The value being counted.",
-                    "type": "string"
-                },
-                "count": {
-                    "description": "The count of the value.",
-                    "type": "integer"
-                }
-            },
-            "additionalProperties": false
+          "description": "The count of the value.",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "episode": {
+      "type": "object",
+      "description": "An episode.",
+      "required": [
+        "imdbId",
+        "season",
+        "episodeNumber",
+        "title",
+        "description"
+      ],
+      "properties": {
+        "imdbId": {
+          "description": "The imdbId of the movie.",
+          "type": "string"
         },
-        "episode": {
-            "type": "object",
-            "description": "An episode.",
-            "required": [
-                "imdbId",
-                "season",
-                "episodeNumber",
-                "title",
-                "description"
-            ],
-            "properties": {
-                "imdbId": {
-                    "description": "The imdbId of the movie.",
-                    "type": "string"
-                },
-                "season": {
-                    "description": "The season number.",
-                    "type": "string"
-                },
-                "episodeNumber": {
-                    "description": "The episode number.",
-                    "type": "string"
-                },
-                "title": {
-                    "description": "The title of the episode.",
-                    "type": "string"
-                },
-                "description": {
-                    "description": "The description of the episode.",
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false
+        "season": {
+          "description": "The season number.",
+          "type": "string"
         },
-        "episodes": {
-            "description": "A list of episodes.",
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/episode"
-            }
-        },
-        "seasons": {
-            "description": "A list of seasons.",
-            "type": "array",
-            "items": {
-                "type": "integer"
-            }
+        "episodeNumber": {
+          "description": "The episode number.",
+          "type": "string"
         },
         "title": {
-            "type": "object",
-            "description": "A movie title.",
-            "required": [
-                "imdbid",
-                "title",
-                "year",
-                "imageUrl"
-            ],
-            "properties": {
-                "imdbid": {
-                    "description": "The imdbid of the movie.",
-                    "type": "string"
-                },
-                "title": {
-                    "description": "The movie title.",
-                    "type": "string"
-                },
-                "year": {
-                    "description": "The movie release-year.",
-                    "type": "string"
-                },
-                "imageUrl": {
-                    "description": "The url o\tf the movie poster-image.",
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false
+          "description": "The title of the episode.",
+          "type": "string"
         },
-        "titles": {
-            "description": "A list of titles.",
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/title"
-            }
+        "description": {
+          "description": "The description of the episode.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "episodes": {
+      "description": "A list of episodes.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/episode"
+      }
+    },
+    "seasons": {
+      "description": "A list of seasons.",
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "title": {
+      "type": "object",
+      "description": "A movie title.",
+      "required": [
+        "imdbid",
+        "title",
+        "year",
+        "imageUrl"
+      ],
+      "properties": {
+        "imdbid": {
+          "description": "The imdbid of the movie.",
+          "type": "string"
+        },
+        "title": {
+          "description": "The movie title.",
+          "type": "string"
+        },
+        "year": {
+          "description": "The movie release-year.",
+          "type": "string"
+        },
+        "imageUrl": {
+          "description": "The url o\tf the movie poster-image.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "titles": {
+      "description": "A list of titles.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/title"
+      }
+    },
+    "genres": {
+      "description": "A list of the movie-genres",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cast": {
+      "description": "A list of the movie-cast",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "description": "A list of the movie-tags",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "movie": {
+      "type": "object",
+      "description": "A movie, with cast.",
+      "required": [
+        "imdbId",
+        "title",
+        "releaseYear",
+        "duration",
+        "rating",
+        "director",
+        "imageUrl",
+        "description",
+        "genres",
+        "cast",
+        "tags"
+      ],
+      "properties": {
+        "imdbId": {
+          "description": "The imdbId of the movie.",
+          "type": "string"
+        },
+        "title": {
+          "description": "The movie title.",
+          "type": "string"
+        },
+        "releaseYear": {
+          "description": "The movie release-year.",
+          "type": "string"
+        },
+        "duration": {
+          "description": "The movie run-time.",
+          "type": "string"
+        },
+        "rating": {
+          "description": "The movie rating",
+          "type": "string"
+        },
+        "director": {
+          "description": "The movie director.",
+          "type": "string"
+        },
+        "imageUrl": {
+          "description": "The url if the movie poster-image.",
+          "type": "string"
+        },
+        "description": {
+          "description": "A synopsis of the movie plot.",
+          "type": "string"
         },
         "genres": {
-            "description": "A list of the movie-genres",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+          "$ref": "#/definitions/genres"
         },
         "cast": {
-            "description": "A list of the movie-cast",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+          "$ref": "#/definitions/cast"
         },
         "tags": {
-            "description": "A list of the movie-tags",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
-        "movie": {
-            "type": "object",
-            "description": "A movie, with cast.",
-            "required": [
-                "imdbId",
-                "title",
-                "releaseYear",
-                "duration",
-                "rating",
-                "director",
-                "imageUrl",
-                "description",
-                "genres",
-                "cast",
-                "tags"
-            ],
-            "properties": {
-                "imdbId": {
-                    "description": "The imdbId of the movie.",
-                    "type": "string"
-                },
-                "title": {
-                    "description": "The movie title.",
-                    "type": "string"
-                },
-                "releaseYear": {
-                    "description": "The movie release-year.",
-                    "type": "string"
-                },
-                "duration": {
-                    "description": "The movie run-time.",
-                    "type": "string"
-                },
-                "rating": {
-                    "description": "The movie rating",
-                    "type": "string"
-                },
-                "director": {
-                    "description": "The movie director.",
-                    "type": "string"
-                },
-                "imageUrl": {
-                    "description": "The url if the movie poster-image.",
-                    "type": "string"
-                },
-                "description": {
-                    "description": "A synopsis of the movie plot.",
-                    "type": "string"
-                },
-                "genres": {
-                    "$ref": "#/definitions/genres"
-                },
-                "cast": {
-                    "$ref": "#/definitions/cast"
-                },
-                "tags": {
-                    "$ref": "#/definitions/tags"
-                }
-            },
-            "additionalProperties": false
-        },
-        "movies": {
-            "description": "A list of movies.",
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/movie"
-            }
-        },
-        "keys": {
-            "description": "A list of keys.",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+          "$ref": "#/definitions/tags"
         }
+      },
+      "additionalProperties": false
     },
-    "paths": {
-        "/title/{imdbId}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_TITLES"
-                ],
-                "summary": "Individual movie title.",
-                "description": "Request title of a single movie.",
-                "parameters": [
-                    {
-                        "name": "imdbId",
-                        "description": "imdbId. Request a title with imdbId.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the title.",
-                        "schema": {
-                            "$ref": "#/definitions/title"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/movie/{imdbId}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_DETAILS"
-                ],
-                "summary": "Individual movie.",
-                "description": "Request details on a single movie.",
-                "parameters": [
-                    {
-                        "name": "imdbId",
-                        "description": "imdbId. Request a movie with imdbId.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the movie.",
-                        "schema": {
-                            "$ref": "#/definitions/movie"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            },
-            "delete": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_DETAILS"
-                ],
-                "summary": "Individual movie.",
-                "description": "Delete a single movie.",
-                "parameters": [
-                    {
-                        "name": "imdbId",
-                        "description": "imdbId. Delete a movie with imdbId.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully deleted the movie."
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/cast/{imdbId}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_DETAILS"
-                ],
-                "summary": "Cast of a movie.",
-                "description": "Request a list of the cast of a single movie.",
-                "parameters": [
-                    {
-                        "name": "imdbId",
-                        "description": "imdbId. Request the cast with imdbId.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the cast.",
-                        "schema": {
-                            "$ref": "#/definitions/cast"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/titles/{index}/{key}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_TITLES"
-                ],
-                "summary": "Titles associated with an index.",
-                "description": "Request a list of titles associated with an index.",
-                "parameters": [
-                    {
-                        "name": "index",
-                        "description": "index. The name of the index.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "all",
-                            "actor",
-                            "director",
-                            "genre",
-                            "rating",
-                            "tag",
-                            "title",
-                            "year"
-                        ]
-                    },
-                    {
-                        "name": "key",
-                        "description": "key. Request a list of titles associated with this key. Must relate to index.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the titles.",
-                        "schema": {
-                            "$ref": "#/definitions/titles"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/index/keys/{name}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_INDICES"
-                ],
-                "summary": "Index keys associated with an index-name.",
-                "description": "Request a list of index-keys associated with an index-name.",
-                "parameters": [
-                    {
-                        "name": "name",
-                        "description": "name. Request a list of index-keys associated with a name.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "all",
-                            "actor",
-                            "director",
-                            "genre",
-                            "rating",
-                            "tag",
-                            "title",
-                            "year"
-                        ]
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the keys.",
-                        "schema": {
-                            "$ref": "#/definitions/keys"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/index/{name}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_INDICES"
-                ],
-                "summary": "Indices associated with an index-name.",
-                "description": "Request a list of indices associated with a name.",
-                "parameters": [
-                    {
-                        "name": "name",
-                        "description": "name. Request a list of indices associated with a name.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "actor",
-                            "director",
-                            "genre",
-                            "rating",
-                            "tag",
-                            "title",
-                            "year"
-                        ]
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the indices.",
-                        "schema": {
-                            "$ref": "#/definitions/indices"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/index/{name}/{key}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_INDICES"
-                ],
-                "summary": "Indices associated with an index-name and key.",
-                "description": "Request a list of indices associated with a name and key.",
-                "parameters": [
-                    {
-                        "name": "name",
-                        "description": "name. Request an index associated with a name.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "actor",
-                            "director",
-                            "genre",
-                            "rating",
-                            "tag",
-                            "title",
-                            "year"
-                        ]
-                    },
-                    {
-                        "name": "key",
-                        "description": "The index key. Must relate to name.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the index.",
-                        "schema": {
-                            "$ref": "#/definitions/index"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/episodes/{imdbid}/{season}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_EPISODES",
-                    "MOVIE_SEASONS"
-                ],
-                "summary": "Episodes associated with a show and season.",
-                "description": "Request a list of episodes associated with a show and season.",
-                "parameters": [
-                    {
-                        "name": "imdbid",
-                        "description": "imdbid. Request a list of episodes associated with imdbid.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "season",
-                        "description": "season. Filter the list of episodes by season.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the episodes.",
-                        "schema": {
-                            "$ref": "#/definitions/episodes"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            },
-            "delete": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_EPISODES",
-                    "MOVIE_SEASONS"
-                ],
-                "summary": "One ore more episodes.",
-                "description": "Delete all episodes for single season of a movie.",
-                "parameters": [
-                    {
-                        "name": "imdbId",
-                        "description": "imdbId. Delete all episodes for a season with imdbId.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully deleted the episodes."
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/episodes/{imdbid}/{season}/{episodeNumber}": {
-            "delete": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_EPISODES",
-                    "MOVIE_SEASONS"
-                ],
-                "summary": "One episode.",
-                "description": "Delete one episodes for single season of a movie.",
-                "parameters": [
-                    {
-                        "name": "imdbId",
-                        "description": "imdbId. Delete one episode for a season with imdbId.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully deleted the episode."
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/episodes/{imdbid}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_EPISODES"
-                ],
-                "summary": "All episodes associated with a show.",
-                "description": "Request a list of episodes associated with a show.",
-                "parameters": [
-                    {
-                        "name": "imdbid",
-                        "description": "imdbid. Request a list of episodes associated with imdbid.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the episodes.",
-                        "schema": {
-                            "$ref": "#/definitions/episodes"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            },
-            "delete": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_EPISODES"
-                ],
-                "summary": "One ore more episodes.",
-                "description": "Delete all episodes for a movie.",
-                "parameters": [
-                    {
-                        "name": "imdbId",
-                        "description": "imdbId. Delete all episodes for a movie with imdbId.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully deleted the episodes."
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/seasons/{imdbid}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_SEASONS"
-                ],
-                "summary": "A list of seasons associated with a show.",
-                "description": "Request a list of seasons associated with a show.",
-                "parameters": [
-                    {
-                        "name": "imdbid",
-                        "description": "imdbid. Request a list of seasons associated with imdbid.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the seasons.",
-                        "schema": {
-                            "$ref": "#/definitions/seasons"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/movies/{index}": {
-            "get": {
-                "tags": [
-                    "MOVIES",
-                    "MOVIE_DETAILS"
-                ],
-                "summary": "Movies associated with an index.",
-                "description": "Request a list of movies associated with an index.",
-                "parameters": [
-                    {
-                        "name": "index",
-                        "description": "index. The name of the index.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "actor",
-                            "director",
-                            "genre",
-                            "rating",
-                            "tag",
-                            "title",
-                            "year"
-                        ]
-                    },
-                    {
-                        "name": "name",
-                        "description": "name. Request a list of movies associated with this name. Must relate to index.",
-                        "in": "query",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the movies.",
-                        "schema": {
-                            "$ref": "#/definitions/movies"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/count/{index}": {
-            "get": {
-                "tags": [
-                    "MOVIES"
-                ],
-                "summary": "Count of items associated with an index.",
-                "description": "Request a count of items associated with an index.",
-                "parameters": [
-                    {
-                        "name": "index",
-                        "description": "index. The name of the index.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "actor",
-                            "director",
-                            "genre",
-                            "rating",
-                            "tag",
-                            "title",
-                            "year"
-                        ]
-                    },
-                    {
-                        "name": "name",
-                        "description": "name. Request a count of items associated with this name. Must relate to index.",
-                        "in": "query",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the count.",
-                        "schema": {
-                            "$ref": "#/definitions/count"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        },
-        "/search/{index}": {
-            "get": {
-                "tags": [
-                    "MOVIES"
-                ],
-                "summary": "List of items associated with an index.",
-                "description": "Request a list of items associated with an index.",
-                "parameters": [
-                    {
-                        "name": "index",
-                        "description": "index. The name of the index.",
-                        "in": "path",
-                        "required": true,
-                        "type": "string",
-                        "enum": [
-                            "actor",
-                            "director",
-                            "genre",
-                            "rating",
-                            "tag",
-                            "title",
-                            "year"
-                        ]
-                    },
-                    {
-                        "name": "q",
-                        "description": "q. Request data associated with this search term.",
-                        "in": "query",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Successfully retrieved the values.",
-                        "schema": {
-                            "$ref": "#/definitions/nvpairs"
-                        }
-                    }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
-            }
-        }
+    "movies": {
+      "description": "A list of movies.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/movie"
+      }
+    },
+    "keys": {
+      "description": "A list of keys.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
+  },
+  "paths": {
+    "/movie": {
+      "post": {
+        "tags": [
+          "MOVIES"
+        ],
+        "summary": "Add movie to catalog",
+        "description": "Add a new movie to the catalog",
+        "operationId": "postMovie",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Movie object to be added to the catalog",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/movie"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully saved the movie in the catalog.",
+            "schema": {
+              "$ref": "#/definitions/movie"
+            }
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/episodes": {
+      "post": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_EPISODES"
+        ],
+        "summary": "Add episode to catalog",
+        "description": "Add a new episode to the catalog",
+        "operationId": "postEpisode",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Episode object to be added to the catalog",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/episode"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully saved the episode in the catalog.",
+            "schema": {
+              "$ref": "#/definitions/episode"
+            }
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/title/{imdbId}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_TITLES"
+        ],
+        "summary": "Individual movie title.",
+        "description": "Request title of a single movie.",
+        "operationId": "getTitleByImdbId",
+        "parameters": [
+          {
+            "name": "imdbId",
+            "description": "imdbId. Request a title with imdbId.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the title.",
+            "schema": {
+              "$ref": "#/definitions/title"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/movie/{imdbId}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_DETAILS"
+        ],
+        "summary": "Individual movie.",
+        "description": "Request details on a single movie.",
+        "parameters": [
+          {
+            "name": "imdbId",
+            "description": "imdbId. Request a movie with imdbId.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the movie.",
+            "schema": {
+              "$ref": "#/definitions/movie"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_DETAILS"
+        ],
+        "summary": "Individual movie.",
+        "description": "Delete a single movie.",
+        "parameters": [
+          {
+            "name": "imdbId",
+            "description": "imdbId. Delete a movie with imdbId.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted the movie."
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/cast/{imdbId}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_DETAILS"
+        ],
+        "summary": "Cast of a movie.",
+        "description": "Request a list of the cast of a single movie.",
+        "operationId": "getCastByImdbId",
+        "parameters": [
+          {
+            "name": "imdbId",
+            "description": "imdbId. Request the cast with imdbId.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the cast.",
+            "schema": {
+              "$ref": "#/definitions/cast"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/titles/{index}/{key}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_TITLES"
+        ],
+        "summary": "Titles associated with an index.",
+        "description": "Request a list of titles associated with an index.",
+        "operationId": "getTitlesByIndexAndKey",
+        "parameters": [
+          {
+            "name": "index",
+            "description": "index. The name of the index.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "all",
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          },
+          {
+            "name": "key",
+            "description": "key. Request a list of titles associated with this key. Must relate to index.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the titles.",
+            "schema": {
+              "$ref": "#/definitions/titles"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/titles/{index}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_TITLES"
+        ],
+        "summary": "Titles associated with an index.",
+        "description": "Request a list of titles associated with an index.",
+        "operationId": "getTitlesByIndexAndName",
+        "parameters": [
+          {
+            "name": "index",
+            "description": "index. The name of the index.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "all",
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          },
+          {
+            "name": "name",
+            "description": "name. Request a list of titles associated with this key. Must relate to index.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the titles.",
+            "schema": {
+              "$ref": "#/definitions/titles"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/index/keys/{name}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_INDICES"
+        ],
+        "summary": "Index keys associated with an index-name.",
+        "description": "Request a list of index-keys associated with an index-name.",
+        "operationId": "getKeysByIndex",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "name. Request a list of index-keys associated with a name.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "all",
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the keys.",
+            "schema": {
+              "$ref": "#/definitions/keys"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/index/{name}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_INDICES"
+        ],
+        "summary": "Indices associated with an index-name.",
+        "description": "Request a list of indices associated with a name.",
+        "operationId": "getIdsByIndex",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "name. Request a list of indices associated with a name.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the indices.",
+            "schema": {
+              "$ref": "#/definitions/indices"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/index/{name}/{key}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_INDICES"
+        ],
+        "summary": "Indices associated with an index-name and key.",
+        "description": "Request a list of indices associated with a name and key.",
+        "operationId": "getIdsByIndexAndKey",
+        "parameters": [
+          {
+            "name": "name",
+            "description": "name. Request an index associated with a name.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          },
+          {
+            "name": "key",
+            "description": "The index key. Must relate to name.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the index.",
+            "schema": {
+              "$ref": "#/definitions/index"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/episodes/{imdbid}/{season}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_EPISODES",
+          "MOVIE_SEASONS"
+        ],
+        "summary": "Episodes associated with a show and season.",
+        "description": "Request a list of episodes associated with a show and season.",
+        "operationId": "getEpisodesByImdbIdAndSeason",
+        "parameters": [
+          {
+            "name": "imdbid",
+            "description": "imdbid. Request a list of episodes associated with imdbid.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "season",
+            "description": "season. Filter the list of episodes by season.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the episodes.",
+            "schema": {
+              "$ref": "#/definitions/episodes"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_EPISODES",
+          "MOVIE_SEASONS"
+        ],
+        "summary": "One ore more episodes.",
+        "description": "Delete all episodes for single season of a movie.",
+        "operationId": "deleteEpisodesByImdbIdAndSeason",
+        "parameters": [
+          {
+            "name": "imdbid",
+            "description": "imdbId. Delete all episodes for a season with imdbId.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "season",
+            "description": "season. Filter the list of episodes by season.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted the episodes."
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/episodes/{imdbid}/{season}/{episodeNumber}": {
+      "delete": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_EPISODES",
+          "MOVIE_SEASONS"
+        ],
+        "summary": "One episode.",
+        "description": "Delete one episodes for single season of a movie.",
+        "operationId": "deleteEpisodesByImdbIdAndSeasonAndEpisodeNumber",
+        "parameters": [
+          {
+            "name": "imdbid",
+            "description": "imdbId. Delete one episode for a season with imdbId.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "season",
+            "description": "season. Filter the list of episodes by season.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "episodeNumber",
+            "description": "season. Filter the list of episodes by episodeNumber.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted the episode."
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/episodes/{imdbid}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_EPISODES"
+        ],
+        "summary": "All episodes associated with a show.",
+        "description": "Request a list of episodes associated with a show.",
+        "operationId": "getEpisodesByImdbId",
+        "parameters": [
+          {
+            "name": "imdbid",
+            "description": "imdbid. Request a list of episodes associated with imdbid.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the episodes.",
+            "schema": {
+              "$ref": "#/definitions/episodes"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_EPISODES"
+        ],
+        "summary": "One ore more episodes.",
+        "description": "Delete all episodes for a movie.",
+        "operationId": "deleteEpisodesByImdbId",
+        "parameters": [
+          {
+            "name": "imdbid",
+            "description": "imdbId. Delete all episodes for a movie with imdbId.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted the episodes."
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/seasons/{imdbid}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_SEASONS"
+        ],
+        "summary": "A list of seasons associated with a show.",
+        "description": "Request a list of seasons associated with a show.",
+        "operationId": "getSeasonsByImdbId",
+        "parameters": [
+          {
+            "name": "imdbid",
+            "description": "imdbid. Request a list of seasons associated with imdbid.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the seasons.",
+            "schema": {
+              "$ref": "#/definitions/seasons"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/movies/{index}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_DETAILS"
+        ],
+        "summary": "Movies associated with an index.",
+        "description": "Request a list of movies associated with an index.",
+        "operationId": "getMoviesByIndexAndName",
+        "parameters": [
+          {
+            "name": "index",
+            "description": "index. The name of the index.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          },
+          {
+            "name": "name",
+            "description": "name. Request a list of movies associated with this name. Must relate to index.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the movies.",
+            "schema": {
+              "$ref": "#/definitions/movies"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/movies/{index}/{key}": {
+      "get": {
+        "tags": [
+          "MOVIES",
+          "MOVIE_DETAILS"
+        ],
+        "summary": "Movies associated with an index.",
+        "description": "Request a list of movies associated with an index.",
+        "operationId": "getMoviesByIndexAndKey",
+        "parameters": [
+          {
+            "name": "index",
+            "description": "index. The name of the index.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          },
+          {
+            "name": "key",
+            "description": "key. Request a list of movies associated with this name. Must relate to index.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the movies.",
+            "schema": {
+              "$ref": "#/definitions/movies"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/count/{index}": {
+      "get": {
+        "tags": [
+          "MOVIES"
+        ],
+        "summary": "Count of items associated with an index.",
+        "description": "Request a count of items associated with an index.",
+        "operationId": "getCountByIndexAndName",
+        "parameters": [
+          {
+            "name": "index",
+            "description": "index. The name of the index.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          },
+          {
+            "name": "name",
+            "description": "name. Request a count of items associated with this name. Must relate to index.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the count.",
+            "schema": {
+              "$ref": "#/definitions/count"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/search/{index}": {
+      "get": {
+        "tags": [
+          "MOVIES"
+        ],
+        "summary": "List of items associated with an index.",
+        "description": "Request a list of items associated with an index.",
+        "operationId": "searchByIndex",
+        "parameters": [
+          {
+            "name": "index",
+            "description": "index. The name of the index.",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "actor",
+              "director",
+              "genre",
+              "rating",
+              "tag",
+              "title",
+              "year"
+            ]
+          },
+          {
+            "name": "q",
+            "description": "q. Request data associated with this search term.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the values.",
+            "schema": {
+              "$ref": "#/definitions/nvpairs"
+            }
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    }
+  }
 }
