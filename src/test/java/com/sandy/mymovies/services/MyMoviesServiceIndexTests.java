@@ -20,6 +20,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class MyMoviesServiceIndexTests {
 
+  private static final Integer ALL_COUNT = 8;
   private static final Integer ACTOR_COUNT = 84030;
   private static final Integer DIRECTOR_COUNT = 780;
   private static final Integer GENRE_COUNT = 25;
@@ -40,7 +41,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.isEmpty(), is(false));
 
-    assertThat(keys.size(), is(8));
+    assertThat(keys.size(), is(ALL_COUNT));
 
     assertThat(keys.get(6), is("title"));
   }

@@ -27,8 +27,6 @@ import java.util.Arrays;
 import org.hamcrest.collection.IsEmptyCollection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -45,7 +43,6 @@ import org.springframework.test.web.servlet.MockMvc;
 public class MyMoviesControllerTests {
 
   private static final ObjectMapper objectMapper = new ObjectMapper();
-  private static final Logger logger = LoggerFactory.getLogger(MyMoviesControllerTests.class);
 
   @Autowired
   private MockMvc mockMvc;
