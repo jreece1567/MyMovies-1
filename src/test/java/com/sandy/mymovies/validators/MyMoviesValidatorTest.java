@@ -27,12 +27,12 @@ public class MyMoviesValidatorTest {
 
   @Test
   public void testSupports_withvalidclass_succeeds() {
-    assertThat(moviesValidator.supports(new Movie().getClass()),is(true));
+    assertThat(moviesValidator.supports(new Movie().getClass()), is(true));
   }
 
   @Test
   public void testSupports_withinvalidclass_fails() {
-    assertThat(moviesValidator.supports(new Actor().getClass()),is(false));
+    assertThat(moviesValidator.supports(new Actor().getClass()), is(false));
   }
 
   @Test

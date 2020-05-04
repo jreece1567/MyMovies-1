@@ -216,7 +216,7 @@ public class MyMoviesServiceMovieTests {
     }
 
     Movie newMovie = moviesService.createMovie(movie);
-    Assert.assertEquals(movie,newMovie);
+    Assert.assertEquals(movie, newMovie);
   }
 
   @Test
@@ -241,7 +241,7 @@ public class MyMoviesServiceMovieTests {
     moviesService.deleteEpisodes("0060028");
 
     List<Episode> emptyEpisodes = moviesService.readEpisodes("0060028");
-    assertEquals(0,emptyEpisodes.size());
+    assertEquals(0, emptyEpisodes.size());
 
     episodes.forEach(episode -> moviesService.createEpisode(episode));
   }
@@ -303,13 +303,13 @@ public class MyMoviesServiceMovieTests {
     }
 
     Movie newMovie = moviesService.createMovie(movie);
-    Assert.assertEquals(movie,newMovie);
+    Assert.assertEquals(movie, newMovie);
   }
 
   @Test
   public void createEpisode_withvalidepisode_succeeds() {
 
-    List<Episode> episodes = moviesService.readEpisodes("0060028",2);
+    List<Episode> episodes = moviesService.readEpisodes("0060028", 2);
 
     moviesService.deleteEpisode("0060028", 2, 4);
 
@@ -322,9 +322,9 @@ public class MyMoviesServiceMovieTests {
 
     Episode newEpisode = moviesService.createEpisode(episode);
 
-    Assert.assertEquals(episode,newEpisode);
+    Assert.assertEquals(episode, newEpisode);
 
-    List<Episode> newEpisodes = moviesService.readEpisodes("0060028",2);
+    List<Episode> newEpisodes = moviesService.readEpisodes("0060028", 2);
     AtomicBoolean found = new AtomicBoolean();
     found.set(false);
     newEpisodes.forEach(e -> {

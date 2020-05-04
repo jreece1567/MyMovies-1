@@ -70,6 +70,7 @@ public class MyMoviesValidator implements Validator {
 
   /**
    * Evaluate any validation errors.
+   *
    * @param errors the collection of errors from the JSR-303 validator
    * @throws IllegalArgumentException if any errors are present
    */

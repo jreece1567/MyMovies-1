@@ -1,14 +1,11 @@
 package com.sandy.mymovies.controllers;
 
-import static junit.framework.Assert.assertTrue;
-import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.fail;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.request;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -26,9 +23,7 @@ import com.sandy.mymovies.repositories.ChapterRepository;
 import com.sandy.mymovies.repositories.GenreRepository;
 import com.sandy.mymovies.repositories.TagRepository;
 import com.sandy.mymovies.repositories.VideoRepository;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import org.hamcrest.collection.IsEmptyCollection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -41,7 +36,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = MyMoviesApplication.class)
@@ -563,7 +557,7 @@ public class MyMoviesControllerTests {
 
     Movie movie = new Movie();
     movie.setImdbId("1234567");
-    movie.setCast(new Cast(Arrays.asList("me","myself")));
+    movie.setCast(new Cast(Arrays.asList("me", "myself")));
     movie.setDescription("A movie about a test.");
     movie.setDirector("Q.A. Tester");
     movie.setDuration("1:00");
@@ -604,7 +598,7 @@ public class MyMoviesControllerTests {
 
     Movie movie = new Movie();
     movie.setImdbId("1234567");
-    movie.setCast(new Cast(Arrays.asList("me","myself")));
+    movie.setCast(new Cast(Arrays.asList("me", "myself")));
     movie.setDescription("A movie about a test.");
     movie.setDirector("Q.A. Tester");
     movie.setDuration("1:00");
