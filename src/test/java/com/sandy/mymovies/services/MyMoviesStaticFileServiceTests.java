@@ -1,5 +1,7 @@
 package com.sandy.mymovies.services;
 
+import static com.sandy.mymovies.MyMoviesTestData.INVALID_IMDB_ID;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertThat;
@@ -22,7 +24,7 @@ public class MyMoviesStaticFileServiceTests {
   @Test
   public void fetchPosterImage_withValidImdbId_returnsImage() {
 
-    byte[] imageBytes = staticFileService.fetchPosterImage("0128442");
+    byte[] imageBytes = staticFileService.fetchPosterImage(TEST_IMDB_ID);
 
     assertThat(imageBytes.length, greaterThan(0));
   }
@@ -32,7 +34,7 @@ public class MyMoviesStaticFileServiceTests {
 
     try {
 
-      byte[] imageBytes = staticFileService.fetchPosterImage("0999999");
+      byte[] imageBytes = staticFileService.fetchPosterImage(INVALID_IMDB_ID);
       fail();
 
     } catch (NoSuchElementException ex) {

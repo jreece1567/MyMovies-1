@@ -1,5 +1,16 @@
 package com.sandy.mymovies.controllers;
 
+import static com.sandy.mymovies.MyMoviesTestData.INVALID_GENRE_KEY;
+import static com.sandy.mymovies.MyMoviesTestData.INVALID_IMDB_ID;
+import static com.sandy.mymovies.MyMoviesTestData.INVALID_INDEX_KEY;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_GENRE;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_GENRE_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_GENRE_KEY;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID_DELETE;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID_SERIES;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID_TITLE;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_INDEX_KEY;
 import static junit.framework.TestCase.fail;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -66,10 +77,12 @@ public class MyMoviesControllerTests {
   public void fetchMovie_withvalidmovieid_returnsMovie() {
 
     try {
-      mockMvc.perform(get("/movie/0128442").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movie/" + TEST_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("title", is("Rounders")));
+          .andExpect(jsonPath("title", is(TEST_IMDB_ID_TITLE)));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -80,7 +93,9 @@ public class MyMoviesControllerTests {
   public void fetchMovie_withinvalidmovieid_returns404() {
 
     try {
-      mockMvc.perform(get("/movie/9999999").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movie/" + INVALID_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNotFound());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -92,10 +107,12 @@ public class MyMoviesControllerTests {
   public void fetchTitle_withvalidmovieid_returnsTitle() {
 
     try {
-      mockMvc.perform(get("/title/0128442").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/title/" + TEST_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("title", is("Rounders")));
+          .andExpect(jsonPath("title", is(TEST_IMDB_ID_TITLE)));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -106,7 +123,9 @@ public class MyMoviesControllerTests {
   public void fetchTitle_withinvalidmovieid_returns404() {
 
     try {
-      mockMvc.perform(get("/title/9999999").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/title/" + INVALID_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNotFound());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -118,7 +137,9 @@ public class MyMoviesControllerTests {
   public void fetchCast_withvalidmovieid_returnsCast() {
 
     try {
-      mockMvc.perform(get("/cast/0128442").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/cast/" + TEST_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[0]", is(notNullValue())));
@@ -132,34 +153,10 @@ public class MyMoviesControllerTests {
   public void fetchCast_withinvalidmovieid_returns404() {
 
     try {
-      mockMvc.perform(get("/cast/9999999").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/cast/" + INVALID_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNotFound());
-    } catch (Exception ex) {
-      fail(ex.getMessage());
-    }
-
-  }
-
-  @Test
-  public void fetchIndexKeys_withvalidkey_returnsIndexKeys() {
-
-    try {
-      mockMvc.perform(get("/index/keys/all").contentType(MediaType.APPLICATION_JSON))
-          .andExpect(status().isOk())
-          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[6]", is("title")));
-    } catch (Exception ex) {
-      fail(ex.getMessage());
-    }
-
-  }
-
-  @Test
-  public void fetchIndexKeys_withinvalidkey_returns422() {
-
-    try {
-      mockMvc.perform(get("/index/keys/foo").contentType(MediaType.APPLICATION_JSON))
-          .andExpect(status().isUnprocessableEntity());
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -170,11 +167,12 @@ public class MyMoviesControllerTests {
   public void fetchIndex_withvalidkey_returnsIndexKeys() {
 
     try {
-      mockMvc.perform(get("/index/keys/genre")
-          .contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/index/keys/" + TEST_INDEX_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[6]", is("Documentary")));
+          .andExpect(jsonPath("$[6]", is(TEST_GENRE_KEY)));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -185,7 +183,9 @@ public class MyMoviesControllerTests {
   public void fetchIndex_withinvalidkey_returns422() {
 
     try {
-      mockMvc.perform(get("/index/keys/genrez").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/index/keys/" + INVALID_INDEX_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isUnprocessableEntity());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -197,7 +197,9 @@ public class MyMoviesControllerTests {
   public void fetchIds_withvalidindex_returnsIds() {
 
     try {
-      mockMvc.perform(get("/index/genre").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/index/" + TEST_INDEX_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[0].key", is("Action")));
@@ -211,7 +213,9 @@ public class MyMoviesControllerTests {
   public void fetchIds_withinvalidindex_returns422() {
 
     try {
-      mockMvc.perform(get("/index/genrez").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/index/" + INVALID_INDEX_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isUnprocessableEntity());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -223,10 +227,12 @@ public class MyMoviesControllerTests {
   public void fetchIds_withvalidindexandkey_returnsIds() {
 
     try {
-      mockMvc.perform(get("/index/genre/Documentary").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/index/" + TEST_INDEX_KEY + "/" + TEST_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("key", is("Documentary")))
+          .andExpect(jsonPath("key", is(TEST_GENRE_KEY)))
           .andExpect(jsonPath("ids[0]", is(notNullValue())));
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -238,7 +244,9 @@ public class MyMoviesControllerTests {
   public void fetchIds_withinvalidindexkey_returnsEmptyArray() {
 
     try {
-      mockMvc.perform(get("/index/genre/zzz").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/index/" + TEST_INDEX_KEY + "/" + INVALID_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("key", is("zzz")))
@@ -253,7 +261,9 @@ public class MyMoviesControllerTests {
   public void fetchIndexEntry_withvalidindex_returnsIndexEntries() {
 
     try {
-      mockMvc.perform(get("/titles/genre/Documentary").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/titles/" + TEST_INDEX_KEY + "/" + TEST_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[6].imdbId", is("0277457")));
@@ -267,7 +277,9 @@ public class MyMoviesControllerTests {
   public void fetchIndexEntry_withinvalidindex_returnsEmptyArray() {
 
     try {
-      mockMvc.perform(get("/titles/genre/Documentaryz").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/titles/" + TEST_INDEX_KEY + "/" + INVALID_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(content().string("[]"));
@@ -281,7 +293,9 @@ public class MyMoviesControllerTests {
   public void fetchIndexEntry_withvalidindexqp_returnsIndexEntries() {
 
     try {
-      mockMvc.perform(get("/titles/genre?name=Documentary").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/titles/" + TEST_INDEX_KEY + "?name=" + TEST_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[6].imdbId", is("0277457")));
@@ -295,8 +309,9 @@ public class MyMoviesControllerTests {
   public void fetchIndexEntry_withinvalidindexqp_returnsEmptyArray() {
 
     try {
-      mockMvc.perform(get("/titles/genre?name=Documentaryz")
-          .contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/titles/" + TEST_INDEX_KEY + "?name=" + INVALID_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(content().string("[]"));
@@ -310,7 +325,9 @@ public class MyMoviesControllerTests {
   public void fetchMovies_withvalidindex_returnsIndexEntries() {
 
     try {
-      mockMvc.perform(get("/movies/genre/Documentary").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movies/" + TEST_INDEX_KEY + "/" + TEST_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[6].imdbId", is("0277457")));
@@ -324,7 +341,9 @@ public class MyMoviesControllerTests {
   public void fetchMovies_withinvalidindex_returnsEmptyArray() {
 
     try {
-      mockMvc.perform(get("/movies/genre/Documentaryz").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movies/" + TEST_INDEX_KEY + "/" + INVALID_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(content().string("[]"));
@@ -338,7 +357,9 @@ public class MyMoviesControllerTests {
   public void fetchMovies_withvalidindexqp_returnsIndexEntries() {
 
     try {
-      mockMvc.perform(get("/movies/genre?name=Documentary").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movies/" + TEST_INDEX_KEY + "?name=" + TEST_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[6].imdbId", is("0277457")));
@@ -352,8 +373,9 @@ public class MyMoviesControllerTests {
   public void fetchMovies_withinvalidindexqp_returnsEmptyArray() {
 
     try {
-      mockMvc.perform(get("/movies/genre?name=Documentaryz")
-          .contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movies/" + TEST_INDEX_KEY + "?name=" + INVALID_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(content().string("[]"));
@@ -367,7 +389,9 @@ public class MyMoviesControllerTests {
   public void fetchSeasons_withvalidquery_returnsSeasons() {
 
     try {
-      mockMvc.perform(get("/seasons/5651844").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/seasons/" + TEST_IMDB_ID_SERIES)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[0]", is(1)))
@@ -382,7 +406,9 @@ public class MyMoviesControllerTests {
   public void fetchSeasons_withinvalidquery_returnsEmptyArray() {
 
     try {
-      mockMvc.perform(get("/seasons/0128442").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/seasons/" + TEST_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(content().string("[]"));
@@ -395,10 +421,12 @@ public class MyMoviesControllerTests {
   @Test
   public void fetchEpisodes_withvalidimdbId_returnsEpisodes() {
     try {
-      mockMvc.perform(get("/episodes/5651844").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/episodes/" + TEST_IMDB_ID_SERIES)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[0].imdbId", is("5651844")))
+          .andExpect(jsonPath("$[0].imdbId", is(TEST_IMDB_ID_SERIES)))
           .andExpect(jsonPath("$[0].season", is("1")))
           .andExpect(jsonPath("$[0].episodeNumber", is("1")));
     } catch (Exception ex) {
@@ -409,10 +437,12 @@ public class MyMoviesControllerTests {
   @Test
   public void fetchEpisodes_withvalidseason_returnsEpisodes() {
     try {
-      mockMvc.perform(get("/episodes/5651844/2").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/episodes/" + TEST_IMDB_ID_SERIES + "/2")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[0].imdbId", is("5651844")))
+          .andExpect(jsonPath("$[0].imdbId", is(TEST_IMDB_ID_SERIES)))
           .andExpect(jsonPath("$[0].season", is("2")))
           .andExpect(jsonPath("$[0].episodeNumber", is("1")));
     } catch (Exception ex) {
@@ -423,7 +453,9 @@ public class MyMoviesControllerTests {
   @Test
   public void fetchEpisodes_withinvalidseason_returns404() {
     try {
-      mockMvc.perform(get("/episodes/5651844/9").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/episodes/" + TEST_IMDB_ID_SERIES + "/9")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNotFound())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
     } catch (Exception ex) {
@@ -435,10 +467,12 @@ public class MyMoviesControllerTests {
   public void searchIndexEntry_withvalidquery_returnsIndexEntries() {
 
     try {
-      mockMvc.perform(get("/search/genre?q=cum").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/search/genre?q=cum")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[0]", is("Documentary")));
+          .andExpect(jsonPath("$[0]", is(TEST_GENRE_KEY)));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -449,7 +483,9 @@ public class MyMoviesControllerTests {
   public void searchIndexEntry_withinvalidquery_returnsEmptyArray() {
 
     try {
-      mockMvc.perform(get("/search/genre?q=zzzz").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/search/genre?q=zzzz")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(content().string("[]"));
@@ -463,11 +499,13 @@ public class MyMoviesControllerTests {
   public void countIndexEntry_withvalidquery_returnsCount() {
 
     try {
-      mockMvc.perform(get("/count/genre?name=Family").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/count/" + TEST_INDEX_KEY + "?name=" + TEST_GENRE)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$.value", is("Family")))
-          .andExpect(jsonPath("$.count", is(18)));
+          .andExpect(jsonPath("$.value", is(TEST_GENRE)))
+          .andExpect(jsonPath("$.count", is(TEST_GENRE_COUNT)));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -478,10 +516,12 @@ public class MyMoviesControllerTests {
   public void countIndexEntry_withinvalidquery_returnsZero() {
 
     try {
-      mockMvc.perform(get("/count/genre?name=zzzz").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/count/" + TEST_INDEX_KEY + "?name=" + INVALID_GENRE_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$.value", is("zzzz")))
+          .andExpect(jsonPath("$.value", is(INVALID_GENRE_KEY)))
           .andExpect(jsonPath("$.count", is(0)));
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -493,7 +533,9 @@ public class MyMoviesControllerTests {
   public void deleteMovie_withvalidmovieid_returns204() {
 
     try {
-      mockMvc.perform(delete("/movie/0055630").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          delete("/movie/" + TEST_IMDB_ID_DELETE)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNoContent());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -505,7 +547,9 @@ public class MyMoviesControllerTests {
   public void deleteMovie_withinvalidmovieid_returns404() {
 
     try {
-      mockMvc.perform(get("/movie/9999999").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movie/" + INVALID_IMDB_ID)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNotFound());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -517,7 +561,9 @@ public class MyMoviesControllerTests {
   public void deleteEpisodes_withvalidmovieid_returns204() {
 
     try {
-      mockMvc.perform(delete("/episodes/0060028").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          delete("/episodes/" + TEST_IMDB_ID_SERIES)
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNoContent());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -529,7 +575,9 @@ public class MyMoviesControllerTests {
   public void deleteEpisodes_withvalidmovieidandseason_returns204() {
 
     try {
-      mockMvc.perform(delete("/episodes/0060028/2").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          delete("/episodes/" + TEST_IMDB_ID_SERIES + "/2")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNoContent());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -541,7 +589,9 @@ public class MyMoviesControllerTests {
   public void deleteEpisodes_withvalidmovieidandseasonandepisode_returns204() {
 
     try {
-      mockMvc.perform(delete("/episodes/0060028/2/3").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          delete("/episodes/" + TEST_IMDB_ID_SERIES + "/2/3")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNoContent());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -558,7 +608,7 @@ public class MyMoviesControllerTests {
     movie.setDescription("A movie about a test.");
     movie.setDirector("Q.A. Tester");
     movie.setDuration("1:00");
-    movie.setGenres(new Genres(Arrays.asList("Family")));
+    movie.setGenres(new Genres(Arrays.asList(TEST_GENRE)));
     movie.setImageUrl("test_image.jpg");
     movie.setRating("GP");
     movie.setReleaseYear(2020);
@@ -574,15 +624,19 @@ public class MyMoviesControllerTests {
     }
 
     try {
-      mockMvc.perform(post("/movie")
-          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+      mockMvc.perform(
+          post("/movie")
+              .contentType(MediaType.APPLICATION_JSON)
+              .content(requestBody))
           .andExpect(status().isOk());
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
 
     try {
-      mockMvc.perform(delete("/movie/1234567").contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          delete("/movie/1234567")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNoContent());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -599,7 +653,7 @@ public class MyMoviesControllerTests {
     movie.setDescription("A movie about a test.");
     movie.setDirector("Q.A. Tester");
     movie.setDuration("1:00");
-    movie.setGenres(new Genres(Arrays.asList("Family")));
+    movie.setGenres(new Genres(Arrays.asList(TEST_GENRE)));
     movie.setImageUrl("test_image.jpg");
     movie.setRating("GP");
     movie.setReleaseYear(null); // <<--- invalid value
@@ -615,8 +669,10 @@ public class MyMoviesControllerTests {
     }
 
     try {
-      mockMvc.perform(post("/movie")
-          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+      mockMvc.perform(
+          post("/movie")
+              .contentType(MediaType.APPLICATION_JSON)
+              .content(requestBody))
           .andExpect(status().isUnprocessableEntity());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -628,7 +684,7 @@ public class MyMoviesControllerTests {
   public void createEpisode_withvalidmovie_returns200() throws JsonProcessingException {
 
     Episode episode = new Episode();
-    episode.setImdbId("0060028");
+    episode.setImdbId(TEST_IMDB_ID_SERIES);
     episode.setSeason("2");
     episode.setEpisodeNumber("4");
     episode.setTitle("Test Episode");
@@ -643,8 +699,10 @@ public class MyMoviesControllerTests {
     }
 
     try {
-      mockMvc.perform(post("/episodes")
-          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+      mockMvc.perform(
+          post("/episodes")
+              .contentType(MediaType.APPLICATION_JSON)
+              .content(requestBody))
           .andExpect(status().isOk());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -656,7 +714,7 @@ public class MyMoviesControllerTests {
   public void createEpisode_withinvalidmovie_returns404() throws JsonProcessingException {
 
     Episode episode = new Episode();
-    episode.setImdbId("0999999");
+    episode.setImdbId(INVALID_IMDB_ID);
     episode.setSeason("2");
     episode.setEpisodeNumber("4");
     episode.setTitle("Test Episode");
@@ -671,8 +729,10 @@ public class MyMoviesControllerTests {
     }
 
     try {
-      mockMvc.perform(post("/episodes")
-          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+      mockMvc.perform(
+          post("/episodes")
+              .contentType(MediaType.APPLICATION_JSON)
+              .content(requestBody))
           .andExpect(status().isNotFound());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -684,7 +744,7 @@ public class MyMoviesControllerTests {
   public void createEpisode_withinvalidepisode_returns422() throws JsonProcessingException {
 
     Episode episode = new Episode();
-    episode.setImdbId("0060028");
+    episode.setImdbId(TEST_IMDB_ID_SERIES);
     episode.setSeason(null);  // <<<---- invalid value
     episode.setEpisodeNumber("4");
     episode.setTitle("Test Episode");
@@ -699,8 +759,10 @@ public class MyMoviesControllerTests {
     }
 
     try {
-      mockMvc.perform(post("/episodes")
-          .contentType(MediaType.APPLICATION_JSON).content(requestBody))
+      mockMvc.perform(
+          post("/episodes")
+              .contentType(MediaType.APPLICATION_JSON)
+              .content(requestBody))
           .andExpect(status().isUnprocessableEntity());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -712,8 +774,9 @@ public class MyMoviesControllerTests {
   public void notImplemented_succeeds() {
 
     try {
-      mockMvc.perform(get("/movie/notimplemented")
-          .contentType(MediaType.APPLICATION_JSON))
+      mockMvc.perform(
+          get("/movie/notimplemented")
+              .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isNotImplemented());
     } catch (Exception ex) {
       fail(ex.getMessage());

@@ -1,5 +1,10 @@
 package com.sandy.mymovies.services;
 
+import static com.sandy.mymovies.MyMoviesTestData.INVALID_IMDB_ID;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_ACTOR;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID_SERIES;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID_TITLE;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -32,7 +37,7 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void readMovie_withValidImdbId_returnsMovie() {
 
-    Movie movie = moviesService.readMovie("0128442");
+    Movie movie = moviesService.readMovie(TEST_IMDB_ID);
 
     assertThat(movie, is(notNullValue()));
 
@@ -45,7 +50,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      Movie movie = moviesService.readMovie("0999999");
+      Movie movie = moviesService.readMovie(INVALID_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -57,11 +62,11 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void readTitle_withValidImdbId_returnsTitle() {
 
-    Title title = moviesService.readTitle("0128442");
+    Title title = moviesService.readTitle(TEST_IMDB_ID);
 
     assertThat(title, is(notNullValue()));
 
-    assertThat(title.getTitle(), is("Rounders"));
+    assertThat(title.getTitle(), is(TEST_IMDB_ID_TITLE));
 
   }
 
@@ -70,7 +75,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      Title title = moviesService.readTitle("0999999");
+      Title title = moviesService.readTitle(INVALID_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -82,11 +87,11 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void readCast_withValidImdbId_returnsCast() {
 
-    Cast cast = moviesService.readCast("0128442");
+    Cast cast = moviesService.readCast(TEST_IMDB_ID);
 
     assertThat(cast, is(notNullValue()));
 
-    assertThat(cast.contains("Matt Damon"), is(true));
+    assertThat(cast.contains(TEST_ACTOR), is(true));
 
   }
 
@@ -95,7 +100,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      Title title = moviesService.readTitle("0999999");
+      Title title = moviesService.readTitle(INVALID_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -107,7 +112,7 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void readEpisodes_withValidImdbId_returnsEpisodes() {
 
-    List<Episode> episodes = moviesService.readEpisodes("0060028");
+    List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES);
 
     assertThat(episodes, is(notNullValue()));
 
@@ -122,7 +127,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      List<Episode> episodes = moviesService.readEpisodes("0999999");
+      List<Episode> episodes = moviesService.readEpisodes(INVALID_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -134,7 +139,7 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void readEpisodes_withValidImdbIdAndSeason_returnsEpisodes() {
 
-    List<Episode> episodes = moviesService.readEpisodes("0060028", 3);
+    List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES, 3);
 
     assertThat(episodes, is(notNullValue()));
 
@@ -149,7 +154,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      List<Episode> episodes = moviesService.readEpisodes("0999999", 3);
+      List<Episode> episodes = moviesService.readEpisodes(INVALID_IMDB_ID, 3);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -163,7 +168,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      List<Episode> episodes = moviesService.readEpisodes("0060028", 6);
+      List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES, 6);
       fail("Unknown season should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -175,7 +180,7 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void readSeasons_withValidImdbId_returnsSeasons() {
 
-    List<Integer> seasons = moviesService.readSeasons("0060028");
+    List<Integer> seasons = moviesService.readSeasons(TEST_IMDB_ID_SERIES);
 
     assertThat(seasons, is(notNullValue()));
 
@@ -190,7 +195,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      List<Integer> seasons = moviesService.readSeasons("0999999");
+      List<Integer> seasons = moviesService.readSeasons(INVALID_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -202,13 +207,13 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void deleteMovie_withvalidImdbId_succeeds() {
 
-    Movie movie = moviesService.readMovie("5774060");
+    Movie movie = moviesService.readMovie(TEST_IMDB_ID);
 
-    moviesService.deleteMovie("5774060");
+    moviesService.deleteMovie(TEST_IMDB_ID);
 
     try {
 
-      moviesService.readMovie("5774060");
+      moviesService.readMovie(TEST_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -224,7 +229,7 @@ public class MyMoviesServiceMovieTests {
 
     try {
 
-      moviesService.deleteMovie("0999999");
+      moviesService.deleteMovie(INVALID_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -235,12 +240,12 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void deleteEpisodes_withvalidImdbId_succeeds() {
 
-    Movie movie = moviesService.readMovie("0060028");
-    List<Episode> episodes = moviesService.readEpisodes("0060028");
+    Movie movie = moviesService.readMovie(TEST_IMDB_ID_SERIES);
+    List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES);
 
-    moviesService.deleteEpisodes("0060028");
+    moviesService.deleteEpisodes(TEST_IMDB_ID_SERIES);
 
-    List<Episode> emptyEpisodes = moviesService.readEpisodes("0060028");
+    List<Episode> emptyEpisodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES);
     assertEquals(0, emptyEpisodes.size());
 
     episodes.forEach(episode -> moviesService.createEpisode(episode));
@@ -249,12 +254,12 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void deleteEpisodes_withvalidImdbIdandSeason_succeeds() {
 
-    Movie movie = moviesService.readMovie("0060028");
-    List<Episode> episodes = moviesService.readEpisodes("0060028");
+    Movie movie = moviesService.readMovie(TEST_IMDB_ID_SERIES);
+    List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES);
 
-    moviesService.deleteEpisodes("0060028", 1);
+    moviesService.deleteEpisodes(TEST_IMDB_ID_SERIES, 1);
 
-    List<Episode> emptyEpisodes = moviesService.readEpisodes("0060028");
+    List<Episode> emptyEpisodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES);
     assertEquals("2", emptyEpisodes.get(0).getSeason());
 
     episodes.forEach(episode -> {
@@ -267,12 +272,12 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void deleteEpisodes_withvalidImdbIdandSeasonAndEpisode_succeeds() {
 
-    final Movie movie = moviesService.readMovie("0060028");
-    final List<Episode> episodes = moviesService.readEpisodes("0060028");
+    final Movie movie = moviesService.readMovie(TEST_IMDB_ID_SERIES);
+    final List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES);
 
-    moviesService.deleteEpisode("0060028", 1, 5);
+    moviesService.deleteEpisode(TEST_IMDB_ID_SERIES, 1, 5);
 
-    List<Episode> emptyEpisodes = moviesService.readEpisodes("0060028");
+    List<Episode> emptyEpisodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES);
     assertEquals("1", emptyEpisodes.get(0).getSeason());
     emptyEpisodes.forEach(episode -> {
       if (episode.getSeason().equals("1")) {
@@ -289,13 +294,13 @@ public class MyMoviesServiceMovieTests {
 
   @Test
   public void createMovie_withvalidmovie_succeeds() {
-    Movie movie = moviesService.readMovie("5774060");
+    Movie movie = moviesService.readMovie(TEST_IMDB_ID);
 
-    moviesService.deleteMovie("5774060");
+    moviesService.deleteMovie(TEST_IMDB_ID);
 
     try {
 
-      moviesService.readMovie("5774060");
+      moviesService.readMovie(TEST_IMDB_ID);
       fail("Unknown imdbId should throw NoSuchElementException");
 
     } catch (NoSuchElementException ex) {
@@ -309,12 +314,12 @@ public class MyMoviesServiceMovieTests {
   @Test
   public void createEpisode_withvalidepisode_succeeds() {
 
-    List<Episode> episodes = moviesService.readEpisodes("0060028", 2);
+    List<Episode> episodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES, 2);
 
-    moviesService.deleteEpisode("0060028", 2, 4);
+    moviesService.deleteEpisode(TEST_IMDB_ID_SERIES, 2, 4);
 
     final Episode episode = new Episode();
-    episode.setImdbId("0060028");
+    episode.setImdbId(TEST_IMDB_ID_SERIES);
     episode.setSeason("2");
     episode.setEpisodeNumber("4");
     episode.setTitle("Test Episode");
@@ -324,7 +329,7 @@ public class MyMoviesServiceMovieTests {
 
     Assert.assertEquals(episode, newEpisode);
 
-    List<Episode> newEpisodes = moviesService.readEpisodes("0060028", 2);
+    List<Episode> newEpisodes = moviesService.readEpisodes(TEST_IMDB_ID_SERIES, 2);
     AtomicBoolean found = new AtomicBoolean();
     found.set(false);
     newEpisodes.forEach(e -> {

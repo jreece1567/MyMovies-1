@@ -1,5 +1,27 @@
 package com.sandy.mymovies.services;
 
+import static com.sandy.mymovies.MyMoviesTestData.ACTOR_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.ALL_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.DIRECTOR_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.GENRE_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.RATING_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TAG_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_ACTOR;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_ACTOR_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_DIRECTOR;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_DIRECTOR_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_GENRE;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_GENRE_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_RATING;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_RATING_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_TAG;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_TAG_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_TITLE;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_TITLE_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_YEAR;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_YEAR_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.TITLE_COUNT;
+import static com.sandy.mymovies.MyMoviesTestData.YEAR_COUNT;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
@@ -19,15 +41,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class MyMoviesServiceIndexTests {
-
-  private static final Integer ALL_COUNT = 8;
-  private static final Integer ACTOR_COUNT = 84030;
-  private static final Integer DIRECTOR_COUNT = 780;
-  private static final Integer GENRE_COUNT = 25;
-  private static final Integer RATING_COUNT = 15;
-  private static final Integer TAG_COUNT = 23;
-  private static final Integer TITLE_COUNT = 1599;
-  private static final Integer YEAR_COUNT = 91;
 
   @Autowired
   MyMoviesService moviesService;
@@ -151,13 +164,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readTitlesWithIndexAndKey_withActor_returnsTitles() {
 
-    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.ACTOR, "Matt Damon");
+    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.ACTOR, TEST_ACTOR);
 
     assertThat(titles, is(notNullValue()));
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(24));
+    assertThat(titles.size(), is(TEST_ACTOR_COUNT));
 
     assertThat(titles.get(21).getTitle(), is("The Martian"));
   }
@@ -165,13 +178,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readTitlesWithIndexAndKey_withDirector_returnsTitles() {
 
-    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.DIRECTOR, "Stanley Kubrick");
+    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.DIRECTOR, TEST_DIRECTOR);
 
     assertThat(titles, is(notNullValue()));
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(6));
+    assertThat(titles.size(), is(TEST_DIRECTOR_COUNT));
 
     assertThat(titles.get(3).getTitle(), is("Full Metal Jacket"));
   }
@@ -179,13 +192,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readTitlesWithIndexAndKey_withGenre_returnsTitles() {
 
-    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.GENRE, "Family");
+    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.GENRE, TEST_GENRE);
 
     assertThat(titles, is(notNullValue()));
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(18));
+    assertThat(titles.size(), is(TEST_GENRE_COUNT));
 
     assertThat(titles.get(17).getTitle(), is("WALL-E"));
   }
@@ -193,13 +206,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readTitlesWithIndexAndKey_withRating_returnsTitles() {
 
-    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.RATING, "M");
+    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.RATING, TEST_RATING);
 
     assertThat(titles, is(notNullValue()));
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(8));
+    assertThat(titles.size(), is(TEST_RATING_COUNT));
 
     assertThat(titles.get(3).getTitle(), is("Outrageous Fortune"));
   }
@@ -207,13 +220,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readTitlesWithIndexAndKey_withTag_returnsTitles() {
 
-    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.TAG, "Science");
+    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.TAG, TEST_TAG);
 
     assertThat(titles, is(notNullValue()));
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(42));
+    assertThat(titles.size(), is(TEST_TAG_COUNT));
 
     assertThat(titles.get(28).getTitle(), is("The Blue Planet"));
   }
@@ -221,27 +234,27 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readTitlesWithIndexAndKey_withTitle_returnsTitles() {
 
-    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.TITLE, "Ex Machina");
+    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.TITLE, TEST_TITLE);
 
     assertThat(titles, is(notNullValue()));
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(1));
+    assertThat(titles.size(), is(TEST_TITLE_COUNT));
 
-    assertThat(titles.get(0).getTitle(), is("Ex Machina"));
+    assertThat(titles.get(0).getTitle(), is(TEST_TITLE));
   }
 
   @Test
   public void readTitlesWithIndexAndKey_withYear_returnsTitles() {
 
-    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.YEAR, "1960");
+    List<Title> titles = moviesService.readTitlesByIndexAndKey(Index.YEAR, TEST_YEAR);
 
     assertThat(titles, is(notNullValue()));
 
     assertThat(titles.isEmpty(), is(false));
 
-    assertThat(titles.size(), is(6));
+    assertThat(titles.size(), is(TEST_YEAR_COUNT));
 
     assertThat(titles.get(3).getTitle(), is("Psycho"));
   }
@@ -249,13 +262,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readMoviesWithIndexAndKey_withActor_returnsMovies() {
 
-    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.ACTOR, "Matt Damon");
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.ACTOR, TEST_ACTOR);
 
     assertThat(movies, is(notNullValue()));
 
     assertThat(movies.isEmpty(), is(false));
 
-    assertThat(movies.size(), is(24));
+    assertThat(movies.size(), is(TEST_ACTOR_COUNT));
 
     assertThat(movies.get(21).getTitle(), is("The Martian"));
   }
@@ -263,13 +276,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readMoviesWithIndexAndKey_withDirector_returnsMovies() {
 
-    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.DIRECTOR, "Stanley Kubrick");
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.DIRECTOR, TEST_DIRECTOR);
 
     assertThat(movies, is(notNullValue()));
 
     assertThat(movies.isEmpty(), is(false));
 
-    assertThat(movies.size(), is(6));
+    assertThat(movies.size(), is(TEST_DIRECTOR_COUNT));
 
     assertThat(movies.get(3).getTitle(), is("Full Metal Jacket"));
   }
@@ -277,13 +290,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readMoviesWithIndexAndKey_withGenre_returnsMovies() {
 
-    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.GENRE, "Family");
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.GENRE, TEST_GENRE);
 
     assertThat(movies, is(notNullValue()));
 
     assertThat(movies.isEmpty(), is(false));
 
-    assertThat(movies.size(), is(18));
+    assertThat(movies.size(), is(TEST_GENRE_COUNT));
 
     assertThat(movies.get(17).getTitle(), is("WALL-E"));
   }
@@ -291,13 +304,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readMoviesWithIndexAndKey_withRating_returnsMovies() {
 
-    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.RATING, "M");
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.RATING, TEST_RATING);
 
     assertThat(movies, is(notNullValue()));
 
     assertThat(movies.isEmpty(), is(false));
 
-    assertThat(movies.size(), is(8));
+    assertThat(movies.size(), is(TEST_RATING_COUNT));
 
     assertThat(movies.get(3).getTitle(), is("Outrageous Fortune"));
   }
@@ -305,13 +318,13 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readMoviesWithIndexAndKey_withTag_returnsMovies() {
 
-    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.TAG, "Science");
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.TAG, TEST_TAG);
 
     assertThat(movies, is(notNullValue()));
 
     assertThat(movies.isEmpty(), is(false));
 
-    assertThat(movies.size(), is(42));
+    assertThat(movies.size(), is(TEST_TAG_COUNT));
 
     assertThat(movies.get(28).getTitle(), is("The Blue Planet"));
   }
@@ -319,27 +332,27 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readMoviesWithIndexAndKey_withTitle_returnsMovies() {
 
-    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.TITLE, "Ex Machina");
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.TITLE, TEST_TITLE);
 
     assertThat(movies, is(notNullValue()));
 
     assertThat(movies.isEmpty(), is(false));
 
-    assertThat(movies.size(), is(1));
+    assertThat(movies.size(), is(TEST_TITLE_COUNT));
 
-    assertThat(movies.get(0).getTitle(), is("Ex Machina"));
+    assertThat(movies.get(0).getTitle(), is(TEST_TITLE));
   }
 
   @Test
   public void readMoviesWithIndexAndKey_withYear_returnsMovies() {
 
-    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.YEAR, "1960");
+    List<Movie> movies = moviesService.readMoviesByIndexAndKey(Index.YEAR, TEST_YEAR);
 
     assertThat(movies, is(notNullValue()));
 
     assertThat(movies.isEmpty(), is(false));
 
-    assertThat(movies.size(), is(6));
+    assertThat(movies.size(), is(TEST_YEAR_COUNT));
 
     assertThat(movies.get(3).getTitle(), is("Psycho"));
   }
@@ -431,183 +444,183 @@ public class MyMoviesServiceIndexTests {
   @Test
   public void readIdsWithIndexAndKey_withActor_returnsIds() {
 
-    Key key = moviesService.readIdsByIndexAndKey(Index.ACTOR, "Matt Damon");
+    Key key = moviesService.readIdsByIndexAndKey(Index.ACTOR, TEST_ACTOR);
 
     assertThat(key, is(notNullValue()));
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(24));
+    assertThat(key.getIds().size(), is(TEST_ACTOR_COUNT));
 
-    assertThat(key.getKey(), is("Matt Damon"));
+    assertThat(key.getKey(), is(TEST_ACTOR));
   }
 
   @Test
   public void readIdsWithIndexAndKey_withDirector_returnsIds() {
 
-    Key key = moviesService.readIdsByIndexAndKey(Index.DIRECTOR, "Stanley Kubrick");
+    Key key = moviesService.readIdsByIndexAndKey(Index.DIRECTOR, TEST_DIRECTOR);
 
     assertThat(key, is(notNullValue()));
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(6));
+    assertThat(key.getIds().size(), is(TEST_DIRECTOR_COUNT));
 
-    assertThat(key.getKey(), is("Stanley Kubrick"));
+    assertThat(key.getKey(), is(TEST_DIRECTOR));
   }
 
   @Test
   public void readIdsWithIndexAndKey_withGenre_returnsIds() {
 
-    Key key = moviesService.readIdsByIndexAndKey(Index.GENRE, "Family");
+    Key key = moviesService.readIdsByIndexAndKey(Index.GENRE, TEST_GENRE);
 
     assertThat(key, is(notNullValue()));
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(18));
+    assertThat(key.getIds().size(), is(TEST_GENRE_COUNT));
 
-    assertThat(key.getKey(), is("Family"));
+    assertThat(key.getKey(), is(TEST_GENRE));
   }
 
   @Test
   public void readIdsWithIndexAndKey_withRating_returnsIds() {
 
-    Key key = moviesService.readIdsByIndexAndKey(Index.RATING, "M");
+    Key key = moviesService.readIdsByIndexAndKey(Index.RATING, TEST_RATING);
 
     assertThat(key, is(notNullValue()));
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(8));
+    assertThat(key.getIds().size(), is(TEST_RATING_COUNT));
 
-    assertThat(key.getKey(), is("M"));
+    assertThat(key.getKey(), is(TEST_RATING));
   }
 
   @Test
   public void readIdsWithIndexAndKey_withTag_returnsIds() {
 
-    Key key = moviesService.readIdsByIndexAndKey(Index.TAG, "Science");
+    Key key = moviesService.readIdsByIndexAndKey(Index.TAG, TEST_TAG);
 
     assertThat(key, is(notNullValue()));
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(42));
+    assertThat(key.getIds().size(), is(TEST_TAG_COUNT));
 
-    assertThat(key.getKey(), is("Science"));
+    assertThat(key.getKey(), is(TEST_TAG));
   }
 
   @Test
   public void readIdsWithIndexAndKey_withTitle_returnsIds() {
 
-    Key key = moviesService.readIdsByIndexAndKey(Index.TITLE, "Ex Machina");
+    Key key = moviesService.readIdsByIndexAndKey(Index.TITLE, TEST_TITLE);
 
     assertThat(key, is(notNullValue()));
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(1));
+    assertThat(key.getIds().size(), is(TEST_TITLE_COUNT));
 
-    assertThat(key.getKey(), is("Ex Machina"));
+    assertThat(key.getKey(), is(TEST_TITLE));
   }
 
   @Test
   public void readIdsWithIndexAndKey_withYear_returnsIds() {
 
-    Key key = moviesService.readIdsByIndexAndKey(Index.YEAR, "1960");
+    Key key = moviesService.readIdsByIndexAndKey(Index.YEAR, TEST_YEAR);
 
     assertThat(key, is(notNullValue()));
 
     assertThat(key.getIds().isEmpty(), is(false));
 
-    assertThat(key.getIds().size(), is(6));
+    assertThat(key.getIds().size(), is(TEST_YEAR_COUNT));
 
-    assertThat(key.getKey(), is("1960"));
+    assertThat(key.getKey(), is(TEST_YEAR));
   }
 
   @Test
   public void countIdsWithIndexAndKey_withActor_returnsCount() {
 
-    Count count = moviesService.countByIndexAndKey(Index.ACTOR, "Matt Damon");
+    Count count = moviesService.countByIndexAndKey(Index.ACTOR, TEST_ACTOR);
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(24));
+    assertThat(count.getCount(), is(TEST_ACTOR_COUNT));
 
-    assertThat(count.getValue(), is("Matt Damon"));
+    assertThat(count.getValue(), is(TEST_ACTOR));
   }
 
   @Test
   public void countIdsWithIndexAndKey_withDirector_returnsCount() {
 
-    Count count = moviesService.countByIndexAndKey(Index.DIRECTOR, "Stanley Kubrick");
+    Count count = moviesService.countByIndexAndKey(Index.DIRECTOR, TEST_DIRECTOR);
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(6));
+    assertThat(count.getCount(), is(TEST_DIRECTOR_COUNT));
 
-    assertThat(count.getValue(), is("Stanley Kubrick"));
+    assertThat(count.getValue(), is(TEST_DIRECTOR));
   }
 
   @Test
   public void countIdsWithIndexAndKey_withGenre_returnsCount() {
 
-    Count count = moviesService.countByIndexAndKey(Index.GENRE, "Family");
+    Count count = moviesService.countByIndexAndKey(Index.GENRE, TEST_GENRE);
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(18));
+    assertThat(count.getCount(), is(TEST_GENRE_COUNT));
 
-    assertThat(count.getValue(), is("Family"));
+    assertThat(count.getValue(), is(TEST_GENRE));
   }
 
   @Test
   public void countIdsWithIndexAndKey_withRating_returnsCount() {
 
-    Count count = moviesService.countByIndexAndKey(Index.RATING, "M");
+    Count count = moviesService.countByIndexAndKey(Index.RATING, TEST_RATING);
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(8));
+    assertThat(count.getCount(), is(TEST_RATING_COUNT));
 
-    assertThat(count.getValue(), is("M"));
+    assertThat(count.getValue(), is(TEST_RATING));
   }
 
   @Test
   public void countIdsWithIndexAndKey_withTag_returnsCount() {
 
-    Count count = moviesService.countByIndexAndKey(Index.TAG, "Science");
+    Count count = moviesService.countByIndexAndKey(Index.TAG, TEST_TAG);
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(42));
+    assertThat(count.getCount(), is(TEST_TAG_COUNT));
 
-    assertThat(count.getValue(), is("Science"));
+    assertThat(count.getValue(), is(TEST_TAG));
   }
 
   @Test
   public void countIdsWithIndexAndKey_withTitle_returnsCount() {
 
-    Count count = moviesService.countByIndexAndKey(Index.TITLE, "Ex Machina");
+    Count count = moviesService.countByIndexAndKey(Index.TITLE, TEST_TITLE);
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(1));
+    assertThat(count.getCount(), is(TEST_TITLE_COUNT));
 
-    assertThat(count.getValue(), is("Ex Machina"));
+    assertThat(count.getValue(), is(TEST_TITLE));
   }
 
   @Test
   public void countIdsWithIndexAndKey_withYear_returnsCount() {
 
-    Count count = moviesService.countByIndexAndKey(Index.YEAR, "1960");
+    Count count = moviesService.countByIndexAndKey(Index.YEAR, TEST_YEAR);
 
     assertThat(count, is(notNullValue()));
 
-    assertThat(count.getCount(), is(6));
+    assertThat(count.getCount(), is(TEST_YEAR_COUNT));
 
-    assertThat(count.getValue(), is("1960"));
+    assertThat(count.getValue(), is(TEST_YEAR));
   }
 
 }
