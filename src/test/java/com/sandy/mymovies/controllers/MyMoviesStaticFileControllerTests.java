@@ -1,5 +1,7 @@
 package com.sandy.mymovies.controllers;
 
+import static com.sandy.mymovies.MyMoviesTestData.INVALID_IMDB_ID;
+import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID;
 import static junit.framework.TestCase.fail;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -32,7 +34,7 @@ public class MyMoviesStaticFileControllerTests {
   @Test
   public void fetchPosterImageWithValidImdbId_returnsImage() {
     try {
-      mockMvc.perform(get("/image/0128442").contentType(MediaType.IMAGE_JPEG))
+      mockMvc.perform(get("/image/" + TEST_IMDB_ID).contentType(MediaType.IMAGE_JPEG))
           .andExpect(status().isOk());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -42,7 +44,7 @@ public class MyMoviesStaticFileControllerTests {
   @Test
   public void fetchPosterImageWithInvalidImdbId_returnsError() {
     try {
-      mockMvc.perform(get("/image/0999999").contentType(MediaType.IMAGE_JPEG))
+      mockMvc.perform(get("/image/" + INVALID_IMDB_ID).contentType(MediaType.IMAGE_JPEG))
           .andExpect(status().isNotFound());
     } catch (Exception ex) {
       fail(ex.getMessage());
@@ -54,6 +56,26 @@ public class MyMoviesStaticFileControllerTests {
     try {
       mockMvc.perform(get("/favicon.ico").contentType(MediaType.IMAGE_JPEG))
           .andExpect(status().isOk());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+  }
+
+  @Test
+  public void fetchStaticAssetWithValidPath_returnsAsset() {
+    try {
+      mockMvc.perform(get("/static/doc/overview.html").contentType(MediaType.TEXT_HTML))
+          .andExpect(status().isOk());
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+  }
+
+  @Test
+  public void fetchStaticAssetWithInvalidPath_returnsError() {
+    try {
+      mockMvc.perform(get("/static/doc/index.html").contentType(MediaType.TEXT_HTML))
+          .andExpect(status().isNotFound());
     } catch (Exception ex) {
       fail(ex.getMessage());
     }

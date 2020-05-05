@@ -25,23 +25,7 @@ public final class MyStaticFileService {
    */
   public byte[] fetchPosterImage(final String imdbId) {
 
-    final String filename = "/db/" + imdbId + ".jpg";
-    byte[] imageBytes;
-
-    try (final InputStream imageInput = getClass().getResourceAsStream(filename)) {
-
-      if (imageInput == null) {
-        throw new NoSuchElementException(filename + " not found.");
-      }
-
-      imageBytes = fetchImageBytes(imageInput);
-
-    } catch (IOException ex) {
-      log.info(ERROR_MSG + filename + " - " + ex.getMessage());
-      throw new NoSuchElementException(ERROR_MSG + filename);
-    }
-
-    return imageBytes;
+    return fetchBytesFromResource("/db/" + imdbId + ".jpg");
   }
 
   /**
@@ -51,45 +35,49 @@ public final class MyStaticFileService {
    */
   public byte[] fetchFavicon() {
 
-    final String filename = "/images/" + "favicon.ico";
-    byte[] imageBytes;
+    return fetchBytesFromResource("/images/" + "favicon.ico");
+  }
 
-    try (final InputStream imageInput = getClass().getResourceAsStream(filename)) {
+  /**
+   * Read and return a static asset.
+   *
+   * @return the asset bytes.
+   */
+  public byte[] fetchStaticAsset(String filename) {
 
-      if (imageInput == null) {
+    return fetchBytesFromResource(filename);
+  }
+
+  private byte[] fetchBytesFromResource(String filename) {
+
+    byte[] resourceBytes;
+
+    try (final InputStream resourceInput = getClass().getResourceAsStream(filename)) {
+
+      if (resourceInput == null) {
         throw new NoSuchElementException(filename + " not found.");
       }
 
-      imageBytes = fetchImageBytes(imageInput);
+      final BufferedInputStream resourceReader = new BufferedInputStream(resourceInput);
+      final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+      final byte[] buffer = new byte[8192];
+
+      int len = 0;
+      do {
+        len = resourceReader.read(buffer);
+        if (len != -1) {
+          baos.write(buffer, 0, len);
+        }
+      } while (len != -1);
+
+      resourceBytes = baos.toByteArray();
 
     } catch (IOException ex) {
       log.info(ERROR_MSG + filename + " - " + ex.getMessage());
       throw new NoSuchElementException(ERROR_MSG + filename);
     }
 
-    return imageBytes;
+    return resourceBytes;
   }
 
-  /**
-   * Read image bytes from a stream, return as a byte array.
-   *
-   * @param imageInput the input stream.
-   * @return a byte array containing the image bytes.
-   */
-  private byte[] fetchImageBytes(final InputStream imageInput) throws IOException {
-
-    final BufferedInputStream imageReader = new BufferedInputStream(imageInput);
-    final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-    final byte[] buffer = new byte[8192];
-
-    int len = 0;
-    do {
-      len = imageReader.read(buffer);
-      if (len != -1) {
-        baos.write(buffer, 0, len);
-      }
-    } while (len != -1);
-
-    return baos.toByteArray();
-  }
 }

@@ -2,17 +2,21 @@ package com.sandy.mymovies.controllers;
 
 import com.sandy.mymovies.configs.MyMoviesCacheConfig;
 import com.sandy.mymovies.services.MyStaticFileService;
+import com.sandy.mymovies.services.util.MimeTypes;
 import java.util.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.MimeType;
+import org.springframework.util.MimeTypeUtils;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 /**
  * Provides HTTP 'transport layer' support for the application. Any type of static file can be
@@ -83,6 +87,36 @@ public class MyStaticFileController {
         .contentType(new MediaType("image", "x-icon"))
         .contentLength(imageBytes.length)
         .body(imageBytes);
+  }
+
+  /**
+   * Fetch any static asset.
+   *
+   * @return the asset, with appropriate content-type and content-length headers.
+   */
+  @RequestMapping(path = "/static/**", method = RequestMethod.GET)
+  @ResponseStatus(HttpStatus.OK)
+  public ResponseEntity<byte[]> fetchStaticAsset() {
+
+    final ServletUriComponentsBuilder builder = ServletUriComponentsBuilder.fromCurrentRequest();
+
+    // get the asset filepath/filename.ext
+    final String ext = builder.removePathExtension();
+    final String filename = builder.scheme(null).host(null).port(null).build()
+        .toUriString().replaceFirst("/static","")
+        + "."
+        + ext;
+
+    // get the MIME type
+    final MimeType mimeType = MimeTypeUtils.parseMimeType(MimeTypes.MIME.getMimeType(ext));
+    final MediaType mediaType = new MediaType(mimeType.getType(),mimeType.getSubtype());
+
+    final byte[] assetBytes = staticFileService.fetchStaticAsset(filename);
+
+    return ResponseEntity.ok().cacheControl(cacheConfig.cacheControl())
+        .contentType(mediaType)
+        .contentLength(assetBytes.length)
+        .body(assetBytes);
   }
 
 }

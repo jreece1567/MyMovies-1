@@ -51,4 +51,26 @@ public class MyMoviesStaticFileServiceTests {
     assertThat(imageBytes.length, greaterThan(0));
   }
 
+  @Test
+  public void fetchStaticAsset_withValidPath_returnsAsset() {
+
+    byte[] assetBytes = staticFileService.fetchStaticAsset("/doc/overview.html");
+
+    assertThat(assetBytes.length, greaterThan(0));
+  }
+
+  @Test
+  public void fetchStaticAsset_withInValidPath_returnsException() {
+
+    try {
+
+      byte[] assetBytes = staticFileService.fetchStaticAsset("/doc/index.html");
+      fail();
+
+    } catch (NoSuchElementException ex) {
+      assertThat(ex, instanceOf(NoSuchElementException.class));
+    }
+
+  }
+
 }
