@@ -40605,6 +40605,54 @@
     "episodeNumber" : "10",
     "title" : "The Passenger",
     "description" : "Everyone converges at the Valley Beyond."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "1",
+    "title" : "Parce Domine",
+    "description" : "Dolores sets out to find the architect of the Rehoboam; Bernard tries to blend in; Ex-soldier Caleb tries to find his way in neo-Los Angeles."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "2",
+    "title" : "The Winter Line",
+    "description" : "Maeve finds herself in a new park and meets a ghost from the past; Bernard makes his way back to Westworld."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "3",
+    "title" : "The Absence of Field",
+    "description" : "Charlotte grapples with reality; Dolores and Caleb begin to form a key partnership."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "4",
+    "title" : "The Mother of Exiles",
+    "description" : "Bernard and Ashley infiltrate a private charity event, while Dolores and Caleb make similar plans; The Man in Black prepares to re-enter society; Maeve comes face to face with an old comrade."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "5",
+    "title" : "Genre",
+    "description" : "Serac's past is revealed; Dolores pressures Liam for access to Rehoboam; Caleb is dosed with an unusual party drug."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "6",
+    "title" : "Decoherence",
+    "description" : "As the world falls into chaos, Serac gains control of Delos, changing Charlotte's plan; Maeve gets one last chance to stop Dolores; William starts his therapy."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "7",
+    "title" : "Passed Pawn",
+    "description" : "Caleb gets an insight on the true nature of his past; Delores seeks out Rehoboam's predecessor, while Maeve tracks her down; Bernard, Stubbs, and William escape from all the chaos."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "3",
+    "episodeNumber" : "8",
+    "title" : "Crisis Theory",
+    "description" : "Dolores' true intentions are revealed; Bernard confronts a ghost from his past; Maeve is conflicted; Serac's voice is dominant; Caleb's role is revealed; and William faces an unexpected villain."
   } ],
   "0481303" : [ {
     "imdbId" : "0481303",
@@ -43178,6 +43226,25 @@
     "episodeNumber" : "18",
     "title" : "Cosmic Apocalypse",
     "description" : "Program examines the possible ways the universe could come to an end. The most likely scenario, eternal expansion, is expected to be rather eventful in the long term."
+  } ],
+  "10602236" : [ {
+    "imdbId" : "10602236",
+    "season" : "1",
+    "episodeNumber" : "1",
+    "title" : "The Nile",
+    "description" : "The Nile is the world's longest river. From elephants and leopards to extreme kayakers and ancient wonders, its great length provides a lifeline for Africa's wildest beasts and for some of the world's most incredible cultures."
+  }, {
+    "imdbId" : "10602236",
+    "season" : "1",
+    "episodeNumber" : "2",
+    "title" : "The Amazon",
+    "description" : "The Amazon amasses one-fifth of Earth's freshwater as it flows east from the Andes to the Atlantic. Boiling streams, crystal clear lagoons, pink river dolphins and a strange new reef are some of its many secret and extreme worlds."
+  }, {
+    "imdbId" : "10602236",
+    "season" : "1",
+    "episodeNumber" : "3",
+    "title" : "The Mississippi",
+    "description" : "From the frozen north--where coyotes learn to fish in icy water--down through the nation's agricultural heart and to the mysterious, steamy southern swamps where alligators still rule, the many faces of the Mississippi unite a nation."
   } ],
   "10691858" : [ {
     "imdbId" : "10691858",
