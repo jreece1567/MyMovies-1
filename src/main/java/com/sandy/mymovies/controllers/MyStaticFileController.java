@@ -103,15 +103,14 @@ public class MyStaticFileController {
     // get the asset filepath/filename.ext
     final String ext = builder.removePathExtension();
     final String filename = builder.scheme(null).host(null).port(null).build()
-        .toUriString().replaceFirst("/static","")
-        + "."
-        + ext;
+        .toUriString().replaceFirst("/static","");
+    final String fileExtension = ext != null ? "." + ext : "";
 
     // get the MIME type
     final MimeType mimeType = MimeTypeUtils.parseMimeType(MimeTypes.MIME.getMimeType(ext));
     final MediaType mediaType = new MediaType(mimeType.getType(),mimeType.getSubtype());
 
-    final byte[] assetBytes = staticFileService.fetchStaticAsset(filename);
+    final byte[] assetBytes = staticFileService.fetchStaticAsset(filename + fileExtension);
 
     return ResponseEntity.ok().cacheControl(cacheConfig.cacheControl())
         .contentType(mediaType)

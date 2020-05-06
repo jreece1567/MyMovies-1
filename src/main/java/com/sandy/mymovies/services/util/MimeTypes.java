@@ -380,7 +380,7 @@ public enum MimeTypes {
    */
   public String getMimeType(final String fileExtension) {
     final String mime = map.get(fileExtension);
-    return mime != null ? mime : "text/plain";
+    return mime != null ? mime : "application/octet-stream";
   }
 
 }
