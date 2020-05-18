@@ -1,9 +1,28 @@
 <html>
 <head>
+<style>
+body { font-family: Verdana,Arial,sans-serif; vertical-align: top; }
+td { padding-left: 5px; font-size: 115%; }
+div { display:inline; float:left; }
+.title { font-size:150%; font-weight:bold; }
+img { width:214; height:317; }
+.poster { width: 216px; height: 319px; display:inline; float:left; }
+.desc { width:70%; display:inline; font-size:115%; }
+.home { font-size: 115%; padding-left: 10px; }
+.filter { display:inline; margin-left:5px; }
+.indexlink { text-decoration:none; }
+select { font-size: 115%; }
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+input { font-size: 115%; padding: 2px; border: 1px solid #CCC; display: block; margin: 2px 0; vertical-align: middle; }
+</style>
 </head>
 <script>
 
-	const BASE_URL = 'http://localhost:8080/';
+	const BASE_URL = 'http://localhost:8080';
 
 window.onload = function(){
 	buildKeys("all");
@@ -26,78 +45,77 @@ function doGet(url,key,callback) {
 
 function formatKeyList(list,key) {
 	if (key != "all") {
-		document.write("<span onclick='buildKeys(\"all\")'>Home</span><br/>");
+		document.write("<a href='javascript:buildKeys(\"all\")'>Home</a><br/>");
 	}
 	var count = list.length;
 	if (list.includes("all")) count = count - 1;
 	document.write("<h2>"+key+" ("+count+")"+"</h2>")
-	document.write("<ul>");
 	var ix;
 	var sList;
 	for (ix = 0; ix < list.length; ix++) {
 		if (list[ix] != "all") {
 			sList = "";
 			if (key == "all") {
-				sList = sList + "<li onclick='buildKeys( \"" + list[ix] + "\" )' >";
+				sList = sList + "<a href='javascript:buildKeys( \"" + list[ix] + "\" )' >";
 			} else {
-				sList = sList + "<li onclick='buildTitles(\"" + key + "\"" + ", \"" + list[ix] + "\" )' >";
+				sList = sList + "<a href='javascript:buildTitles(\"" + key + "\"" + ", \"" + list[ix] + "\" )' >";
 			}
 			sList = sList + list[ix];
-			sList = sList + "</li>";
+			sList = sList + "</a><br/>";
 			document.write(sList);
 		}
 	}
-	document.write("</ul>")
 }
 
 function formatTitleList(list,key) {
-	document.write("<span onclick='buildKeys(\"all\")'>Home</span><br/>");
+	document.write("<a href='javascript:buildKeys(\"all\")'>Home</a><br/>");
 	document.write("<h2>"+key+" ("+list.length+")"+"</h2>")
-	document.write("<ul>");
 	var ix;
 	var sList;
 	for (ix = 0; ix < list.length; ix++) {
 		sList = "";
-		sList = sList + "<li onclick='buildMovie(\""+list[ix].imdbId+"\")'>";
+		sList = sList + "<a href='javascript:buildMovie(\""+list[ix].imdbId+"\")'>";
 		sList = sList + list[ix].title;
-		sList = sList + "</li>";
+		sList = sList + "</a><br/>";
 		document.write(sList);
 	}
-	document.write("</ul>")
 }
 
 function formatMovie(movie,imdbid) {
-	document.write("<span onclick='buildKeys(\"all\")'>Home</span><br/>");
+	document.write("<a href='javascript:buildKeys(\"all\")'>Home</a><br/>");
 	document.write("<h2>"+movie.title+"</h2>");
 	document.write("<img src='"+BASE_URL+"/static/db/"+imdbid+".jpg'/><br/>");
-	document.write("<b>"+createKeysLink('year','Year:')+"</b> "+createTitlesLink('year',movie.releaseYear)+"<br/>");
+	document.write("<b>"+createKeysLink('year','Year:')+"</b> "+createTitlesLink('year',movie.releaseYear)+"<br/><br/>");
 	document.write("<b>"+createKeysLink('director','Director:')+"</b> "+createTitlesLink('director',movie.director)+"<br/>");
 	document.write("<b>"+createKeysLink('rating','Rating:')+"</b> "+createTitlesLink('rating',movie.rating)+"<br/>");
-	document.write("<b>Duration: </b>"+movie.duration+"<br/>");
-	document.write("<b>Description: </b>"+movie.description+"<br/>");
+	document.write("<b>Duration: </b>"+movie.duration+"<br/><br/>");
+	document.write("<b>Description: </b>"+movie.description+"<br/><br/>");
 	document.write("<b>"+createKeysLink('genre','Genre:')+"</b><br/>");
 	document.write("<ul>");
 	var ix;
 	for (ix = 0; ix < movie.genres.length; ix++) {
-		document.write("<li onclick='buildTitles(\"" + "genre" + "\", \"" + movie.genres[ix] + "\" )' >" + movie.genres[ix] + "</li>");
+		document.write("<li><a href='javascript:buildTitles(\"" + "genre" + "\", \"" + movie.genres[ix] + "\" )' >" + movie.genres[ix] + "</a></li>");
 	}
 	document.write("</ul>")
 	if (movie.tags.length > 0) {
-		document.write("<b>"+createKeysLink('tag','Tags:')+"</b><br/>");
-		document.write("<ul>");
+		document.write("<b>"+createKeysLink('tag','Tags: ')+"</b>&nbsp;");
 		for (ix = 0; ix < movie.tags.length; ix++) {
-			document.write("<li onclick='buildTitles(\"" + "tag" + "\", \"" + movie.tags[ix] + "\" )' >" + movie.tags[ix] + "</li>");
+			document.write("<a href='javascript:buildTitles(\"" + "tag" + "\", \"" + movie.tags[ix] + "\" )' >" + movie.tags[ix] + "</a>&nbsp;&nbsp;");
 		}
-    	document.write("</ul>")
+		document.write("<br/><br/>")
+	}
+	document.write("<b>Cast:</b><br/>");
+	for (ix = 0; ix < movie.cast.length; ix++) {
+		document.write("<a href='javascript:buildTitles(\"" + "actor" + "\", \"" + movie.cast[ix] + "\" )' >" + movie.cast[ix] + "</a><br/>");
 	}
 }
 
 function createKeysLink(key,value) {
-    return "<span onclick='buildKeys(\"" + key + "\" )' >" + value + "</span>";
+    return "<a href='javascript:buildKeys(\"" + key + "\" )' >" + value + "</a>";
 }
 
 function createTitlesLink(key,value) {
-	return "<span onclick='buildTitles(\"" + key + "\", \"" + value + "\" )' >" + value + "</span>";
+	return "<a href='javascript:buildTitles(\"" + key + "\", \"" + value + "\" )' >" + value + "</a>";
 }
 
 function buildKeys(key) {
@@ -119,3 +137,4 @@ function buildMovie(imdbid) {
 
 <body>
 </body>
+</html>
