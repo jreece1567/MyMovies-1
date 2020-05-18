@@ -3,6 +3,8 @@
 </head>
 <script>
 
+	const BASE_URL = 'http://localhost:8080/';
+
 window.onload = function(){
 	buildKeys("all");
 }
@@ -23,10 +25,12 @@ function doGet(url,key,callback) {
 }
 
 function formatKeyList(list,key) {
-	document.write("<h2>"+key+"</h2>")
 	if (key != "all") {
 		document.write("<span onclick='buildKeys(\"all\")'>Home</span><br/>");
 	}
+	var count = list.length;
+	if (list.includes("all")) count = count - 1;
+	document.write("<h2>"+key+" ("+count+")"+"</h2>")
 	document.write("<ul>");
 	var ix;
 	var sList;
@@ -47,31 +51,69 @@ function formatKeyList(list,key) {
 }
 
 function formatTitleList(list,key) {
-	document.write("<h2>"+key+" ("+list.length+")"+"</h2>")
 	document.write("<span onclick='buildKeys(\"all\")'>Home</span><br/>");
+	document.write("<h2>"+key+" ("+list.length+")"+"</h2>")
 	document.write("<ul>");
 	var ix;
 	var sList;
 	for (ix = 0; ix < list.length; ix++) {
 		sList = "";
-		sList = sList + "<li>";
-		sList = sList + "(" + list[ix].releaseYear + ") - " + list[ix].title;
+		sList = sList + "<li onclick='buildMovie(\""+list[ix].imdbId+"\")'>";
+		sList = sList + list[ix].title;
 		sList = sList + "</li>";
 		document.write(sList);
 	}
 	document.write("</ul>")
 }
 
+function formatMovie(movie,imdbid) {
+	document.write("<span onclick='buildKeys(\"all\")'>Home</span><br/>");
+	document.write("<h2>"+movie.title+"</h2>");
+	document.write("<img src='"+BASE_URL+"/static/db/"+imdbid+".jpg'/><br/>");
+	document.write("<b>"+createKeysLink('year','Year:')+"</b> "+createTitlesLink('year',movie.releaseYear)+"<br/>");
+	document.write("<b>"+createKeysLink('director','Director:')+"</b> "+createTitlesLink('director',movie.director)+"<br/>");
+	document.write("<b>"+createKeysLink('rating','Rating:')+"</b> "+createTitlesLink('rating',movie.rating)+"<br/>");
+	document.write("<b>Duration: </b>"+movie.duration+"<br/>");
+	document.write("<b>Description: </b>"+movie.description+"<br/>");
+	document.write("<b>"+createKeysLink('genre','Genre:')+"</b><br/>");
+	document.write("<ul>");
+	var ix;
+	for (ix = 0; ix < movie.genres.length; ix++) {
+		document.write("<li onclick='buildTitles(\"" + "genre" + "\", \"" + movie.genres[ix] + "\" )' >" + movie.genres[ix] + "</li>");
+	}
+	document.write("</ul>")
+	if (movie.tags.length > 0) {
+		document.write("<b>"+createKeysLink('tag','Tags:')+"</b><br/>");
+		document.write("<ul>");
+		for (ix = 0; ix < movie.tags.length; ix++) {
+			document.write("<li onclick='buildTitles(\"" + "tag" + "\", \"" + movie.tags[ix] + "\" )' >" + movie.tags[ix] + "</li>");
+		}
+    	document.write("</ul>")
+	}
+}
+
+function createKeysLink(key,value) {
+    return "<span onclick='buildKeys(\"" + key + "\" )' >" + value + "</span>";
+}
+
+function createTitlesLink(key,value) {
+	return "<span onclick='buildTitles(\"" + key + "\", \"" + value + "\" )' >" + value + "</span>";
+}
+
 function buildKeys(key) {
 	document.body.innerHTML = "";
-	doGet('http://localhost:8080/index/keys/'+key,key,formatKeyList);
+	doGet(BASE_URL+"/index/keys/"+key,key,formatKeyList);
 }
 
 function buildTitles(key,zname) {
 	document.body.innerHTML = "";
-	doGet('http://localhost:8080/titles/'+key+'?name='+zname,zname,formatTitleList);
+	doGet(BASE_URL+"/titles/"+key+"?name="+zname,zname,formatTitleList);
 }
 
+function buildMovie(imdbid) {
+	document.body.innerHTML = "";
+	doGet(BASE_URL+"/movie/"+imdbid,imdbid,formatMovie);
+}
 
 </script>
 
