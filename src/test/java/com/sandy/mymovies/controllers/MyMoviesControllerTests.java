@@ -13,6 +13,7 @@ import static com.sandy.mymovies.MyMoviesTestData.TEST_IMDB_ID_TITLE;
 import static com.sandy.mymovies.MyMoviesTestData.TEST_INDEX_KEY;
 import static junit.framework.TestCase.fail;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -523,6 +524,37 @@ public class MyMoviesControllerTests {
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$.value", is(INVALID_GENRE_KEY)))
           .andExpect(jsonPath("$.count", is(0)));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void leaderboard_withvalidquery_returnsCounts() {
+
+    try {
+      mockMvc.perform(
+          get("/leaderboard/" + TEST_INDEX_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isOk())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+          .andExpect(jsonPath("$[0].count", not(0)));
+    } catch (Exception ex) {
+      fail(ex.getMessage());
+    }
+
+  }
+
+  @Test
+  public void leaderboard_withinvalidquery_returns422() {
+
+    try {
+      mockMvc.perform(
+          get("/leaderboard/" + INVALID_INDEX_KEY)
+              .contentType(MediaType.APPLICATION_JSON))
+          .andExpect(status().isUnprocessableEntity())
+          .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }

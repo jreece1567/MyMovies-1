@@ -623,4 +623,74 @@ public class MyMoviesServiceIndexTests {
     assertThat(count.getValue(), is(TEST_YEAR));
   }
 
+  @Test
+  public void leaderboard_withActor_returnsCount() {
+
+    List<Count> counts = moviesService.leaderboardByIndex(Index.ACTOR);
+
+    assertThat(counts, is(notNullValue()));
+
+    assertThat(counts.isEmpty(), is(false));
+  }
+
+  @Test
+  public void leaderboard_withDirector_returnsCount() {
+
+    List<Count> counts = moviesService.leaderboardByIndex(Index.DIRECTOR);
+
+    assertThat(counts, is(notNullValue()));
+
+    assertThat(counts.isEmpty(), is(false));
+  }
+
+  @Test
+  public void leaderboard_withGenre_returnsCount() {
+
+    List<Count> counts = moviesService.leaderboardByIndex(Index.GENRE);
+
+    assertThat(counts, is(notNullValue()));
+
+    assertThat(counts.isEmpty(), is(false));
+  }
+
+  @Test
+  public void leaderboard_withRating_returnsCount() {
+
+    List<Count> counts = moviesService.leaderboardByIndex(Index.RATING);
+
+    assertThat(counts, is(notNullValue()));
+
+    assertThat(counts.isEmpty(), is(false));
+  }
+
+  @Test
+  public void leaderboard_withTag_returnsCount() {
+
+    List<Count> counts = moviesService.leaderboardByIndex(Index.TAG);
+
+    assertThat(counts, is(notNullValue()));
+
+    assertThat(counts.isEmpty(), is(false));
+  }
+
+  @Test
+  public void leaderboard_withTitle_returnsCount() {
+
+    List<Count> counts = moviesService.leaderboardByIndex(Index.TITLE);
+
+    assertThat(counts, is(notNullValue()));
+
+    assertThat(counts.isEmpty(), is(false));
+  }
+
+  @Test
+  public void leaderboard_withYear_returnsCount() {
+
+    List<Count> counts = moviesService.leaderboardByIndex(Index.YEAR);
+
+    assertThat(counts, is(notNullValue()));
+
+    assertThat(counts.isEmpty(), is(false));
+  }
+
 }

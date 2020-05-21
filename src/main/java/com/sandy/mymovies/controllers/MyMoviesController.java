@@ -396,6 +396,18 @@ public class MyMoviesController {
   }
 
   /**
+   * Fetch the count of titles associated with a given Index and key-value.
+   *
+   * @param index the index name (actor,director,genre,rating,tag,title,year,etc.).
+   * @return The Count of titles associated with an index and key.
+   */
+  @RequestMapping(method = RequestMethod.GET, path = "/leaderboard/{index}")
+  public List<Count> getLeaderboardByIndex(@PathVariable(INDEX) final String index) {
+
+    return service.leaderboardByIndex(Index.fromValue(index));
+  }
+
+  /**
    * Throw NotYetImplemented exception to test response processing.
    *
    * @throws NotYetImplementedException in all cases

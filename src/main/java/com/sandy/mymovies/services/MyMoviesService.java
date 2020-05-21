@@ -742,4 +742,65 @@ public class MyMoviesService {
     return new Count(value, count);
   }
 
+  /**
+   * Return the leaderboard under a given Index.
+   *
+   * @param index the index (actor,director,genre,rating,tag,title,year,etc.).
+   * @return a list of Count instances, one for each value in the index.
+   */
+  public List<Count> leaderboardByIndex(final Index index) {
+
+    final List<Count> counts = new ArrayList<>();
+
+    switch (index) {
+      case ACTOR:
+        List<String> actors = actorRepository.findAllDistinctActors();
+        actors.forEach(actor -> {
+          counts.add(new Count(actor,actorRepository.countAllByName(actor)));
+        });
+        break;
+      case DIRECTOR:
+        List<String> directors = videoRepository.findAllDistinctDirectors();
+        directors.forEach(director -> {
+          counts.add(new Count(director,videoRepository.countAllByDirector(director)));
+        });
+        break;
+      case GENRE:
+        List<String> genres = genreRepository.findAllDistinctGenres();
+        genres.forEach(genre -> {
+          counts.add(new Count(genre,genreRepository.countAllByGenre(genre)));
+        });
+        break;
+      case RATING:
+        List<String> ratings = videoRepository.findAllDistinctRatings();
+        ratings.forEach(rating -> {
+          counts.add(new Count(rating,videoRepository.countAllByRating(rating)));
+        });
+        break;
+      case TAG:
+        List<String> tags = tagRepository.findAllDistinctTags();
+        tags.forEach(tag -> {
+          counts.add(new Count(tag,tagRepository.countAllByTag(tag)));
+        });
+        break;
+      case TITLE:
+        List<String> titles = videoRepository.findAllDistinctTitles();
+        titles.forEach(title -> {
+          counts.add(new Count(title,1));
+        });
+        break;
+      case YEAR:
+        List<Integer> years = videoRepository.findAllDistinctReleaseYears();
+        years.forEach(year -> {
+          counts.add(new Count(String.valueOf(year),videoRepository.countAllByReleaseYear(year)));
+        });
+        break;
+      default:
+        break;
+    }
+
+    counts.sort((o1, o2) -> o1.getCount().compareTo(o2.getCount()) * -1);
+
+    return counts;
+  }
 }
