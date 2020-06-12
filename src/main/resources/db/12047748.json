@@ -1,0 +1,13 @@
+{
+  "imdbId" : "12047748",
+  "title" : "George W. Bush",
+  "releaseYear" : "2020",
+  "duration" : "1:00",
+  "rating" : "TV-MA",
+  "director" : "Jamila Ephron",
+  "imageUrl" : "12047748.jpg",
+  "description" : "Biography and political career of George W. Bush, the 43rd President of the United States.",
+  "genres" : [ "Documentary", "Biography", "History" ],
+  "cast" : [ "George W. Bush" ],
+  "tags" : [ "President" ]
+}
