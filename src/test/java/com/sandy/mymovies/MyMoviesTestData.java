@@ -4,11 +4,11 @@ public final class MyMoviesTestData {
 
   public static final Integer ALL_COUNT = 8;
   public static final Integer ACTOR_COUNT = 84556;
-  public static final Integer DIRECTOR_COUNT = 786;
+  public static final Integer DIRECTOR_COUNT = 788;
   public static final Integer GENRE_COUNT = 25;
   public static final Integer RATING_COUNT = 15;
   public static final Integer TAG_COUNT = 23;
-  public static final Integer TITLE_COUNT = 1618;
+  public static final Integer TITLE_COUNT = 1621;
   public static final Integer YEAR_COUNT = 91;
 
   public static final Integer TEST_ACTOR_COUNT = 24;
