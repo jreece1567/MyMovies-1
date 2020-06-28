@@ -7,7 +7,7 @@ public final class MyMoviesTestData {
   public static final Integer DIRECTOR_COUNT = 791;
   public static final Integer GENRE_COUNT = 25;
   public static final Integer RATING_COUNT = 15;
-  public static final Integer TAG_COUNT = 23;
+  public static final Integer TAG_COUNT = 26;
   public static final Integer TITLE_COUNT = 1624;
   public static final Integer YEAR_COUNT = 91;
 
