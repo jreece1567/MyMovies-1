@@ -142,7 +142,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.size(), is(TITLE_COUNT));
 
-    assertThat(keys.get(22), is("300"));
+    assertThat(keys.get(23), is("300"));
 
   }
 
