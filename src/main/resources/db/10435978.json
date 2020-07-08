@@ -2,12 +2,12 @@
   "imdbId" : "10435978",
   "title" : "Tiananmen",
   "releaseYear" : "2019",
-  "duration" : "",
+  "duration" : "1:00",
   "rating" : "NOT RATED",
   "director" : "",
   "imageUrl" : "10435978.jpg",
-  "description" : "",
+  "description" : "It's been thirty years since the massacre at Tianamen Square in Beijing, where upwards of a few thousand students were killed in the military crackdown on their protests, the massacre which the Communist Party of China refuses to talk about or even acknowledge as having happened. With new official documents coming to light as well as the surfacing of other eyewitness video accounts, the seven weeks of the protest leading to the massacre are dissected in detail, it a time when China seemed to be on the brink of a new direction to possible democracy.",
   "genres" : [ "Documentary", "History" ],
-  "cast" : [ "Tiananmen (TV Mini-Series 2019) Poster" ],
-  "tags" : [ "TV" ]
+  "cast" : [ ],
+  "tags" : [ ]
 }
