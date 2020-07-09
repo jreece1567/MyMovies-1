@@ -45,7 +45,7 @@
   "season" : "1",
   "episodeNumber" : "8",
   "title" : "Pinkeye",
-  "description" : "The living dead beset South Park after a bottle of Worcestershire sauce mixes with embalming fluid at the mortuary; Tina Yothera judged a costume contest."
+  "description" : "The living dead beset South Park after a bottle of Worcestershire sauce mixes with embalming fluid at the mortuary; Tina Yothers judged a costume contest."
 }, {
   "imdbId" : "0121955",
   "season" : "1",
@@ -255,7 +255,7 @@
   "season" : "3",
   "episodeNumber" : "11",
   "title" : "Chinpokomon",
-  "description" : "The kids (But not Kyle) get hooked on a brainwashing violent cartoon from Japan which turns them against the American government."
+  "description" : "The kids get hooked on a brainwashing violent cartoon from Japan which turns them against the American government."
 }, {
   "imdbId" : "0121955",
   "season" : "3",
@@ -807,7 +807,7 @@
   "season" : "9",
   "episodeNumber" : "9",
   "title" : "Marjorine",
-  "description" : "Butters fake his own death and disguises himself as a girl so he can infiltrate a sleepover and steal a fortune telling device from the girls. Meanwhile, Butters' father turns to the occult to bring back his son."
+  "description" : "Butters fakes his own death and disguises himself as a girl so he can infiltrate a sleepover and steal a fortune telling device from the girls. Meanwhile, Butters' father turns to the occult to bring back his son."
 }, {
   "imdbId" : "0121955",
   "season" : "9",
@@ -1389,7 +1389,7 @@
   "season" : "16",
   "episodeNumber" : "8",
   "title" : "Sarcastaball",
-  "description" : "Angered over the overly sensitive parents in South Park over their kids playing football because of recent news about concussions, Randy invents the game Sarcastaball in order to get people to see how stupid they've been. But when everybody takes it seriously, Randy ends up begrudgingly taking the game national. Butters, the most knowledgeable of the game, becomes the coach for the kids."
+  "description" : "Angered over the overly sensitive parents in South Park over their kids playing football because of recent news about concussions, Randy invents the game Sarcastaball in order to get people to see how stupid they've been."
 }, {
   "imdbId" : "0121955",
   "season" : "16",
@@ -1412,7 +1412,7 @@
   "imdbId" : "0121955",
   "season" : "16",
   "episodeNumber" : "12",
-  "title" : "A Nightmare on Facetime",
+  "title" : "A Nightmare on FaceTime",
   "description" : "The boys are excited to go trick-or-treating, dressed as the Avengers, but Stan is unable to come because Randy has bought a Blockbuster Video franchise location in South Park."
 }, {
   "imdbId" : "0121955",
@@ -1497,7 +1497,7 @@
   "season" : "18",
   "episodeNumber" : "2",
   "title" : "Gluten Free Ebola",
-  "description" : "Mr.Mackey is now gluten free and everyone is annoyed when he won't quit preaching about how great he feels."
+  "description" : "Mr. Mackey is now gluten free and everyone is annoyed when he won't quit preaching about how great he feels."
 }, {
   "imdbId" : "0121955",
   "season" : "18",
@@ -1617,7 +1617,7 @@
   "season" : "20",
   "episodeNumber" : "2",
   "title" : "Skank Hunt",
-  "description" : "The boys decide they have to take down Cartman but meanwhile, Skank Hunt takes his rein of terror global."
+  "description" : "The boys decide they have to take down Cartman but meanwhile, Skank Hunt takes his reign of terror global."
 }, {
   "imdbId" : "0121955",
   "season" : "20",
@@ -1786,4 +1786,64 @@
   "episodeNumber" : "10",
   "title" : "Bike Parade",
   "description" : "With the Amazon workers striking, no one is getting their Christmas packages they ordered. On top of that, the boys' chance of winning a bike parade are jeopardized when Kenny decides to resist commercialism alongside the striking workers."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "1",
+  "title" : "Mexican Joker",
+  "description" : "Randy battles home-grown weed; Kyle is placed in a detention camp after Cartman reports him to ICE."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "2",
+  "title" : "Band in China",
+  "description" : "Randy sees an opportunity for Tegridy Farms in China; Stan starts a band to work out his frustration over having to move away from South Park and scores a hit, but China interferes."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "3",
+  "title" : "Shots!!!",
+  "description" : "Randy revels in a Tegridy Farms milestone; Cartman stands his ground and refuses to get a shot."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "4",
+  "title" : "Let Them Eat Goo",
+  "description" : "The citizens of South Park are moving toward a completely plant-based diet. Cartman is pretty sure the new food in the cafeteria gave him a heart attack."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "5",
+  "title" : "Tegridy Farms Halloween Special",
+  "description" : "It's Halloween and Randy is dealing with his daughter's marijuana problem. Butters gets an unexpected surprise when he visits the Egyptian Artifact exhibit at the Denver Museum."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "6",
+  "title" : "Season Finale",
+  "description" : "The citizens of South Park have had enough of Randy and Tegridy Farms and they just want to lock him up."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "7",
+  "title" : "Board Girls",
+  "description" : "Cartman, Stan, Butters and the other boys play Dungeons & Dragons; The annual Strong Woman competition pushes everyone to their limits."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "8",
+  "title" : "Turd Burglars",
+  "description" : "Sheila has a fecal transplant and when it improves her health, all the other women wants their hands on her stool."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "9",
+  "title" : "Basic Cable",
+  "description" : "Scott Malkinson's future with the new girl in his class depends on him getting the latest streaming platform, but Scott's dad refuses to move beyond basic cable."
+}, {
+  "imdbId" : "0121955",
+  "season" : "23",
+  "episodeNumber" : "10",
+  "title" : "Christmas Snow",
+  "description" : "It's a bleak Christmas Season in South Park this year and it's all Santa's fault. He is single handedly stealing the joy from the holiday. The town just wants their Christmas Spirit back but that will take a Christmas miracle."
 }]
