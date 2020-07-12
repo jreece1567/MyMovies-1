@@ -127,7 +127,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.size(), is(TAG_COUNT));
 
-    assertThat(keys.get(19), is("TV"));
+    assertThat(keys.get(20), is("TV"));
 
   }
 
