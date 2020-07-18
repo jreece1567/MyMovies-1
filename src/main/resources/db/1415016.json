@@ -1,6 +1,6 @@
 {
   "imdbId" : "1415016",
-  "title" : "The End of Time: Part One",
+  "title" : "Doctor Who: The End of Time - Part One",
   "releaseYear" : "2009",
   "duration" : "1:00",
   "rating" : "TV-PG",
@@ -9,5 +9,5 @@
   "description" : "The Ood have given a warning to The Doctor. The Master is returning yet that is not the biggest threat. A darkness is coming which brings with it The End of Time.",
   "genres" : [ "Adventure", "Drama", "Mystery", "Sci-Fi" ],
   "cast" : [ "David Tennant", "John Simm", "Bernard Cribbins", "Timothy Dalton", "Catherine Tate", "Jacqueline King", "Claire Bloom", "June Whitfield", "David Harewood", "Tracy Ifeachor", "Sinead Keenan", "Lawry Lewin", "Alexandra Moen", "Karl Collins", "Teresa Banham", "Barry Howard", "Allister Bain", "Simon Thomas", "Sylvia Seymour", "Pete Lee-Wilson", "Dwayne Scantlebury", "Lacey Bond", "Lachele Carl", "Paul Kasey", "Ruari Mears", "Max Benjamin", "Brian Cox", "Freema Agyeman", "Julian Bleach", "Nicholas Briggs", "Silas Carson", "John Childs", "Jon Davey", "Marcus Elliot", "Jeanie Gold", "Ian Hilditch", "Kevin Hudson", "Andy Jones", "Trevor Laird", "Claudio Laurini", "Barack Obama", "Sarah Parish", "Colin Stinton", "Victoria Wicks" ],
-  "tags" : [ "TV" ]
+  "tags" : [ "TV", "Doctor Who" ]
 }
