@@ -1,0 +1,13 @@
+{
+  "imdbId" : "1337072",
+  "title" : "Planet of the Dead",
+  "releaseYear" : "2009",
+  "duration" : "1:00",
+  "rating" : "TV-PG",
+  "director" : "James Strong",
+  "imageUrl" : "1337072.jpg",
+  "description" : "A meeting in a London bus with jewel thief Lady Christina takes a turn for the worst for the Doctor when the bus takes a detour to a desert-like planet, where the deadly Swarm awaits.",
+  "genres" : [ "Adventure", "Drama", "Mystery", "Sci-Fi" ],
+  "cast" : [ "David Tennant", "Michelle Ryan", "Lee Evans", "Noma Dumezweni", "Adam James", "Glenn Doherty", "Victoria Alcock", "David Ames", "Ellen Thomas", "Reginald Tsiboe", "Daniel Kaluuya", "Keith Parry", "James Layton", "Paul Kasey", "Ruari Mears", "Marcus Elliot", "Barbara Fadden", "Ian Hilditch", "Claudio Laurini" ],
+  "tags" : [ "TV" ]
+}
