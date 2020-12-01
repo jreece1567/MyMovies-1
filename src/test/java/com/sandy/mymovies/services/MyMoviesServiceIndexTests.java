@@ -84,7 +84,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.size(), is(DIRECTOR_COUNT));
 
-    assertThat(keys.get(37), is("Andy Mikita"));
+    assertThat(keys.get(38), is("Andy Mikita"));
   }
 
   @Test
