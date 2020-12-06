@@ -26,3 +26,6 @@ gradle
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### Project-specific
+updatedb.sh
