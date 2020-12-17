@@ -200,7 +200,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(titles.size(), is(TEST_GENRE_COUNT));
 
-    assertThat(titles.get(18).getTitle(), is("WALL-E"));
+    assertThat(titles.get(20).getTitle(), is("WALL-E"));
   }
 
   @Test
@@ -298,7 +298,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(movies.size(), is(TEST_GENRE_COUNT));
 
-    assertThat(movies.get(18).getTitle(), is("WALL-E"));
+    assertThat(movies.get(20).getTitle(), is("WALL-E"));
   }
 
   @Test
