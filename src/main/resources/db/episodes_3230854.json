@@ -3,7 +3,7 @@
   "season" : "1",
   "episodeNumber" : "1",
   "title" : "Dulcinea",
-  "description" : "In the outer solar system near Saturn, James Holden and the crew of the ice-freighter Canterbury, investigate a distress call from a mysterious derelict ship, the Scopuli. On Ceres Station, Detective Miller begins an off the book investigation of a missing heiress, Julie Mao."
+  "description" : "In the asteroid belt near Saturn, James Holden and the crew of the ice freighter Canterbury, on its way to Ceres Station, investigate a distress call from an unknown derelict ship, the Scopuli."
 }, {
   "imdbId" : "3230854",
   "season" : "1",
@@ -27,7 +27,7 @@
   "season" : "1",
   "episodeNumber" : "5",
   "title" : "Back to the Butcher",
-  "description" : "The crew has survived the loss of the Canturbury and the Donnager and are contacted by an unlikely ally. Miller, on Ceres, continues his investigation and his thoughts of a conspiracy grow."
+  "description" : "The crew has survived the loss of the Canterbury and the Donnager and are contacted by an unlikely ally. Miller, on Ceres, continues his investigation and his thoughts of a conspiracy grow."
 }, {
   "imdbId" : "3230854",
   "season" : "1",
@@ -99,7 +99,7 @@
   "season" : "2",
   "episodeNumber" : "7",
   "title" : "The Seventh Man",
-  "description" : "Draper struggles with what happened on Ganymede while the coming Earth/Mars peace conference tighten the tension on Erringwright. Dawes confronts Fred Johnson about what the OPA's course of action should be regarding the protomolecule."
+  "description" : "Draper struggles with what happened on Ganymede while the coming Earth/Mars peace conference tighten the tension on Errinwright. Dawes confronts Fred Johnson about what the OPA's course of action should be regarding the protomolecule."
 }, {
   "imdbId" : "3230854",
   "season" : "2",
@@ -214,4 +214,64 @@
   "episodeNumber" : "13",
   "title" : "Abaddon's Gate",
   "description" : "Humanity's fate is on the line as Holden and his allies race against time to save the ring by countering the plan Ashford's team is implementing. A new chapter opens for humanity."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "1",
+  "title" : "New Terra",
+  "description" : "With 1300 new worlds within reach, a new interplanetary \"land rush\" has begun. The UN charges the crew of the Rocinante to settle a land dispute on its new colony world \"New Terra.\" Meanwhile, the OPA begins transitioning the Behemoth to become outpost and gatekeeper to humanity's new frontier."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "2",
+  "title" : "Jetsam",
+  "description" : "Avasarala is blindsided while on a visit to Mars. The Roci crew continue their protomolecule investigation while tensions between the RCE and Belters reach a tipping point. Drummer and Ashford track down a terrorist."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "3",
+  "title" : "Subduction",
+  "description" : "New alien threats emerge on Ilus as Naomi battles health challenges on the planet. Bobbie searches for a missing person on Mars. Avasarala faces a new challenge in the UN."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "4",
+  "title" : "Retrograde",
+  "description" : "Drummer and Ashford confront a dangerous person from Naomi's past. Murtry hunts down a target. Bobbie's makes a life-changing confession."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "5",
+  "title" : "Oppressor",
+  "description" : "As tensions on Ilus reach a boiling point, Holden reveals a secret. Avasarala debates Nancy Gao while an emergency on the Roci forces Alex and Naomi into action."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "6",
+  "title" : "Displacement",
+  "description" : "The Roci crew prepares for an incoming disaster on Ilus. Ashford and Drummer close in on an enemy within the Belt. Bobbie takes on a dangerous job."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "7",
+  "title" : "A Shot in the Dark",
+  "description" : "Naomi and Alex work to keep the Barbapiccola in orbit amidst a power outage. Avasarala faces a tough decision. Holden and Elvi race to find a cure for a disease spreading on Ilus."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "8",
+  "title" : "The One-Eyed Man",
+  "description" : "Avasarala faces fallout for the UN's military mission. Ashford and Drummer makes big decisions about their future within the OPA. A spreading illness on Ilus takes a toll on Amos. Alex and Naomi's attempt to rescue the Barb turns desperate."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "9",
+  "title" : "Saeculum",
+  "description" : "Holden and Miller race to save Ilus. Murtry puts his endgame into motion, putting the Roci crew's lives at risk."
+}, {
+  "imdbId" : "3230854",
+  "season" : "4",
+  "episodeNumber" : "10",
+  "title" : "Cibola Burn",
+  "description" : "Ashford closes in on an enemy while uncovering a dangerous plot. Avasarala faces a crossroads in her personal and political life. The Roci crew works to reestablish life on Ilus in the wake of a deadly catastrophe."
 }]
