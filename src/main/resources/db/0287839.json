@@ -4,10 +4,10 @@
   "releaseYear" : "2003",
   "duration" : "4:26",
   "rating" : "UNRATED",
-  "director" : "",
+  "director" : "Greg Yaitanes",
   "imageUrl" : "0287839.jpg",
   "description" : "The twins of Paul \"Muad'dib\" Atreides become embroiled in the political landscape of Arrakis (\"Dune\") and the rest of the universe.",
-  "genres" : [ "Adventure", "Drama", "Fantasy" ],
-  "cast" : [ "Alec Newman", "Julie Cox", "Ian McNeice", "Steven Berkoff", "Daniela Amavia", "James McAvoy", "Susan Sarandon", "Edward Atterton", "P.H. Moriarty", "Jessica Brooks", "Rik Young", "Jonathan Bruun", "Karel Dobrý", "Barbora Kodetová", "Martin McDougall", "Gee Williams", "Mariano Titanti", "Zuzana Geislerová", "Dagmar Bláhová", "David Backovsky", "Ivan Shvedoff", "Marek Vasut", "Jakob Schwarz", "Klára Issová", "Ivo Novák", "Predrag Bjelac", "Zdenek Maryska", "Pavel Kríz", "Viliam Docolomansky", "Lana Likic", "Terrence Stone", "Peter Varga", "Gregory Finn", "Jan Pavel Filipensky", "Pavel Cajzl", "David Mottl", "Kamila Zenkerová", "Filip Tomsa", "Miroslav Táborský", "Martin Dejdar", "Rudolf Pellar", "Jan Unger", "Jan Nemejovský", "David O'Kelly", "James Babson", "Noel le Bon", "Daniel Brown", "Kristina Madericova", "David Fisher", "Eva Aichmajerová", "Daniela Krhutova", "Veronika Bellová", "Pavel Bezdek", "Daniel Rous", "Jeffrey Stewart Smith", "Petr Vobecky", "Daniel Pietrucha", "Paul Lauden", "Srdjan Simeonovich", "Mikulás Kren", "Jirí Wohanka", "David Forrester", "Michaela Strnadova", "Robert Nizník", "Alvin Van Der Kuech", "Nada Safratova", "Jan Kuzelka", "Dragan Radivojevic Lav", "Alice Krige" ],
-  "tags" : [ ]
+  "genres" : [ "Adventure", "Drama", "Fantasy", "Sci-Fi" ],
+  "cast" : [ "Alec Newman", "Julie Cox", "Ian McNeice", "Steven Berkoff", "Daniela Amavia", "James McAvoy", "Susan Sarandon", "Edward Atterton", "P.H. Moriarty", "Alice Krige", "Jessica Brooks", "Rik Young", "Jonathan Bruun", "Karel Dobrý", "Barbora Kodetová", "Martin McDougall", "Gee Williams", "Mariano Titanti", "Jakob Schwarz", "Zuzana Geislerová", "Dagmar Bláhová", "David Backovsky", "Ivan Shvedoff", "Marek Vasut", "Klára Issová", "Ivo Novák", "Predrag Bjelac", "Zdenek Maryska", "Pavel Kríz", "Viliam Docolomansky", "Lana Likic", "Terrence Stone", "Peter Varga", "Gregory Finn", "Jan Filipenský", "Pavel Cajzl", "David Mottl", "Kamila Zenkerová", "Filip Tomsa", "Miroslav Táborský", "Martin Dejdar", "Rudolf Pellar", "Jan Unger", "Jan Nemejovský", "David O'Kelly", "James Babson", "Noel le Bon", "Daniel Brown", "Kristina Beranova", "David Fisher", "Eva Decastelo", "Daniela Krhutova", "Veronika Bellová", "Pavel Bezdek", "Daniel Rous", "Jeffrey Stewart Smith", "Petr Vobecky", "Daniel Pietrucha", "Paul Lauden", "Srdjan Simeonovich", "Mikulás Kren", "Jirí Wohanka", "David Forrester", "Michaela Strnadova", "Robert Nizník", "Alvin Van Der Kuech", "Nada Safratova", "Jan Kuzelka", "Dragan Radivojevic Lav" ],
+  "tags" : [ "TV" ]
 }

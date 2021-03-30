@@ -1,0 +1,19 @@
+[{
+  "imdbId" : "0142032",
+  "season" : "1",
+  "episodeNumber" : "1",
+  "title" : "Episode #1.1",
+  "description" : "On order of the emperor, Duke Leto Atreides moves his family from his home planet Caladan to another planet, Arrakis, also known as Dune. After an attack on their stronghold, his son Paul and his concubine flee into the desert."
+}, {
+  "imdbId" : "0142032",
+  "season" : "1",
+  "episodeNumber" : "2",
+  "title" : "Episode #1.2",
+  "description" : "The Lady Jessica and her son, Paul Atreides, manage to contact the native Dune population, known as Fremen."
+}, {
+  "imdbId" : "0142032",
+  "season" : "1",
+  "episodeNumber" : "3",
+  "title" : "Episode #1.3",
+  "description" : "Paul Atreides, who has become known as Paul Muad'Dib, leads a rebellion against the Harkonnen, who have the secret support of the emperor."
+}]
