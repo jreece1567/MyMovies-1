@@ -53891,7 +53891,7 @@
     "season" : "2",
     "episodeNumber" : "17",
     "title" : "Melinda",
-    "description" : "The story of Melinda May's transformation into \"The Cavalry\" is revealed as she finds herself at a crossroads in the war between Coulson and Gonzales. As Skye learns more about her true heritage from Lincoln, the truth about Inhumans will send her in a new direction."
+    "description" : "The story of May’s transformation into “The Cavalry” is revealed. As Skye learns more about her heritage, the truth will send her in a new direction."
   }, {
     "imdbId" : "2364582",
     "season" : "2",
@@ -53987,7 +53987,7 @@
     "season" : "3",
     "episodeNumber" : "11",
     "title" : "Bouncing Back",
-    "description" : "Coulson is more determined than ever to get to Gideon Malick and put to an end to Hydra once and for all in the aftermath of his trip to Maveth. Meanwhile, Daisy and the team encounter more Inhumans who have powers like they've never seen before, but will they be friends or enemies of S.H.I.E.L.D?"
+    "description" : "Threats loom as the team tries to take down Hydra."
   }, {
     "imdbId" : "2364582",
     "season" : "3",
@@ -54041,7 +54041,7 @@
     "season" : "3",
     "episodeNumber" : "20",
     "title" : "Emancipation",
-    "description" : "In the aftermath of the events of"
+    "description" : "Daisy's prophecy ticks closer towards a major loss, as the aftermath of the events of \"Marvel's Captain America: Civil War\" force S.H.I.E.L.D. to register the Inhumans."
   }, {
     "imdbId" : "2364582",
     "season" : "3",
@@ -54065,7 +54065,7 @@
     "season" : "4",
     "episodeNumber" : "2",
     "title" : "Ghost Rider: Meet the New Boss",
-    "description" : "Daisy goes to battle Ghost Rider at a terrible cost, and Coulson faces the new Director, and his bold agenda surprises them all."
+    "description" : "Daisy goes to battle Ghost Rider at a terrible cost, and Coulson faces the new director, whose bold agenda surprises them all."
   }, {
     "imdbId" : "2364582",
     "season" : "4",
@@ -54088,7 +54088,7 @@
     "imdbId" : "2364582",
     "season" : "4",
     "episodeNumber" : "6",
-    "title" : "Ghost Rider: The Good Samaritan",
+    "title" : "The Good Samaritan",
     "description" : "The shocking origin story of Robbie's transition into Ghost Rider is revealed as the lives of Coulson and the team hang in the balance."
   }, {
     "imdbId" : "2364582",
@@ -54317,7 +54317,163 @@
     "season" : "5",
     "episodeNumber" : "22",
     "title" : "The End",
-    "description" : "Coulson's life or death is the challenge the team finds themselves in, As the wrong decision will cause the destruction of Earth."
+    "description" : "The team must choose between Coulson's life or death; the wrong decision will cause the destruction of Earth."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "1",
+    "title" : "Missing Pieces",
+    "description" : "Scattered across the galaxy, the team works to find their footing in the wake of losing Coulson."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "2",
+    "title" : "Window of Opportunity",
+    "description" : "While Fitz and Enoch struggle in space, Sarge and his team move forward with their mysterious mission on Earth."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "3",
+    "title" : "Fear and Loathing on the Planet of Kitson",
+    "description" : "While Fitz and Enoch try their luck at the casino, Daisy and Simmons find themselves in a much more exciting situation."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "4",
+    "title" : "Code Yellow",
+    "description" : "Yo-Yo and Keller take things public; parasitic aliens threaten the human race; and someone really needs boba."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "5",
+    "title" : "The Other Thing",
+    "description" : "Sarge has May; Altarah has Daisy, Enoch and Simmons; and now, there are two planets that need saving."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "6",
+    "title" : "Inescapable",
+    "description" : "Fitz and Simmons have fought through space, time and alternate realities to find each other, and now, closer than ever, only their own demons can stop their mission."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "7",
+    "title" : "Toldja",
+    "description" : "After finding themselves in yet another gambling dilemma, a mysterious stranger offers Enoch and FitzSimmons a ride home."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "8",
+    "title" : "Collision Course (Part I)",
+    "description" : "To face The Galaxy-Hopping Hate-Beast That Eats Planets, the team on Earth asks for help in all the wrong places; while back on the Lazy Comet, something weird goes on with Izel's crew."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "9",
+    "title" : "Collision Course (Part II)",
+    "description" : "There's no time for the team to play catch-up when there's a planet to save."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "10",
+    "title" : "Leap",
+    "description" : "The team must trust each other in order to face impending doom and an enemy that's closer than they think."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "11",
+    "title" : "From the Ashes",
+    "description" : "Out of answers and running out of time, the agents must face the ghosts of their past to move forward."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "12",
+    "title" : "The Sign",
+    "description" : "With time running short, the team has to go to hell to stop the end of everything."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "6",
+    "episodeNumber" : "13",
+    "title" : "New Life",
+    "description" : "With time running short, the team has to go to hell to stop the end of everything."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "1",
+    "title" : "The New Deal",
+    "description" : "Coulson and the agents are thrust backwards in time and stranded in 1931 New York City; with an all-new Zephyr set to time-jump at any moment, the team must hurry to find out exactly what happened."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "2",
+    "title" : "Know Your Onions",
+    "description" : "With the identity of the timeline-unraveling \"thread\" revealed, the team's mission to protect him at all costs leads each agent to question their own values."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "3",
+    "title" : "Alien Commies from the Future!",
+    "description" : "A surprise leap forward in time."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "4",
+    "title" : "Out of the Past",
+    "description" : "Agent Phil Coulson comes to a realization about the importance of July 22, 1955, in the S.H.I.E.L.D. history books."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "5",
+    "title" : "A Trout in the Milk",
+    "description" : "The team - Daniel Sousa in tow - reunites with more than one familiar face at the S.H.I.E.L.D. hangout and discovers exactly how to dismantle the Chronicoms' latest plan; the Zephyr unexpectedly leaps forward again."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "6",
+    "title" : "Adapt or Die",
+    "description" : "The team scrambles to rescue Mack's parents."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "7",
+    "title" : "The Totally Excellent Adventures of Mack and the D",
+    "description" : "After getting stranded in 1982, Mack retreats to his childhood home to deal with the death of his parents; Deke scouts a group of new agents."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "8",
+    "title" : "After, Before",
+    "description" : "With the Zephyr's time drive malfunctioning, the team hurtle toward disaster with Yo-Yo as its only hope; Yo-Yo must enlist the help of an old adversary to regain her powers."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "9",
+    "title" : "As I Have Always Been",
+    "description" : "A time storm ravages the Zephyr, propelling it toward destruction while simultaneously forcing Daisy and Coulson to relive their failed attempts to save the team."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "10",
+    "title" : "Stolen",
+    "description" : "The team arrives back in 1983, where Nathaniel and Kora are hard at work building an army; Daisy is tasked with protecting Jiaying; the others learn they'll need to face another supercharged enemy to stop Malick."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "11",
+    "title" : "Brand New Day",
+    "description" : "With help from Kora on the inside, Sibyl and Nathanial continue their fight to shape a dark new future for S.H.I.E.L.D., managing to stay one step ahead of the agents along the way."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "12",
+    "title" : "The End is at Hand",
+    "description" : "Sibyl attempts to get the location of Fitz from Jemma's memories. Meanwhile, the SHIELD team attempts to stop Nathaniel's plans for anarchy and the Chronicoms' attempts to rewrite history."
+  }, {
+    "imdbId" : "2364582",
+    "season" : "7",
+    "episodeNumber" : "13",
+    "title" : "What We're Fighting For",
+    "description" : "The final fight against the Chronicoms begins. A familiar face returns."
   } ],
   "2375692" : [ {
     "imdbId" : "2375692",
@@ -60306,7 +60462,7 @@
     "season" : "1",
     "episodeNumber" : "14",
     "title" : "River of Time",
-    "description" : "After numerous attempts in many different time periods, the team has successfully captured Vandal Savage. However, Savage tells Kendra that he can reunite her with Carter so she struggles with whether she should kill him. Rip decides they will deliver Savage to the Time Masters which doesn't sit well with Snart and Rory. The duo decides it may be time to jump ship and return to their old life. Meanwhile, Savage taunts Ray about his place in Kendra's life."
+    "description" : "After the team successfully captures Vandal Savage, his presence causes dissension amongst them - as they decide whether he should live or die."
   }, {
     "imdbId" : "4532368",
     "season" : "1",
@@ -60318,7 +60474,7 @@
     "season" : "1",
     "episodeNumber" : "16",
     "title" : "Legendary",
-    "description" : "After the numerous sacrifices the team has made since the beginning of this ride, Rip decides that it's time they each decide their own destiny and returns them to Central City a few months after they first left. Returned to their normal lives, each team member must individually decide if they are willing to sacrifice everything in order to save the world. Meanwhile, Sara visits with her father who delivers some heartbreaking news about her sister."
+    "description" : "After all their sacrifices, Rip returns the team to Central City a few months after they left, so they can decide for themselves if they’re willing to risk everything in the finale."
   }, {
     "imdbId" : "4532368",
     "season" : "2",
@@ -60510,7 +60666,7 @@
     "season" : "3",
     "episodeNumber" : "15",
     "title" : "Necromancing the Stone",
-    "description" : "When Mallus' power over Sara resurfaces, she unwittingly becomes the bearer of one of the Totems. Rory must conquer his dark side in order to wield his own Totem power to help save the crew. Meanwhile, Agent Sharpe notices that something is wrong and recruits someone unorthodox to help."
+    "description" : "When Mallus's power over Sara resurfaces, she unwittingly becomes the bearer of one of the Totems. And Rory must conquer his dark side to save the crew."
   }, {
     "imdbId" : "4532368",
     "season" : "3",
@@ -60540,7 +60696,7 @@
     "season" : "4",
     "episodeNumber" : "2",
     "title" : "Witch Hunt",
-    "description" : "When the magical Time Seismograph goes off, the team finds themselves headed to the Salem witch trials. Sara notices that Zari is taking the case personally when she promises to save a mom, who is being accused of being a witch. However, the team quickly learns that there is a magical creature in the town creating problems they hadn't been expecting. Meanwhile, Nate and Ava work together to try to keep their Time Bureau funding by proving to them that magic exists."
+    "description" : "The Legends find themselves headed to the Salem witch trials, where they learn that a magical creature in town is causing problems they hadn’t expected."
   }, {
     "imdbId" : "4532368",
     "season" : "4",
@@ -60594,13 +60750,13 @@
     "season" : "4",
     "episodeNumber" : "11",
     "title" : "Séance and Sensibility",
-    "description" : "When Mona discovers that her favorite author, Jane Austen, might be at the epicenter of a magical alert, Mona, Sara, Charlie and Zari find themselves in 1809."
+    "description" : "When Mona discovers that her favorite author, Jane Austen, might be at the epicenter of a magical alert, Mona, Sara, Charlie and Zari find themselves in Bath, England, 1802."
   }, {
     "imdbId" : "4532368",
     "season" : "4",
     "episodeNumber" : "12",
     "title" : "The Eggplant, the Witch & the Wardrobe",
-    "description" : "With darkness on the rise in 2019, the team realizes that a new host of problems have risen as they have been cleaning up history. Sara tries to save Ava from a fate worse than death while battling her own demons. Nora and Constantine, work together to take down a powerful demon. Meanwhile, Zari gets unsolicited advice from Mona, Charlie and even Rory."
+    "description" : "With darkness on the rise in 2019, the team realizes that a host of problems have risen while they were cleaning up history. Sara saves Ava from a fate worse than death."
   }, {
     "imdbId" : "4532368",
     "season" : "4",
@@ -60625,6 +60781,96 @@
     "episodeNumber" : "16",
     "title" : "Hey, World!",
     "description" : "Sara and Ava concoct a bold plan to take back the Time Bureau; Zari and Charlie must work together to discover what Neron is planning; Constantine is given a tough choice on who to save from Hell."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "1",
+    "title" : "Crisis on Infinite Earths: Part Five",
+    "description" : "Worlds lived, worlds died. Nothing will ever be the same."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "2",
+    "title" : "Meet the Legends",
+    "description" : "After saving the world, the Legends become famous and invite a documentary film crew aboard the Waverider. But trouble arises when Rasputin returns from Hell in the season premiere."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "3",
+    "title" : "Miss Me, Kiss Me, Love Me",
+    "description" : "When a new blip lands the Legends in 1947 Los Angeles, it puts them on the trail of Benjamin \"Bugsy\" Siegel; Sara, Ray and Constantine devise a plan to capture him; Ava struggles with being on the sidelines with Rory."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "4",
+    "title" : "Slay Anything",
+    "description" : "When the Legends discover a new Encore, Sara, Rory and Ava end up crashing a high school reunion to attempt to stop a serial killer from finishing unfinished business. The Legends devise a plan to send Nate, Ray, Nora, Behrad and their hostage Zari, back in time to try and intervene in order to try to save everyone including them. Meanwhile, Constantine is annoyed that Charlie has been squatting in his old home, but it might be the blessing in disguise they were not looking for."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "5",
+    "title" : "A Head of Her Time",
+    "description" : "When Sara is called away on business, she leaves Ava in charge and Ava tries to impress the team as they try to take on their latest Encore, Marie Antionette. With Zari still on the ship, Behrad convinces the team to bring her along on the mission which they all hope isn't a mistake. Meanwhile, Constantine finally confronts someone from his past with the help of Charlie, which leads him on a journey through his past."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "6",
+    "title" : "Mortal Khanbat",
+    "description" : "With Sara away from the Waverider, the Legends find a new Encore with Ava's new invention, the Prognosticator, and must now to defeat Genghis Khan in 1990s Hong Kong; Constantine's life is hanging in the balance."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "7",
+    "title" : "Mr. Parker's Cul-De-Sac",
+    "description" : "Ray plans a date night for him and Nora, but all goes awry when an Encore shows up making the team think on their feet and create a lie to keep the Encore at bay. While trying to fool the Encore, Ava learns what Sara was really doing while she was away and confronts her. Charlie and Constantine make a deal to work together, which will benefit both of them. Meanwhile, Rory is upset when he gets negative comments about his book, so Zari helps track down who the critic is, and Rory gets more than he bargained for."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "8",
+    "title" : "Romeo V. Juliet: Dawn of Justness",
+    "description" : "The Legends continue their hunt for pieces for the Loom of Fate and find themselves face to face with William Shakespeare; Ray and Nora make another big life decision that leaves the team surprised."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "9",
+    "title" : "Zari, Not Zari",
+    "description" : "Sara, Constantine and Charlie find themselves in British Columbia for another piece of the Loom; Zari has been having trouble feeling like herself, so she goes on a meditative journey at the suggestion of Behrad."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "10",
+    "title" : "The Great British Fake Off",
+    "description" : "With Sara recuperating from her latest battle, Charlie starts to notice something might not be right with her; Constantine and Zari find themselves trapped in a 1910 boarding house; Ava, Gary and Rory take a trip."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "11",
+    "title" : "Ship Broken",
+    "description" : "The Legends deal with a shipboard saboteur as they attempt to use the Loom."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "12",
+    "title" : "Freaks and Greeks",
+    "description" : "The team find themselves going back to college and forming a sorority in order to retrieve an ancient artifact; Nate falls under Dion's spell, letting him know of Sara, Astra, Ava and Charlie's plan to get the cup."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "13",
+    "title" : "I Am Legends",
+    "description" : "After drinking from the Chalice, the Legends have immortality for 24 hours, which gives them time to get to the Waverider and use the Loom of Fate; they get stuck at Constantine's house during a zombie apocalypse."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "14",
+    "title" : "The One Where We're Trapped on TV",
+    "description" : "After Charlie does the one thing that goes against her nature when it comes to her sisters, she tries to protect the Legends by scattering them in different television shows."
+  }, {
+    "imdbId" : "4532368",
+    "season" : "5",
+    "episodeNumber" : "15",
+    "title" : "Swan Thong",
+    "description" : "Still controlled by the Fates, the Legends find themselves in 1984-esque world, they soon discover that things aren't as they thought they would be. The Legends must convince the civilians to trust them and stand up for their right to choose, but the Fates don't make it easy by resurrecting the Encores once again."
   } ],
   "4977374" : [ {
     "imdbId" : "4977374",
@@ -62652,6 +62898,103 @@
     "episodeNumber" : "5",
     "title" : "Americas",
     "description" : "As early humans spread out across the world, their toughest challenge was colonizing the Americas because a huge ice sheet blocked the route. It has long been thought that the first Americans were Clovis people, who arrived 13,000 years ago. But an underwater discovery in Mexico suggests people arrived earlier--coming by boat, not on foot. How closely related were these early Americans to today's Native Americans? It's an emotive issue, involving one of the most controversial fossils in the world, Kennewick Man."
+  } ],
+  "8111088" : [ {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "1",
+    "title" : "Chapter 1: The Mandalorian",
+    "description" : "A Mandalorian bounty hunter tracks a target for a well-paying, mysterious client."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "2",
+    "title" : "Chapter 2: The Child",
+    "description" : "Target in hand, the Mandalorian must now contend with scavengers."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "3",
+    "title" : "Chapter 3: The Sin",
+    "description" : "The battered Mandalorian returns to his client for his reward."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "4",
+    "title" : "Chapter 4: Sanctuary",
+    "description" : "The Mandalorian teams up with an ex-soldier to protect a farming village from raiders."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "5",
+    "title" : "Chapter 5: The Gunslinger",
+    "description" : "On a familiar desert planet, the Mandalorian helps a rookie bounty hunter who is in over his head."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "6",
+    "title" : "Chapter 6: The Prisoner",
+    "description" : "The Mandalorian is part of a crew of mercenaries springing a convict from a prison ship."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "7",
+    "title" : "Chapter 7: The Reckoning",
+    "description" : "An old contact extends an invitation for the Mandalorian to make peace with his enemies."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "1",
+    "episodeNumber" : "8",
+    "title" : "Chapter 8: Redemption",
+    "description" : "The Mandalorian and his allies come to know their true enemy, who already knows much about them."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "1",
+    "title" : "Chapter 9: The Marshal",
+    "description" : "The Mandalorian is drawn to the Outer Rim in search of others of his kind."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "2",
+    "title" : "Chapter 10: The Passenger",
+    "description" : "The Mandalorian must ferry a passenger with precious cargo on a risky journey."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "3",
+    "title" : "Chapter 11: The Heiress",
+    "description" : "The Mandalorian braves high seas and meets unexpected allies."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "4",
+    "title" : "Chapter 12: The Siege",
+    "description" : "The Mandalorian rejoins old allies for a new mission."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "5",
+    "title" : "Chapter 13: The Jedi",
+    "description" : "The Mandalorian travels to a world ruled by a ruthless magistrate who has made a powerful enemy."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "6",
+    "title" : "Chapter 14: The Tragedy",
+    "description" : "The Mandalorian and Child travel to an ancient site."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "7",
+    "title" : "Chapter 15: The Believer",
+    "description" : "To move against the Empire, the Mandalorian needs the help of an old enemy."
+  }, {
+    "imdbId" : "8111088",
+    "season" : "2",
+    "episodeNumber" : "8",
+    "title" : "Chapter 16: The Rescue",
+    "description" : "The Mandalorian and his allies attempt a daring rescue."
   } ],
   "8539056" : [ {
     "imdbId" : "8539056",

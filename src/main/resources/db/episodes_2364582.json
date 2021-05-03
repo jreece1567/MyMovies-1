@@ -231,7 +231,7 @@
   "season" : "2",
   "episodeNumber" : "17",
   "title" : "Melinda",
-  "description" : "The story of Melinda May's transformation into \"The Cavalry\" is revealed as she finds herself at a crossroads in the war between Coulson and Gonzales. As Skye learns more about her true heritage from Lincoln, the truth about Inhumans will send her in a new direction."
+  "description" : "The story of May’s transformation into “The Cavalry” is revealed. As Skye learns more about her heritage, the truth will send her in a new direction."
 }, {
   "imdbId" : "2364582",
   "season" : "2",
@@ -327,7 +327,7 @@
   "season" : "3",
   "episodeNumber" : "11",
   "title" : "Bouncing Back",
-  "description" : "Coulson is more determined than ever to get to Gideon Malick and put to an end to Hydra once and for all in the aftermath of his trip to Maveth. Meanwhile, Daisy and the team encounter more Inhumans who have powers like they've never seen before, but will they be friends or enemies of S.H.I.E.L.D?"
+  "description" : "Threats loom as the team tries to take down Hydra."
 }, {
   "imdbId" : "2364582",
   "season" : "3",
@@ -381,7 +381,7 @@
   "season" : "3",
   "episodeNumber" : "20",
   "title" : "Emancipation",
-  "description" : "In the aftermath of the events of"
+  "description" : "Daisy's prophecy ticks closer towards a major loss, as the aftermath of the events of \"Marvel's Captain America: Civil War\" force S.H.I.E.L.D. to register the Inhumans."
 }, {
   "imdbId" : "2364582",
   "season" : "3",
@@ -405,7 +405,7 @@
   "season" : "4",
   "episodeNumber" : "2",
   "title" : "Ghost Rider: Meet the New Boss",
-  "description" : "Daisy goes to battle Ghost Rider at a terrible cost, and Coulson faces the new Director, and his bold agenda surprises them all."
+  "description" : "Daisy goes to battle Ghost Rider at a terrible cost, and Coulson faces the new director, whose bold agenda surprises them all."
 }, {
   "imdbId" : "2364582",
   "season" : "4",
@@ -428,7 +428,7 @@
   "imdbId" : "2364582",
   "season" : "4",
   "episodeNumber" : "6",
-  "title" : "Ghost Rider: The Good Samaritan",
+  "title" : "The Good Samaritan",
   "description" : "The shocking origin story of Robbie's transition into Ghost Rider is revealed as the lives of Coulson and the team hang in the balance."
 }, {
   "imdbId" : "2364582",
@@ -657,5 +657,161 @@
   "season" : "5",
   "episodeNumber" : "22",
   "title" : "The End",
-  "description" : "Coulson's life or death is the challenge the team finds themselves in, As the wrong decision will cause the destruction of Earth."
+  "description" : "The team must choose between Coulson's life or death; the wrong decision will cause the destruction of Earth."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "1",
+  "title" : "Missing Pieces",
+  "description" : "Scattered across the galaxy, the team works to find their footing in the wake of losing Coulson."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "2",
+  "title" : "Window of Opportunity",
+  "description" : "While Fitz and Enoch struggle in space, Sarge and his team move forward with their mysterious mission on Earth."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "3",
+  "title" : "Fear and Loathing on the Planet of Kitson",
+  "description" : "While Fitz and Enoch try their luck at the casino, Daisy and Simmons find themselves in a much more exciting situation."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "4",
+  "title" : "Code Yellow",
+  "description" : "Yo-Yo and Keller take things public; parasitic aliens threaten the human race; and someone really needs boba."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "5",
+  "title" : "The Other Thing",
+  "description" : "Sarge has May; Altarah has Daisy, Enoch and Simmons; and now, there are two planets that need saving."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "6",
+  "title" : "Inescapable",
+  "description" : "Fitz and Simmons have fought through space, time and alternate realities to find each other, and now, closer than ever, only their own demons can stop their mission."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "7",
+  "title" : "Toldja",
+  "description" : "After finding themselves in yet another gambling dilemma, a mysterious stranger offers Enoch and FitzSimmons a ride home."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "8",
+  "title" : "Collision Course (Part I)",
+  "description" : "To face The Galaxy-Hopping Hate-Beast That Eats Planets, the team on Earth asks for help in all the wrong places; while back on the Lazy Comet, something weird goes on with Izel's crew."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "9",
+  "title" : "Collision Course (Part II)",
+  "description" : "There's no time for the team to play catch-up when there's a planet to save."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "10",
+  "title" : "Leap",
+  "description" : "The team must trust each other in order to face impending doom and an enemy that's closer than they think."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "11",
+  "title" : "From the Ashes",
+  "description" : "Out of answers and running out of time, the agents must face the ghosts of their past to move forward."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "12",
+  "title" : "The Sign",
+  "description" : "With time running short, the team has to go to hell to stop the end of everything."
+}, {
+  "imdbId" : "2364582",
+  "season" : "6",
+  "episodeNumber" : "13",
+  "title" : "New Life",
+  "description" : "With time running short, the team has to go to hell to stop the end of everything."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "1",
+  "title" : "The New Deal",
+  "description" : "Coulson and the agents are thrust backwards in time and stranded in 1931 New York City; with an all-new Zephyr set to time-jump at any moment, the team must hurry to find out exactly what happened."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "2",
+  "title" : "Know Your Onions",
+  "description" : "With the identity of the timeline-unraveling \"thread\" revealed, the team's mission to protect him at all costs leads each agent to question their own values."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "3",
+  "title" : "Alien Commies from the Future!",
+  "description" : "A surprise leap forward in time."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "4",
+  "title" : "Out of the Past",
+  "description" : "Agent Phil Coulson comes to a realization about the importance of July 22, 1955, in the S.H.I.E.L.D. history books."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "5",
+  "title" : "A Trout in the Milk",
+  "description" : "The team - Daniel Sousa in tow - reunites with more than one familiar face at the S.H.I.E.L.D. hangout and discovers exactly how to dismantle the Chronicoms' latest plan; the Zephyr unexpectedly leaps forward again."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "6",
+  "title" : "Adapt or Die",
+  "description" : "The team scrambles to rescue Mack's parents."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "7",
+  "title" : "The Totally Excellent Adventures of Mack and the D",
+  "description" : "After getting stranded in 1982, Mack retreats to his childhood home to deal with the death of his parents; Deke scouts a group of new agents."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "8",
+  "title" : "After, Before",
+  "description" : "With the Zephyr's time drive malfunctioning, the team hurtle toward disaster with Yo-Yo as its only hope; Yo-Yo must enlist the help of an old adversary to regain her powers."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "9",
+  "title" : "As I Have Always Been",
+  "description" : "A time storm ravages the Zephyr, propelling it toward destruction while simultaneously forcing Daisy and Coulson to relive their failed attempts to save the team."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "10",
+  "title" : "Stolen",
+  "description" : "The team arrives back in 1983, where Nathaniel and Kora are hard at work building an army; Daisy is tasked with protecting Jiaying; the others learn they'll need to face another supercharged enemy to stop Malick."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "11",
+  "title" : "Brand New Day",
+  "description" : "With help from Kora on the inside, Sibyl and Nathanial continue their fight to shape a dark new future for S.H.I.E.L.D., managing to stay one step ahead of the agents along the way."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "12",
+  "title" : "The End is at Hand",
+  "description" : "Sibyl attempts to get the location of Fitz from Jemma's memories. Meanwhile, the SHIELD team attempts to stop Nathaniel's plans for anarchy and the Chronicoms' attempts to rewrite history."
+}, {
+  "imdbId" : "2364582",
+  "season" : "7",
+  "episodeNumber" : "13",
+  "title" : "What We're Fighting For",
+  "description" : "The final fight against the Chronicoms begins. A familiar face returns."
 }]
