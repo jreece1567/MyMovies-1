@@ -1,0 +1,13 @@
+{
+  "imdbId" : "9032400",
+  "title" : "Eternals",
+  "releaseYear" : "2021",
+  "duration" : "2:36",
+  "rating" : "PG-13",
+  "director" : "Chloé Zhao",
+  "imageUrl" : "9032400.jpg",
+  "description" : "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+  "genres" : [ "Action", "Adventure", "Fantasy" ],
+  "cast" : [ "Gemma Chan", "Richard Madden", "Angelina Jolie", "Salma Hayek", "Kit Harington", "Kumail Nanjiani", "Lia McHugh", "Brian Tyree Henry", "Lauren Ridloff", "Barry Keoghan", "Ma Dong-seok", "Harish Patel", "Bill Skarsgård", "Haaz Sleiman", "Esai Daniel Cross", "Harry Styles", "Alan Scott", "Hannah Dodd", "Adrià Escudero", "Sebastián Capitán Viveros", "Nikkita Chadha", "Grahame Fox", "Zain Al Rafeea", "Alberto Falcon Rodriguez", "Lucia Efstathiou", "Orson Rosenberg", "Ariadna Vadillo Soto", "Derek Horsham", "Jeff Mirza", "Ascension Martinez Rubio", "Ozer Ercan", "Patton Oswalt", "David Kaye", "Mahershala Ali", "Kishore Bhatt", "Brenda Lorena Garcia", "Jorge Leon Martinez", "Haroon Rafiq", "Sebastian Senior", "Chloe Stannage" ],
+  "tags" : [ "Marvel" ]
+}
