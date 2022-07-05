@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0097372",
+  "title" : "For All Mankind",
+  "releaseYear" : "1989",
+  "duration" : "1:20",
+  "rating" : "NOT RATED",
+  "director" : "Al Reinert",
+  "imageUrl" : "0097372.jpg",
+  "description" : "An in-depth look at various NASA moon landing missions, starting with Apollo 8.",
+  "genres" : [ "Documentary", "History" ],
+  "cast" : [ "Jim Lovell", "Russell Schweickart", "Eugene Cernan", "Michael Collins", "Charles Conrad", "Richard Gordon", "Alan Bean", "Jack Swigert", "Stuart Roosa", "James Irwin", "Ken Mattingly", "Charles Duke", "Harrison Schmitt", "Buzz Aldrin", "Bill Anders", "Neil Armstrong", "Stephen Bales", "Frank Borman", "Walter Cunningham", "Jeff Denton", "Ron Evans", "Fred Haise", "Neil B. Hutchinson", "Christopher Kraft", "Gene Kranz", "Jim McDivitt", "Edgar D. Mitchell", "Bob Overmyer", "Buck Owens", "Wally Schirra", "Dave Scott", "Alan Shepard", "Deke Slayton", "Thomas P. Stafford", "Edward H. White II", "John Young", "Lyndon B. Johnson", "John F. Kennedy", "Joe Kerwin" ],
+  "tags" : [ ]
+}
