@@ -256,7 +256,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(titles.size(), is(TEST_YEAR_COUNT));
 
-    assertThat(titles.get(4).getTitle(), is("Psycho"));
+    assertThat(titles.get(5).getTitle(), is("Psycho"));
   }
 
   @Test
@@ -354,7 +354,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(movies.size(), is(TEST_YEAR_COUNT));
 
-    assertThat(movies.get(4).getTitle(), is("Psycho"));
+    assertThat(movies.get(5).getTitle(), is("Psycho"));
   }
 
   @Test

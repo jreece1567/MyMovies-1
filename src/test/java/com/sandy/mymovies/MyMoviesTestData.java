@@ -3,12 +3,12 @@ package com.sandy.mymovies;
 public final class MyMoviesTestData {
 
   public static final Integer ALL_COUNT = 8;
-  public static final Integer ACTOR_COUNT = 91701;
+  public static final Integer ACTOR_COUNT = 91788;
   public static final Integer DIRECTOR_COUNT = 850;
   public static final Integer GENRE_COUNT = 25;
   public static final Integer RATING_COUNT = 15;
   public static final Integer TAG_COUNT = 28;
-  public static final Integer TITLE_COUNT = 1749;
+  public static final Integer TITLE_COUNT = 1752;
   public static final Integer YEAR_COUNT = 93;
 
   public static final Integer TEST_ACTOR_COUNT = 25;
@@ -29,7 +29,7 @@ public final class MyMoviesTestData {
   public static final Integer TEST_TITLE_COUNT = 1;
   public static final String TEST_TITLE = "Ex Machina";
 
-  public static final Integer TEST_YEAR_COUNT = 7;
+  public static final Integer TEST_YEAR_COUNT = 8;
   public static final String TEST_YEAR = "1960";
 
   public static final String INVALID_IMDB_ID = "0999999";
