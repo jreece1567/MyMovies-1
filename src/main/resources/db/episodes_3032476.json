@@ -39,7 +39,7 @@
   "season" : "1",
   "episodeNumber" : "7",
   "title" : "Bingo",
-  "description" : "The Kettlemans seek Jimmy as their lawyer after turning down an offer from HHM, going as far as attempting to blackmail him."
+  "description" : "The Kettlemans seek Jimmy as their lawyer after turning down an offer from HHM."
 }, {
   "imdbId" : "3032476",
   "season" : "1",
@@ -81,7 +81,7 @@
   "season" : "2",
   "episodeNumber" : "4",
   "title" : "Gloves Off",
-  "description" : "Jimmy and Kim face the repercussions of the TV commercial. Mike makes a deal with Nacho in regards to his newest job offer."
+  "description" : "Mike makes a deal with Nacho in regards to his newest job offer. Jimmy and Kim face the repercussions of the TV commercial."
 }, {
   "imdbId" : "3032476",
   "season" : "2",
@@ -105,7 +105,7 @@
   "season" : "2",
   "episodeNumber" : "8",
   "title" : "Fifi",
-  "description" : "Mike aims to settle the score with an enemy; an unexpected opportunity presents itself to Jimmy."
+  "description" : "Kim hopes to keep the Mesa Verde case, but HHM won't let it go without a fight. Mike stakes out the Salamanca's business."
 }, {
   "imdbId" : "3032476",
   "season" : "2",
@@ -147,13 +147,13 @@
   "season" : "3",
   "episodeNumber" : "5",
   "title" : "Chicanery",
-  "description" : "Kim and Jimmy face off with an adversary. Jimmy looks to Chuck's past to secure his future. Jimmy loses an ally and gains another."
+  "description" : "Kim and Jimmy face off with Chuck and Howard at the New Mexico Bar Association hearing."
 }, {
   "imdbId" : "3032476",
   "season" : "3",
   "episodeNumber" : "6",
   "title" : "Off Brand",
-  "description" : "Jimmy embarks on a new endeavor. Chuck pushes himself to the limit. Nacho finds himself ensnared in a power struggle."
+  "description" : "Needs must, so Jimmy is back in the commercial making business. Chuck pushes himself to the limit. Nacho finds himself ensnared in a power struggle."
 }, {
   "imdbId" : "3032476",
   "season" : "3",
@@ -171,7 +171,7 @@
   "season" : "3",
   "episodeNumber" : "9",
   "title" : "Fall",
-  "description" : "Jimmy visits an old friend and takes up a new pastime; Chuck and Hamlin spar over the future of the firm; and Kim faces challenges at work."
+  "description" : "Jimmy visits Irene at Sandpiper Crossing to see how the class action lawsuit is going; Chuck and Howard spar over the future of the firm; and Kim faces challenges after deciding to take on a new client."
 }, {
   "imdbId" : "3032476",
   "season" : "3",
@@ -183,7 +183,7 @@
   "season" : "4",
   "episodeNumber" : "1",
   "title" : "Smoke",
-  "description" : "Jimmy struggles to cope with Chuck's tragic incidence. Mike ponders his role at Madrigal. Howard makes a startling confession."
+  "description" : "Jimmy struggles to cope with Chuck's tragic incident. Mike ponders his role at Madrigal. Howard makes a startling confession."
 }, {
   "imdbId" : "3032476",
   "season" : "4",
@@ -231,19 +231,19 @@
   "season" : "4",
   "episodeNumber" : "9",
   "title" : "Wiedersehen",
-  "description" : "Jimmy and Kim unburden themselves, risking their relationship in the process; Nacho is forced to make the rounds with Lalo; Mike has cause to worry."
+  "description" : "Jimmy attends his reinstatement hearing at the Bar Association; Nacho is forced to make the rounds with Lalo; Mike has cause to worry."
 }, {
   "imdbId" : "3032476",
   "season" : "4",
   "episodeNumber" : "10",
   "title" : "Winner",
-  "description" : "Jimmy turns the page on his reputation; Lalo tracks a loose end in Gus's operation; Mike is forced to make a difficult decision."
+  "description" : "Lalo tails Mike as he attempts to track down Werner; Jimmy and Kim invoke the memory of Chuck for the Bar Association appeal hearing."
 }, {
   "imdbId" : "3032476",
   "season" : "5",
   "episodeNumber" : "1",
   "title" : "Magic Man",
-  "description" : "Now doing business as Saul Goodman, Jimmy unveils an unorthodox strategy that tests Kim's tolerance of his new legal persona. Lalo searches for the mysterious \"Michael.\""
+  "description" : "Lalo searches for the mysterious Michael. Now doing business as Saul Goodman, Jimmy unveils an unorthodox strategy that tests Kim's tolerance."
 }, {
   "imdbId" : "3032476",
   "season" : "5",
@@ -267,13 +267,13 @@
   "season" : "5",
   "episodeNumber" : "5",
   "title" : "Dedicado a Max",
-  "description" : "Mike takes an impromptu trip out of town; as she and Jimmy grow closer over their campaign to help a client, Kim makes a surprising call."
+  "description" : "As she and Jimmy grow closer over their campaign to help a client, Kim makes a surprising call; Mike is restless during his out-of-town recuperation."
 }, {
   "imdbId" : "3032476",
   "season" : "5",
   "episodeNumber" : "6",
   "title" : "Wexler v. Goodman",
-  "description" : "Kim tries to pump the brakes on Jimmy's latest scheme, but it may be too late to stop Saul; Mike turns the heat up on Lalo; Nacho attempts to enlist support from above."
+  "description" : "Kim has a change of heart, but Saul is determined to stick it to Mesa Verde; Mike turns the heat up on Lalo; Nacho attempts to enlist support from above."
 }, {
   "imdbId" : "3032476",
   "season" : "5",
@@ -298,4 +298,82 @@
   "episodeNumber" : "10",
   "title" : "Something Unforgivable",
   "description" : "Jimmy and Kim make a sideways move that takes a serious turn; Nacho gets closer to the cartel than he'd like."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "1",
+  "title" : "Wine and Roses",
+  "description" : "Nacho runs for his life. Saul and Kim hatch a plan to mess with Howard. Mike questions his allegiances."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "2",
+  "title" : "Carrot and Stick",
+  "description" : "Kim and Saul enlist some familiar faces in their scheme to get Howard. Harsh realities dawn on Nacho. Gus investigates his suspicions."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "3",
+  "title" : "Rock and Hard Place",
+  "description" : "Still on the run, Nacho is forced to choose where his loyalties lie. Saul must decide whether he wants to remain a \"friend of the cartel\" after his reputation is called into question. Gus and Mike ready the team for a meet."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "4",
+  "title" : "Hit and Run",
+  "description" : "Despite assurances from the cartel, Gus takes extreme measures to protect himself against looming threats. Kim and Saul enlist the help of a local pro to put on a show for Cliff Main. Howard seeks outside counsel."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "5",
+  "title" : "Black and Blue",
+  "description" : "While business booms for Jimmy, the vise tightens on the cat-and-mouse game between Gus and Lalo."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "6",
+  "title" : "Axe and Grind",
+  "description" : "Kim and Jimmy enlist a knowledgeable contact; Howard scrutinizes Jimmy's business practices."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "7",
+  "title" : "Plan and Execution",
+  "description" : "Jimmy and Kim deal with a last-minute snag in their plan; Lalo is forced to make an unexpected move."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "8",
+  "title" : "Point and Shoot",
+  "description" : "An unexpected visitor forces Jimmy and Kim to face the consequences of their actions."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "9",
+  "title" : "Fun and Games",
+  "description" : "Gus attempts to smooth things over with the cartel while Mike ties up loose ends as Jimmy and Kim deal with the repercussions of their actions."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "10",
+  "title" : "Nippy",
+  "description" : "A lost dog leads to a new friend. A new player gets in the game."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "11",
+  "title" : "Breaking Bad",
+  "description" : "The partners escalate their enterprise to new levels."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "12",
+  "title" : "Waterworks",
+  "description" : "The stakes are raised when a discovery is made that will send shockwaves far and wide."
+}, {
+  "imdbId" : "3032476",
+  "season" : "6",
+  "episodeNumber" : "13",
+  "title" : "Saul Gone",
+  "description" : "Six years before he meets Walter White, small-time lawyer Jimmy McGill transforms into his alias, Saul Goodman -- a man who puts the \"criminal\" in \"criminal lawyer\" -- and searches for his destiny, hustling to make a name for himself."
 }]

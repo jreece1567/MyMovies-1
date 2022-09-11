@@ -170,7 +170,7 @@
   "imdbId" : "5171438",
   "season" : "2",
   "episodeNumber" : "14",
-  "title" : "Such Sweet Sorrow: Part 2",
+  "title" : "Such Sweet Sorrow, Part 2",
   "description" : "The U.S.S. Discovery battles against Control in a fight not only for their lives but for the future, with a little help from some unexpected friends. Spock and Burnham discern vital new connections between the red signals while Burnham faces one of life's harshest truths: the right decisions are often the hardest to make."
 }, {
   "imdbId" : "5171438",
@@ -182,7 +182,7 @@
   "imdbId" : "5171438",
   "season" : "3",
   "episodeNumber" : "2",
-  "title" : "Far From Home",
+  "title" : "Far from Home",
   "description" : "After the U.S.S. Discovery crash-lands on a strange planet, the crew finds themselves racing against time to repair their ship. Meanwhile, Saru and Tilly embark on a perilous first-contact mission in hopes of finding Burnham."
 }, {
   "imdbId" : "5171438",
@@ -250,4 +250,82 @@
   "episodeNumber" : "13",
   "title" : "That Hope Is You, Part 2",
   "description" : "As the Emerald Chain tightens its grip and the mystery of the Burn is finally solved, Burnham and the crew have one last chance to save themselves - and the Federation."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "1",
+  "title" : "Kobayashi Maru",
+  "description" : "After months spent reconnecting the Federation with distant worlds, Captain Michael Burnham and the crew of the U.S.S. Discovery are sent to assist a damaged space station."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "2",
+  "title" : "Anomaly",
+  "description" : "Saru returns to help the U.S.S. Discovery uncover the mystery of an unusually destructive new force; as Burnham leads the crew, she must also find a way to help Book cope with an unimaginable loss."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "3",
+  "title" : "Choose to Live",
+  "description" : "Burnham and Tilly hunt the killer of a Starfleet officer as Stamets and the science team race against the clock to prevent the anomaly from killing anyone else."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "4",
+  "title" : "All Is Possible",
+  "description" : "Tilly and Adira lead a team of Starfleet Academy cadets on a training mission that takes a dangerous turn. Meanwhile, Burnham is pulled into tense negotiations on Ni'Var."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "5",
+  "title" : "The Examples",
+  "description" : "Burnham and Book race to evacuate a group of stranded colonists in the anomaly's path as one of the Federation's brightest scientists comes aboard the U.S.S. Discovery to do high-stakes research with Saru and Stamets."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "6",
+  "title" : "Stormy Weather",
+  "description" : "Seeking answers, the U.S.S. Discovery ventures into a subspace rift created by the Dark Matter Anomaly. Meanwhile, Book faces a strange visitor from his past."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "7",
+  "title" : "...But to Connect",
+  "description" : "Tensions rise as representatives from across the galaxy gather to confront the threat of the Dark Matter Anomaly. Zora's new sentience raises difficult questions."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "8",
+  "title" : "All In",
+  "description" : "Following a hunch, Captain Burnham tracks Book to an old haunt from their courier days and gets drawn into a high-stakes competition for a powerful weapon."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "9",
+  "title" : "Rubicon",
+  "description" : "Captain Burnham and the U.S.S. Discovery race to stop Book and Ruon Tarka from launching a rogue plan that could inadvertently endanger the galaxy."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "10",
+  "title" : "The Galactic Barrier",
+  "description" : "Captain Burnham and her crew must go where few have gone before: beyond the Galactic Barrier. Meanwhile, Book learns the truth of what drives Ruon Tarka."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "11",
+  "title" : "Rosetta",
+  "description" : "While Captain Burnham leads an away mission to a planet that was once home to the aliens responsible for the DMA, Book and Tarka secretly infiltrate the U.S.S. Discovery."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "12",
+  "title" : "Species Ten-C",
+  "description" : "As the DMA approaches Earth and Ni'Var, Captain Burnham and the crew of the U.S.S. Discovery attempt to make First Contact with the powerful species responsible before it's too late."
+}, {
+  "imdbId" : "5171438",
+  "season" : "4",
+  "episodeNumber" : "13",
+  "title" : "Coming Home",
+  "description" : "As the DMA approaches Earth and Ni'Var, and with evacuations underway, Burnham and the team aboard the U.S.S. Discovery must find a way to communicate and connect with a species far different from their own before time runs out."
 }]
