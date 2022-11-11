@@ -43831,13 +43831,61 @@
     "season" : "3",
     "episodeNumber" : "7",
     "title" : "Passed Pawn",
-    "description" : "Caleb gets an insight on the true nature of his past; Delores seeks out Rehoboam's predecessor, while Maeve tracks her down; Bernard, Stubbs, and William escape from all the chaos."
+    "description" : "Caleb gets an insight on the true nature of his past; Dolores seeks out Rehoboam's predecessor, while Maeve tracks her down; Bernard, Stubbs, and William escape from all the chaos."
   }, {
     "imdbId" : "0475784",
     "season" : "3",
     "episodeNumber" : "8",
     "title" : "Crisis Theory",
     "description" : "Dolores' true intentions are revealed; Bernard confronts a ghost from his past; Maeve is conflicted; Serac's voice is dominant; Caleb's role is revealed; and William faces an unexpected villain."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "1",
+    "title" : "The Auguries",
+    "description" : "Seven years after the demise of Rehoboam, events are set in motion that reunite allies and enemies."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "2",
+    "title" : "Well Enough Alone",
+    "description" : "Maeve and Caleb search for answers. Christina investigates Peter Myers. William announces a new Delos venture."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "3",
+    "title" : "Années Folles",
+    "description" : "Bernard begins his journey. Maeve finds herself in familiar territory. Caleb sees someone he loves."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "4",
+    "title" : "Generation Loss",
+    "description" : "Maeve and Caleb attempt to escape Temperance with their lives. Bernard and the resistance search for a weapon in the desert."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "5",
+    "title" : "Zhuangzi",
+    "description" : "Christina questions the nature of her reality. Charlotte tasks William with tracking a human outlier who has breached."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "6",
+    "title" : "Fidelity",
+    "description" : "Caleb attempts to escape from Charlotte's brutal interrogation, and uncovers a disturbing reality. Bernard and C make their way to the resistance hideout, only to find a spy in their midst."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "7",
+    "title" : "Metanoia",
+    "description" : "Bernard and Maeve fight to save the world. Charlotte begins to see her plans realized. The Man in Black returns to the game."
+  }, {
+    "imdbId" : "0475784",
+    "season" : "4",
+    "episodeNumber" : "8",
+    "title" : "Que Será, Será",
+    "description" : "Christina finds the center of the maze; Caleb and C try to escape; William changes the game's difficulty, to Hale's furious disapproval."
   } ],
   "0481303" : [ {
     "imdbId" : "0481303",
