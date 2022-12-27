@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0088930",
+  "title" : "Clue",
+  "releaseYear" : "1985",
+  "duration" : "1:34",
+  "rating" : "PG",
+  "director" : "Jonathan Lynn",
+  "imageUrl" : "0088930.jpg",
+  "description" : "Six guests are anonymously invited to a strange mansion for dinner, but after their host is killed, they must cooperate with the staff to identify the murderer as the bodies pile up.",
+  "genres" : [ "Comedy", "Crime", "Mystery" ],
+  "cast" : [ "Eileen Brennan", "Tim Curry", "Madeline Kahn", "Christopher Lloyd", "Michael McKean", "Martin Mull", "Lesley Ann Warren", "Colleen Camp", "Lee Ving", "Bill Henderson", "Jane Wiedlin", "Jeffrey Kramer", "Kellye Nakahara", "Will Nye", "Rick Goldman", "Don Camp", "Howard Hesseman" ],
+  "tags" : [ ]
+}

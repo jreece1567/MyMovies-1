@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0074937",
+  "title" : "Murder by Death",
+  "releaseYear" : "1976",
+  "duration" : "1:35",
+  "rating" : "PG",
+  "director" : "Robert Moore",
+  "imageUrl" : "0074937.jpg",
+  "description" : "Five famous literary detective characters and their sidekicks are invited to a bizarre mansion to solve an even stranger mystery.",
+  "genres" : [ "Comedy", "Crime", "Mystery" ],
+  "cast" : [ "Eileen Brennan", "Truman Capote", "James Coco", "Peter Falk", "Alec Guinness", "Elsa Lanchester", "David Niven", "Peter Sellers", "Maggie Smith", "Nancy Walker", "Estelle Winwood", "James Cromwell", "Richard Narita", "Myron", "Fay Wray" ],
+  "tags" : [ ]
+}
