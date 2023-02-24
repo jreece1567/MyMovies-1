@@ -70,7 +70,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(keys.size(), is(ACTOR_COUNT));
 
-    assertThat(keys.get(22), is("A. Philip Randolph"));
+    assertThat(keys.get(23), is("A. Philip Randolph"));
   }
 
   @Test
