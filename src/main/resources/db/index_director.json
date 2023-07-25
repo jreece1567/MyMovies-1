@@ -95,7 +95,7 @@
   "Byambasuren Davaa" : [ "0373861" ],
   "Byron Haskin" : [ "0046534", "0058530" ],
   "Calvin Skaggs" : [ "0431468" ],
-  "Cameron Crowe" : [ "1417592", "0116695" ],
+  "Cameron Crowe" : [ "1417592", "0181875", "0116695" ],
   "Cameron Porsandeh" : [ "2758950" ],
   "Carl Byker" : [ "1471325", "0307674" ],
   "Carlton Cuse" : [ "0163949" ],
@@ -266,6 +266,7 @@
   "Gavin Hood" : [ "0458525", "5431890", "1731141" ],
   "Gavin O'Connor" : [ "2140479" ],
   "Geoff Murphy" : [ "0114781" ],
+  "George Armitage" : [ "0119229" ],
   "George Clooney" : [ "0433383" ],
   "George Dunning" : [ "0063823" ],
   "George Huang" : [ "0114594" ],
@@ -791,6 +792,7 @@
   "Stefano Sollima" : [ "5052474" ],
   "Stephanie Kern" : [ "1870151" ],
   "Stephen Cooter" : [ "10691858" ],
+  "Stephen Frears" : [ "0146882" ],
   "Stephen Gaghan" : [ "0365737" ],
   "Stephen Herek" : [ "1079444", "0096928" ],
   "Stephen Hopkins" : [ "0164212", "0120738", "0100403" ],
@@ -872,5 +874,6 @@
   "Wolfgang Petersen" : [ "0114069", "0177971", "0082096", "0107206", "0089092", "0118571" ],
   "Woody Allen" : [ "0066808", "0065063", "0070707" ],
   "Yann Demange" : [ "4537896" ],
+  "Zach Braff" : [ "0333766" ],
   "Zack Snyder" : [ "12361974", "0409459", "2975590", "0770828", "0974015", "0416449" ]
 }
