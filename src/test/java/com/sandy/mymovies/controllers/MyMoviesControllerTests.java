@@ -267,7 +267,7 @@ public class MyMoviesControllerTests {
               .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[8].imdbId", is("0277457")));
+          .andExpect(jsonPath("$[9].imdbId", is("0277457")));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -299,7 +299,7 @@ public class MyMoviesControllerTests {
               .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[8].imdbId", is("0277457")));
+          .andExpect(jsonPath("$[9].imdbId", is("0277457")));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -331,7 +331,7 @@ public class MyMoviesControllerTests {
               .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[8].imdbId", is("0277457")));
+          .andExpect(jsonPath("$[9].imdbId", is("0277457")));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
@@ -363,7 +363,7 @@ public class MyMoviesControllerTests {
               .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-          .andExpect(jsonPath("$[8].imdbId", is("0277457")));
+          .andExpect(jsonPath("$[9].imdbId", is("0277457")));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
