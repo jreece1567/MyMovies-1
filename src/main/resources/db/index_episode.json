@@ -51303,6 +51303,66 @@
     "episodeNumber" : "10",
     "title" : "A Quality of Mercy",
     "description" : "In the season one finale, just as Captain Pike thinks he's figured out how to escape his fate, he's visited by his future self, who shows him the consequences of his actions."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "1",
+    "title" : "The Broken Circle",
+    "description" : "A distress call from Lt. Noonien-Singh compels Spock to disobey orders and take the Enterprise and its crew into disputed space on a rescue mission."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "2",
+    "title" : "Ad Astra Per Aspera",
+    "description" : "Commander Una Chin-Riley faces court martial, imprisonment and dishonorable discharge from Starfleet."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "3",
+    "title" : "Tomorrow and Tomorrow and Tomorrow",
+    "description" : "La'an travels back in time to 21st-century Earth to prevent an attack which will alter humanity's future history."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "4",
+    "title" : "Among the Lotus Eaters",
+    "description" : "Returning to a planet that dredges up tragic memories, Captain Pike and his landing party find themselves forgetting everything, including their own identities as he confronts a ghost from his past."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "5",
+    "title" : "Charades",
+    "description" : "A shuttle accident leads to Spock's Vulcan DNA being removed by aliens, making him fully human and completely unprepared to face T'Pring's family during an important ceremonial dinner."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "6",
+    "title" : "Lost in Translation",
+    "description" : "Uhura seems to be the only one who can hear a strange sound that seems to trigger terrifying hallucinations."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "7",
+    "title" : "Those Old Scientists",
+    "description" : "An accident while investigating a time portal sends Ensigns Beckett Mariner and Bradward Boimler through time from the 24th Century, and Captain Pike and his crew must get them back where they belong before they can alter the timeline."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "8",
+    "title" : "Under the Cloak of War",
+    "description" : "Captain Pike and his crew welcome a Klingon defector aboard the U.S.S. Enterprise, but his presence triggers the revelation of some shocking secrets."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "9",
+    "title" : "Subspace Rhapsody",
+    "description" : "An accident with an experimental quantum probability field causes everyone on the Enterprise to break uncontrollably into song, but the real danger is that the field is expanding & beginning to impact other ships - allies & enemies alike."
+  }, {
+    "imdbId" : "12327578",
+    "season" : "2",
+    "episodeNumber" : "10",
+    "title" : "Hegemony",
+    "description" : "When the Enterprise investigates an attack on a colony at the edge of Federation space, Captain Pike and the crew face the return of a formidable enemy."
   } ],
   "1286039" : [ {
     "imdbId" : "1286039",
@@ -64775,6 +64835,54 @@
     "episodeNumber" : "8",
     "title" : "Strongman",
     "description" : "Jack heads to the Presidential Palace to retrieve Greer. When the polls are shutdown, violent protests erupt outside the palace, and Jack must make a decision that could determine his future."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "1",
+    "title" : "Falcon",
+    "description" : "Jack Ryan is called into service to right a wrong against his country. Using the latest technology and help of a loyal friend he jumps into action to prevent chaos, that could destroy democracy and our republic."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "2",
+    "title" : "Old Haunts",
+    "description" : "Jack, out in the cold and on the run after the fallout from his failed operation in Greece, must evade authorities both foreign and domestic before receiving help from an old friend."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "3",
+    "title" : "Running with Wolves",
+    "description" : "Jack travels to Vienna to track down the source of his original intelligence on Sokol. Greer advises Alena on a key NATO deal. Petr Kovac, Alena's father, hosts a hunt in the Czech woods."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "4",
+    "title" : "Our Death's Keeper",
+    "description" : "In Budapest, Jack and Mike plan a sting on a slippery arms dealer to ascertain the whereabouts of the Sokol nuclear device, as Greer discovers some intriguing and potentially incriminating information on Petr Kovac."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "5",
+    "title" : "Druz'ya I Vragi",
+    "description" : "Jack and Mike head to a mysterious, abandoned outpost in Russia to seize the Sokol nuclear device, but an unexpected visitor foils their plans. Meanwhile, Petr seeks to rescue Alena, who has been kidnapped by her own head of security."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "6",
+    "title" : "Ghosts",
+    "description" : "Jack races to stop the detonation of the Sokol nuclear device, which has traveled to the Czech Republic. Petr and Luka's secret histories come to the surface in a deadly reckoning."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "7",
+    "title" : "Moscow Rules",
+    "description" : "In Moscow, Jack teams with Luka to expose the high-ranking cabal members within the government who are now orchestrating the secret Sokol plan."
+  }, {
+    "imdbId" : "5057054",
+    "season" : "3",
+    "episodeNumber" : "8",
+    "title" : "Star on the Wall",
+    "description" : "Jack, Greer, Wright, Alena and Luka all work in concert to prevent the start of a third world war."
   } ],
   "5126054" : [ {
     "imdbId" : "5126054",
