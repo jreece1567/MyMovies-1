@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0060345",
+  "title" : "How the Grinch Stole Christmas!",
+  "releaseYear" : "1966",
+  "duration" : "0:26",
+  "rating" : "NOT RATED",
+  "director" : "Chuck Jones",
+  "imageUrl" : "0060345.jpg",
+  "description" : "A grumpy hermit hatches a plan to steal Christmas from the Whos of Whoville.",
+  "genres" : [ "Animation", "Comedy", "Family" ],
+  "cast" : [ "Boris Karloff", "June Foray", "Dal McKennon" ],
+  "tags" : [ ]
+}
