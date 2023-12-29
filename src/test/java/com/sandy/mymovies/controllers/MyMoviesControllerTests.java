@@ -396,7 +396,7 @@ public class MyMoviesControllerTests {
           .andExpect(status().isOk())
           .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
           .andExpect(jsonPath("$[0]", is(1)))
-          .andExpect(jsonPath("$[1]]", is(2)));
+          .andExpect(jsonPath("$[1]", is(2)));
     } catch (Exception ex) {
       fail(ex.getMessage());
     }
