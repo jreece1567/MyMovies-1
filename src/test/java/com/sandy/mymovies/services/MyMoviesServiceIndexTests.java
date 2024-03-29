@@ -172,7 +172,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(titles.size(), is(TEST_ACTOR_COUNT));
 
-    assertThat(titles.get(23).getTitle(), is("The Martian"));
+    assertThat(titles.get(24).getTitle(), is("The Martian"));
   }
 
   @Test
@@ -270,7 +270,7 @@ public class MyMoviesServiceIndexTests {
 
     assertThat(movies.size(), is(TEST_ACTOR_COUNT));
 
-    assertThat(movies.get(23).getTitle(), is("The Martian"));
+    assertThat(movies.get(24).getTitle(), is("The Martian"));
   }
 
   @Test
