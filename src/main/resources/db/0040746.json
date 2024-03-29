@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0040746",
+  "title" : "Rope",
+  "releaseYear" : "1948",
+  "duration" : "1:20",
+  "rating" : "APPROVED",
+  "director" : "Alfred Hitchcock",
+  "imageUrl" : "0040746.jpg",
+  "description" : "Two men attempt to prove they committed the perfect crime by hosting a dinner party after strangling their former classmate to death.",
+  "genres" : [ "Crime", "Drama", "Mystery" ],
+  "cast" : [ "Dick Hogan", "John Dall", "Farley Granger", "Edith Evanson", "Douglas Dick", "Joan Chandler", "Cedric Hardwicke", "Constance Collier", "James Stewart", "Alfred Hitchcock" ],
+  "tags" : [ ]
+}
