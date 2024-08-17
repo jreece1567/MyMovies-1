@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0067800",
+  "title" : "Straw Dogs",
+  "releaseYear" : "1971",
+  "duration" : "1:53",
+  "rating" : "R",
+  "director" : "Sam Peckinpah",
+  "imageUrl" : "0067800.jpg",
+  "description" : "A young American and his English wife come to rural England and face increasingly vicious local harassment.",
+  "genres" : [ "Crime", "Drama", "Thriller" ],
+  "cast" : [ "Dustin Hoffman", "Susan George", "Peter Vaughan", "T.P. McKenna", "Del Henney", "Jim Norton", "Donald Webster", "Ken Hutchison", "Len Jones", "Sally Thomsett", "Bob Keegan", "Peter Arne", "Cherina Schaer", "Colin Welland", "June Brown", "Jimmy Charters", "Chloe Franks", "Michael Mundell", "David Warner" ],
+  "tags" : [ ]
+}

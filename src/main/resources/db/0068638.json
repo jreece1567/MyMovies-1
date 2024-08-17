@@ -1,0 +1,13 @@
+{
+  "imdbId" : "0068638",
+  "title" : "The Getaway",
+  "releaseYear" : "1972",
+  "duration" : "2:3",
+  "rating" : "PG",
+  "director" : "Sam Peckinpah",
+  "imageUrl" : "0068638.jpg",
+  "description" : "A recently-released ex-con and his loyal wife go on the run after a heist goes awry.",
+  "genres" : [ "Action", "Crime", "Thriller" ],
+  "cast" : [ "Steve McQueen", "Ali MacGraw", "Ben Johnson", "Sally Struthers", "Al Lettieri", "Slim Pickens", "Richard Bright", "Jack Dodson", "Dub Taylor", "Bo Hopkins", "Roy Jenson", "John Bryson", "Bill Hart", "Tom Runyon", "Whitney Jones", "Raymond King", "Ivan Thomas", "C.W. White", "Brenda W. King", "W. Dee Kutach", "Brick Lowry", "Martin Colley", "O.S. Savage", "Dick Crockett", "A.L. Camp", "Bob Veal", "Bruce Bissonette", "Maggie Gonzalez", "Jim Kannon", "Doug Dudley", "Stacy Newton", "Tommy Bush", "Stephen Douglas Butler", "Robert M. Cousins", "R.C. Keene", "Margaret Mazzola", "Hal Smith", "Tommy Splittgerber" ],
+  "tags" : [ ]
+}
