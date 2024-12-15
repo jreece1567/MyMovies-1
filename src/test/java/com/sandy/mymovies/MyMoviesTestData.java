@@ -3,8 +3,8 @@ package com.sandy.mymovies;
 public final class MyMoviesTestData {
 
   public static final Integer ALL_COUNT = 8;
-  public static final Integer ACTOR_COUNT = 99937;
-  public static final Integer DIRECTOR_COUNT = 909;
+  public static final Integer ACTOR_COUNT = 100008;
+  public static final Integer DIRECTOR_COUNT = 910;
   public static final Integer GENRE_COUNT = 25;
   public static final Integer RATING_COUNT = 15;
   public static final Integer TAG_COUNT = 29;
